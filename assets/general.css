@@ -1,0 +1,92 @@
+.section .wrapper {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.section .section--heading {
+    font-family: var(--gilroybold);
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.section .section--subheading  {
+    font-family: var(--futurabold);
+    font-size: 14px;
+    line-height: 11px;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--mint);
+}
+
+.section p,
+.section li {
+    font-family: var(--gilroysemi);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@media (min-width: 768px) {
+    .section .section--heading {
+        font-size: 40px;
+        line-height: 42px;
+    }
+}
+
+.btn {
+    font-family: var(--futurabold);
+    font-size: 14px;
+    line-height: normal;
+    padding: 15px 30px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: all ease-in-out 300ms;
+    transform: scale(1);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn--primary {
+    color: white;
+    background: var(--mint);
+}
+
+.horizontal-gradient {
+    background: rgb(101,101,160);
+    background: linear-gradient(-90deg, rgba(101,101,160,1) 0%, rgba(42,41,79,1) 100%);
+}
+
+.vertical-gradient {
+    background: rgb(101,101,160);
+    background: linear-gradient(180deg, rgba(101,101,160,1) 10%, rgba(42,41,79,1) 90%);
+}
+
+.header-wrapper .header__inline-menu a,
+.header-wrapper .header__inline-menu span {
+    font-family: var(--futurabold);
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+
+.header__icons .header__icon--account {
+    width: auto;
+    border: 1px solid var(--purple);
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--purple);
+    font-family: var(--futurabold);
+    font-size: 14px;
+    line-height: normal;
+}
+
+.header__icons .header__icon--account svg {
+    width: 35px;
+    flex: 0 0 35px;
+}

@@ -1,0 +1,31 @@
+.section--cta-bar {
+    padding: 20px 0;
+}
+
+
+.cta-bar p {
+    font-family: var(--gilroybold);
+    font-size: 14px;
+    line-height: normal;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.cta-bar {
+    display: flex;
+}
+
+.cta-bar--item {
+    margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .section--cta-bar {
+        padding: 15px 0;
+    }
+
+    .cta-bar p {
+        font-size: 26px;
+    }
+}

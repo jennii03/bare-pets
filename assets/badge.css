@@ -1,0 +1,29 @@
+.trust-badge {
+  background: #000;
+  padding: 5px 0;
+}
+
+.badge-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.badge-heading h3 {
+  font-size: var(--subheading);
+  color: #fff;
+  margin: 0;
+}
+
+
+@media (min-width: 768px) {
+  .badge-heading {
+    margin-right: 60px;
+  }
+  
+  .badge-content {
+    flex-direction: row;
+  }
+}

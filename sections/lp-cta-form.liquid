@@ -1,0 +1,56 @@
+{{ 'section-cta-form.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-cta-form {{ section.settings.custom_class }}" style="background-image: url({{ section.settings.background | img_url : 'master' }})">
+  <div class="wrapper">
+    <div class="cta-form">
+      <div class="cta-form-image">
+        <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/transparent.png?v=1666599995" class="transparent">
+        <img src="{{ section.settings.photo | img_url: 'master' }}" alt="Product Shot" class="product">
+      </div>
+      <div class="cta-form-text">
+        <h2>{{ section.settings.heading }}</h2>
+        {{ section.settings.form }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - CTA Form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "sign up and get 30% off your first month!",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "form",
+      "label": "Add Form Code here"
+    },
+    {
+      "type": "image_picker",
+      "id": "photo",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - CTA Form"
+    }
+  ]
+}
+{% endschema %}

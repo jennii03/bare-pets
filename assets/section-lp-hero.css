@@ -1,0 +1,91 @@
+/* LOGO */
+.landing-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-top: 45px;
+  transition: all ease-in-out 300ms;
+}
+
+.landing-logo .static {
+  display: block;
+}
+
+.landing-logo .fixed { 
+  display: none;
+}
+
+.landing-page-1 #shopify-section-header,
+.landing-page-1 #shopify-section-announcement-bar,
+.landing-page-2 #shopify-section-header,
+.landing-page-2 #shopify-section-announcement-bar {
+  display: none;
+}
+
+.landing-logo.sticky {
+  padding: 20px 0;
+  background: #2A294F;
+}
+
+.landing-logo.sticky .static {
+  display: none;
+}
+
+.landing-logo.sticky .fixed { 
+  display: block;
+  max-width: 100px;
+}
+
+
+/* LANDING HERO */
+.landing-header {
+  position: relative;
+}
+
+.landing-header > img {
+  width: 100%;
+  display: block;
+}
+
+.landng-header__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.landng-header__content h5 {
+  font-family: var(--futurabold);
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  color: var(--purple);
+}
+
+.landng-header__content h1 {
+  font-family: var(--gilroybold);
+  font-size: 70px;
+  line-height: 72px;
+  font-weight: 900;
+  color: var(--purple);
+  margin: 0;
+}
+
+.landng-header__content h1 span {
+  color: var(--light-green);
+}
+
+@media (min-width: 768px) {
+  .landng-header__content h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

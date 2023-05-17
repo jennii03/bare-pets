@@ -1,0 +1,63 @@
+{{ 'section-purpose.css' | asset_url | stylesheet_tag }}
+
+<section class="section section--purpose pull-by-prev">
+  <picture>
+    <source srcset="{{ 'img-purpose-desktop-top-left.png' | asset_url }}" media="(min-width: 768px)">
+    <img class="decor-top-left" src="{{ 'img-purpose-mobile-top-left.png' | asset_url }}" alt="Decor">
+  </picture>
+
+  <div class="wrapper">
+    <div class="purpose">
+      <div class="purpose--content">
+        <h3 class="section--heading">{{ section.settings.heading }}</h3>
+        <h4 class="section--subheading">{{ section.settings.subheading }}</h4>
+        {{ section.settings.content }}
+      </div>
+      <div class="purpose--image">
+        <img src="{{ section.settings.photo | img_url: 'master' }}" alt="{{ section.settings.heading }}">
+      </div>
+    </div>
+  </div>
+
+  <picture>
+    <source srcset="{{ 'img-purpose-desktop-bottom-right.png' | asset_url }}" media="(min-width: 768px)">
+    <img class="decor-bottom-right" src="{{ 'img-purpose-mobile-bottom-right.png' | asset_url }}" alt="Decor">
+  </picture>
+</section>
+
+{% schema %}
+{
+  "name": "Purpose",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Our Purpose: Giving Back to Dogs in Need",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Giving Back with Every Purchase",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "default": "<p>With every order purchased, we give a % back to local shelters, rescue organizations, and animal welfare projects to help dogs and pups in need.</p>",
+      "label": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "photo",
+      "label": "Featured Photo"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Purpose"
+    }
+  ]
+}
+{% endschema %}

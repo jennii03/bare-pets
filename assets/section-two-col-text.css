@@ -1,0 +1,36 @@
+.section-two-text-content {
+    padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+    .section-two-text-content {
+        padding: 60px 0 70px;
+    }
+}
+
+.two-col-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.two-col-text h3 {
+    font-family: var(--futurabold);
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--mint);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.two-col-text p {
+    font-family: var(--gilroysemi);
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media (min-width: 768px) {
+    .two-col-text {
+        grid-template-columns: 1fr 1fr;
+    }
+}

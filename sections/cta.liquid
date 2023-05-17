@@ -1,0 +1,28 @@
+{{ 'cta.css' | asset_url | stylesheet_tag }}
+
+<section class="cta-block">
+  <div class="page-width">
+    {{ section.settings.contents }}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Block",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "contents",
+      "default": "<p>Title of Content</p>",
+      "label": "CTA Content"
+    }
+  ],
+  "presets": [ 
+    {
+      "name": "CTA Block"
+    }
+  ]
+}
+{% endschema %}

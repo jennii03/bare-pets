@@ -1,0 +1,40 @@
+.landing-chart-table {
+  background-color: #65659F;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0 40px;
+}
+
+.landing-chart-table h4 {
+  text-align: center;
+  font-family: var(--futurabold);
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--light-green);
+  margin: 0;
+}
+
+.landing-chart-table p {
+  font-family: var(--gilroyreg);
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+}
+
+.landing-chart-table h4,
+.landing-chart-table p {
+  max-width: 670px;
+  margin: auto;
+}
+
+.landing-chart-table .section-title {
+  display: block;
+  margin: auto;
+}
+
+.landing-chart-table img {
+  max-width: 100%;
+}

@@ -1,0 +1,51 @@
+{{ 'section-table.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-chart-table" style="background-image: url({{ section.settings.background | img_url : 'master' }})">
+  <div class="wrapper">
+    <h4>{{ section.settings.subheading }}</h4>
+    <img src="{{ section.settings.heading | img_url: 'master' }}" alt="Section Title" class="section-title">
+    <p>{{ section.settings.intro }}</p> 
+    <img src="{{ section.settings.chart | img_url: 'master' }}" alt="Comparison Table">
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Comparison Table",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "How We Compare",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro",
+      "default": "Superior, clean ingredients mean balanced nutrition that's better for your doggo in every bite, which is not something we can say about the competition."
+    },
+    {
+      "type": "image_picker",
+      "id": "chart",
+      "label": "Comparison Table"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "background"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Comparison Table"
+    }
+  ]
+}
+{% endschema %}

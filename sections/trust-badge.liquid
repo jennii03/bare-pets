@@ -1,0 +1,42 @@
+{{ 'badge.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<div class="trust-badge">
+  <div class="page-width">
+    <div class="badge-content">
+      <div class="badge-heading">
+        <h3>{{ section.settings.heading }}</h3>
+      </div>
+      <div class="badge-logo">
+        <img src="{{ section.settings.image | img_url : 'master' }}">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trust Badge",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Badge Logo",
+      "label": "Turst Badge Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Logo"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust Badge"
+    }
+  ]
+}
+{% endschema %}

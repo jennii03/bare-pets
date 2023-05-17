@@ -1,0 +1,84 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
+<section class="section section--testimonials">
+  <img class="decor-top" alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI5NSIgdmlld0JveD0iMCAwIDEyODAgOTUiPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzExNDAiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDExNDAiIHdpZHRoPSIxMjgwIiBoZWlnaHQ9Ijk1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMxODAuNDM3KSIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNzA3MDcwIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDwvY2xpcFBhdGg+CiAgPC9kZWZzPgogIDxnIGlkPSJ0b3AtZGVjb3IiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMxODAuNDM3KSIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aCkiPgogICAgPGcgaWQ9IlJlY3RhbmdsZV8xMTQxIiBkYXRhLW5hbWU9IlJlY3RhbmdsZSAxMTQxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMiAzMTY1LjQzNykiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIxIj4KICAgICAgPHJlY3Qgd2lkdGg9IjEyODIiIGhlaWdodD0iMTEwIiBzdHJva2U9Im5vbmUiLz4KICAgICAgPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIxMjgxIiBoZWlnaHQ9IjEwOSIgZmlsbD0ibm9uZSIvPgogICAgPC9nPgogICAgPHBhdGggaWQ9IkVsZW1lbnRfQmVhbl9HcmVlbi1NZWRpdW0iIGRhdGEtbmFtZT0iRWxlbWVudF9CZWFuIEdyZWVuLU1lZGl1bSIgZD0iTTI1MC44MzQsNzcwLjc4NEMzNzIuMDcsNzEzLjIsNTg0LjE0Niw0NzIuNiw1ODIuNDI2LDM1NC41NTVTNDcwLjg5MiwxOTkuNTYyLDMzMy42NTcsNDcuOTI5LDI0LjI3OSwxMzcsMy41NzMsMzE3LjcxM0MtMjUuNTczLDU3Mi4wODUsMTI5LjYsODI4LjM3MSwyNTAuODM0LDc3MC43ODRaIiB0cmFuc2Zvcm09Im1hdHJpeCgtMC4yNTksIDAuOTY2LCAtMC45NjYsIC0wLjI1OSwgNDg2Ljg3NiwgMzIxNS4zNDcpIiBmaWxsPSJyZ2JhKDIyNCwyMjQsMjM2LDAuNSkiLz4KICAgIDxwYXRoIGlkPSJCYXNlMSIgZD0iTTAsNzg5Ljk0SDEyODBWLS40NnMtMjIyLjIsNjAuNjE2LTQ2Myw1My42UzUyOC40LDMuMjMsMzI1LjQtLjQ2LTEuOCw3My41NzktMS44LDczLjU3OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzE4MSkiIGZpbGw9IiMyYTI5NGYiLz4KICA8L2c+Cjwvc3ZnPgo=" />
+  <div class="wrapper">
+    {%- if section.settings.subheading -%}<h4 class="section--subheading">{{ section.settings.subheading }}</h4>{%- endif -%}
+    <h2 class="section--heading">{{ section.settings.heading }}</h2>
+
+    <ul class="testimonials testimonials-col js-testimonial">
+      {% for block in section.blocks %}
+        <li class="testimonial-item">
+          <div class="testimonial">
+            <p>{{ block.settings.quote }}</p>
+            <div class="testimonial-author">
+              <div class="testimonial-author__info">
+                <h5>{{ block.settings.author }}</h5>
+                <h6>{{ block.settings.title }}</h6>
+              </div>
+
+              <div class="testimonial-author__image">
+                <img src="{{ block.settings.photo | img_url: 'master' }}" alt="Author Photo">
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Client Reviews",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "What Customers Are Saying…",
+      "label": "Heading"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Photo"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Name"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Testimonials"
+    }
+  ]
+}
+{% endschema %}

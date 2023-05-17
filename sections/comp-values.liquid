@@ -1,0 +1,88 @@
+{{ 'section-values.css' | asset_url | stylesheet_tag }}
+
+<section class="section section--core-values vertical-gradient pull-next">
+  <img class="decor-top" alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI4MSIgaGVpZ2h0PSI4MSIgdmlld0JveD0iMCAwIDEyODEgODEiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIwLjUiIHgyPSIwLjUiIHkyPSIxIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzY1NjVhMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyYTI5NGYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+CiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfMTE0MCIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMTE0MCIgd2lkdGg9IjEyODEiIGhlaWdodD0iODEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgOS44OTgpIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgaWQ9Ikdyb3VwXzMzMDQiIGRhdGEtbmFtZT0iR3JvdXAgMzMwNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgLTE4OS44OTgpIj4KICAgIDxnIGlkPSJNYXNrX0dyb3VwXzQ3IiBkYXRhLW5hbWU9Ik1hc2sgR3JvdXAgNDciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMTgwKSIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aCkiPgogICAgICA8cGF0aCBpZD0iQmFzZV8yIiBkYXRhLW5hbWU9IkJhc2UgMiIgZD0iTTAsODczLjNIMTI4MGwuNi04NjAuMTFTMTAzNy4yLDY5Ljc0OSw4NTYsNjguNDU2LDUxOC44LDQuMzQ3LDMxNS44LjI2OCwwLDc0LjkyLDAsNzQuOTJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjgxLjYgOTAuMDEyKSByb3RhdGUoMTgwKSIgZmlsbD0iIzJhMjk0ZiIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==" />
+  <img src="{{ 'img-core-kibble.png' | asset_url }}" class="decor-kibble-top-right" alt="">
+
+  <div class="wrapper">
+    {%- if section.settings.subheading -%}<h4 class="section--subheading">{{ section.settings.subheading }}</h4>{%- endif -%}
+    <h2 class="section--heading">{{ section.settings.heading }}</h2>
+
+    <ul class="core-values">
+      {% for block in section.blocks %}
+        <li class="core-values-item">
+          <div class="values">
+            <div class="values--image">
+              <img src="{{ block.settings.photo | img_url: 'master' }}" alt="Photo about {{ block.settings.title }}">
+            </div>
+            <div class="values--copy">
+              <h5>{{ block.settings.subtitle }}</h5>
+              <h3>{{ block.settings.title }}</h3>
+              <p>{{ block.settings.description }}</p>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Core Values",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Our Core Values",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Committed to dog parents & dogs all over the world",
+      "label": "Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "values",
+      "name": "Values",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Photo"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Core Values"
+    }
+  ]
+}
+{% endschema %}

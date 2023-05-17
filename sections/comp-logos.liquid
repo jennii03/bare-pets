@@ -1,0 +1,82 @@
+{{ 'section-logos.css' | asset_url | stylesheet_tag }}
+
+<section class="section section-logos">
+  <img class="top-decor" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI5OSIgdmlld0JveD0iMCAwIDEyODAgOTkiPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzExNDEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDExNDEiIHdpZHRoPSIxMjgwIiBoZWlnaHQ9Ijk5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDU3MTEpIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgaWQ9Ik1hc2tfR3JvdXBfNDciIGRhdGEtbmFtZT0iTWFzayBHcm91cCA0NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtNTcxMSkiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4KICAgIDxwYXRoIGlkPSJCYXNlNyIgZD0iTTE0ODguNSwzMDRzLTQyLjc3My05Mi44LTIyMC42NDEtOTkuMi0zMDMuNzExLDYzLjcyOS00OTMuNjM4LDcyYy0xOTMuNyw4LjQzNS0zNTYuMzgtNjAuOC01NTEuMTM2LTU0Uy00LjgsMzA0LTQuOCwzMDRWNDBTNTkuNzY4LTExLjIsMjIzLjA4Ny0xMS4yLDQ3Ny4yNjgsNDUuNiw3NDMuMTM2LDQwczMxMC4wNDMtODMuMiw1MjQuNzI0LTgzLjJTMTUwNy4yLDQwLDE1MDcuMiw0MFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NS4yIDU3NTkuNikiIGZpbGw9IiM2NTY1YTAiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="" >
+  <div class="wrapper">
+    <h3 class="section--heading">{{ section.settings.heading }}</h3>
+    {%- if section.blocks -%}
+      <div class="logos-list js-logos-list">
+        {%- for block in section.blocks -%}
+          <div class="logos-list__item">
+            {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}">
+                {% endif %}
+                    <img src="{{ block.settings.logo | img_url: 'master' }}" alt="{{ block.settings.logo.alt }}">
+                {% if block.settings.link != blank %}
+                </a>
+            {% endif %}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <img class="bottom-decor" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI4NyIgdmlld0JveD0iMCAwIDEyODAgODciPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzExNDEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDExNDEiIHdpZHRoPSIxMjgwIiBoZWlnaHQ9Ijg3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDU5NTYpIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgaWQ9Ik1hc2tfR3JvdXBfNDciIGRhdGEtbmFtZT0iTWFzayBHcm91cCA0NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtNTk1NikiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4KICAgIDxwYXRoIGlkPSJCYXNlNyIgZD0iTTE0ODguNSwzMDRzLTQyLjc3My05Mi44LTIyMC42NDEtOTkuMi0zMDMuNzExLDYzLjcyOS00OTMuNjM4LDcyYy0xOTMuNyw4LjQzNS0zNTYuMzgtNjAuOC01NTEuMTM2LTU0Uy00LjgsMzA0LTQuOCwzMDRWNDBTNTkuNzY4LTExLjIsMjIzLjA4Ny0xMS4yLDQ3Ny4yNjgsNDUuNiw3NDMuMTM2LDQwczMxMC4wNDMtODMuMiw1MjQuNzI0LTgzLjJTMTUwNy4yLDQwLDE1MDcuMiw0MFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NS4yIDU3NTkuNikiIGZpbGw9IiM2NTY1YTAiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="Decor">
+</section>
+
+{% schema %}
+{
+  "name": "Logos",
+  "tag": "section",
+  "class": "section section-wrapper-logos",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Title of Content",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Logo Link"
+        }
+      ]
+    }
+  ],
+  "presets": [ 
+    {
+      "name": "Logos",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

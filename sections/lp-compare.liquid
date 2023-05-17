@@ -1,0 +1,85 @@
+{{ 'section-compare.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<div class="landing-chart">
+  <div class="wrapper">
+      <img src="{{ section.settings.logo | img_url: '' }}" alt="Main Product" class="section-title">
+    <div class="comparison-chart">
+      <div class="compare-from">
+        <img src="{{ section.settings.main_photo | img_url: '' }}" alt="Main Product">
+        <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/versus.png?v=1666602450" class="versus" alt="Versus">
+      </div>
+      <div class="compare-to">
+        <div class="compare-slider owl-carousel">
+          {% for block in section.blocks %}
+            <div class="compare-item">
+              <img src="{{ block.settings.chart | img_url: 'master' }}">
+              <!-- <p>{{ block.settings.chart.alt }}</p> -->
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="compare-name-slider owl-carousel">
+          {% for block in section.blocks %}
+            <div class="compare-item">
+              <p>{{ block.settings.chart.alt }}</p>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="compare-logo-slider">
+          {% for block in section.blocks %}
+            <div class="compare-item">
+              <img src="{{ block.settings.logo | img_url: 'master' }}" data-index="{{ forloop.index }}" class="js-slider-pager js-slider-item-{{ forloop.index }}">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Comparison Chart",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Title Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_photo",
+      "label": "Main Photo"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "compare",
+      "name": "Competitor",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "chart",
+          "label": "Competitor"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Competitor Logo"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Comparison Chart"
+    }
+  ]
+}
+{% endschema %}

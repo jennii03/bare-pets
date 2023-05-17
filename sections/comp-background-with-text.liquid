@@ -1,0 +1,211 @@
+{{ 'section-background.css' | asset_url | stylesheet_tag }}
+
+<section class="section section--background-text">
+  {% assign desktop_img = section.settings.image | img_url : 'master' %}
+  {% assign mobile_img  = section.settings.image_2 | img_url : 'master' %}
+
+  <picture>
+    <source media="(max-width: 650px)" srcset="{{ mobile_img }}" />
+    <source media="(min-width: 651px)" srcset="{{ desktop_img }}" />
+    <img src="{{ desktop_img }}" class="bg" alt="Background" />
+  </picture>
+
+  <div class="wrapper">
+    <div class="contents {{ section.settings.desktop_content_position }} {{ section.settings.desktop_content_alignment }}">
+      <div class="contents--container" style="background: rgba(255, 255, 255, {{ section.settings.image_overlay_opacity }})">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'heading' %}
+              <h2 class="section--heading">{{ block.settings.heading }}</h2>
+            {% when 'text' %}
+              {{ block.settings.text }}
+            {% when 'buttons' %}
+              <div class="buttons">
+                {% if block.settings.button_link_1 != blank %}
+                  <a href="{{ block.settings.button_link_1 }}" class="button button--primary">{{ block.settings.button_label_1 }}</a>
+                {% endif %}
+                {% if block.settings.button_link_2 != blank %}
+                  <a href="{{ block.settings.button_link_2 }}" class="button button--primary">{{ block.settings.button_label_2 }}</a>
+                {% endif %}
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Background with Text",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop Version"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Mobile Version"
+    },
+    {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Image Overlay Opacity",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_box",
+      "default": true,
+      "label": "Add Content Background"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top Left"
+        },
+        {
+          "value": "top-center",
+          "label": "Top Center"
+        },
+        {
+          "value": "top-right",
+          "label": "Top Right"
+        },
+        {
+          "value": "middle-left",
+          "label": "Middle Left"
+        },
+        {
+          "value": "middle-center",
+          "label": "Middle Center"
+        },
+        {
+          "value": "middle-right",
+          "label": "Middle Right"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom Left"
+        },
+        {
+          "value": "bottom-center",
+          "label": "Bottom Center"
+        },
+        {
+          "value": "bottom-right",
+          "label": "Bottom Right"
+        }
+      ],
+      "default": "middle-center",
+      "label": "Content Position"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Content Text Alignment"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-banner.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Background with Text",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "RTE",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "RTE"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "First Button Label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "First Button Link"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Button label",
+          "label": "Second Button Label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Second Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Background with Text",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

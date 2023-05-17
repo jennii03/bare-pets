@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="441" height="619" viewBox="0 0 441 619">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_844" data-name="Rectangle 844" width="619" height="441" transform="translate(0.336 178.336)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Element_Bean_Blue" data-name="Element_Bean Blue" transform="translate(-178.336 619.336) rotate(-90)" clip-path="url(#clip-path)">
+    <path id="Element_Bean_Green-Medium" data-name="Element_Bean Green-Medium" d="M250.834,8.187C372.07,65.773,584.146,306.375,582.426,424.416S470.892,579.409,333.657,731.042,24.279,641.972,3.573,461.258C-25.573,206.886,129.6-49.4,250.834,8.187Z" transform="matrix(-0.966, 0.259, -0.259, -0.966, 698.814, 883.888)" fill="rgba(224,224,236,0.2)"/>
+  </g>
+</svg>

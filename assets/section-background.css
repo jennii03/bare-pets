@@ -1,0 +1,72 @@
+.section--background-text {
+    position: relative;
+}
+
+.section--background-text .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.section--background-text .contents {
+    position: relative;
+    z-index: 2;
+    padding: 50px 0;
+    display: flex;
+    min-height: 00px;
+}
+
+.section--background-text .contents--container {
+    padding: 30px;
+}
+
+.section--background-text .contents.top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.section--background-text .contents.top-center {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section--background-text .contents.top-right {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.section--background-text .contents.middle-left {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section--background-text .contents.middle-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.section--background-text .contents.middle-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section--background-text .contents.bottom-left {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.section--background-text .contents.bottom-center {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.section--background-text .contents.bottom-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.section--background-text .contents.left { text-align: left; }
+.section--background-text .contents.center { text-align: center; }
+.section--background-text .contents.right { text-align: right; }

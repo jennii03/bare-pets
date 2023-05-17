@@ -1,0 +1,97 @@
+{{ 'section-page-header.css' | asset_url | stylesheet_tag }}
+
+<section class="section section-page-header">
+  {% assign desktop_img = section.settings.desktop | img_url : 'master' %}
+  {% assign mobile_img  = section.settings.mobile | img_url : 'master' %}
+
+  <picture>
+    <source media="(max-width: 650px)" srcset="{{ mobile_img }}" />
+    <source media="(min-width: 651px)" srcset="{{ desktop_img }}" />
+    <img src="{{ desktop_img }}" class="bg" alt="Background" />
+  </picture>
+
+  <div class="wrapper">
+    <div class="page-header {{ section.settings.desktop_content_alignment }}">
+        <h1 class="section--heading">{{ section.settings.heading }}</h1>
+        {% if section.settings.intro != blank %}
+            <p>{{ section.settings.intro }}</p>
+        {% endif %}
+        
+        {% if section.settings.button_link != blank %}
+            <a href="{{ section.settings.button_link }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+        {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Page Header",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Page Title",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "default": "Intro Text",
+      "label": "Intro Text"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button Label",
+      "label": "Button Label"
+    },
+    {
+      "type": "text",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Content Text Alignment"
+    },
+    {
+      "type": "header",
+      "content": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop",
+      "label": "Background for Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile",
+      "label": "Background for Mobile"
+    }
+  ],
+  "presets": [ 
+    {
+      "name": "Page Header"
+    }
+  ]
+}
+{% endschema %}

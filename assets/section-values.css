@@ -1,0 +1,127 @@
+.section--core-values {
+    position: relative;
+    padding: 0 0 10%;
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-color: #6565A0;
+
+    background: rgb(101,101,160);
+    background: linear-gradient(180deg, rgba(101,101,160,1) 0%, rgba(42,41,79,1) 100%);
+}
+
+.section--core-values .decor-top {
+    margin-bottom: 30px;
+}
+
+.decor-kibble-top-right {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: 1;
+    max-width: 50px;
+}
+
+.section--core-values .section--subheading {
+    font-family: var(--futurabold);
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--mint);
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.section--core-values .section--heading {
+    margin-bottom: 45px;
+    color: white;
+    text-align: center;
+    margin: 0 0 25px;
+    text-transform: capitalize;
+}
+
+.core-values {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.core-values-item .values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.values--image {
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+.values--image img {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.values--copy {
+    flex: 0 0 72%;
+}
+
+.values--copy h3 {
+    margin: 0;
+    font-family: var(--gilroybold);
+    font-size: 18px;
+    text-transform: lowercase;
+    color: white
+}
+
+.values--copy h5 {
+    margin: 0;
+    color: var(--mint);
+    font-family: var(--futurabold);
+    font-size: 14px;
+    line-height: 11px;
+}
+
+.values--copy p {
+    font-family: var(--gilroysemi);
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+
+    .decor-kibble-top-right {
+        top: calc( 50% - 140px );
+        max-width: none;
+    }
+    
+
+    .section--core-values .section--heading {
+        max-width: 65%;
+        margin: auto;
+    }
+
+    .core-values {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .values--copy h3 {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .values--copy p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .values--copy {
+        flex: 0 0 70%;
+    }
+}

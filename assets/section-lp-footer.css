@@ -1,0 +1,109 @@
+.landing-page-1 #shopify-section-footer,
+.landing-page-2 #shopify-section-footer {
+  display: none;
+}
+
+.landing-footer {
+  background: var(--purple);
+  padding: 30px 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.logo-brand img {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.landing-footer svg.decor {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+} 
+
+.trust-badge {
+  margin: 20px 0 30px;
+  color: #fff;
+}
+
+.social-media {
+  position: relative;
+  z-index: 2;
+  margin: 30px 0 70px;
+  display: block;
+  text-align: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.logo-brand h4 {
+  color: #fff;
+  font-family: var(--gilroybold);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.logo-icon {
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-icon img {
+  display: block;
+  margin: auto;
+}
+
+.landing-footer svg.decor {
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .landing-footer {
+    padding: 50px 0 0;
+  }
+
+  .landing-footer svg.decor.desktop { display: block; }
+  .landing-footer svg.decor.mobile { display: none; } 
+}  
+
+@media (max-width: 767px) {
+
+  .landing-footer svg.decor {
+    max-width: 100%;
+  }
+
+  .landing-footer svg.decor.desktop { display: none; }
+  .landing-footer svg.decor.mobile { display: block; }
+}
+
+.js-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 50;
+  opacity: 0;
+  transition: all ease-in-out 200ms;
+}
+
+.js-top.show {
+  opacity: 1;
+}
+
+.js-top svg {
+  width: 25px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .js-top svg {
+    width: 45px;
+  }
+}

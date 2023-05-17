@@ -1,0 +1,37 @@
+{{ 'section-cta-bar.css' | asset_url | stylesheet_tag }}
+
+<section class="section section--cta-bar horizontal-gradient">
+  <div class="cta-bar js-cta-bar">
+    {%- for block in section.blocks -%}
+      <div class="cta-bar--item">
+        <p>{{ block.settings.title }}</p>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Bar",
+  "blocks": [
+    {
+      "type": "cta",
+      "name": "CTA",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "simple. honest. nutritious."
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "CTA Bar"
+    }
+  ]
+}
+{% endschema %}

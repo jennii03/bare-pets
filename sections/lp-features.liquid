@@ -1,0 +1,99 @@
+{{ 'section-features.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-features">
+  <div class="wrapper">
+    <div class="features">
+      <div class="features-left features-icon">
+        {%- for block in section.blocks limit:4 -%}
+          <div class="icon-set">
+            <img src="{{ block.settings.icon | img_url: 'master' }}" alt="Icon">
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.desc }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="features-center">
+        <h4>{{ section.settings.subheading }}</h4>
+        <h2>{{ section.settings.heading }}</h2>
+        <img src="{{ section.settings.featured_photo | img_url: 'master' }}" alt="Featured Photo">
+        <br>
+        {%- if section.settings.cta_link != blank -%}
+          <a href="{{ section.settings.cta_link }}" class="btn btn-primary">Sign up Now</a>
+        {%- endif -%}
+      </div>
+      <div class="features-right features-icon">
+        {%- for block in section.blocks limit:4 offset:4 -%}
+          <div class="icon-set">
+            <img src="{{ block.settings.icon | img_url: 'master' }}" alt="Icon">
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.desc }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Featured",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "bare's specialty",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "clean, healthy, and vet-approved",
+      "label": "Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_photo",
+      "label": "Featured Photo"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "text",
+      "id": "cta_link",
+      "label": "CTA Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "left_icons",
+      "name": "Icons",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "desc",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Featured"
+    }
+  ]
+}
+{% endschema %}

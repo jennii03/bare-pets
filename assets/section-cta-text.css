@@ -1,0 +1,49 @@
+.cta-text {
+  padding: 35px 0;
+  background: var(--purple);
+}
+
+.cta-text .wrapper {
+  max-width: 930px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.cta-text h4 {
+  font-family: var(--futurabold);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--light-green);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cta-text h2 {
+  font-family: var(--gilroybold);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .cta-text {
+    padding: 70px 0;
+  }
+
+  .cta-text h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .cta-text h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}

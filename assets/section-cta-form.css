@@ -1,0 +1,217 @@
+.section-cta-form {
+    background-color: #2A294F;
+    padding: 40px 0;
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 80px 0 180px;
+}
+
+.section-cta-form .section--heading {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--mint);
+  margin: 0;
+}
+
+.section-cta-form .section--intro {
+  color: #fff;
+  font-family: var(--gilroybold);
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.section-cta-form .cta-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-cta-form .cta-form-text {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .section-cta-form {
+    padding: 100px 0;
+    background-position: center;
+  }
+
+  .section-cta-form .section--intro {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .section-cta-form .cta-form-text {
+    flex: 0 0 50%;
+  }
+}
+
+.landing-cta-form {
+    background-color: #E0E0EC;
+    padding: 40px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .landing-cta-form .cta-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .landing-cta-form .cta-form-image {
+    flex: 0 0 30%;
+    position: relative;
+  }
+  
+  .cta-form-image .product {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+  }
+  
+  
+  
+  .landing-cta-form .cta-form-text h2 {
+    font-family: var(--gilroybold);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    margin: 0 0 10px;
+    color: var(--light-purple);
+    text-align: center;
+  }
+  
+  .landing-cta-form .klaviyo-form.klaviyo-form.klaviyo-form {
+    padding: 0 !important;
+  }
+  
+  .landing-cta-form .kl-private-reset-css-Xuajs1 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    color: var(--purple);
+  }
+  
+  .landing-cta-form.hero-form .kl-private-reset-css-Xuajs1 {
+    color: white;
+  }
+  
+  .landing-cta-form .kl-private-reset-css-Xuajs1 span {
+    font-family: var(--gilroysemi) !important;
+  }
+  
+  @media (min-width: 768px) {
+    .landing-cta-form .cta-form-image {
+      width: 30%;
+    }
+  
+    .landing-cta-form .cta-form {
+      flex-direction: row;
+    }
+  
+    .landing-cta-form .cta-form-text {
+      flex: 0 0 65%;
+      width: 65%;
+      margin-top: 30px;
+    }
+  
+    .landing-cta-form .cta-form-text h2 {
+      font-size: 48px;
+      line-height: 64px;
+      margin: 0;
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .landing-cta-form .cta-form-text {
+      margin-top: 0;
+    }
+  }
+  
+  /* FORM */
+  .img-static .transparent { display: none; }
+  
+  .img-static .cta-form-image .product {
+    position: static;
+  }
+  
+  .bottom-align .cta-form-image .product {
+    bottom: -120px;
+  }
+  
+  .landing-cta-form.hero-form .transparent {
+    height: 100px;
+  }
+  
+  
+  .landing-cta-form.hero-form {
+   background-color: var(--purple); 
+  }
+  
+  .landing-cta-form.hero-form .cta-form-text h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--futurabold);
+    margin-bottom: 15px;
+  }
+  
+  .landing-cta-form.hero-form .cta-form-text h2 span {
+    color: var(--green);
+  }
+  
+  .landing-cta-form.hero-form .kl-private-reset-css-Xuajs1 input[type=text] {
+    background-color: rgba(255,255,255,0.3) !important;
+    color: white !important;
+  }
+  
+  .landing-cta-form.hero-form .cta-form-image .product {
+    bottom: -75px;
+  }
+  
+  .transparent { display: none; }
+  
+  @media (min-width: 768px) {
+    .transparent {
+      display: block;
+    }
+  
+    .landing-cta-form.hero-form .cta-form {
+      flex-direction: row-reverse;
+    }
+  
+    .cta-form-image .product {
+      max-width: 100%;
+    }
+  }
+  
+  
+  
+  @media (max-width: 767px) {
+    
+    .landing-cta-form .kl-private-reset-css-Xuajs1 {
+      display: block !important;
+    }
+  
+    .landing-cta-form input {
+      width: 100% !important;  
+      margin-bottom: 10px !important;
+    }
+    
+    .cta-form-image .product {
+      position: static;
+      margin-top: -145px;
+      max-width: 55%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+

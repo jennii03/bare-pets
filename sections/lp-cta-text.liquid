@@ -1,0 +1,34 @@
+{{ 'section-cta-text.css' | asset_url | stylesheet_tag }}
+
+<div class="cta-text">
+  <div class="wrapper">
+    <h4>{{ section.settings.subheading }}</h4>
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - CTA Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "7 nutritious ingredients",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Chicken, Sweet Potato, Rice Flour, Honey, Citric Acid (natural preservative), Buffered Vinegar (natural preservative), Peppermint Oil",
+      "label": "Heading"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - CTA Text"
+    }
+  ]
+}
+{% endschema %}

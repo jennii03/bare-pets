@@ -1,0 +1,313 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "fe5e1ff4-bbb2-4b17-8194-86e1571047d6": {
+      "type": "lp-hero-2",
+      "settings": {
+        "logo_static": "shopify:\/\/shop_images\/NAV.png",
+        "logo_fixed": "shopify:\/\/shop_images\/Logo_2_bad80347-dd0f-4da8-a6dc-6bf095f38a3e.png",
+        "hero": "shopify:\/\/shop_images\/BG_HERO.png",
+        "hero_mobile": "shopify:\/\/shop_images\/Group_1525_e5955052-912b-455d-9bab-f9fa1586e3b5.png",
+        "heading": "simple<span>.<\/span> honest<span>.<\/span> nutritious<span>.<\/span>",
+        "subheading": "Dog Food that's",
+        "catch1": "Guaranteed kibble that your kids will love.",
+        "catch2": "Our first ingredient is fresh chicken.",
+        "form_heading": "Sign up and get 30% off your first month!",
+        "form": "<div class=\"klaviyo-form-Th7YUK\"><\/div>",
+        "featured": "shopify:\/\/shop_images\/hero2-desk.png",
+        "featured_mobile": "shopify:\/\/shop_images\/hero2.png"
+      }
+    },
+    "183527f8-c8d5-4bfd-aac8-ce24e4702810": {
+      "type": "lp-hero",
+      "disabled": true,
+      "settings": {
+        "logo_static": "shopify:\/\/shop_images\/NAV.png",
+        "logo_fixed": "shopify:\/\/shop_images\/Logo_2_bad80347-dd0f-4da8-a6dc-6bf095f38a3e.png",
+        "hero": "shopify:\/\/shop_images\/hero_bg.jpg",
+        "heading": "simple<span>.<\/span> honest<span>.<\/span><br> nutritious<span>.<\/span>",
+        "subheading": "Dog Food that's"
+      }
+    },
+    "903fa90a-26c0-4eba-9103-5b0dec34568f": {
+      "type": "lp-cta-form",
+      "disabled": true,
+      "settings": {
+        "heading": "Sign up and get 30% off your first month!",
+        "form": "<div class=\"klaviyo-form-TU2Tu7\"><\/div>",
+        "photo": "shopify:\/\/shop_images\/products_07257696-3c7a-4436-a0e0-289b384692ff.png",
+        "custom_class": "hero-form"
+      }
+    },
+    "61b2986f-16ce-4fef-a91c-c3f089d9b3dd": {
+      "type": "lp-features",
+      "blocks": {
+        "9b414804-494a-4a02-977e-d59312694fc2": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fussy.png",
+            "title": "perfect for fussy eaters",
+            "desc": "Perfect for even the \npickiest eaters."
+          }
+        },
+        "3fcbfaa4-daa9-42b4-aedf-2820cebf28fe": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/prebiotics.png",
+            "title": "prebiotics & probiotics",
+            "desc": "Improve your dog’s digestion\nand immune system."
+          }
+        },
+        "87c88be3-1e52-46f5-a383-dca84b118a71": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/additives.png",
+            "title": "the right additives",
+            "desc": "Fortified vitamins and \nminerals for optimal nutrition."
+          }
+        },
+        "3f0ce0b0-bb1d-4709-bb1f-fb0fa48bcbe7": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/delivery.png",
+            "title": "auto-delivery",
+            "desc": "Never run out of\ndog food again."
+          }
+        },
+        "e2dbb382-b95c-4545-b7ce-6f8edd90288e": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/chicken.png",
+            "title": "fresh chicken",
+            "desc": "Our number one\ningredient, always."
+          }
+        },
+        "6592a342-193e-402e-8aa3-36baa295d931": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fur_you.png",
+            "title": "made just fur you",
+            "desc": "Made for fur parents\nby fur parents."
+          }
+        },
+        "6f6b518d-a53d-45e2-bd0b-649c2a5c2ccb": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/nasties.png",
+            "title": "no nasties",
+            "desc": "No bad stuff. \nJust the bare stuff."
+          }
+        },
+        "6dd2679e-aefb-4a57-80f4-f0260a65dd13": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/give_back.png",
+            "title": "giving back",
+            "desc": "Help us make a\ndifference locally."
+          }
+        }
+      },
+      "block_order": [
+        "9b414804-494a-4a02-977e-d59312694fc2",
+        "3fcbfaa4-daa9-42b4-aedf-2820cebf28fe",
+        "87c88be3-1e52-46f5-a383-dca84b118a71",
+        "3f0ce0b0-bb1d-4709-bb1f-fb0fa48bcbe7",
+        "e2dbb382-b95c-4545-b7ce-6f8edd90288e",
+        "6592a342-193e-402e-8aa3-36baa295d931",
+        "6f6b518d-a53d-45e2-bd0b-649c2a5c2ccb",
+        "6dd2679e-aefb-4a57-80f4-f0260a65dd13"
+      ],
+      "settings": {
+        "subheading": "bare's specialty",
+        "heading": "vet-approved dog food that the pickiest eaters eat",
+        "featured_photo": "shopify:\/\/shop_images\/products.png",
+        "background": "shopify:\/\/shop_images\/bg.png",
+        "cta_link": "#"
+      }
+    },
+    "426cd778-f52f-42da-9e00-55786e581dc1": {
+      "type": "lp-ingredients-simple",
+      "blocks": {
+        "78736521-bbb0-4aea-b5c0-17040fe28fe2": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fresh-chicken_1a2cea12-f8ed-48da-b85a-15f6e9cbbd71.png",
+            "title": "Real<br>Chicken"
+          }
+        },
+        "340eba32-a556-432a-a1c2-02889e4a4f7c": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/peppermint_385c5773-013a-4ccb-9248-af142abf1bcf.png",
+            "title": "Peppermint<br>Oil"
+          }
+        },
+        "da16720b-d123-4d5e-a158-9b9f70ee3cc9": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Sweet_Potato_11ace37a-38d7-4cf0-8d34-c5657cbba80d.png",
+            "title": "Sweet<br>Potato"
+          }
+        },
+        "1326c484-57b1-4d24-accc-bfa1cc07febb": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/honey_e7ed04b3-7d15-4864-9a13-76a3d929f494.png",
+            "title": "Fresh<br>Honey"
+          }
+        }
+      },
+      "block_order": [
+        "78736521-bbb0-4aea-b5c0-17040fe28fe2",
+        "340eba32-a556-432a-a1c2-02889e4a4f7c",
+        "da16720b-d123-4d5e-a158-9b9f70ee3cc9",
+        "1326c484-57b1-4d24-accc-bfa1cc07febb"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Group_37.png",
+        "logo_mobile": "shopify:\/\/shop_images\/Group_37_1d0fa45e-e129-40e7-ac09-a7a12a315a8c.png",
+        "heading": "fresh",
+        "featured_photo": "shopify:\/\/shop_images\/dental-grp_3b4851e3-0d28-48ac-9db0-439f7b2dcbfd.png",
+        "contents": "<p>What’s the easiest way to achieve fresh, minty breath? The answer is Bare dental. Made with four key ingredients that every dog loves, this dental treat is your number #1 solution to improving your pup’s overall dental health, giving him shiny, white teeth, healthy gums, and — of course — fresh breath.<\/p>",
+        "cta_title": "7 nutritious ingredients",
+        "cta_text": "<p>Chicken, Sweet Potato, Rice Flour, Honey, Citric Acid (natural preservative), Buffered Vinegar (natural preservative), Peppermint Oil<\/p>",
+        "cta_link": ""
+      }
+    },
+    "12cde4ad-a1a3-41fb-ac8e-f5705cb39d72": {
+      "type": "lp-ingredients",
+      "disabled": true,
+      "blocks": {
+        "3305ec19-816a-4967-8654-0efea3aa97d9": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fresh-chicken.png",
+            "title": "First ingredient is fresh chicken"
+          }
+        },
+        "b428457f-7896-4065-b87f-a19b6d4c8191": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/vitamins-minreals.png",
+            "title": "18 vitamins and minerals"
+          }
+        },
+        "839b490c-a8c9-4819-a608-23c3b1441571": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/veg.png",
+            "title": "6 fruits and vegetables"
+          }
+        },
+        "3ae7d5b9-3c4a-43f4-b904-859b53dd60c2": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/bad-stuff.png",
+            "title": "0 bad stuff. just bare"
+          }
+        }
+      },
+      "block_order": [
+        "3305ec19-816a-4967-8654-0efea3aa97d9",
+        "b428457f-7896-4065-b87f-a19b6d4c8191",
+        "839b490c-a8c9-4819-a608-23c3b1441571",
+        "3ae7d5b9-3c4a-43f4-b904-859b53dd60c2"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/barekibble.png",
+        "featured_photo": "shopify:\/\/shop_images\/kibbles-product-cover.png",
+        "contents": "<p>Keep your dog’s tummy troubles at bay with Bare Kibbles. Made with only fresh ingredients and jam-packed with vitamins and minerals, this is your go-to product to relieve your pet from upset stomachs and promote a healthier digestive system. Make the switch today and see the difference in as fast as 10 days! It’s that simple. <\/p>",
+        "bullets": "",
+        "ingredients": ""
+      }
+    },
+    "ae7c6e54-4c49-411d-be9e-e5b9eb4eb514": {
+      "type": "lp-video",
+      "blocks": {
+        "11be054e-ba4e-42d9-b3c7-b29336ffc72c": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f0f16e9fbfc442cdb9db36f031d1088f.mp4"
+          }
+        },
+        "4ce6e80f-fc53-4d86-adf6-666eac9fed6c": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f0f16e9fbfc442cdb9db36f031d1088f.mp4"
+          }
+        },
+        "e2fd0458-6239-48a2-ac4c-c9808bf507a7": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f0f16e9fbfc442cdb9db36f031d1088f.mp4"
+          }
+        },
+        "fac0365d-a206-4c72-813a-558e298e4ff8": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f0f16e9fbfc442cdb9db36f031d1088f.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "11be054e-ba4e-42d9-b3c7-b29336ffc72c",
+        "4ce6e80f-fc53-4d86-adf6-666eac9fed6c",
+        "e2fd0458-6239-48a2-ac4c-c9808bf507a7",
+        "fac0365d-a206-4c72-813a-558e298e4ff8"
+      ],
+      "settings": {
+        "subheading": "bare reviews",
+        "heading": "what the doggos say"
+      }
+    },
+    "6f0284ac-ebd9-4fcf-8dfd-96b882bd1d3b": {
+      "type": "lp-cta-form",
+      "settings": {
+        "heading": "sign up and get 30% off your first month!",
+        "form": "<div class=\"klaviyo-form-XWEHmf\"><\/div>",
+        "photo": "shopify:\/\/shop_images\/products_968a7049-1fff-488f-a196-e58ebfa8b142.png",
+        "custom_class": "bottom-align",
+        "background": "shopify:\/\/shop_images\/bg_signup.png"
+      }
+    },
+    "f5c17aca-29aa-498e-aefc-1a412459ee1e": {
+      "type": "lp-cta-block",
+      "settings": {
+        "headline": "100% honesty guaranteed!",
+        "cta_label": "Sign Up Today",
+        "cta_link": "#contact-us"
+      }
+    },
+    "4ab50f5f-632e-4599-915d-48696b79ce3d": {
+      "type": "lp-footer",
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Logo_2.png",
+        "tagline": "simple. honest. nutritious.",
+        "animated": "shopify:\/\/shop_images\/dog.png",
+        "instagram": "https:\/\/www.instagram.com\/barepetco\/",
+        "facebook": "https:\/\/www.facebook.com\/BarePets",
+        "twitter": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fe5e1ff4-bbb2-4b17-8194-86e1571047d6",
+    "183527f8-c8d5-4bfd-aac8-ce24e4702810",
+    "903fa90a-26c0-4eba-9103-5b0dec34568f",
+    "61b2986f-16ce-4fef-a91c-c3f089d9b3dd",
+    "426cd778-f52f-42da-9e00-55786e581dc1",
+    "12cde4ad-a1a3-41fb-ac8e-f5705cb39d72",
+    "ae7c6e54-4c49-411d-be9e-e5b9eb4eb514",
+    "6f0284ac-ebd9-4fcf-8dfd-96b882bd1d3b",
+    "f5c17aca-29aa-498e-aefc-1a412459ee1e",
+    "4ab50f5f-632e-4599-915d-48696b79ce3d"
+  ]
+}

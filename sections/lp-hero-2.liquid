@@ -1,0 +1,132 @@
+{{ 'section-lp-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-logo">
+  <div class="wrapper">
+    <div class="logo-header-flex">
+      <div class="logo-image">
+        <img src="{{ section.settings.logo_static | img_url : 'master' }}" alt="Bate Pet Co." class="static">
+        <img src="{{ section.settings.logo_fixed | img_url : 'master' }}" alt="Bate Pet Co." class="fixed">
+      </div>
+      <div class="logo-button">
+        <a href="#js-hero-form" class="btn btn-primary js-signup">Sign up Today</a>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="landing-header-2">
+
+  <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Kibble-1_71d9c6c1-6df8-4950-b538-45d8ced99bb4.png?v=1667037170" class="kibble kibble-1">
+  <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/kibble-2_765a3545-06e5-4c49-876c-91cf403f904c.png?v=1667037170" class="kibble kibble-2">
+  <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Kibble-3_6cc8b6a0-f7d4-431d-86e3-8e39a64c50f0.png?v=1667037170" class="kibble kibble-3">
+  <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Kibble-4_3c5af768-e4d6-4943-a71b-5ea2266895cb.png?v=1667037170" class="kibble kibble-4">
+  <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Kibble-5_30009ad6-8194-44f3-b5db-c0087a3697ff.png?v=1667037170" class="kibble kibble-5">
+  <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Kibble-6_d70f736c-0bef-48ae-af78-400f07a88e56.png?v=1667037172" class="kibble kibble-6">
+
+  <picture>
+    <source srcset="{{ section.settings.hero | img_url : 'master' }}" media="(min-width: 768px)">
+    <img src="{{ section.settings.hero_mobile | img_url: 'master' }}" alt="Section Title: Bare Kibble" class="bg-photo" />
+  </picture>
+  <div class="landng-header__content">
+    <div class="wrapper">
+      <h5>{{ section.settings.subheading }}</h5>
+      <h1>{{ section.settings.heading }}</h1>
+      <div class="featured-image-wrapper">
+        <p class="catch-phrase catch-phrase-1">{{ section.settings.catch1 }}</p>
+        <picture>
+          <source srcset="{{ section.settings.featured | img_url : 'master' }}" media="(min-width: 768px)">
+          <img src="{{ section.settings.featured_mobile | img_url: 'master' }}" alt="Bare Kibble" class="hero-photo" />
+        </picture>
+        <p class="catch-phrase catch-phrase-2">{{ section.settings.catch2 }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-hero-2 js-hero-form" id="js-hero-form">
+  <div class="wrapper">
+    <div class="form-hero__wrapper">
+      <h4>{{ section.settings.form_heading }}</h4>
+      {{ section.settings.form }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Hero - Center",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo_static",
+      "label": "Static Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_fixed",
+      "label": "Fixed Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero",
+      "label": "Hero Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_mobile",
+      "label": "Hero Image - Mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "simple<span>.</span> honest<span>.</span> nutritious<span>.</span>",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Dog Food that's",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "catch1",
+      "default": "Guaranteed kibble <br>that your kids will love.",
+      "label": "Catch Phrase 1"
+    },
+    {
+      "type": "text",
+      "id": "catch2",
+      "default": "Our first ingredient <br>is <span>fresh chicken.</span>",
+      "label": "Catch Phrase 1"
+    },
+    {
+      "type": "text",
+      "id": "form_heading",
+      "label": "Form Heading"
+    },
+    {
+      "type": "text",
+      "id": "form",
+      "label": "Form Shortcode",
+      "default": "<div class='klaviyo-form-Th7YUK'></div>"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured",
+      "label": "Featured Photo"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_mobile",
+      "label": "Featured Photo - Mobile"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Hero - Center"
+    }
+  ]
+}
+{% endschema %}

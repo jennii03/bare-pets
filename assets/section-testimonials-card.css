@@ -1,0 +1,186 @@
+.section--testimonials-card {
+  background: #2A294F;
+  padding: 90px 0 100px;
+}
+
+.section--testimonials-card .section--heading {
+  color: var(--yellow);
+  font-family: var(--gilroybold);
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 30px;
+  max-width: 60%;
+}
+
+.testimonials-card img {
+  max-width: 100%;
+}
+
+.section--testimonials-card .testimonials-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-bottom: 140px;
+}
+
+.section--testimonials-card .testimonials-card:after {
+  content: '';
+  position: absolute;
+  top: -65px;
+  right: -20px;
+  z-index: 0;
+  height: 550px;
+  width: 210px;
+  border-radius: 120px;
+  background: var(--yellow);
+}
+
+.section--testimonials-card .testimonials-card .slick-list {
+  position: relative;
+  z-index: 2;
+}
+
+
+.testimonial-card-item .testimonial {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.testimonial-card-item .testimonial-author__info {
+  padding: 10px 15px;
+}
+
+.testimonial-card-item .testimonial-author__info h5 {
+  font-family: var(--gilroybold);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--purple);
+}
+
+.testimonial-card-item .testimonial-author__info p {
+  font-family: var(--gilroysemi);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--purple);
+
+}
+
+
+.testimonial-card-item .testimonial-dog {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-card-item .testimonial-dog img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.testimonial-card-item .testimonial-dog h6 {
+  font-family: var(--gilroysemi);
+  font-size: 11px;
+  line-height: 13px;
+  color: var(--purple);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .section--testimonials-card .section--heading {
+    max-width: 100%;
+    font-size: 46px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .section--testimonials-card .testimonials-card {
+    padding-bottom: 60px;
+  }
+
+  .section--testimonials-card .testimonials-card:after {
+    width: 285px;
+    height: 578px;
+    top: -85px;
+    border-radius: 150px;
+  }
+
+  .section--testimonials-card {
+    padding: 90px 0 180px;
+  }
+
+  .testimonial-card-item {
+    margin: 0 10px;
+  }
+}
+
+/* SLICK */
+.section--testimonials-card .testimonials-card .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 100%;
+  overflow: hidden;
+  text-indent: -99em;
+  background-color: #9DA9B3;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4Ljg5MSIgaGVpZ2h0PSIxMy4xODgiIHZpZXdCb3g9IjAgMCA4Ljg5MSAxMy4xODgiPgogIDxwYXRoIGlkPSJQYXRoXzI2MTM0IiBkYXRhLW5hbWU9IlBhdGggMjYxMzQiIGQ9Ik0zNTIuOTcxLDQ5bDYuNDg1LDUuMTg4LTYuNDg1LDUuMTg4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzUxLjU2NSAtNDcuNTk0KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.section--testimonials-card .testimonials-card .slick-arrow:hover {
+  background-color: var(--mint); 
+}
+
+.section--testimonials-card .testimonials-card .slick-prev {
+  left: 25px;
+  transform: scaleX(-1);
+}
+
+.section--testimonials-card .testimonials-card .slick-next {
+  left: 65px;
+}
+
+.section--testimonials-card .slick-dots {
+  position: absolute;
+  bottom: 100px;
+  right: 35px;
+  z-index: 1;
+}
+
+.section--testimonials-card .slick-dots button {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  text-indent: -99em;
+  margin: 0 0 0 10px;
+  padding: 0;
+  border: 0;
+  background: #E1E1E1;
+}
+
+.section--testimonials-card .slick-dots .slick-active button {
+  background: var(--purple) 
+}
+
+@media (min-width: 768px) {
+  .section--testimonials-card .testimonials-card .slick-prev {
+    left: 0;
+  }
+  
+  .section--testimonials-card .testimonials-card .slick-next {
+    left: 45px;
+  }
+  
+  .section--testimonials-card .slick-dots {
+    bottom: 20px;
+    right: 70px;
+  }
+}

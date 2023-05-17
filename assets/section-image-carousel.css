@@ -1,0 +1,43 @@
+.section-wrapper-image-carousel + .shopify-section {
+    margin-top: -3%;;
+}
+
+.section-image-carousel {
+    padding-top: 20px;
+}
+
+.section-image-carousel .section--heading {
+    text-align: center;  
+    margin-bottom: 50px;  
+}
+
+.image-carousel__item {
+    margin: 0 5px;
+}
+
+.image-carousel img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.section-image-carousel .bottom-decor {
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .section-image-carousel {
+        padding-top: 60px;
+    }
+
+    .section-image-carousel .section--heading {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .image-carousel__item {
+        margin: 0 10px;
+    }
+}

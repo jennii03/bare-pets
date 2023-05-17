@@ -1,0 +1,107 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-testimonials">
+  <div class="wrapper">
+    <h4>{{ section.settings.subheading }}</h4>
+    <h2>{{ section.settings.heading }}</h2>
+
+    <ul class="testimonials">
+      {% for block in section.blocks %}
+        <li class="testimonial-item">
+          <div class="testimonial">
+            <h5>{{ block.settings.title }}</h5>
+            <p>{{ block.settings.quote }}</p>
+
+            <div class="author">
+              <div class="author-photo">
+                <img src="{{ block.settings.photo | img_url: 'master' }}" alt="Author Photo">
+              </div>
+              <div class="author-meta">
+                <p>{{ block.settings.author }}</p>
+                <p>{{ block.settings.location }}</p>
+              </div>
+
+              <div class="author-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37.85" height="6.361" viewBox="0 0 37.85 6.361">
+                  <g id="Star" transform="translate(-251 -5984.75)">
+                    <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M8.84,5.577H6.591l-.683-2.04a.248.248,0,0,0-.465,0l-.683,2.04H2.495a.245.245,0,0,0-.245.245.18.18,0,0,0,0,.041.235.235,0,0,0,.1.173l1.849,1.3L3.5,9.4a.245.245,0,0,0,.084.275.237.237,0,0,0,.138.06.3.3,0,0,0,.153-.055l1.8-1.286,1.8,1.286a.287.287,0,0,0,.153.055.22.22,0,0,0,.136-.06A.242.242,0,0,0,7.852,9.4L7.143,7.338,8.976,6.023l.044-.038a.234.234,0,0,0-.18-.408Z" transform="translate(248.75 5981.375)" fill="#f9d050"/>
+                    <path id="Icon_ionic-ios-star-2" data-name="Icon ionic-ios-star" d="M8.84,5.577H6.591l-.683-2.04a.248.248,0,0,0-.465,0l-.683,2.04H2.495a.245.245,0,0,0-.245.245.18.18,0,0,0,0,.041.235.235,0,0,0,.1.173l1.849,1.3L3.5,9.4a.245.245,0,0,0,.084.275.237.237,0,0,0,.138.06.3.3,0,0,0,.153-.055l1.8-1.286,1.8,1.286a.287.287,0,0,0,.153.055.22.22,0,0,0,.136-.06A.242.242,0,0,0,7.852,9.4L7.143,7.338,8.976,6.023l.044-.038a.234.234,0,0,0-.18-.408Z" transform="translate(256.75 5981.375)" fill="#f9d050"/>
+                    <path id="Icon_ionic-ios-star-3" data-name="Icon ionic-ios-star" d="M8.84,5.577H6.591l-.683-2.04a.248.248,0,0,0-.465,0l-.683,2.04H2.495a.245.245,0,0,0-.245.245.18.18,0,0,0,0,.041.235.235,0,0,0,.1.173l1.849,1.3L3.5,9.4a.245.245,0,0,0,.084.275.237.237,0,0,0,.138.06.3.3,0,0,0,.153-.055l1.8-1.286,1.8,1.286a.287.287,0,0,0,.153.055.22.22,0,0,0,.136-.06A.242.242,0,0,0,7.852,9.4L7.143,7.338,8.976,6.023l.044-.038a.234.234,0,0,0-.18-.408Z" transform="translate(264.75 5981.375)" fill="#f9d050"/>
+                    <path id="Icon_ionic-ios-star-4" data-name="Icon ionic-ios-star" d="M8.84,5.577H6.591l-.683-2.04a.248.248,0,0,0-.465,0l-.683,2.04H2.495a.245.245,0,0,0-.245.245.18.18,0,0,0,0,.041.235.235,0,0,0,.1.173l1.849,1.3L3.5,9.4a.245.245,0,0,0,.084.275.237.237,0,0,0,.138.06.3.3,0,0,0,.153-.055l1.8-1.286,1.8,1.286a.287.287,0,0,0,.153.055.22.22,0,0,0,.136-.06A.242.242,0,0,0,7.852,9.4L7.143,7.338,8.976,6.023l.044-.038a.234.234,0,0,0-.18-.408Z" transform="translate(271.75 5981.375)" fill="#f9d050"/>
+                    <path id="Icon_ionic-ios-star-5" data-name="Icon ionic-ios-star" d="M8.84,5.577H6.591l-.683-2.04a.248.248,0,0,0-.465,0l-.683,2.04H2.495a.245.245,0,0,0-.245.245.18.18,0,0,0,0,.041.235.235,0,0,0,.1.173l1.849,1.3L3.5,9.4a.245.245,0,0,0,.084.275.237.237,0,0,0,.138.06.3.3,0,0,0,.153-.055l1.8-1.286,1.8,1.286a.287.287,0,0,0,.153.055.22.22,0,0,0,.136-.06A.242.242,0,0,0,7.852,9.4L7.143,7.338,8.976,6.023l.044-.038a.234.234,0,0,0-.18-.408Z" transform="translate(279.75 5981.375)" fill="#f9d050"/>
+                  </g>
+                </svg>
+                <p>{{ block.settings.date }}</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "bare reviews",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "what pawrents are saying…",
+      "label": "Heading"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Photo"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Testimonials"
+    }
+  ]
+}
+{% endschema %}

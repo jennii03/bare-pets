@@ -1,0 +1,63 @@
+{{ 'section-image-carousel.css' | asset_url | stylesheet_tag }}
+
+<section class="section section-image-carousel">
+  <div class="wrapper">
+    <h3 class="section--heading">{{ section.settings.heading }}</h3>
+  </div>
+
+  <div class="image-carousel js-image-carousel">
+    {% for block in section.blocks %}
+      <div class="image-carousel__item">
+        <img src="{{ block.settings.logo | img_url: 'master' }}" alt="">
+      </div>
+    {% endfor %}
+  </div>
+  
+  <img class="bottom-decor" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgyLjkwNiIgaGVpZ2h0PSIxMTQuNTg1IiB2aWV3Qm94PSIwIDAgMTI4Mi45MDYgMTE0LjU4NSI+CiAgPHBhdGggaWQ9IlBhdGhfMjY3MTAiIGRhdGEtbmFtZT0iUGF0aCAyNjcxMCIgZD0iTTE3OTEuODY5LDY2NjcuODI1czEyOC4xLTQwLjI0MywzNTYuMTUtMzEuMzg3LDQ2Ny4xMDgsMjYuOTU2LDYxMS40NjQsMzAuODQ2LDMxNS4yOTItMzAuODQ2LDMxNS4yOTItMzAuODQ2di04My4ySDE3OTEuODY5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3OTEuODY5IC02NTUzLjI0KSIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K" alt="Decor">
+</section>
+
+{% schema %}
+{
+  "name": "Featured Image Carousel",
+  "tag": "section",
+  "class": "section section-wrapper-image-carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "join our community of taking a fresher approach to pet food",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        }
+      ]
+    }
+  ],
+  "presets": [ 
+    {
+      "name": "Featured Image Carousel",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,129 @@
+{{ 'section-store-info.css' | asset_url | stylesheet_tag }}
+
+<section class="section section--store-info">
+  <img class="decor-bottom-right" src="{{ 'img-history-decor-bottom-right.svg' | asset_url }}" alt="BG">
+  <img class="decor-bottom-left" src="{{ 'img-history-decor-bottom-left.svg' | asset_url }}" alt="BG">
+  <div class="wrapper">
+    <div class="info">
+      <div class="info--mission">
+        <h4 class="section--subheading">{{ section.settings.mission_title }}</h4>
+        {{ section.settings.mission_content }}
+      </div>
+      <div class="info--vision">
+        <h4 class="section--subheading">{{ section.settings.vision_title }}</h4>
+        {{ section.settings.vision_content }}
+      </div>
+    </div>
+  </div>
+
+  <div class="history--store">
+  <div class="history--wrapper">
+    <div class="history">
+      {%- for block in section.blocks -%}
+        {% assign mod = forloop.index | plus: 1 | modulo: 2 %}
+        
+        {% if mod == 0 %}
+          <div class="history--item">
+            <div class="history--year">
+              <h3>{{ block.settings.year }}</h3>
+            </div>
+            <div class="history--desc">
+              {{ block.settings.desc }}
+            </div>
+            <div class="history--photo">
+              <img src="{{ block.settings.photo | img_url: 'master' }}" alt="History">
+            </div>
+          </div>
+
+        {% else %}
+          
+          <div class="history--item">
+            <div class="history--desc">
+              {{ block.settings.desc }}
+            </div>
+            <div class="history--year">
+              <h3>{{ block.settings.year }}</h3>
+            </div>
+            <div class="history--photo">
+              <img src="{{ block.settings.photo | img_url: 'master' }}" alt="History">
+            </div>
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Store Info",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Mission"
+    },
+    {
+      "type": "text",
+      "id": "mission_title",
+      "default": "Our Mission",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "mission_content",
+      "default": "<p>To bring transparency to an industry plagued with misleading and dishonest practices by putting the health and well-being of pets front and center. With a modern eye on innovation, delivering products that offer nothing but the highest quality of nutrition and care for your furry family members is our simple goal.</p>",
+      "label": "Content"
+    },
+    {
+      "type": "header",
+      "content": "Vision"
+    },
+    {
+      "type": "text",
+      "id": "vision_title",
+      "default": "Our Vision",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "vision_content",
+      "default": "<p>To deliver 100M bowls of transparent and nutritious pet food around the world.</p><p>To make it more convenient for pet parents to access premium pet nutrition through widespread availability via mainstream retail distribution channels.</p>",
+      "label": "Content"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "history",
+      "name": "History",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Photo"
+        },
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Year",
+          "default": "2023"
+        },
+        {
+          "type": "textarea",
+          "id": "desc",
+          "label": "Description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Store Info"
+    }
+  ]
+}
+{% endschema %}

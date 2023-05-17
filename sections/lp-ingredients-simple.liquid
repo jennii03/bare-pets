@@ -1,0 +1,126 @@
+{{ 'section-ingredients.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-ingredients simple" style="background-color: #fff;">
+  <div class="wrapper">
+    <div class="ingredients right-align">
+      <div class="ingredients-photo">
+        <img src="{{ section.settings.featured_photo | img_url: 'master' }}" alt="Product Shot" />
+      </div>
+      <div class="ingredients-details">
+        <div class="flex-heading">
+          <div>
+            <picture>
+                <source srcset="{{ section.settings.logo | img_url: 'master' }}" media="(min-width: 768px)">
+                <img src="{{ section.settings.logo_mobile | img_url: 'master' }}" alt="Section Title: Bare Kibble" class="section-title" />
+            </picture>
+          </div>
+          <div><h2 class="module-title">{{ section.settings.heading }}</h2></div>
+        </div>
+
+        <div class="ingredients-recipe">
+          {% for block in section.blocks %}
+            <div class="ingredients-recipe__list">
+              <img src="{{ block.settings.icon | img_url: 'master' }}" alt="Recipe Photo" />
+              <p>{{ block.settings.title }}</p>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="126.804" viewBox="0 0 4 126.804">
+                <line id="Line_3" data-name="Line 3" y2="122.804" transform="translate(2 2)" fill="none" stroke="#65659f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" stroke-dasharray="2 12"/>
+              </svg>
+            </div>
+          {% endfor %}
+        </div>
+
+        {{ section.settings.contents }}
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-area">
+    <div class="wrapper">
+      <div class="cta-area__content">
+        <div class="cta-area__text">
+          <h4>{{ section.settings.cta_title }}</h4>
+          {{ section.settings.cta_text }}
+        </div>
+        <div class="cta-area__button">
+          <a href="{{ section.settings.cta_link }}" class="btn btn-primary">Sign up Now</a>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Simple Ingredients",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_mobile",
+      "label": "Logo - Mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "kibble"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_photo",
+      "label": "Featured Photo"
+    },
+    {
+      "type": "richtext",
+      "id": "contents",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "cta_title",
+      "label": "CTA Title",
+      "default": "7 nutritious ingredients"
+    },
+    {
+      "type": "richtext",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "<p>Chicken, Sweet Potato, Rice Flour, Honey, Citric Acid (natural preservative), Buffered Vinegar (natural preservative), Peppermint Oil</p>"
+    },
+    {
+      "type": "text",
+      "id": "cta_link",
+      "label": "CTA Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "recipe",
+      "name": "Recipe",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Simple Ingredients"
+    }
+  ]
+}
+{% endschema %}

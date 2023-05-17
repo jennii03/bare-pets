@@ -1,0 +1,56 @@
+{{ 'section-cta-form.css' | asset_url | stylesheet_tag }}
+
+<section class="section section-cta-form" style="background-image: url({{ section.settings.background | img_url : 'master' }})">
+  <div class="wrapper">
+    <div class="cta-form">
+      <div class="cta-form-text">
+        <h2 class="section--heading">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro %}
+            <p class="section--intro">{{ section.settings.intro }}</p>
+        {% endif %}
+        {{ section.settings.form }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Form - Newsletter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Subscribe and get 20% off your first order",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "default": "You shouldn't be the only one eating healthy",
+      "label": "Intro Text"
+    },
+    {
+      "type": "textarea",
+      "id": "form",
+      "label": "Add Form Code here"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge",
+      "label": "Badge"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "CTA Form - Newsletter"
+    }
+  ]
+}
+{% endschema %}

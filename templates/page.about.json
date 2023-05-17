@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "503a1029-3460-4fe8-8308-9fed89a27b60": {
+      "type": "comp-page-header",
+      "settings": {
+        "heading": "humanizing the<br>dog food culture",
+        "intro": "without the junk<span class=\"curve\"><\/span>",
+        "button_label": "Try Bare",
+        "button_link": "\/shop",
+        "desktop_content_alignment": "right",
+        "desktop": "shopify:\/\/shop_images\/page-about.png"
+      }
+    },
+    "bb388078-2e30-458f-a560-5c20de9dc0aa": {
+      "type": "comp-company-info",
+      "blocks": {
+        "570db62c-a7e5-42dc-ad5b-b36685872b3e": {
+          "type": "history",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/2021.png",
+            "year": "2021",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "252c3148-c75a-4846-935b-bdf992731c1b": {
+          "type": "history",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/2023.png",
+            "year": "2023",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "453f109a-ee41-4373-a485-cc025ea46212": {
+          "type": "history",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/2025.png",
+            "year": "2025",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "f66aca97-56db-4d4a-94e2-2b7c7012965d": {
+          "type": "history",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/2027.png",
+            "year": "2027",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        }
+      },
+      "block_order": [
+        "570db62c-a7e5-42dc-ad5b-b36685872b3e",
+        "252c3148-c75a-4846-935b-bdf992731c1b",
+        "453f109a-ee41-4373-a485-cc025ea46212",
+        "f66aca97-56db-4d4a-94e2-2b7c7012965d"
+      ],
+      "settings": {
+        "mission_title": "Our Mission",
+        "mission_content": "<p>To bring transparency to an industry plagued with misleading and dishonest practices by putting the health and well-being of pets front and center. With a modern eye on innovation, delivering products that offer nothing but the highest quality of nutrition and care for your furry family members is our simple goal.<\/p>",
+        "vision_title": "Our Vision",
+        "vision_content": "<p>To deliver 100M bowls of transparent and nutritious pet food around the world.<\/p><p>To make it more convenient for pet parents to access premium pet nutrition through widespread availability via mainstream retail distribution channels.<\/p>"
+      }
+    },
+    "88aa1245-aa5a-4f15-96ef-59edd5cf6767": {
+      "type": "comp-testimonial",
+      "blocks": {
+        "9c14e04d-dc0b-4239-b0e3-293bafe6413c": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_88bff026-42be-49dd-b2d6-a4218bdc28bf.png",
+            "title": "Veterinarian",
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus. Pellentesque nec nam aliquam.",
+            "author": "Dr. John Smith"
+          }
+        },
+        "112e6ed0-0abb-48a6-94f4-daa0e76bfa6f": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_6963d769-1c79-456c-8852-32deb7f3c8d7.png",
+            "title": "Veterinarian",
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus. Pellentesque nec nam aliquam.",
+            "author": "Dr. John Smith"
+          }
+        },
+        "aa145356-6c0a-4c0e-ada3-42ecc2d32e2d": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_60bc22e2-14d8-4ad2-aed9-f14d521bfede.png",
+            "title": "Veterinarian",
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui nunc mattis enim ut tellus. Pellentesque nec nam aliquam.",
+            "author": "Dr. John Smith"
+          }
+        }
+      },
+      "block_order": [
+        "9c14e04d-dc0b-4239-b0e3-293bafe6413c",
+        "112e6ed0-0abb-48a6-94f4-daa0e76bfa6f",
+        "aa145356-6c0a-4c0e-ada3-42ecc2d32e2d"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Formulated by nutritionists, praised by vets"
+      }
+    },
+    "0123b705-1144-4761-991b-05df5b98015f": {
+      "type": "comp-values",
+      "blocks": {
+        "5baf2506-397c-4295-b06d-b4e2b0113314": {
+          "type": "values",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/1.png",
+            "subtitle": "WE BELIEVE IN",
+            "title": "transparency",
+            "description": "We aspire to elevate the level of transparency in the industry. From our ingredients and recipes to how different things affect a pet’s health. We aim to bring it all out in the open."
+          }
+        },
+        "a4543436-8df9-409f-b6e6-9c48383fa214": {
+          "type": "values",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/2.png",
+            "subtitle": "WE BELIEVE IN",
+            "title": "nutrition",
+            "description": "We believe pet food can be both tasty and nutritious. It plays a significant role in a healthy, happy and balanced lifestyle and should make a positive contribution to the health and development of your pet."
+          }
+        },
+        "d38d9a39-530c-4783-86c2-9fcc130db5cc": {
+          "type": "values",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/3.png",
+            "subtitle": "WE BELIEVE IN",
+            "title": "togetherness",
+            "description": "We believe in bringing people together by creating a community of pet parents, caring for them and their pets, and making a difference to the ones who aren’t as fortunate."
+          }
+        },
+        "8043296e-b52f-4aa8-a328-86da8779e22e": {
+          "type": "values",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/4.png",
+            "subtitle": "WE BELIEVE IN",
+            "title": "simplicity",
+            "description": "We believe in the power of simplicity. Every experience from the decision on what to purchase to unboxing should feel effortless and convenient for every full time pet parent."
+          }
+        }
+      },
+      "block_order": [
+        "5baf2506-397c-4295-b06d-b4e2b0113314",
+        "a4543436-8df9-409f-b6e6-9c48383fa214",
+        "d38d9a39-530c-4783-86c2-9fcc130db5cc",
+        "8043296e-b52f-4aa8-a328-86da8779e22e"
+      ],
+      "settings": {
+        "subheading": "Our Core Values",
+        "heading": "Committed to dog parents & dogs all over the world",
+        "bg": "shopify:\/\/shop_images\/purple.png"
+      }
+    },
+    "7ad918cb-a3b6-4489-a593-e41dfce73b5e": {
+      "type": "comp-purpose",
+      "settings": {
+        "heading": "Our Purpose: Giving Back to Dogs in Need",
+        "subheading": "Giving Back with Every Purchase",
+        "content": "<p>With every order purchased, we give a % back to local shelters, rescue organizations, and animal welfare projects to help dogs and pups in need.<\/p><p><\/p><ul><li><a href=\"https:\/\/PhilippineRescueShelter.org\" target=\"_blank\" title=\"https:\/\/PhilippineRescueShelter.org\">PhilippineRescueShelter.org<\/a><\/li><li><a href=\"https:\/\/AsiaRescueOrganization.org\" target=\"_blank\" title=\"https:\/\/AsiaRescueOrganization.org\">AsiaRescueOrganization.org<\/a><\/li><li><a href=\"https:\/\/AnimalWelfareUnited.org\" target=\"_blank\" title=\"https:\/\/AnimalWelfareUnited.org\">AnimalWelfareUnited.org<\/a><\/li><li><a href=\"https:\/\/PhilippineRescueShelter.org\" target=\"_blank\" title=\"https:\/\/PhilippineRescueShelter.org\">PhilippineRescueShelter.org<\/a><\/li><li><a href=\"https:\/\/AsiaRescueOrganization.org\" target=\"_blank\" title=\"https:\/\/AsiaRescueOrganization.org\">AsiaRescueOrganization.org<\/a><\/li><li><a href=\"https:\/\/AnimalWelfareUnited.org\" target=\"_blank\" title=\"https:\/\/AnimalWelfareUnited.org\">AnimalWelfareUnited.org<\/a><\/li><\/ul>",
+        "photo": "shopify:\/\/shop_images\/img-purpose.png"
+      }
+    },
+    "9dd0f306-882f-4e58-b3ce-7c48fd2017ef": {
+      "type": "comp-cta-bar",
+      "blocks": {
+        "e40eb268-47b1-4a50-b221-45eb8445f623": {
+          "type": "cta",
+          "settings": {
+            "title": "simple. honest. nutritious."
+          }
+        },
+        "84a14a69-abdb-4ff7-9c46-6712422b1842": {
+          "type": "cta",
+          "settings": {
+            "title": "simple. honest. nutritious."
+          }
+        },
+        "7518d570-4418-414f-9802-74c66bdd9195": {
+          "type": "cta",
+          "settings": {
+            "title": "simple. honest. nutritious."
+          }
+        },
+        "03a53fcd-b8ef-4ebe-a673-007e903b12e7": {
+          "type": "cta",
+          "settings": {
+            "title": "simple. honest. nutritious."
+          }
+        },
+        "73420c03-d405-45f1-a071-256bb727c8bf": {
+          "type": "cta",
+          "settings": {
+            "title": "simple. honest. nutritious."
+          }
+        }
+      },
+      "block_order": [
+        "e40eb268-47b1-4a50-b221-45eb8445f623",
+        "84a14a69-abdb-4ff7-9c46-6712422b1842",
+        "7518d570-4418-414f-9802-74c66bdd9195",
+        "03a53fcd-b8ef-4ebe-a673-007e903b12e7",
+        "73420c03-d405-45f1-a071-256bb727c8bf"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "503a1029-3460-4fe8-8308-9fed89a27b60",
+    "bb388078-2e30-458f-a560-5c20de9dc0aa",
+    "88aa1245-aa5a-4f15-96ef-59edd5cf6767",
+    "0123b705-1144-4761-991b-05df5b98015f",
+    "7ad918cb-a3b6-4489-a593-e41dfce73b5e",
+    "9dd0f306-882f-4e58-b3ce-7c48fd2017ef"
+  ]
+}

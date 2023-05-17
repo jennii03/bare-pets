@@ -1,0 +1,64 @@
+{{ 'section-lp-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-logo">
+  <div class="wrapper">
+    <img src="{{ section.settings.logo_static | img_url : 'master' }}" alt="Bate Pet Co." class="static">
+    <img src="{{ section.settings.logo_fixed | img_url : 'master' }}" alt="Bate Pet Co." class="fixed">
+  </div>
+</div>
+
+<div class="landing-header">
+  <img src="{{ section.settings.hero | img_url : 'master' }}" />
+  <div class="landng-header__content">
+    <div class="wrapper">
+      <h5>{{ section.settings.subheading }}</h5>
+      <h1>{{ section.settings.heading }}</h1>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo_static",
+      "label": "Static Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_fixed",
+      "label": "Fixed Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "simple<span>.</span> honest<span>.</span> nutritious<span>.</span>",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Dog Food that's",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "animated",
+      "label": "Animated Logo"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Hero"
+    }
+  ]
+}
+{% endschema %}

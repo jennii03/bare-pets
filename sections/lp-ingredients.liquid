@@ -1,0 +1,121 @@
+{{ 'section-ingredients.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-ingredients">
+  <div class="wrapper">
+    <div class="ingredients">
+      <div class="ingredients-photo">
+        <img src="{{ section.settings.featured_photo | img_url: 'master' }}" alt="Product Shot" />
+      </div>
+      <div class="ingredients-details">
+        <img src="{{ section.settings.logo | img_url: 'master' }}" alt="Section Title: Bare Kibble" />
+
+        <div class="ingredients-recipe">
+          {% for block in section.blocks %}
+            <div class="ingredients-recipe__list">
+              <img src="{{ block.settings.icon | img_url: 'master' }}" alt="Recipe Photo" />
+              <p>{{ block.settings.title }}</p>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="126.804" viewBox="0 0 4 126.804">
+                <line id="Line_3" data-name="Line 3" y2="122.804" transform="translate(2 2)" fill="none" stroke="#65659f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" stroke-dasharray="2 12"/>
+              </svg>
+            </div>
+          {% endfor %}
+        </div>
+
+        {{ section.settings.contents }}
+
+        {% assign strings = section.settings.bullets | strip | newline_to_br | strip_newlines | split: "<br />"  %}
+
+        <div class="bullets">
+          {% for paragraph in strings %}
+            <div>
+              <p>{{ paragraph }}</p>
+            </div>
+          {% endfor %}
+        </div>
+
+
+      </div>
+    </div>
+
+    {% assign ingredients = section.settings.ingredients | strip | newline_to_br | strip_newlines | split: "<br />"  %}
+    {% if section.settings.ingredients != blank %}
+    <h4 class="ingredients-heading">Ingredients</h4>
+    <ul class="ingredients-item">
+      {% for paragraph in ingredients %}
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17.525" height="12.518" viewBox="0 0 17.525 12.518">
+            <path id="Icon_feather-check" data-name="Icon feather-check" d="M20.7,9l-10.1,10.1L6,14.511" transform="translate(-4.586 -7.586)" fill="none" stroke="#6bc5b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </svg>
+
+          <p>{{ paragraph }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Ingredients",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_photo",
+      "label": "Featured Photo"
+    },
+    {
+      "type": "richtext",
+      "id": "contents",
+      "label": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "bullets",
+      "label": "Bullet Lists",
+      "info": "1 Item per line"
+    },
+    {
+      "type": "textarea",
+      "id": "ingredients",
+      "label": "Ingredients Lists",
+      "info": "1 Item per line"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "recipe",
+      "name": "Recipe",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "LP - Ingredients"
+    }
+  ]
+}
+{% endschema %}

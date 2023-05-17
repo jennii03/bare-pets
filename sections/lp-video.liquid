@@ -1,0 +1,62 @@
+{{ 'section-videos.css' | asset_url | stylesheet_tag }}
+
+<div class="landing-video">
+  <div class="wrapper">
+    <h4>{{ section.settings.subheading }}</h4>
+    <h2>{{ section.settings.heading }}</h2>
+
+    {% if section.blocks %}
+      <div class="video-testimonial">
+        {% for block in section.blocks %}
+          <div class="video-item">
+            <video controls>
+              <source src="{{ block.settings.video }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "LP - Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "bare reviews",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "what the doggos say",
+      "label": "Heading"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "video",
+          "label": "Video Testimonial URL"
+        }
+      ]
+    }
+  ],
+
+
+  "presets": [
+    {
+      "name": "LP - Video"
+    }
+  ]
+}
+{% endschema %}

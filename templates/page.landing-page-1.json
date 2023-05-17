@@ -1,0 +1,478 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "a83fc155-e6f0-4fad-b086-34444c432787": {
+      "type": "lp-hero-2",
+      "disabled": true,
+      "settings": {
+        "logo_static": "shopify:\/\/shop_images\/NAV.png",
+        "logo_fixed": "shopify:\/\/shop_images\/Logo_2_bad80347-dd0f-4da8-a6dc-6bf095f38a3e.png",
+        "hero": "shopify:\/\/shop_images\/BG_HERO.png",
+        "heading": "simple<span>.<\/span> honest<span>.<\/span> nutritious<span>.<\/span>",
+        "subheading": "Serving Soon. dog food that's",
+        "form_heading": "",
+        "form": ""
+      }
+    },
+    "183527f8-c8d5-4bfd-aac8-ce24e4702810": {
+      "type": "lp-hero",
+      "settings": {
+        "logo_static": "shopify:\/\/shop_images\/NAV.png",
+        "logo_fixed": "shopify:\/\/shop_images\/Logo_2_bad80347-dd0f-4da8-a6dc-6bf095f38a3e.png",
+        "hero": "shopify:\/\/shop_images\/hero_bg.jpg",
+        "heading": "simple<span>.<\/span> honest<span>.<\/span><br> nutritious<span>.<\/span>",
+        "subheading": "Dog Food that's"
+      }
+    },
+    "903fa90a-26c0-4eba-9103-5b0dec34568f": {
+      "type": "lp-cta-form",
+      "settings": {
+        "heading": "Sign up and get 30% off your first month!",
+        "form": "<div class=\"klaviyo-form-TU2Tu7\"><\/div>",
+        "photo": "shopify:\/\/shop_images\/products_07257696-3c7a-4436-a0e0-289b384692ff.png",
+        "custom_class": "hero-form"
+      }
+    },
+    "61b2986f-16ce-4fef-a91c-c3f089d9b3dd": {
+      "type": "lp-features",
+      "blocks": {
+        "9b414804-494a-4a02-977e-d59312694fc2": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fussy.png",
+            "title": "perfect for fussy eaters",
+            "desc": "Perfect for even the \npickiest eaters."
+          }
+        },
+        "3fcbfaa4-daa9-42b4-aedf-2820cebf28fe": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/prebiotics.png",
+            "title": "prebiotics & probiotics",
+            "desc": "Improve your dog’s digestion\nand immune system."
+          }
+        },
+        "87c88be3-1e52-46f5-a383-dca84b118a71": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/additives.png",
+            "title": "the right additives",
+            "desc": "Fortified vitamins and \nminerals for optimal nutrition."
+          }
+        },
+        "3f0ce0b0-bb1d-4709-bb1f-fb0fa48bcbe7": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/delivery.png",
+            "title": "auto-delivery",
+            "desc": "Never run out of\ndog food again."
+          }
+        },
+        "e2dbb382-b95c-4545-b7ce-6f8edd90288e": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/chicken.png",
+            "title": "fresh chicken",
+            "desc": "Our number one\ningredient, always."
+          }
+        },
+        "6592a342-193e-402e-8aa3-36baa295d931": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fur_you.png",
+            "title": "made just fur you",
+            "desc": "Made for fur parents\nby fur parents."
+          }
+        },
+        "6f6b518d-a53d-45e2-bd0b-649c2a5c2ccb": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/nasties.png",
+            "title": "no nasties",
+            "desc": "No bad stuff. \nJust the bare stuff."
+          }
+        },
+        "6dd2679e-aefb-4a57-80f4-f0260a65dd13": {
+          "type": "left_icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/give_back.png",
+            "title": "giving back",
+            "desc": "Help us make a\ndifference locally."
+          }
+        }
+      },
+      "block_order": [
+        "9b414804-494a-4a02-977e-d59312694fc2",
+        "3fcbfaa4-daa9-42b4-aedf-2820cebf28fe",
+        "87c88be3-1e52-46f5-a383-dca84b118a71",
+        "3f0ce0b0-bb1d-4709-bb1f-fb0fa48bcbe7",
+        "e2dbb382-b95c-4545-b7ce-6f8edd90288e",
+        "6592a342-193e-402e-8aa3-36baa295d931",
+        "6f6b518d-a53d-45e2-bd0b-649c2a5c2ccb",
+        "6dd2679e-aefb-4a57-80f4-f0260a65dd13"
+      ],
+      "settings": {
+        "subheading": "bare's specialty",
+        "heading": "clean, healthy, and vet-approved",
+        "featured_photo": "shopify:\/\/shop_images\/products.png",
+        "cta_link": "#"
+      }
+    },
+    "12cde4ad-a1a3-41fb-ac8e-f5705cb39d72": {
+      "type": "lp-ingredients",
+      "blocks": {
+        "3305ec19-816a-4967-8654-0efea3aa97d9": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fresh-chicken.png",
+            "title": "First ingredient is fresh chicken"
+          }
+        },
+        "b428457f-7896-4065-b87f-a19b6d4c8191": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/vitamins-minreals.png",
+            "title": "18 vitamins and minerals"
+          }
+        },
+        "839b490c-a8c9-4819-a608-23c3b1441571": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/veg.png",
+            "title": "6 fruits and vegetables"
+          }
+        },
+        "3ae7d5b9-3c4a-43f4-b904-859b53dd60c2": {
+          "type": "recipe",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/bad-stuff.png",
+            "title": "0 bad stuff. just bare"
+          }
+        }
+      },
+      "block_order": [
+        "3305ec19-816a-4967-8654-0efea3aa97d9",
+        "b428457f-7896-4065-b87f-a19b6d4c8191",
+        "839b490c-a8c9-4819-a608-23c3b1441571",
+        "3ae7d5b9-3c4a-43f4-b904-859b53dd60c2"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/bg_kibble_6b4377e6-754e-4265-a7fd-8caa13222199.png",
+        "logo": "shopify:\/\/shop_images\/Group_37.png",
+        "featured_photo": "shopify:\/\/shop_images\/kibbles-product-cover.png",
+        "contents": "<p>Keep your dog’s tummy troubles at bay with Bare Kibbles. Made with only fresh ingredients and jam-packed with vitamins and minerals, this is your go-to product to relieve your pet from upset stomachs and promote a healthier digestive system. Make the switch today and see the difference in as fast as 10 days! It’s that simple. <\/p>",
+        "bullets": "Picky food habits\nBones and joints\nGut health\nHeart and brain function\nDigestion\nQuality of life",
+        "ingredients": "Fresh chicken (15%)\nHydrolyzed chicken protein\nDried brewer's yeast\nSpinach\nDried parsley\nGlucosamine hydrochloride (100mg\/kg)\nDried pork protein\nDried beef pulp\nFolic acid\nDried thyme\nDried sage\nChonodrotin sulphate (100mg\/kg)\nWhite rice\nPoultry fat\nCholine chloride\nDried marjoram\nCarnitin (100mg\/kg)\nEnterococcus faecium\nBarely\nDried chicory\nTrace elements\nDried oregano\nDried parsley\nGlucosamine hydrochloride (100mg\/kg)\nWheat\nVitamins (A, D3, E, B1, B2)\nDried apple\nDried carrot\nVitamins (B1, B5, B6, B8, B12)\nWhole peas"
+      }
+    },
+    "7a666596-39e2-43a9-aa51-807fd23b085f": {
+      "type": "lp-compare",
+      "blocks": {
+        "877616bc-8d33-443c-8faf-94bf4fb16e30": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Holistic.png",
+            "logo": "shopify:\/\/shop_images\/Holitic.png"
+          }
+        },
+        "9228460c-9f3d-499a-907b-4c269ec45ffc": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Nutrichunks_2f4248d2-2db6-4d1a-924c-96987dbb4131.png",
+            "logo": "shopify:\/\/shop_images\/Nutrichunks.png"
+          }
+        },
+        "42bfa85b-d587-458e-acf8-588af2b0f029": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Pedigree_f99f9657-a9dc-4867-9167-f0b8bff7cf69.png",
+            "logo": "shopify:\/\/shop_images\/Pedigree.png"
+          }
+        },
+        "839a2e4a-c19e-4143-a900-9a0dfdeecc81": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Purina_98b804cf-ded9-43df-8eec-fd513f545123.png",
+            "logo": "shopify:\/\/shop_images\/Purina.png"
+          }
+        },
+        "0edd6751-3604-45f9-85ae-abeb8f092a99": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Vitality_52ddf3d9-77ba-4f3e-9d81-6a975b425a8d.png",
+            "logo": "shopify:\/\/shop_images\/Vitality.png"
+          }
+        },
+        "5fbf54b7-6ab5-4241-a55e-ade205e86d48": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Royal_Canin_18cb1788-f453-4831-b16b-eb1f4136791d.png",
+            "logo": "shopify:\/\/shop_images\/Royal_Canin.png"
+          }
+        },
+        "6c03a82b-70e9-462d-a4ae-b2969b9496c7": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Eukanuba_25e3845b-73ec-4b08-83b5-9f70eab113d2.png",
+            "logo": "shopify:\/\/shop_images\/Eukanuba.png"
+          }
+        },
+        "79cdcb22-187a-4712-8c24-3adb93d802e9": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Orijen_eaa4d1cc-f66d-4ef2-80a0-b81b87bd7468.png",
+            "logo": "shopify:\/\/shop_images\/Orijen.png"
+          }
+        },
+        "6cfcc148-d709-45c5-bc2c-ace8d278591e": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Tast_of_the_wild.png",
+            "logo": "shopify:\/\/shop_images\/Taste_of_the_wild.png"
+          }
+        },
+        "6f5cec18-b077-430b-b21c-f51b4060564c": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Acana_bcd9156f-a289-4a46-b4cd-61c870d2bd55.png",
+            "logo": "shopify:\/\/shop_images\/Acana.png"
+          }
+        },
+        "315bfcd0-90e0-4707-b63d-5ff2676fedf1": {
+          "type": "compare",
+          "settings": {
+            "chart": "shopify:\/\/shop_images\/Petchola_69a4c343-66d7-469c-b999-2325bd7c9c10.png",
+            "logo": "shopify:\/\/shop_images\/Petchola.png"
+          }
+        }
+      },
+      "block_order": [
+        "877616bc-8d33-443c-8faf-94bf4fb16e30",
+        "9228460c-9f3d-499a-907b-4c269ec45ffc",
+        "42bfa85b-d587-458e-acf8-588af2b0f029",
+        "839a2e4a-c19e-4143-a900-9a0dfdeecc81",
+        "0edd6751-3604-45f9-85ae-abeb8f092a99",
+        "5fbf54b7-6ab5-4241-a55e-ade205e86d48",
+        "6c03a82b-70e9-462d-a4ae-b2969b9496c7",
+        "79cdcb22-187a-4712-8c24-3adb93d802e9",
+        "6cfcc148-d709-45c5-bc2c-ace8d278591e",
+        "6f5cec18-b077-430b-b21c-f51b4060564c",
+        "315bfcd0-90e0-4707-b63d-5ff2676fedf1"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Group_37.png",
+        "main_photo": "shopify:\/\/shop_images\/bare_565995c2-a85e-4d1e-a082-eed755935c57.png"
+      }
+    },
+    "4620d3fc-324e-42b9-865d-4a4935c15668": {
+      "type": "lp-treats",
+      "blocks": {
+        "7df20399-5fa5-4446-b5e6-523a4be94527": {
+          "type": "icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fresh-chicken_-_dental.png",
+            "title": "real<br>chicken"
+          }
+        },
+        "94837956-746e-4bb8-9069-a74116cd7ba3": {
+          "type": "icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/peppermint.png",
+            "title": "peppermint<br>oil"
+          }
+        },
+        "a0abfe32-16d7-4c01-a4df-6097bacdd584": {
+          "type": "icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Sweet_Potato.png",
+            "title": "sweet<br>potato"
+          }
+        },
+        "c8712c95-bb62-4dd3-a17c-5e399d0bf978": {
+          "type": "icons",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/honey.png",
+            "title": "fresh<br>honey"
+          }
+        }
+      },
+      "block_order": [
+        "7df20399-5fa5-4446-b5e6-523a4be94527",
+        "94837956-746e-4bb8-9069-a74116cd7ba3",
+        "a0abfe32-16d7-4c01-a4df-6097bacdd584",
+        "c8712c95-bb62-4dd3-a17c-5e399d0bf978"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Group_37.png",
+        "background": "shopify:\/\/shop_images\/bg_dental.png",
+        "featured_photo": "shopify:\/\/shop_images\/dental-grp.png",
+        "contents": "<p>What’s the easiest way to achieve fresh, minty breath? The answer is Bare dental. Made with four key ingredients that every dog loves, this dental treat is your number #1 solution to improving your pup’s overall dental health, giving him shiny, white teeth, healthy gums, and — of course — fresh breath. <\/p>",
+        "cta_link": "#"
+      }
+    },
+    "0b5e6f3e-3f27-4b19-8232-83c893ce02b9": {
+      "type": "lp-cta-text",
+      "settings": {
+        "subheading": "7 nutritious ingredients",
+        "heading": "Chicken, Sweet Potato, Rice Flour, Honey, Citric Acid (natural preservative), Buffered Vinegar (natural preservative), Peppermint Oil"
+      }
+    },
+    "15090ae4-27d4-497e-ab64-4485ec002c47": {
+      "type": "lp-testimonial",
+      "blocks": {
+        "e0162b44-ff36-457e-8565-8cd5674dd984": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1.png",
+            "title": "BEST. DECISION. EVER.",
+            "quote": "My puppy has always been such a picky eater. But when I switched to Bare, he couldn’t get enough of it!",
+            "author": "Mac M.",
+            "location": "Makati, Metro Manila",
+            "date": "15 Jan 2022"
+          }
+        },
+        "55df5d67-e96a-47cc-aeca-e60191afc8d4": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_7226eb16-267e-4634-b249-039e85ce162c.png",
+            "title": "Great Product. Will Buy Again.",
+            "quote": "",
+            "author": "Eunice O.",
+            "location": "Alabang, Muntinlupa",
+            "date": "15 Jan 2022"
+          }
+        },
+        "a45ad865-1671-4dfc-9567-2bf9a7d53922": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_72c3340b-82d1-42e5-bfe0-c391aac20dd3.png",
+            "title": "WOW! I Love Bare",
+            "quote": "",
+            "author": "Nicole A.",
+            "location": "Lipa, Batangas",
+            "date": "15 Jan 2022"
+          }
+        },
+        "7870701e-fc2b-4b6f-ae7e-345a05bceb60": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_f4c2a8ff-0b1e-4094-b097-e65cd036aac6.png",
+            "title": "The BEST Dog Food In The Market",
+            "quote": "I don’t think I’ve ever seen dog food quite like this one. It’s made with only natural ingredients, grain-free, and jam-packed with vitamins and nutrients. It’s like an all-in-one product for my dog, and I love it! I think this is the best dog food out there, and I’m so happy I made the switch!",
+            "author": "Jordan G.",
+            "location": "Cebu City, Cebu",
+            "date": "15 Ju 2022"
+          }
+        },
+        "4b3b745f-170e-4047-b350-49512d425c7e": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_3474b53b-04ca-470d-bced-55a1873166ea.png",
+            "title": "Simple And Nutritious",
+            "quote": "I never knew that dog food could make such a big difference. With Bare’s recipe, I can feed my dog with only the best and freshest ingredients.",
+            "author": "Ira D.",
+            "location": "Taguig, Metro Manila",
+            "date": "15 Jan 2022"
+          }
+        },
+        "3f9cdeff-3846-4c6c-8462-4029e344ebd1": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_60bc22e2-14d8-4ad2-aed9-f14d521bfede.png",
+            "title": "Great Value For Money!",
+            "quote": "",
+            "author": "Frances B.",
+            "location": "Metro Manila",
+            "date": "15 Jan 2022"
+          }
+        },
+        "5803f14e-4e8f-456c-bb67-9d91d378efd6": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_6963d769-1c79-456c-8852-32deb7f3c8d7.png",
+            "title": "No More Upset Tummy For My Pup",
+            "quote": "",
+            "author": "Alma C.",
+            "location": "Ortigas, Pasig City",
+            "date": "15 Jan 2022"
+          }
+        },
+        "25f7c3d6-671b-499a-9057-752622b37dd3": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Mask_Group_1_88bff026-42be-49dd-b2d6-a4218bdc28bf.png",
+            "title": "The Best Dental Treats",
+            "quote": "I have been giving my puppy commercialized dental sticks for the longest time and never saw the benefits. Then, I came across Bare’s dental treats and was intrigued by them. I was instantly sold with their ingredients. I’m still testing it out, but so far, so good!",
+            "author": "Chriselle F.",
+            "location": "Negros Occidental",
+            "date": "15 Jan 2022"
+          }
+        }
+      },
+      "block_order": [
+        "e0162b44-ff36-457e-8565-8cd5674dd984",
+        "55df5d67-e96a-47cc-aeca-e60191afc8d4",
+        "a45ad865-1671-4dfc-9567-2bf9a7d53922",
+        "7870701e-fc2b-4b6f-ae7e-345a05bceb60",
+        "4b3b745f-170e-4047-b350-49512d425c7e",
+        "3f9cdeff-3846-4c6c-8462-4029e344ebd1",
+        "5803f14e-4e8f-456c-bb67-9d91d378efd6",
+        "25f7c3d6-671b-499a-9057-752622b37dd3"
+      ],
+      "settings": {
+        "subheading": "bare reviews",
+        "heading": "what pawrents are saying…"
+      }
+    },
+    "6f0284ac-ebd9-4fcf-8dfd-96b882bd1d3b": {
+      "type": "lp-cta-form",
+      "settings": {
+        "heading": "sign up and get 30% off your first month!",
+        "form": "<div class=\"klaviyo-form-XWEHmf\"><\/div>",
+        "photo": "shopify:\/\/shop_images\/products_968a7049-1fff-488f-a196-e58ebfa8b142.png",
+        "custom_class": ""
+      }
+    },
+    "f5c17aca-29aa-498e-aefc-1a412459ee1e": {
+      "type": "lp-cta-block",
+      "settings": {
+        "headline": "100% honesty guaranteed!",
+        "cta_label": "Sign Up Today",
+        "cta_link": "#contact-us"
+      }
+    },
+    "4ab50f5f-632e-4599-915d-48696b79ce3d": {
+      "type": "lp-footer",
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Logo_2.png",
+        "tagline": "simple. honest. nutritious.",
+        "animated": "shopify:\/\/shop_images\/dog.png",
+        "instagram": "https:\/\/www.instagram.com\/barepetco\/",
+        "facebook": "https:\/\/www.facebook.com\/BarePets",
+        "twitter": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a83fc155-e6f0-4fad-b086-34444c432787",
+    "183527f8-c8d5-4bfd-aac8-ce24e4702810",
+    "903fa90a-26c0-4eba-9103-5b0dec34568f",
+    "61b2986f-16ce-4fef-a91c-c3f089d9b3dd",
+    "12cde4ad-a1a3-41fb-ac8e-f5705cb39d72",
+    "7a666596-39e2-43a9-aa51-807fd23b085f",
+    "4620d3fc-324e-42b9-865d-4a4935c15668",
+    "0b5e6f3e-3f27-4b19-8232-83c893ce02b9",
+    "15090ae4-27d4-497e-ab64-4485ec002c47",
+    "6f0284ac-ebd9-4fcf-8dfd-96b882bd1d3b",
+    "f5c17aca-29aa-498e-aefc-1a412459ee1e",
+    "4ab50f5f-632e-4599-915d-48696b79ce3d"
+  ]
+}

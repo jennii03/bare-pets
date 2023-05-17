@@ -1,0 +1,82 @@
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
+
+<section class="section section--faq">
+  <img class="decor-top" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgwLjk0NSIgaGVpZ2h0PSI5OS41MzkiIHZpZXdCb3g9IjAgMCAxMjgwLjk0NSA5OS41MzkiPgogIDxwYXRoIGlkPSJQYXRoXzI2NzA5IiBkYXRhLW5hbWU9IlBhdGggMjY3MDkiIGQ9Ik0xNzkzLDcxNjMuODcxczEwNS42NywzNi44NDYsNjMxLjQ0LTIuOSw2NDkuNSwxMS44LDY0OS41LDExLjh2NzIuNjg4SDE3OTNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTc5MyAtNzE0NS45MjQpIiBmaWxsPSIjZWI1ZDU1Ii8+Cjwvc3ZnPgo=" alt="decor">
+    <div class="wrapper">
+        <h2 class="section--heading">{{ section.settings.heading }}</h2>
+
+        {% if section.blocks %}
+            <div class="faqs">
+                {% for block in section.blocks %}
+                    <div class="faqs--item">
+                        <h3 class="faqs--question">
+                            <span>{{ block.settings.question }}</span>
+                            <span class="faqs--toggle"></span>
+                        </h3>
+                        <div class="faqs--answer">
+                            {{ block.settings.answer }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if section.settings.cta_link != blank %}
+        <div class="faq-link">
+          <a href="{{ section.settings.cta_link }}">{{ section.settings.cta_label }}</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQs",
+  "tag": "section",
+  "class": "section-faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Frequently Asked Questions",
+      "label": "Section Heading"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "default": "View All FAQs",
+      "label": "CTA Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "faq-item",
+        "name": "FAQ Item",
+        "settings": [
+            {
+                "type": "text",
+                "id": "question",
+                "default": "Add Question Here",
+                "label": "FAQ Question"
+            },
+            {
+                "type": "richtext",
+                "id": "answer",
+                "default": "<p>Add Answer Here</p>",
+                "label": "FAQ Answer"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQs"
+    }
+  ]
+}
+{% endschema %}

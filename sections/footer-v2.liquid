@@ -1,0 +1,207 @@
+{{ 'section-bare-footer.css' | asset_url | stylesheet_tag }}
+
+
+<footer class="section site-footer">
+  <div class="site-footer__header">
+    <div class="wrapper">
+        <div class="footer-header">
+            <div class="footer-logo">
+                <img src="{{ section.settings.logo | img_url: 'master' }}" alt="Site Logo" />
+            </div>
+            <div class="footer-badge">
+                {{ section.settings.badge }}
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="site-footer__body">
+    <div class="wrapper">
+        <div class="footer-body">
+            <div class="footer-menu">
+                <div class="footer-menu__nav">
+                    {% for block in section.blocks %}
+                        <div class="footer-menu__item">
+                            <h3>{{ block.settings.heading }}</h3>
+                            <ul class="footer-block__details-content list-unstyled">
+                                {%- for link in block.settings.menu.links -%}
+                                    <li>
+                                    <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                                        {{ link.title }}
+                                    </a>
+                                    </li>
+                                {%- endfor -%}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                {{ section.settings.code }}
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="site-footer__foot">
+    <div class="wrapper">
+        <div class="footer-foot">
+            <div class="footer-social">
+                <ul class="footer__list-social list-unstyled list-social" role="list">
+                    {%- if settings.social_twitter_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
+                        {%- render 'icon-twitter' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_facebook_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+                        {%- render 'icon-facebook' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_pinterest_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
+                        {%- render 'icon-pinterest' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_instagram_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                        {%- render 'icon-instagram' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_tiktok_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
+                        {%- render 'icon-tiktok' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_tumblr_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
+                        {%- render 'icon-tumblr' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_snapchat_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
+                        {%- render 'icon-snapchat' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_youtube_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
+                        {%- render 'icon-youtube' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- if settings.social_vimeo_link != blank -%}
+                    <li class="list-social__item">
+                        <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
+                        {%- render 'icon-vimeo' -%}
+                        <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <ul class="footer-legal_menu list-unstyled">
+                    {%- for link in section.settings.legal_menu.links -%}
+                        <li>
+                        <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                            {{ link.title }}
+                        </a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="site-footer__brand"><img src="{{ 'img-footer-dog-bum.png' | asset_url }}" alt=""></div>
+</footer> 
+
+{% schema %}
+{
+  "name": "Bare Footer",
+  "blocks": [
+    {
+      "type": "link_list",
+      "name": "Footer Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Quick links",
+          "label": "Menu Heading"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "footer",
+          "label": "Footer Menu",
+          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Site logo"
+    },
+    {
+        "type": "textarea",
+        "id": "badge",
+        "label": "Trust Badge"
+    },
+    {
+        "type": "textarea",
+        "id": "code",
+        "label": "Newsletter Form"
+    },
+    {
+        "type": "link_list",
+        "id": "legal_menu",
+        "label": "Legal Menu"
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "link_list"
+      },
+      {
+        "type": "link_list"
+      },
+      {
+        "type": "link_list"
+      },
+      {
+        "type": "link_list"
+      }
+    ]
+  }
+}
+{% endschema %}

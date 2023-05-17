@@ -1,0 +1,50 @@
+.cta-block {
+  padding: 25px 0;
+  background: var(--light-purple);
+}
+
+.cta-block .wrapper {
+  max-width: 880px;
+  padding: 0 20px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.cta-block .cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-block .cta-headline,
+.cta-block .cta-button {
+  flex: 0 0 100%;
+}
+
+.cta-headline h3 {
+  color: #fff;
+  font-family: var(--gilroybold);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 900;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .cta-block {
+    padding: 50px 0;
+  }
+
+  .cta-block .cta-headline {
+    flex: auto;
+  }
+
+  .cta-headline h3 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .cta-block .cta-button {
+    flex: 0 0 205px;
+  }
+}

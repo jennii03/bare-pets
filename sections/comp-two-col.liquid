@@ -1,0 +1,47 @@
+{{ 'section-two-col-text.css' | asset_url | stylesheet_tag }}
+
+<section class="section section-two-text-content">
+
+  <div class="wrapper">
+    <div class="two-col-text">
+      {%- for block in section.blocks -%}
+        <div class="two-col-text__item">
+          <h3>{{ block.settings.title }}</h3>
+          {{ block.settings.copy }}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Two Col Text Content",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "copy",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [ 
+    {
+      "name": "Two Col Text Content"
+    }
+  ]
+}
+{% endschema %}

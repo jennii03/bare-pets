@@ -1,0 +1,384 @@
+{
+  "sections": {
+    "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb": {
+      "type": "comp-hero",
+      "blocks": {
+        "b305edb2-9d7e-4766-bb3d-983b38ba8648": {
+          "type": "slide",
+          "settings": {
+            "heading": "Page Title",
+            "intro": "Intro Text",
+            "button_label": "Button Label",
+            "button_link": "#",
+            "desktop_content_alignment": "center",
+            "desktop_content_position": "middle-center",
+            "desktop": "shopify:\/\/shop_images\/hero2.png",
+            "mobile": "shopify:\/\/shop_images\/hero2-desk.png"
+          }
+        },
+        "8a507b59-ca66-46f4-8a05-29f428c124cf": {
+          "type": "slide",
+          "settings": {
+            "heading": "Page Title",
+            "intro": "Intro Text",
+            "button_label": "Button Label",
+            "button_link": "#",
+            "desktop_content_alignment": "center",
+            "desktop_content_position": "top-center",
+            "desktop": "shopify:\/\/shop_images\/hero2-desk.png",
+            "mobile": "shopify:\/\/shop_images\/hero2.png"
+          }
+        }
+      },
+      "block_order": [
+        "b305edb2-9d7e-4766-bb3d-983b38ba8648",
+        "8a507b59-ca66-46f4-8a05-29f428c124cf"
+      ],
+      "settings": {
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1"
+      }
+    },
+    "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7": {
+      "type": "comp-page-header",
+      "settings": {
+        "heading": "Page Title",
+        "intro": "Intro Text",
+        "button_label": "Button Label",
+        "button_link": "#",
+        "desktop_content_alignment": "center",
+        "desktop": "shopify:\/\/shop_images\/hero2-desk.png",
+        "mobile": "shopify:\/\/shop_images\/hero2.png"
+      }
+    },
+    "3445f656-e9c5-4454-b00c-ad9feb9331c5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16010479239341__3445f656-e9c5-4454-b00c-ad9feb9331c5-1672910024454a57dc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--16010479239341__3445f656-e9c5-4454-b00c-ad9feb9331c5-1672910024454a57dc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16010479239341__3445f656-e9c5-4454-b00c-ad9feb9331c5-1672910024454a57dc-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16010479239341__3445f656-e9c5-4454-b00c-ad9feb9331c5-1672910024454a57dc-0",
+        "template--16010479239341__3445f656-e9c5-4454-b00c-ad9feb9331c5-1672910024454a57dc-1",
+        "template--16010479239341__3445f656-e9c5-4454-b00c-ad9feb9331c5-1672910024454a57dc-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "80b04d10-7c5b-40cc-93a6-f0e5ce553755": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ab2d8d0e-25b1-4995-acbf-bdba125fc4df": {
+      "type": "comp-testimonial-card",
+      "blocks": {
+        "b93f10c9-18eb-4288-95ac-c660908b3cbe": {
+          "type": "testimonial_card",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Image.png",
+            "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
+            "author": "John D.",
+            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
+          }
+        },
+        "932d6f43-64a1-4d92-83e0-36fbf006784c": {
+          "type": "testimonial_card",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Image.png",
+            "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
+            "author": "John D.",
+            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
+          }
+        },
+        "75f19896-b3da-43e0-b34a-6091ca3598d0": {
+          "type": "testimonial_card",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Image.png",
+            "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
+            "author": "John D.",
+            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
+          }
+        },
+        "ef5c80d4-d770-400c-b817-9add823ec9af": {
+          "type": "testimonial_card",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Image.png",
+            "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
+            "author": "John D.",
+            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
+          }
+        },
+        "66a9adae-bf9b-4b87-961e-ae0dd6dfba18": {
+          "type": "testimonial_card",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/Image.png",
+            "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
+            "author": "John D.",
+            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
+          }
+        }
+      },
+      "block_order": [
+        "b93f10c9-18eb-4288-95ac-c660908b3cbe",
+        "932d6f43-64a1-4d92-83e0-36fbf006784c",
+        "75f19896-b3da-43e0-b34a-6091ca3598d0",
+        "ef5c80d4-d770-400c-b817-9add823ec9af",
+        "66a9adae-bf9b-4b87-961e-ae0dd6dfba18"
+      ],
+      "settings": {
+        "heading": "Worth Barking About"
+      }
+    },
+    "b0e025b4-e579-45aa-b878-dd05d98304cd": {
+      "type": "comp-logos",
+      "blocks": {
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/the_pet_times.svg",
+            "link": "http:\/\/google.com"
+          }
+        },
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/amazing_pets.svg",
+            "link": ""
+          }
+        },
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/philstar.svg",
+            "link": ""
+          }
+        },
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/my_best.svg",
+            "link": ""
+          }
+        },
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/manila.svg",
+            "link": ""
+          }
+        },
+        "60a8738c-e170-4a9e-91ef-8aacc17125f9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Esquire-logo.svg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-0",
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-1",
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-2",
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-3",
+        "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-4",
+        "60a8738c-e170-4a9e-91ef-8aacc17125f9"
+      ],
+      "settings": {
+        "heading": "As Featured on"
+      }
+    },
+    "8a05caee-4159-483d-8262-0dfd929b53cb": {
+      "type": "comp-featured-image",
+      "blocks": {
+        "template--16026522124461__8a05caee-4159-483d-8262-0dfd929b53cb-1679653631122f335d-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/g1.png"
+          }
+        },
+        "template--16026522124461__8a05caee-4159-483d-8262-0dfd929b53cb-1679653631122f335d-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/g2.png"
+          }
+        },
+        "template--16026522124461__8a05caee-4159-483d-8262-0dfd929b53cb-1679653631122f335d-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/g3.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--16026522124461__8a05caee-4159-483d-8262-0dfd929b53cb-1679653631122f335d-0",
+        "template--16026522124461__8a05caee-4159-483d-8262-0dfd929b53cb-1679653631122f335d-1",
+        "template--16026522124461__8a05caee-4159-483d-8262-0dfd929b53cb-1679653631122f335d-2"
+      ],
+      "settings": {
+        "heading": "join our community of taking a fresher approach to pet food"
+      }
+    },
+    "4ca29403-f6d8-41da-93ee-564a217f84a5": {
+      "type": "comp-cta-form",
+      "settings": {
+        "heading": "sign up and get 30% off your first month!",
+        "intro": "You shouldn't be the only one eating healthy",
+        "form": "FORM CODE",
+        "background": "shopify:\/\/shop_images\/bg-ctaform.png",
+        "badge": "shopify:\/\/shop_images\/Badge-4.png"
+      }
+    },
+    "1ccb83b3-1b95-478b-a7ef-fd1a19f5958a": {
+      "type": "comp-faq",
+      "blocks": {
+        "a067edbf-2c71-45ee-a139-12cf91894198": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Why dog kibble?",
+            "answer": "<p>Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble.<\/p>"
+          }
+        },
+        "201da7f4-2ce2-48dd-91b4-f925ec055510": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Who formulates bare kibble?",
+            "answer": "<p>Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus.<\/p>"
+          }
+        },
+        "8ed6deb5-6f24-4afd-8836-304a0da90fc9": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Does bare meet AAFCO guidelines?",
+            "answer": "<p>Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus.<\/p>"
+          }
+        },
+        "70db93f5-ec8b-4007-a32a-b092688aaa19": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What is an all life stages recipe?",
+            "answer": "<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.<\/p>"
+          }
+        },
+        "125ebfd3-f260-4f90-8921-7d6c893b9823": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What has changed and why\/difference between adult formula and all life stages formula?",
+            "answer": "<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt.<\/p>"
+          }
+        },
+        "b1f43ebf-0bc7-4956-be0f-3afbb811c88c": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Will my dog need to transition to the all life stages kibble?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a067edbf-2c71-45ee-a139-12cf91894198",
+        "201da7f4-2ce2-48dd-91b4-f925ec055510",
+        "8ed6deb5-6f24-4afd-8836-304a0da90fc9",
+        "70db93f5-ec8b-4007-a32a-b092688aaa19",
+        "125ebfd3-f260-4f90-8921-7d6c893b9823",
+        "b1f43ebf-0bc7-4956-be0f-3afbb811c88c"
+      ],
+      "settings": {
+        "heading": "Have Questions?",
+        "cta_label": "View All FAQs",
+        "cta_link": "shopify:\/\/pages\/faqs"
+      }
+    }
+  },
+  "order": [
+    "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb",
+    "rich_text",
+    "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7",
+    "3445f656-e9c5-4454-b00c-ad9feb9331c5",
+    "80b04d10-7c5b-40cc-93a6-f0e5ce553755",
+    "ab2d8d0e-25b1-4995-acbf-bdba125fc4df",
+    "b0e025b4-e579-45aa-b878-dd05d98304cd",
+    "8a05caee-4159-483d-8262-0dfd929b53cb",
+    "4ca29403-f6d8-41da-93ee-564a217f84a5",
+    "1ccb83b3-1b95-478b-a7ef-fd1a19f5958a"
+  ]
+}
