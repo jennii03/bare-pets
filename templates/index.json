@@ -1,5 +1,28 @@
 {
   "sections": {
+    "3a674e00-183f-4229-a1ec-5391b01af4f3": {
+      "type": "module-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/hero_image.png",
+        "h_color": "#6565A0",
+        "txt_color": "#2A294F",
+        "heading": "simple. honest. nutritious. dog food.",
+        "subheading": "A pet brand that millennial moms and dads actually approve of!",
+        "btn_text": "Try Bare",
+        "btn_link": "",
+        "floating_txt_1": "Dog food that your best<br>friends are guaranteed to love.",
+        "floating_txt_2": "Our fur friends loves us"
+      }
+    },
+    "339639e5-f0f3-477c-91d2-77913ac30089": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
+    },
     "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb": {
       "type": "comp-hero",
       "blocks": {
@@ -370,6 +393,8 @@
     }
   },
   "order": [
+    "3a674e00-183f-4229-a1ec-5391b01af4f3",
+    "339639e5-f0f3-477c-91d2-77913ac30089",
     "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb",
     "rich_text",
     "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7",
