@@ -1,0 +1,142 @@
+{%liquid
+    assign bg_image = section.settings.bg_image
+    assign h_color = section.settings.h_color
+    assign txt_color = section.settings.txt_color
+    assign heading = section.settings.heading
+    assign subheading = section.settings.subheading
+    assign btn_text = section.settings.btn_text
+    assign btn_link = section.settings.btn_link
+    assign floating_txt_1 = section.settings.floating_txt_1
+    assign floating_txt_2 = section.settings.floating_txt_2
+%}
+
+<div id="module-banner-{{ section.id }}" class="module-banner">
+    <div class="module-banner__wrapper">
+        <div class="module-banner__container">
+            <h1 class="module-banner__heading remove-spacing text-center">{{ heading }}</h1>
+            <h3 class="module-banner__subheading remove-spacing text-center">{{ subheading }}</h3>
+
+            <div class="module-banner__button text-center">
+                <a href="{{ btn_link }}" class="btn btn--primary">{{ btn_text }}</a>
+            </div>
+
+            <p class="module-banner__floating-txt1 remove-spacing">{{ floating_txt_1 }}</p>
+            <p class="module-banner__floating-txt2 remove-spacing">{{ floating_txt_2 }}</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-banner__wrapper {
+        background-image: url('{{ bg_image | image_url }}');
+        padding: 0 30px;
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+        position: relative;
+    }
+    .module-banner__container {
+        max-width: 1280px;
+        margin: auto;
+        padding: 70px 0;
+    }
+
+    .module-banner__heading {
+        color: {{ h_color }};
+        font-family: var(--gilroybold);
+        font-size: 46px;
+        line-height: 58px;
+        margin-top: 70px;
+    }
+    .module-banner__floating-txt1, .module-banner__floating-txt2, .module-banner__subheading {
+        color: {{ txt_color }};
+    }
+    .module-banner__subheading {
+        font-family: var(--gilroybold);
+        font-size: 16px;
+        line-height: 18px;
+        margin: 20px 0 30px;
+    }
+    .module-banner__floating-txt1, .module-banner__floating-txt2 {
+        font-family: var(--gilroybold);
+        font-size: 14px;
+        line-height: 16px;
+        position: absolute;
+    }
+    .module-banner__floating-txt2 {
+        bottom: 45%;
+        right: 25%;
+    }
+    .module-banner__floating-txt1 {
+        bottom: 50%;
+        left: 20%;
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Banner",
+    "class": "module",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "bg_image",
+            "label": "Background Image"
+        },
+        {
+            "type": "color",
+            "id": "h_color",
+            "label": "Heading Color",
+            "default": "#6565A0"
+        },
+        {
+            "type": "color",
+            "id": "txt_color",
+            "label": "Text Color",
+            "default": "#2A294F"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Lorem Ipsum"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Lorem Ipsum Dolor"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text",
+            "default": "Try Bare"
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+        },
+        {
+            "type": "text",
+            "id": "floating_txt_1",
+            "label": "Floating Text 1",
+            "default": "Lorem ipsum"
+        },
+        {
+            "type": "text",
+            "id": "floating_txt_2",
+            "label": "Floating Text 2",
+            "default": "Lorem ipsum"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Banner",
+        "category": "banner"
+      }
+    ]
+  }
+{% endschema %}

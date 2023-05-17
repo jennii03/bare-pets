@@ -1,0 +1,88 @@
+{%liquid
+    assign gradient_color1 = section.settings.gradient_color1
+    assign gradient_color2 = section.settings.gradient_color2
+    assign txt_color = section.settings.txt_color
+    assign text = section.settings.text
+%}
+
+<div id="module-txt-marquee-{{ section.id }}" class="module-txt-marquee">
+    <div class="module-txt-marquee__wrapper">
+        <div class="module-txt-marquee__container js-text-marquee">
+            {% for i in (1..12) %}
+                <p class="module-txt-marquee__text remove-spacing text-center">{{ text }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-txt-marquee__wrapper {
+        background-image: linear-gradient(270deg, {{ gradient_color2 }}, {{ gradient_color1 }});
+    }
+
+    .module-txt-marquee__text {
+        color: {{ txt_color }};
+        font-family: var(--gilroybold);
+        font-size: 26px;
+        line-height: 64px;
+    }
+    .module-txt-marquee__container {
+        display: flex;
+        gap: 20px;
+        height: 64px;
+        overflow: hidden;
+    }
+    .module-txt-marquee__container .slick-slide {
+        margin: 0 20px;
+        width: auto !important;
+    }
+
+    @media (max-width: 767px) {
+        .module-txt-marquee__text {
+            font-size: 14px;
+            line-height: 50px;
+        }
+        .module-txt-marquee__container {
+            height: 50px;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Text Marquee",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "gradient_color1",
+            "label": "Gradient Color 1",
+            "default": "#2A294F"
+        },
+        {
+            "type": "color",
+            "id": "gradient_color2",
+            "label": "Gradient Color 2",
+            "default": "#6565A0"
+        },
+        {
+            "type": "color",
+            "id": "txt_color",
+            "label": "Text Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "lorem. ipsum. dolor."
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Text Marquee",
+        "category": "banner"
+      }
+    ]
+  }
+{% endschema %}
