@@ -3206,3 +3206,12 @@ details-disclosure > details {
     justify-content: flex-start;
   }  
 }
+
+.text-center {
+  text-align: center;
+}
+
+.remove-spacing {
+  padding: 0;
+  margin: 0;
+}
