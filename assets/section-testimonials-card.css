@@ -152,6 +152,8 @@
   bottom: 100px;
   right: 35px;
   z-index: 1;
+  display: flex;
+  list-style-type: none;
 }
 
 .section--testimonials-card .slick-dots button {
