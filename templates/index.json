@@ -4,8 +4,8 @@
       "type": "module-banner",
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/hero_image.png",
-        "h_color": "#6565A0",
-        "txt_color": "#2A294F",
+        "h_color": "#6565a0",
+        "txt_color": "#2a294f",
         "heading": "simple. honest. nutritious. dog food.",
         "subheading": "A pet brand that millennial moms and dads actually approve of!",
         "btn_text": "Try Bare",
@@ -17,14 +17,15 @@
     "339639e5-f0f3-477c-91d2-77913ac30089": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     },
     "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb": {
       "type": "comp-hero",
+      "disabled": true,
       "blocks": {
         "b305edb2-9d7e-4766-bb3d-983b38ba8648": {
           "type": "slide",
@@ -62,6 +63,7 @@
     },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -88,6 +90,7 @@
     },
     "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7": {
       "type": "comp-page-header",
+      "disabled": true,
       "settings": {
         "heading": "Page Title",
         "intro": "Intro Text",
@@ -100,6 +103,7 @@
     },
     "3445f656-e9c5-4454-b00c-ad9feb9331c5": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--16010479239341__3445f656-e9c5-4454-b00c-ad9feb9331c5-1672910024454a57dc-0": {
           "type": "heading",
@@ -143,6 +147,7 @@
     },
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "description": "",
