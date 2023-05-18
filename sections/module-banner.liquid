@@ -1,5 +1,6 @@
 {%liquid
     assign bg_image = section.settings.bg_image
+    assign mobile_bg = section.settings.mobile_bg
     assign h_color = section.settings.h_color
     assign txt_color = section.settings.txt_color
     assign heading = section.settings.heading
@@ -72,7 +73,69 @@
         bottom: 50%;
         left: 20%;
     }
-</style>
+    @media (max-width: 1600px) {
+        .module-banner__floating-txt1 {
+            left: 15%;
+        }
+    }
+    @media (max-width: 1400px) {
+        .module-banner__floating-txt1 {
+            left: 10%;
+        }
+        .module-banner__floating-txt2 {
+            right: 20%;
+        }
+    }
+    @media (max-width: 1200px) {
+        .module-banner__floating-txt1 {
+            bottom: 55%;
+            left: 5%;
+        }
+        .module-banner__floating-txt2 {
+            right: 5%;
+        }
+    }
+    @media (max-width: 991px) {
+        .module-banner__heading {
+            margin-top: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .module-banner__heading {
+            margin-top: 70px;
+        }
+        .module-banner__wrapper {
+            background-image: url('{{ mobile_bg | image_url }}');
+            background-position: center;
+            margin-top: -70px;
+            height: 80vh;
+        }
+        .module-banner__heading {
+            font-size: 28px;
+            line-height: 35px;
+        }
+        .module-banner__floating-txt1, .module-banner__floating-txt2, .module-banner__subheading {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .module-banner__subheading {
+            margin: 0 0 10px;
+        }
+        .module-banner__floating-txt1 {
+            bottom: 45%;
+            left: 5%;
+        }
+        .module-banner__floating-txt2 {
+            bottom: 40%;
+            right: 5%;
+        }
+    }
+    @media (max-width: 589px){
+        .module-banner__wrapper {
+            height: 70vh;
+        }
+    }
+ </style>
 
 {% schema %}
   {
@@ -83,6 +146,11 @@
             "type": "image_picker",
             "id": "bg_image",
             "label": "Background Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "mobile_bg",
+            "label": "Mobile Background Image"
         },
         {
             "type": "color",
