@@ -27,6 +27,7 @@
       "type": "module-premium-kibble",
       "settings": {
         "background_color": "#2a294f",
+        "image_position": "image_left",
         "subheading": "Premium Kibble",
         "heading": "Premium quality pet food at supermarket price",
         "image": "shopify:\/\/shop_images\/sample-removebg-preview.png",
@@ -41,14 +42,15 @@
     "08ac1a4a-6db7-4fcb-a8cc-33e6320e947c": {
       "type": "module-premium-kibble",
       "settings": {
-        "background_color": "#2A294F",
-        "subheading": "Premium Kibble",
-        "heading": "Premium quality pet food at supermarket price",
+        "background_color": "#2a294f",
+        "image_position": "image_right",
+        "subheading": "Wet Food",
+        "heading": "Seriously Beefy",
         "image": "shopify:\/\/shop_images\/imagee.png",
-        "column_subheading": "Dry Kibble",
-        "column_heading": "Candidly fresh chicken",
+        "column_subheading": "Wet Food",
+        "column_heading": "Seriously beefy",
         "review_text": "12 reviews",
-        "column_description": "Honestly good dry dog food. No gluten. No preservatives. Never any bad stuff.",
+        "column_description": "Serve your picky with the taste and perks of a home-cooked meal, hassle-free.",
         "button_text": "Try Bare",
         "button_link": ""
       }
