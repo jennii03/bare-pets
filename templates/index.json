@@ -23,6 +23,21 @@
         "text": "simple. honest. nutritious."
       }
     },
+    "3adee236-f43c-4068-9a51-1f560aa0383d": {
+      "type": "module-premium-kibble",
+      "settings": {
+        "background_color": "#2A294F",
+        "subheading": "Premium Kibble",
+        "heading": "Premium quality pet food at supermarket price",
+        "image": "shopify:\/\/shop_images\/sample-removebg-preview.png",
+        "column_subheading": "Dry Kibble",
+        "column_heading": "Candidly fresh chicken",
+        "review_text": "12 reviews",
+        "column_description": "Honestly good dry dog food. No gluten. No preservatives. Never any bad stuff.",
+        "button_text": "Try Bare",
+        "button_link": ""
+      }
+    },
     "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb": {
       "type": "comp-hero",
       "disabled": true,
@@ -400,6 +415,7 @@
   "order": [
     "3a674e00-183f-4229-a1ec-5391b01af4f3",
     "339639e5-f0f3-477c-91d2-77913ac30089",
+    "3adee236-f43c-4068-9a51-1f560aa0383d",
     "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb",
     "rich_text",
     "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7",
