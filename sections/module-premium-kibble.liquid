@@ -1,20 +1,20 @@
 {%liquid
     assign background_color = section.settings.background_color
+    assign image_position = section.settings.image_position
+
     assign subheading = section.settings.subheading
     assign heading = section.settings.heading
-
     assign image = section.settings.image
     assign column_subheading = section.settings.column_subheading
     assign column_heading = section.settings.column_heading
     assign review_text = section.settings.review_text
     assign column_description = section.settings.column_description
-
     assign button_text = section.settings.button_text
     assign button_link = section.settings.button_link
 
 %}
   
-<div class="section module-premium-kibble" style="background: {{ background_color }};">
+<div id="module-premium-kibble__{{ section.id }}" class="section module-premium-kibble" style="background: {{ background_color }};">
     <div class="module-premium-kibble__container page-width section-padding">
         <div class="module-premium-kibble__heading text-center">
             <h3 class="text-mint remove-spacing">{{ subheading }}</h3>
@@ -64,6 +64,17 @@
 </div>
   
 <style>
+
+
+  {% if image_position == 'image_left' %}
+    #module-premium-kibble__{{ section.id }} .module-premium-kibble__columns {
+      flex-direction: row;
+    }
+  {% elsif image_position == 'image_right' %}
+      #module-premium-kibble__{{ section.id }} .module-premium-kibble__columns {
+        flex-direction: row-reverse;
+      }
+  {% endif %}
 
   .module-premium-kibble__column {
     display: flex;
@@ -123,6 +134,22 @@
             "label": "Background Color",
             "default": "#2A294F"
         },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Text Image Position",
+          "options": [
+            {
+              "value": "image_left",
+              "label": "Image Left"
+            },
+            {
+              "value": "image_right",
+              "label": "Image Right"
+            }
+          ],
+          "default": "image_left"
+      },
         {
           "type": "text",
           "id": "subheading",
