@@ -1,0 +1,38 @@
+<div class="page-width" style="background-color:#d7d7d7; padding-top: 50px; padding-bottom: 50px;">
+    <h1>Heading: h1</h1>
+    <h2>Heading: h2</h2>
+    <h3>Heading: h3</h3>
+    <h4>Heading: h4</h4>
+    <h5>Heading: h5</h5>
+    <h6>Heading: h6</h6>
+  
+    <p>paragraph: p</p>
+    <div style="margin-top: 40px;">
+        <div class="module-banner__button">
+            <button class="btn--primary">Primary Button</button>
+        </div>
+        <div class="module-banner__button">
+            <button class="btn--secondary">Secondary Button</button>
+        </div>
+    </div>
+</div>
+{% schema %}
+  {
+    "name": "Module Global Styling",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#2A294F"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Global Styling",
+        "category": "product"
+      }
+    ]
+  }
+{% endschema %}
