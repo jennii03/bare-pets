@@ -20,6 +20,7 @@
   --blue: #04A6D5;
   --orange: #EA7B49;
   --orange-red: #EB5B56;
+  --white: #FFFFFF;
 
   --transition: all ease-in-out 300ms;
 }
@@ -3214,4 +3215,25 @@ details-disclosure > details {
 .remove-spacing {
   padding: 0;
   margin: 0;
+}
+
+.text-light {
+  color: var(--white);
+}
+
+.text-mint {
+  color: var(--mint);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-basis-100 {
+  flex-basis: 100%;
+}
+
+.section-padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
