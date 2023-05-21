@@ -4,7 +4,10 @@
 
     assign subheading = section.settings.subheading
     assign heading = section.settings.heading
-    assign image = section.settings.image
+    assign badge = section.settings.badge
+
+    assign iframe_video = section.settings.iframe_video
+
     assign column_subheading = section.settings.column_subheading
     assign column_heading = section.settings.column_heading
     assign review_text = section.settings.review_text
@@ -16,15 +19,25 @@
   
 <div id="module-premium-kibble__{{ section.id }}" class="section module-premium-kibble" style="background: {{ background_color }};">
     <div class="module-premium-kibble__container page-width section-padding">
-        <div class="module-premium-kibble__heading text-center">
-            <h3 class="text-mint remove-spacing">{{ subheading }}</h3>
-            <h2 class="text-light remove-spacing section--heading">{{ heading }}</h2>
-        </div>
+        {% if subheading != blank or heading != blank %}
+          <div class="module-premium-kibble__heading text-center">
+                <h3 class="text-mint remove-spacing subheading">{{ subheading }}</h3>
+                <h2 class="text-light remove-spacing section--heading">{{ heading }}</h2>
+          </div>
+        {% endif %}
         <div class="module-premium-kibble__columns d-flex">
             <div class="module-premium-kibble__column flex-basis-100">
-              {% if image != blank %}
-                <div class="module-premium-kibble__image">
-                  <img src="{{ image | img_url: 'master' }}" alt="{{ image.alt }}" loading="lazy">
+              <video autoplay loop muted draggable="false">
+                {% for source in section.settings.video.sources %}
+                  {% if source.format == 'mp4' %}
+                    <source src="{{ source.url }}" type="{{ source.mime_type }}">
+                  {% endif %}
+                {% endfor %}
+                Your browser does not support the video tag.
+              </video>
+              {% if badge != blank %}
+                <div class="module-premium-kibble__badge">
+                  <img src="{{ badge | img_url: 'master' }}" alt="{{ badge.alt }}" loading="lazy" width="130" height="130">
                 </div>
               {% endif %}
             </div>
@@ -32,8 +45,8 @@
             <div class="module-premium-kibble__column flex-basis-100">
                 <div class="module-premium-kibble__content">
                   <div class="module-premium-kibble__column-content">
-                    <h3 class="text-mint remove-spacing">{{ column_subheading }}</h3>
-                    <h3 class="text-light section--heading remove-spacing">{{ column_heading }}</h3>
+                    <h3 class="text-mint remove-spacing subheading">{{ column_subheading }}</h3>
+                    <h4 class="text-light remove-spacing module-premium-kibble__heading-width">{{ column_heading }}</h4>
 
                     <div class="module-premium-kibble__rating-main">
                       <div class="module-premium-kibble__rating">
@@ -52,7 +65,7 @@
                       </div>
                     </div>
 
-                    <p class="text-light remove-spacing">{{ column_description }}</p>
+                    <p class="text-light remove-spacing module-premium-kibble__description-width">{{ column_description }}</p>
                   </div>
                   <div class="module-premium-kibble__button">
                     <a href="{{ button_link }}" class="btn btn--primary">{{ button_text }}</a>
@@ -70,24 +83,53 @@
     #module-premium-kibble__{{ section.id }} .module-premium-kibble__columns {
       flex-direction: row;
     }
+
+    #module-premium-kibble__{{ section.id }} .module-premium-kibble__badge {
+      position: absolute;
+      top: 0;
+      left: -6%;
+    }
   {% elsif image_position == 'image_right' %}
       #module-premium-kibble__{{ section.id }} .module-premium-kibble__columns {
         flex-direction: row-reverse;
       }
+
+      #module-premium-kibble__{{ section.id }} .module-premium-kibble__badge {
+        position: absolute;
+        top: 30%;
+        right: -12%;
+      }
   {% endif %}
+
+  .module-premium-kibble__columns {
+    gap: 50px;
+  }
 
   .module-premium-kibble__column {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
-  .module-premium-kibble__image img {
+  .module-premium-kibble__column video {
     max-width: 100%;
+    user-select: none;
+    -webkit-user-select: none;        
+    -moz-user-select: none;
+    -ms-user-select: none;
     display: block;
   }
 
   .module-premium-kibble__heading {
+    width: 70%;
+    display: block;
     margin-bottom: 4rem;
+    margin-inline: auto;
+  }
+
+  .module-premium-kibble__description-width {
+    width: 62%;
+    margin-bottom: 2.6rem;
   }
 
   .module-premium-kibble__button {
@@ -105,9 +147,19 @@
   }
 
   .module-premium-kibble__rating-text {
+    font-size: 14px;
+    opacity: 0.6;
     margin-top: -8px;
     margin-left: -22px;
     font-weight: 400;
+  }
+  .module-premium-kibble__heading-width {
+    width: 62%;
+  }
+
+  .module-premium-kibble__badge img {
+    max-width: 100%;
+    object-fit: contain;
   }
 
   @media screen and (max-width: 600px) {
@@ -149,23 +201,28 @@
             }
           ],
           "default": "image_left"
-      },
+        },
         {
           "type": "text",
           "id": "subheading",
-          "label": "Subheading",
+          "label": "Subheading (optional)",
           "default": "Premium Kibble"
         },
         {
           "type": "text",
           "id": "heading",
-          "label": "Heading",
-          "default": "Premium quality pet food at supermarket price"
+          "label": "Heading (optional)",
+          "default": "Premium quality pet food at supermarket prices"
         },
         {
           "type": "image_picker",
-          "id": "image",
-          "label": "Image"
+          "id": "badge",
+          "label": "Badge"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "A Shopify-hosted video"
         },
         {
           "type": "text",

@@ -86,11 +86,19 @@
   }
   
 
-  @font-face {
+  /* @font-face {
     font-family: 'Futura PT Extra Bold';
     font-style: normal;
     font-weight: normal;
     src: local('Futura PT Extra Bold'), url('FuturaCyrillicExtraBold.woff') format('woff');
+  } */
+
+  
+  @font-face {
+    font-family: 'GilroyBlack';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy Black'), url('Gilroy-Black.ttf') format('woff');
   }
 
   /* @font-face {
@@ -121,6 +129,7 @@
 
 :root {
   --gilroybold: "GilroyExtraBold";
+  --gilroyblack: "GilroyBlack";
   --gilroysemi: "GilroySemiBold";
   --gilroyreg: "GilroyRegular";
   --futurabold: "Futura PT Bold";
@@ -548,7 +557,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: var(--font-heading-family);
+  font-family: var(--gilroyreg);
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -603,21 +612,22 @@ h2,
 
 h3,
 .h3 {
-  font-size: calc(var(--font-heading-scale) * 1.7rem);
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
 }
 
 @media only screen and (min-width: 750px) {
   h3,
   .h3 {
-    font-size: calc(var(--font-heading-scale) * 1.8rem);
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
   }
 }
 
 h4,
 .h4 {
-  font-family: var(--font-heading-family);
+  font-family: var(--gilroyblack);
   font-style: var(--font-heading-style);
-  font-size: calc(var(--font-heading-scale) * 1.5rem);
+  /* font-size: calc(var(--font-heading-scale) * 1.5rem); */
+  font-size: 32px;
 }
 
 h5,
@@ -3188,7 +3198,7 @@ details-disclosure > details {
 .flex-heading div:first-child { margin-right: 15px; }
 
 .module-title {
-  font-family: var(--gilroybold);
+  font-family: var(--gilroyblack);
   font-size: 32px;
   font-weight: 900;
   line-height: 43px;
@@ -3236,4 +3246,10 @@ details-disclosure > details {
 .section-padding {
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.1rem;
 }
