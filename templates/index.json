@@ -271,8 +271,62 @@
         "heading": "Worth Barking About"
       }
     },
+    "ad6a8d79-30d4-4419-8461-bfbf4101f893": {
+      "type": "module-logo",
+      "blocks": {
+        "29fedc40-0b65-44c8-96be-987e30c4f3ff": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/the_pet_times.svg"
+          }
+        },
+        "5e44ee52-6e70-47fe-90be-4b2e352abefe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/amazing_pets.svg"
+          }
+        },
+        "32e90a01-8b6b-42f0-99f6-e5a6b974c0a1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/philstar.svg"
+          }
+        },
+        "64a8e828-0a24-440a-9415-539650761f99": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/my_best.svg"
+          }
+        },
+        "73952f09-0908-4190-beb0-a4c4a8600dee": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/manila.svg"
+          }
+        },
+        "e3229550-8878-4be2-8f84-3f90a6a02e84": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Esquire-logo.svg"
+          }
+        }
+      },
+      "block_order": [
+        "29fedc40-0b65-44c8-96be-987e30c4f3ff",
+        "5e44ee52-6e70-47fe-90be-4b2e352abefe",
+        "32e90a01-8b6b-42f0-99f6-e5a6b974c0a1",
+        "64a8e828-0a24-440a-9415-539650761f99",
+        "73952f09-0908-4190-beb0-a4c4a8600dee",
+        "e3229550-8878-4be2-8f84-3f90a6a02e84"
+      ],
+      "settings": {
+        "txt_color": "#9F9FBF",
+        "heading": "AS FEATURED ON"
+      }
+    },
     "b0e025b4-e579-45aa-b878-dd05d98304cd": {
       "type": "comp-logos",
+      "disabled": true,
       "blocks": {
         "template--16010479239341__b0e025b4-e579-45aa-b878-dd05d98304cd-16729839875ee12b10-0": {
           "type": "logo",
@@ -442,6 +496,7 @@
     "3445f656-e9c5-4454-b00c-ad9feb9331c5",
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755",
     "ab2d8d0e-25b1-4995-acbf-bdba125fc4df",
+    "ad6a8d79-30d4-4419-8461-bfbf4101f893",
     "b0e025b4-e579-45aa-b878-dd05d98304cd",
     "8a05caee-4159-483d-8262-0dfd929b53cb",
     "4ca29403-f6d8-41da-93ee-564a217f84a5",
