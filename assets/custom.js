@@ -160,5 +160,45 @@
         ]
     });
 
+    jQuery('.module-logo__logos').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        autoplay: true,
+        centerMode: false,
+        mobileFirst: true, 
+        responsive: [
+          {
+            breakpoint: 1003,
+            settings: "unslick"
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 590,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
+
     
 })();
