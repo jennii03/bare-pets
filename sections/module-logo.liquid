@@ -1,0 +1,131 @@
+{% liquid
+    assign txt_color = section.settings.txt_color
+    assign heading = section.settings.heading
+%}
+
+<div id="module-logo-{{ section.id }}" class="module-logo">
+    <img class="module-top-decor" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI5OSIgdmlld0JveD0iMCAwIDEyODAgOTkiPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzExNDEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDExNDEiIHdpZHRoPSIxMjgwIiBoZWlnaHQ9Ijk5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDU3MTEpIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgaWQ9Ik1hc2tfR3JvdXBfNDciIGRhdGEtbmFtZT0iTWFzayBHcm91cCA0NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtNTcxMSkiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4KICAgIDxwYXRoIGlkPSJCYXNlNyIgZD0iTTE0ODguNSwzMDRzLTQyLjc3My05Mi44LTIyMC42NDEtOTkuMi0zMDMuNzExLDYzLjcyOS00OTMuNjM4LDcyYy0xOTMuNyw4LjQzNS0zNTYuMzgtNjAuOC01NTEuMTM2LTU0Uy00LjgsMzA0LTQuOCwzMDRWNDBTNTkuNzY4LTExLjIsMjIzLjA4Ny0xMS4yLDQ3Ny4yNjgsNDUuNiw3NDMuMTM2LDQwczMxMC4wNDMtODMuMiw1MjQuNzI0LTgzLjJTMTUwNy4yLDQwLDE1MDcuMiw0MFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NS4yIDU3NTkuNikiIGZpbGw9IiM2NTY1YTAiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="" >
+
+    <div class="module-logo__wrapper">
+        <div class="module-logo__container">
+            <h3 class="module-logo__heading remove-spacing text-center">{{ heading }}</h3>
+            <div class="module-logo__logos">
+                {% for block in section.blocks %}
+                    {%liquid
+                        assign logo = block.settings.logo
+                    %}
+                    <div class="module-logo__items">
+                        <img src="{{ logo | image_url }}" class="module-logo__image">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <img class="module-bottom-decor" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI4NyIgdmlld0JveD0iMCAwIDEyODAgODciPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPgogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzExNDEiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDExNDEiIHdpZHRoPSIxMjgwIiBoZWlnaHQ9Ijg3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDU5NTYpIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgaWQ9Ik1hc2tfR3JvdXBfNDciIGRhdGEtbmFtZT0iTWFzayBHcm91cCA0NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtNTk1NikiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4KICAgIDxwYXRoIGlkPSJCYXNlNyIgZD0iTTE0ODguNSwzMDRzLTQyLjc3My05Mi44LTIyMC42NDEtOTkuMi0zMDMuNzExLDYzLjcyOS00OTMuNjM4LDcyYy0xOTMuNyw4LjQzNS0zNTYuMzgtNjAuOC01NTEuMTM2LTU0Uy00LjgsMzA0LTQuOCwzMDRWNDBTNTkuNzY4LTExLjIsMjIzLjA4Ny0xMS4yLDQ3Ny4yNjgsNDUuNiw3NDMuMTM2LDQwczMxMC4wNDMtODMuMiw1MjQuNzI0LTgzLjJTMTUwNy4yLDQwLDE1MDcuMiw0MFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NS4yIDU3NTkuNikiIGZpbGw9IiM2NTY1YTAiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="Decor">
+</div>
+
+<style>
+    .module-logo {
+        margin-top: -7%;
+    }
+    .module-logo__wrapper {
+        background: #6565A0;
+        padding: 0 30px;
+        margin: -3px 0;
+    }
+    .module-logo__container {
+        max-width: 1280px;
+        margin: auto;
+        padding: 20px 0 0;
+    }
+    .module-logo__heading {
+        color: {{ txt_color }};
+        font-size: 18px;
+        line-height: 23px;
+        font-family: var(--futurabold);
+        letter-spacing: 2px;
+    }
+    .module-logo__logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .module-top-decor, .module-bottom-decor {
+        width: 100%;
+    }
+    .module-top-decor {
+        margin-bottom: -10px;
+    }
+    .module-logo__items {
+        text-align: -webkit-center;
+    }
+
+    .module-logo__items:nth-child(1),
+    .module-logo__items:nth-child(6) {
+        margin-top: -8%;
+    }
+    .module-logo__items:nth-child(3),
+    .module-logo__items:nth-child(4) {
+        margin-top: 8%;
+    }
+
+    @media (max-width: 1002px) {
+        .module-logo__items:nth-child(1),
+        .module-logo__items:nth-child(6),
+        .module-logo__items:nth-child(3),
+        .module-logo__items:nth-child(4) {
+            margin-top: 0;
+        }
+        .module-logo__logos {
+            padding: 20px 0;
+        }
+
+        .module-logo__logos .slick-track {
+            display: flex!important;
+            align-items: center;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Logo",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "txt_color",
+            "label": "Heading Color",
+            "default": "#9F9FBF"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Lorem ipsum"
+        }
+    ],
+    "max_blocks": 6,
+    "blocks": [
+        {
+            "type": "logo",
+            "name": "Logo",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "logo",
+                    "label": "Logo"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Logo",
+        "category": "banner"
+      }
+    ]
+  }
+{% endschema %}
