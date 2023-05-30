@@ -11,7 +11,7 @@
     "503a1029-3460-4fe8-8308-9fed89a27b60": {
       "type": "comp-page-header",
       "settings": {
-        "heading": "humanizing the<br>dog food culture",
+        "heading": "humanizing thedog food culture",
         "intro": "without the junk<span class=\"curve\"><\/span>",
         "button_label": "Try Bare",
         "button_link": "\/shop",
@@ -173,6 +173,7 @@
     },
     "9dd0f306-882f-4e58-b3ce-7c48fd2017ef": {
       "type": "comp-cta-bar",
+      "disabled": true,
       "blocks": {
         "e40eb268-47b1-4a50-b221-45eb8445f623": {
           "type": "cta",
@@ -214,6 +215,15 @@
       ],
       "settings": {
       }
+    },
+    "ccaeb511-b054-463b-b8fe-9ffa6bf9ed96": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
@@ -223,6 +233,7 @@
     "88aa1245-aa5a-4f15-96ef-59edd5cf6767",
     "0123b705-1144-4761-991b-05df5b98015f",
     "7ad918cb-a3b6-4489-a593-e41dfce73b5e",
-    "9dd0f306-882f-4e58-b3ce-7c48fd2017ef"
+    "9dd0f306-882f-4e58-b3ce-7c48fd2017ef",
+    "ccaeb511-b054-463b-b8fe-9ffa6bf9ed96"
   ]
 }
