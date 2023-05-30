@@ -40,67 +40,28 @@
     margin-top: -10%;
 }
 
-.purpose {
-    display: flex;
-    flex-direction: column;
+.purpose__logo {
+    gap: 20px;
+    margin-top: 5rem;
 }
 
-.purpose--content h3 {
-    color: white;
-    max-width: 85%;
-    margin-bottom: 15px;
-}
-
-.purpose--content h4 {
-    margin-bottom: 25px;
-}
-
-.purpose--content p {
-    color: white;
-}
-
-.purpose--content ul {
-    list-style: none;
-    margin: 0 0 0 10px;
-    padding: 0;
-}
-
-.purpose--content ul li {
-    position: relative;
-    margin-bottom: 5px;
-    padding-left: 25px;
-}
-
-.purpose--content ul li:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: var(--mint);
-}
-
-.purpose--content a {
-    color: white;
-    text-decoration: none;
-}
-
-.purpose--image img {
+.purpose___main-image {
     max-width: 100%;
-    border-radius: 100%;
+    object-fit: contain;
+    display: block;
+    margin-inline: auto;
+    width: 200px;
+    height: auto;
 }
-
 
 @media (min-width: 768px) {
     .section--purpose {
         padding-top: 10%;
     }
         .section--purpose .decor-bottom-right {
-            bottom: -15px;
-            right: 0;
+            bottom: 60px;
+            right: 0px;
+            width: 136px;
         }
 
     .purpose {
@@ -118,5 +79,11 @@
 @media (min-width: 1300px) {
     .section--purpose {
         background-size: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .purpose__logo {
+        flex-direction: column;
     }
 }

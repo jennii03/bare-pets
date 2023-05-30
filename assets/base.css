@@ -3235,6 +3235,10 @@ details-disclosure > details {
   color: var(--mint);
 }
 
+.text-purple {
+  color: var(--purple);
+}
+
 .d-flex {
   display: flex;
 }
@@ -3252,4 +3256,9 @@ details-disclosure > details {
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 1.1rem;
+}
+
+/* About page */
+.section .section--subheading.info--subheading {
+  font-size: 20px;
 }
