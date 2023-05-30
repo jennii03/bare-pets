@@ -48,6 +48,14 @@
         <div class="footer-foot">
             <div class="footer-social">
                 <ul class="footer__list-social list-unstyled list-social" role="list">
+                    {%- if settings.social_instagram_link != blank -%}
+                        <li class="list-social__item">
+                            <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                            {%- render 'icon-instagram' -%}
+                            <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                            </a>
+                        </li>
+                    {%- endif -%}
                     {%- if settings.social_twitter_link != blank -%}
                     <li class="list-social__item">
                         <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
@@ -69,14 +77,6 @@
                         <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
                         {%- render 'icon-pinterest' -%}
                         <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                        </a>
-                    </li>
-                    {%- endif -%}
-                    {%- if settings.social_instagram_link != blank -%}
-                    <li class="list-social__item">
-                        <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
-                        {%- render 'icon-instagram' -%}
-                        <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
                         </a>
                     </li>
                     {%- endif -%}
@@ -126,7 +126,7 @@
                 <ul class="footer-legal_menu list-unstyled">
                     {%- for link in section.settings.legal_menu.links -%}
                         <li>
-                        <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                        <a href="{{ link.url }}" class="link link--text text-light list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                             {{ link.title }}
                         </a>
                         </li>

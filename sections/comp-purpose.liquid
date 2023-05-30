@@ -1,5 +1,11 @@
 {{ 'section-purpose.css' | asset_url | stylesheet_tag }}
 
+{% liquid
+  assign heading = section.settings.heading
+  assign subheading = section.settings.subheading
+  assign content = section.settings.content
+%}
+
 <section class="section section--purpose pull-by-prev">
   <picture>
     <source srcset="{{ 'img-purpose-desktop-top-left.png' | asset_url }}" media="(min-width: 768px)">
@@ -7,15 +13,22 @@
   </picture>
 
   <div class="wrapper">
-    <div class="purpose">
-      <div class="purpose--content">
-        <h3 class="section--heading">{{ section.settings.heading }}</h3>
-        <h4 class="section--subheading">{{ section.settings.subheading }}</h4>
-        {{ section.settings.content }}
-      </div>
-      <div class="purpose--image">
-        <img src="{{ section.settings.photo | img_url: 'master' }}" alt="{{ section.settings.heading }}">
-      </div>
+    <div class="purpose__content text-light text-center">
+      <h3 class="section--heading text-light">{{ heading }}</h3>
+      <h4 class="section--subheading">{{ subheading }}</h4>
+      {{ content }}
+    </div>
+    <div class="purpose__logo d-flex">
+            {% for block in section.blocks %}
+              {%liquid  
+                  assign logo = block.settings.logo
+              %}
+              <div class="purpose___item-logo flex-basis-100">
+                {% if logo != blank %}
+                  <img class="purpose___main-image" src="{{ logo | img_url: 'master' }}" alt="{{ logo.alt }}" loading="lazy">
+                {% endif %}
+              </div>
+          {% endfor %}
     </div>
   </div>
 
@@ -46,14 +59,21 @@
       "id": "content",
       "default": "<p>With every order purchased, we give a % back to local shelters, rescue organizations, and animal welfare projects to help dogs and pups in need.</p>",
       "label": "Content"
-    },
-    {
-      "type": "image_picker",
-      "id": "photo",
-      "label": "Featured Photo"
     }
   ],
-
+  "blocks" : [
+    {
+      "name": "Logo",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Purpose"

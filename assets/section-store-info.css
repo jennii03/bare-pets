@@ -46,7 +46,7 @@
 
 .history--wrapper {
   overflow: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   max-width: 1150px;
   margin: auto;
   margin-top: 60px;

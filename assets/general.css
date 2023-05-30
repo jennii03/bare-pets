@@ -13,8 +13,8 @@
 
 .section .section--subheading  {
     font-family: var(--futurabold);
-    font-size: 14px;
-    line-height: 11px;
+    font-size: 18px;
+    line-height: 1.3em;
     margin: 0;
     text-transform: uppercase;
     color: var(--mint);
@@ -25,6 +25,12 @@
     font-family: var(--gilroyreg);
     font-size: 16px;
     line-height: 22px;
+}
+
+.purpose__content  {
+    width: 70%;
+    display: block;
+    margin-inline: auto;
 }
 
 @media (min-width: 768px) {
