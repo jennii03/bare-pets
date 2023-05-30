@@ -11,12 +11,13 @@
     "503a1029-3460-4fe8-8308-9fed89a27b60": {
       "type": "comp-page-header",
       "settings": {
-        "heading": "humanizing thedog food culture",
+        "heading": "humanizing the<br>dog food culture",
         "intro": "without the junk<span class=\"curve\"><\/span>",
         "button_label": "Try Bare",
         "button_link": "\/shop",
         "desktop_content_alignment": "right",
-        "desktop": "shopify:\/\/shop_images\/page-about.png"
+        "desktop": "shopify:\/\/shop_images\/page-about.png",
+        "mobile": "shopify:\/\/shop_images\/page-about_1_1.png"
       }
     },
     "bb388078-2e30-458f-a560-5c20de9dc0aa": {
