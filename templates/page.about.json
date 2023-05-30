@@ -164,6 +164,38 @@
     },
     "7ad918cb-a3b6-4489-a593-e41dfce73b5e": {
       "type": "comp-purpose",
+      "blocks": {
+        "2a3d41d9-e865-4add-83fc-3d158b9d3b40": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/prc.png"
+          }
+        },
+        "becbfddb-22aa-4d36-a76e-1faac56dd9e2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/awu.png"
+          }
+        },
+        "7520793c-c9b6-4b64-bdb6-81c3f9b50f08": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/aro_592d57d1-c249-47d9-ab62-e30361806d2b.png"
+          }
+        },
+        "5ac3d7bc-11de-4f66-a553-061e4a27aef9": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/alaga.png"
+          }
+        }
+      },
+      "block_order": [
+        "2a3d41d9-e865-4add-83fc-3d158b9d3b40",
+        "becbfddb-22aa-4d36-a76e-1faac56dd9e2",
+        "7520793c-c9b6-4b64-bdb6-81c3f9b50f08",
+        "5ac3d7bc-11de-4f66-a553-061e4a27aef9"
+      ],
       "settings": {
         "heading": "Our Purpose: Giving Back to Dogs in Need",
         "subheading": "Giving Back with Every Purchase",
