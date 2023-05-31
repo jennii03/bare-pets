@@ -179,6 +179,230 @@
         "padding_bottom": 36
       }
     },
+    "19d1fa98-590c-4862-bc72-22477d925463": {
+      "type": "module-comparison",
+      "blocks": {
+        "850010e3-d008-40d9-93f3-600e02c91eaa": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_table_class": "empty_heading"
+          }
+        },
+        "02213b37-d6ef-4768-af20-d33201a43c26": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/Logo_2.png",
+            "comparison_table_class": "heading_logo bare_pets"
+          }
+        },
+        "37ceaa68-7f16-4364-9a0b-a25e5b2c9b29": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/petchola_f8029e08-1c4c-406a-8055-aae6e9111f14.png",
+            "comparison_table_class": "heading_logo"
+          }
+        },
+        "fc0e4697-7f10-4d4e-b52f-07921908317d": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/pedigree_5e02ca9a-05ad-4965-a642-0e60b88d04d6.png",
+            "comparison_table_class": "heading_logo"
+          }
+        },
+        "4e88b146-23f7-4b1c-ad33-2cb2c67da53d": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/Valuemeal-logo.png",
+            "comparison_table_class": "heading_logo"
+          }
+        },
+        "8762558e-da7b-4105-8a67-c80d197a0990": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/pngegg_4.png",
+            "comparison_table_class": "heading_logo"
+          }
+        },
+        "0753441e-d97b-4e33-8a3b-28f4720eff70": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/PngItem_7618245.png",
+            "comparison_table_class": "heading_logo"
+          }
+        },
+        "5ced8c0a-f0e4-465d-a53d-e92662a238ac": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/totw-logo-stacked.png",
+            "comparison_table_class": "heading_logo"
+          }
+        },
+        "947abf1d-3b12-4637-9119-d4bc24419c9e": {
+          "type": "table_headings",
+          "settings": {
+            "comparison_logo": "shopify:\/\/shop_images\/acana_ccc5bd00-b76c-4c5a-b210-2431f255b42b.png",
+            "comparison_table_class": "heading_logo"
+          }
+        },
+        "6f1b8855-765f-4b16-8f4e-9a03e492f55d": {
+          "type": "table",
+          "settings": {
+            "comparision_title": "first ingridient",
+            "bare_enable": false,
+            "bare_text": "fresh chicken",
+            "petchola_enable": false,
+            "petchola_text": "poultrry meal",
+            "pedigree_enable": false,
+            "pedigree_text": "cereals",
+            "value_enable": false,
+            "value_text": "wholegrain cereals",
+            "euka_enable": false,
+            "euka_text": "chicken",
+            "onijen_enable": false,
+            "onijen_text": "fresh chicken",
+            "taste_enable": false,
+            "taste_text": "duck",
+            "acana_enable": false,
+            "acana_text": "chicken meal"
+          }
+        },
+        "93b5c108-942b-49a8-b657-880dc0e6ffb1": {
+          "type": "table",
+          "settings": {
+            "comparision_title": "type of flavoring",
+            "bare_enable": false,
+            "bare_text": "all-natural",
+            "petchola_enable": false,
+            "petchola_text": "natural",
+            "pedigree_enable": false,
+            "pedigree_text": "not shown",
+            "value_enable": false,
+            "value_text": "not shown",
+            "euka_enable": false,
+            "euka_text": "natural",
+            "onijen_enable": false,
+            "onijen_text": "natural",
+            "taste_enable": false,
+            "taste_text": "natural",
+            "acana_enable": false,
+            "acana_text": "none"
+          }
+        },
+        "6ecfd69b-4227-4b27-9d40-eee666363034": {
+          "type": "table",
+          "settings": {
+            "comparision_title": "amount of meat shown",
+            "bare_enable": false,
+            "bare_text": "15%",
+            "petchola_enable": false,
+            "petchola_text": "",
+            "pedigree_enable": false,
+            "pedigree_text": "",
+            "value_enable": false,
+            "value_text": "",
+            "euka_enable": false,
+            "euka_text": "",
+            "onijen_enable": false,
+            "onijen_text": "13%",
+            "taste_enable": false,
+            "taste_text": "",
+            "acana_enable": false,
+            "acana_text": "25%"
+          }
+        },
+        "154a87b4-b592-4826-a17f-10949e92d91f": {
+          "type": "table",
+          "settings": {
+            "comparision_title": "added probiotics",
+            "bare_enable": true,
+            "bare_text": "Lorem Ipsum",
+            "petchola_enable": true,
+            "petchola_text": "",
+            "pedigree_enable": false,
+            "pedigree_text": "",
+            "value_enable": false,
+            "value_text": "",
+            "euka_enable": false,
+            "euka_text": "",
+            "onijen_enable": false,
+            "onijen_text": "",
+            "taste_enable": false,
+            "taste_text": "",
+            "acana_enable": false,
+            "acana_text": ""
+          }
+        },
+        "da7b7f76-a360-4c85-bd38-ecba5b8172e2": {
+          "type": "table",
+          "settings": {
+            "comparision_title": "at least 18 vitamin & minerals",
+            "bare_enable": true,
+            "bare_text": "Lorem Ipsum",
+            "petchola_enable": false,
+            "petchola_text": "",
+            "pedigree_enable": false,
+            "pedigree_text": "",
+            "value_enable": false,
+            "value_text": "",
+            "euka_enable": false,
+            "euka_text": "",
+            "onijen_enable": false,
+            "onijen_text": "",
+            "taste_enable": false,
+            "taste_text": "",
+            "acana_enable": false,
+            "acana_text": ""
+          }
+        },
+        "800d9bb4-19e5-427f-bb94-a2a52e0a221d": {
+          "type": "table",
+          "settings": {
+            "comparision_title": "cost per day",
+            "bare_enable": false,
+            "bare_text": "P80.00",
+            "petchola_enable": false,
+            "petchola_text": "P79.26",
+            "pedigree_enable": false,
+            "pedigree_text": "P50.33",
+            "value_enable": false,
+            "value_text": "P56.00",
+            "euka_enable": false,
+            "euka_text": "P74.00",
+            "onijen_enable": false,
+            "onijen_text": "P97.98",
+            "taste_enable": false,
+            "taste_text": "P101.40",
+            "acana_enable": false,
+            "acana_text": "P143.17"
+          }
+        }
+      },
+      "block_order": [
+        "850010e3-d008-40d9-93f3-600e02c91eaa",
+        "02213b37-d6ef-4768-af20-d33201a43c26",
+        "37ceaa68-7f16-4364-9a0b-a25e5b2c9b29",
+        "fc0e4697-7f10-4d4e-b52f-07921908317d",
+        "4e88b146-23f7-4b1c-ad33-2cb2c67da53d",
+        "8762558e-da7b-4105-8a67-c80d197a0990",
+        "0753441e-d97b-4e33-8a3b-28f4720eff70",
+        "5ced8c0a-f0e4-465d-a53d-e92662a238ac",
+        "947abf1d-3b12-4637-9119-d4bc24419c9e",
+        "6f1b8855-765f-4b16-8f4e-9a03e492f55d",
+        "93b5c108-942b-49a8-b657-880dc0e6ffb1",
+        "6ecfd69b-4227-4b27-9d40-eee666363034",
+        "154a87b4-b592-4826-a17f-10949e92d91f",
+        "da7b7f76-a360-4c85-bd38-ecba5b8172e2",
+        "800d9bb4-19e5-427f-bb94-a2a52e0a221d"
+      ],
+      "settings": {
+        "subheading": "HOW WE COMPARE",
+        "comparison_heading": "<p>see the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0613\/8406\/5197\/files\/logo.png?v=1678962502\"> difference<\/p>",
+        "description": "Superior, clean ingredients mean balanced nutrition that's better for your <br> doggo in every bite, which is not something we can say about the competition.",
+        "comparison_button": "BUNDLE AND SAVE",
+        "comparison_button_link": "",
+        "comparison-bg-color": "#f9cf4f"
+      }
+    },
     "5d075d25-c4ea-4323-9c20-c0870195b05f": {
       "type": "module-ingredients",
       "blocks": {
@@ -226,7 +450,7 @@
         "37285719-594d-4792-b26a-7c302b6f82f3"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/BG_Comparison_Chart_benefits.png"
+        "background_color": "#2a294f"
       }
     },
     "f70b7d4d-d809-45c8-b342-1f3f9b4c12bc": {
@@ -567,6 +791,7 @@
     "rich_text",
     "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7",
     "3445f656-e9c5-4454-b00c-ad9feb9331c5",
+    "19d1fa98-590c-4862-bc72-22477d925463",
     "5d075d25-c4ea-4323-9c20-c0870195b05f",
     "f70b7d4d-d809-45c8-b342-1f3f9b4c12bc",
     "d905f7cd-742b-4293-808c-e747d8534912",
