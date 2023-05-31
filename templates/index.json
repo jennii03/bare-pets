@@ -233,7 +233,7 @@
       "type": "module-pet-parents",
       "settings": {
         "background_color": "#fcfcff",
-        "heading": "designed by pet parents for pet parents",
+        "heading": "designed by pet parents <span class=\"text-mint\">for pet parents<\/span>",
         "description": "Shop Bare's & more accessible dog food to uplift your best friend's mealtime without emptying your wallet",
         "image_gif": "shopify:\/\/shop_images\/03_Dog_icons_animation_1.gif",
         "main_image": "shopify:\/\/shop_images\/pexels-anastasia-shuraeva-5481542.png",
