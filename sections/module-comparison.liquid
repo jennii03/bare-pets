@@ -1,0 +1,683 @@
+{% liquid
+    assign subheading = section.settings.subheading
+    assign heading = section.settings.comparison_heading
+    assign description = section.settings.description
+    assign button = section.settings.comparison_button
+    assign links = section.settings.comparison_button_link
+    assign description-color = section.settings.testimonial_comparison_desc-color
+    assign product_image = section.settings.comparison_product
+  %}
+<section id="{{ section.id }}" class="module module-comparison-wrapper">
+  <div class="module page-width">
+
+    <div class="module-comparison_container">
+        {% if subheading != blank %}
+            <h3 class="module-comparison_subheading text-center remove-spacing">
+              {{ subheading }}
+            </h3>
+        {% endif %}
+      {% if heading != blank %}
+        <h1 class="module-comparison_heading text-center remove-spacing">
+          {{ heading }}
+        </h1>
+      {% endif %}
+      {% if description != blank %}
+        <p class="module-comparison_description text-center remove-spacing">
+          {{ description }}
+        </p>
+      {% endif %}
+
+      <div class="module-comparison_table-wrapper m-hide">
+        <div id="scroll-test" class="module-comparison_table">
+          <table>
+            <thead>
+              <tr>
+                {% for block in section.blocks %}
+                  {% if block.type == 'table_headings' %}
+                    <th class="{{ block.settings.comparison_table_class }}">
+                      <img src="{{ block.settings.comparison_logo | image_url }}">
+                    </th>
+                  {% endif %}
+                {% endfor %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for block in section.blocks %}
+                {% if block.type == 'table' %}
+                  <tr>
+                    <td class="comparison_title">
+                      <strong>{{ block.settings.comparision_title }}</strong>
+                    </td>
+                    <td class="bare_enabled">
+                      {% if block.settings.bare_enable == true %}
+                        <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check.png?v=1685517505">
+                      {% else %}
+                        <p class="bare-text remove-spacing">{{ block.settings.bare_text }}</p>
+                      {% endif %}
+                    </td>
+                    <td class="petchola_enable">
+                      {% if block.settings.petchola_text != blank %}
+                        <p class="petchola-text remove-spacing">{{ block.settings.petchola_text }}</p>
+                      {% elsif block.settings.petchola_enable == true %}
+                        <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check-1.png?v=1685517505">
+                      {% elsif block.settings.petchola_enable == false %}
+                        <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/X.png?v=1685517505">
+                      {% endif %}
+                    </td>
+                    <td class="pedigree_enable">
+                        {% if block.settings.pedigree_text != blank %}
+                            <p class="pedigree-text remove-spacing">{{ block.settings.pedigree_text }}</p>
+                        {% elsif block.settings.pedigree_enable == true %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check-1.png?v=1685517505">
+                        {% elsif block.settings.pedigree_enable == false %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/X.png?v=1685517505">
+                        {% endif %}
+                    </td>
+                    <td class="value_enable">
+                        {% if block.settings.value_text != blank %}
+                            <p class="value-text remove-spacing">{{ block.settings.value_text }}</p>
+                        {% elsif block.settings.value_enable == true %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check-1.png?v=1685517505">
+                        {% elsif block.settings.value_enable == false %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/X.png?v=1685517505">
+                        {% endif %}
+                    </td>
+                    <td class="euka_enable">
+                        {% if block.settings.euka_text != blank %}
+                            <p class="euka-text remove-spacing">{{ block.settings.euka_text }}</p>
+                        {% elsif block.settings.euka_enable == true %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check-1.png?v=1685517505">
+                        {% elsif block.settings.euka_enable == false %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/X.png?v=1685517505">
+                        {% endif %}
+                    </td>
+                    <td class="onijen_enable">
+                        {% if block.settings.onijen_text != blank %}
+                            <p class="onijen-text remove-spacing">{{ block.settings.onijen_text }}</p>
+                        {% elsif block.settings.onijen_enable == true %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check-1.png?v=1685517505">
+                        {% elsif block.settings.onijen_enable == false %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/X.png?v=1685517505">
+                        {% endif %}
+                    </td>
+                    <td class="taste_enable">
+                        {% if block.settings.taste_text != blank %}
+                            <p class="taste-text remove-spacing">{{ block.settings.taste_text }}</p>
+                        {% elsif block.settings.taste_enable == true %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check-1.png?v=1685517505">
+                        {% elsif block.settings.taste_enable == false %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/X.png?v=1685517505">
+                        {% endif %}
+                    </td>
+                    <td class="acana_enable">
+                        {% if block.settings.acana_text != blank %}
+                            <p class="acana-text remove-spacing">{{ block.settings.acana_text }}</p>
+                        {% elsif block.settings.acana_enable == true %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/check-1.png?v=1685517505">
+                        {% elsif block.settings.acana_enable == false %}
+                            <img src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/X.png?v=1685517505">
+                        {% endif %}
+                    </td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="module-comparison_dots">
+          <input
+            type="radio"
+            name="column_slide"
+            value="1"
+            checked>
+          <input
+            type="radio"
+            name="column_slide"
+            value="2">
+          <input
+            type="radio"
+            name="column_slide"
+            value="3">
+        </div>
+      </div>
+
+      <div class="mobile-table m-show">
+        {% render 'snippet-mobile-comparison', passBlock %}
+      </div>
+
+
+
+      <div class="module-comparison_button text-center">
+        <a href="{{ links }}" class="module-comparison_button-link btn btn--primary">{{ button }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Module Comparison",
+    "class": "module-comparison",
+    "settings": [
+        {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Lorem ipsum"
+        }, {
+        "type": "html",
+        "id": "comparison_heading",
+        "label": "Heading",
+        "default": "<p>Lorem Ipsum Header</p>"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "Lorem ipsum dolorr sit met."
+      },{
+        "type": "text",
+        "id": "comparison_button",
+        "label": "Button Text",
+        "default": "BUNDLE AND SAVE"
+      }, {
+        "type": "url",
+        "id": "comparison_button_link",
+        "label": "Button Link"
+      }, {
+        "type": "color",
+        "id": "comparison-bg-color",
+        "label": "Background Color",
+        "default": "#fff"
+      }
+    ],
+    "max_blocks": 16,
+    "blocks": [
+      {
+        "type": "table",
+        "name": "comparison_list",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "text",
+            "id": "comparision_title",
+            "label": "Comparison Title",
+            "default": "Enter the Comparison Title",
+            "info": "Enter the Comparison content"
+          },
+          {
+            "type": "checkbox",
+            "id": "bare_enable",
+            "label": "Enable checkmark on Bare",
+            "default": true,
+            "info": "Disable to display text"
+          },
+          {
+            "type": "text",
+            "id": "bare_text",
+            "label": "Bare Text",
+            "default": "Lorem Ipsum"
+          },
+          {
+            "type": "checkbox",
+            "id": "petchola_enable",
+            "label": "Enable checkmark on Petchola",
+            "default": false,
+            "info": "Check or X this Brand"
+          }, 
+          {
+            "type": "text",
+            "id": "petchola_text",
+            "label": "Petchola Text",
+            "info": "Leave this blank to display icons"
+          },
+          {
+            "type": "checkbox",
+            "id": "pedigree_enable",
+            "label": "Enable checkmark on Pedigree",
+            "default": false,
+            "info": "Check or X this Brand"
+          },
+          {
+            "type": "text",
+            "id": "pedigree_text",
+            "label": "Pedigree Text",
+            "info": "Leave this blank to display icons"
+          },
+          {
+            "type": "checkbox",
+            "id": "value_enable",
+            "label": "Enable checkmark on Value Meal",
+            "default": false,
+            "info": "Check or X this Brand"
+          },
+          {
+            "type": "text",
+            "id": "value_text",
+            "label": "Value Meal Text",
+            "info": "Leave this blank to display icons"
+          },
+          {
+            "type": "checkbox",
+            "id": "euka_enable",
+            "label": "Enable checkmark on Eukanuba",
+            "default": false,
+            "info": "Check or X this Brand"
+          },
+          {
+            "type": "text",
+            "id": "euka_text",
+            "label": "Eukanuba Text",
+            "info": "Leave this blank to display icons"
+          },
+          {
+            "type": "checkbox",
+            "id": "onijen_enable",
+            "label": "Enable checkmark on Onijen",
+            "default": false,
+            "info": "Check or X this Brand"
+          },
+          {
+            "type": "text",
+            "id": "onijen_text",
+            "label": "Onijen Text",
+            "info": "Leave this blank to display icons"
+          },
+          {
+            "type": "checkbox",
+            "id": "taste_enable",
+            "label": "Enable checkmark on Taste of the Wild",
+            "default": false,
+            "info": "Check or X this Brand"
+          },
+          {
+            "type": "text",
+            "id": "taste_text",
+            "label": "Taste of the Wild Text",
+            "info": "Leave this blank to display icons"
+          },
+          {
+            "type": "checkbox",
+            "id": "acana_enable",
+            "label": "Enable checkmark on Acana",
+            "default": false,
+            "info": "Check or X this Brand"
+          },
+          {
+            "type": "text",
+            "id": "acana_text",
+            "label": "Acana Text",
+            "info": "Leave this blank to display icons"
+          }
+        ]
+      }, {
+        "type": "table_headings",
+        "name": "comparison_table_heading",
+        "limit": 9,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "comparison_logo",
+            "label": "Table Heading Logo"
+          }, {
+            "type": "text",
+            "id": "comparison_table_class",
+            "label": "Table Heading Class",
+            "default": "Enter the Table Comparison Class",
+            "info": "Enter the table heading class for styling"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Module",
+        "name": "Module Comparison"
+      }
+    ]
+  }
+{% endschema %}
+
+{% style %}
+.module-comparison_table table:not([class]) th {
+    padding: 0 1em;
+    border: none;
+}
+.module-comparison_table table:not([class]) td {
+    border-right: none;
+    border-left: none;
+}
+.empty_heading img {
+    visibility: hidden;
+}
+.heading_logo img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.bare_enabled img, .petchola_enable img, .pedigree_enable img, .value_enable img, .euka_enable img, .onijen_enable img, .taste_enable img, .acana_enable img {
+    height: 25px;
+}
+.bare_enabled p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6DC5B1;
+    text-align: center;
+    font-family: var(--gilroybold);
+}
+.petchola_enable p, .pedigree_enable p, .value_enable p, .euka_enable p, .onijen_enable p, .taste_enable p, .acana_enable p {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #3B3F3F;
+    font-family: var(--gilroybold);
+}
+
+  #scroll-test {
+    scroll-behavior: smooth;
+  }
+  .module-comparison_button-link.primary-btn.h-white {
+    width: 100%;
+    max-width: 391px;
+    display: block;
+    margin: auto;
+  }
+  .module-comparison-wrapper {
+    width: 100%;
+    padding: 50px 0;
+    background-color: {{ section.settings.comparison-bg-color }}
+    ;
+  }
+
+  .module-comparison_heading {
+    font-size: 46px;
+    line-height: 50px;
+    color: #2a294f;
+    font-family: var(--gilroybold);
+    margin-bottom: 10px;
+    }
+
+    .module-comparison_heading p {
+    margin: 0;
+    }
+
+    .module-comparison_heading img {
+        height: 36px;
+    }
+
+    .module-comparison_subheading {
+        font-size: 18px;
+        line-height: 23px;
+        color: #EB5B56;
+        margin-bottom: 10px;
+        font-family: var(--futurabold);
+    }
+
+    .module-comparison_description {
+        font-size: 16px;
+        line-height: 21px;
+        color: #2a294f;
+        font-family: var(--gilroyreg);
+    }
+
+  .module-comparison_table-wrapper {
+    width: 100%;
+    max-width: 995px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: Red Hat Display, sans-serif;
+    color: #fff;
+  }
+
+  .module-comparison_table {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 10px 0;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
+  }
+
+  .module-comparison_table table {
+    box-shadow: none;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .module-comparison_table tbody tr td {
+    border-bottom: 1px solid #2a294f;
+  }
+
+  .module-comparison_table th,
+  .module-comparison_table td {
+    padding: 10px 0;
+  }
+
+  .module-comparison_table th {
+    font-weight: normal;
+  }
+
+  .module-comparison_table tbody .comparison_title {
+    width: 285px;
+    padding: 10px 20px 10px 0;
+  }
+
+  .module-comparison_table .comparison_title strong {
+    display: block;
+    font-family: var(--gilroybold);
+    font-size: 14px;
+    line-height: 17px;
+    color: #2A294F;
+  }
+
+  .module-comparison_table td.bare_enabled,
+  .module-comparison_table td.petchola_enable,
+  .module-comparison_table td.pedigree_enable,
+  .module-comparison_table td.value_enable,
+  .module-comparison_table td.euka_enable,
+  .module-comparison_table td.onijen_enable,
+  .module-comparison_table td.taste_enable,
+  .module-comparison_table td.acana_enable  {
+    text-align: center;
+    position: relative
+  }
+
+  .module-comparison_table .indicator {
+    width: 30px;
+    height: 30px;
+  }
+
+  .module-comparison_table thead th.bare_pets,
+  .module-comparison_table tbody td.bare_enabled {
+    background-color: #2a294f;
+    border-color: #2a294f;
+  }
+
+  .module-comparison_table thead th.bare_pets {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .module-comparison_table thead th.empty_heading {
+    width: 160px;
+    }
+
+  .module-comparison_table th.root_by_hudson span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+
+  .module-comparison_table tbody td.bare_enabled .indicator {
+    width: 40px;
+    height: 40px;
+  }
+
+  .module-comparison_table .indicator.off {
+    opacity: 0.5
+  }
+
+
+  .module-comparison_table tr:last-of-type td.bare_enabled:after {
+    content: '';
+    display: block;
+    background-color: #2a294f;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .module-comparison_dots {
+    position: absolute;
+    right: 0;
+    width: 126px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .module-comparison_dots input[type=radio] {
+    margin: 5px;
+  }
+
+
+  @media(min-width: 1600px) {
+    .module-comparison_table-wrapper {
+      max-width: 1200px;
+    }
+    td.petchola_enable {
+      width: calc(100% / 6);
+    }
+
+    td.pedigree_enable {
+      width: calc(100% / 6);
+    }
+
+    td.value_enable {
+      width: calc(100% / 6);
+    }
+    td.euka_enable {
+      width: calc(100% / 6);
+    }
+    td.onijen_enable {
+      width: calc(100% / 6);
+    }
+    td.taste_enable {
+      width: calc(100% / 6);
+    }
+    td.acana_enable {
+      width: calc(100% / 6);
+    }
+  }
+  .m-show {
+    display: none;
+  }
+
+  @media screen and (max-width: 920px) {
+    .module-comparison_table-wrapper.m-hide {
+      display: none;
+    }
+    .m-show {
+      display: block !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .module-comparison_button-link.primary-btn.h-white {
+      max-width: 365px;
+    }
+    .module-comparison_heading {
+      font-size: 28px;
+      max-width: 90% !important;
+      margin: auto;
+    }
+    .module-comparison_heading br {
+      display: none;
+    }
+    .module-comparison_table tbody td.bare_enabled .indicator {
+      width: 30px;
+      height: 30px;
+    }
+    .module-comparison_table th {
+      font-size: 12px
+    }
+    .module-comparison_table th.root_by_hudson span {
+      margin-right: 5px;
+    }
+    .module-comparison_table thead th.root_by_hudson {
+      width: 108px;
+    }
+    .module-comparison_table th:nth-child(1),
+    .module-comparison_table td:nth-child(1) {
+      position: sticky;
+      left: 0;
+      width: 110px;
+      min-width: 110px;
+      z-index: 2;
+      background-color: {{ section.settings.comparison-bg-color }}
+      ;
+    }
+
+    .module-comparison_table th:nth-child(2),
+    .module-comparison_table td:nth-child(2) {
+      position: sticky;
+      left: 110px;
+      width: 126px;
+      min-width: 108px;
+      z-index: 2;
+      background-color: {{ section.settings.comparison-bg-color }}
+      ;
+    }
+
+    .module-comparison_table tbody tr td {
+      border-bottom: 1px solid #2a294f !important;
+    }
+
+    .module-comparison_table::-webkit-scrollbar {
+      display: none;
+    }
+
+    .module-comparison_table {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .module-comparison_table tbody td.petchola_enable,
+    .module-comparison_table tbody td.pedigree_enable,
+    .module-comparison_table tbody td.value_enable,
+    .module-comparison_table tbody td.euka_enable,
+    .module-comparison_table tbody td.onijen_enable,
+    .module-comparison_table tbody td.taste_enable,
+    .module-comparison_table tbody td.acana_enable {
+      min-width: 135px;
+      width: 104px;
+    }
+
+    .module-comparison_table tbody .comparison_title {
+      padding: 10px 0;
+      font-size: 11px;
+    }
+
+    .module-comparison_dots {
+      display: flex;
+    }
+    .module-comparison_table .comparison_title strong {
+      font-size: 12px;
+    }
+    .module-comparison_table thead th.root_by_hudson {
+      font-size: 12px;
+    }
+    .module-comparison_table th.root_by_hudson span {
+      font-size: 16px;
+    }
+
+  }
+{% endstyle %}
