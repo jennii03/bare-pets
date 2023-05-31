@@ -229,6 +229,13 @@
         "background_image": "shopify:\/\/shop_images\/BG_Comparison_Chart_benefits.png"
       }
     },
+    "d905f7cd-742b-4293-808c-e747d8534912": {
+      "type": "module-pet-parents",
+      "settings": {
+        "subheading": "Premium Kibble",
+        "heading": "Premium quality pet food at supermarket prices"
+      }
+    },
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755": {
       "type": "featured-collection",
       "disabled": true,
@@ -545,6 +552,7 @@
     "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7",
     "3445f656-e9c5-4454-b00c-ad9feb9331c5",
     "5d075d25-c4ea-4323-9c20-c0870195b05f",
+    "d905f7cd-742b-4293-808c-e747d8534912",
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755",
     "ab2d8d0e-25b1-4995-acbf-bdba125fc4df",
     "ad6a8d79-30d4-4419-8461-bfbf4101f893",
