@@ -1,14 +1,83 @@
 {%liquid
     assign background_color = section.settings.background_color
-    assign image_position = section.settings.image_position
+    assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign image_gif = section.settings.image_gif
+    assign main_image = section.settings.main_image
+    assign button_text = section.settings.button_text
+    assign button_link = section.settings.button_link
 %}
   
 <div id="module-pet-parents__{{ section.id }}" class="section module-pet-parents" style="background: {{ background_color }};">
-    <div class="module-pet-parents__container page-width">
-        test
+    <div class="module-pet-parents__container page-width d-flex">
+        <div class="module-pet-parents__column-left flex-basis-100">
+            <div class="module-pet-parents__content">
+                <h2 class="module-pet-parents__heading section--heading remove-spacing text-purple">{{ heading }}</h2>
+                <p class="module-pet-parents__description text-purple">{{ description }}</p>
+
+                <div class="module-pet-parents__gif-main">
+                  {% if image_gif != blank %}
+                    <img class="module-pet-parents__gif" src="{{ image_gif | img_url: 'master' }}" alt="{{ image_gif.alt }}" loading="lazy">
+                  {% endif %}
+                </div>
+
+                <div class="module-pet-parents__button">
+                  <a href="{{ button_link }}" class="btn btn--secondary-new">{{ button_text }}</a>
+                </div>
+             
+            </div>
+        </div>
+
+        <div class="module-pet-parents__column-right flex-basis-100">
+          {% if main_image != blank %}
+            <img class="module-pet-parents__main-image" src="{{ main_image | img_url: 'master' }}" alt="{{ main_image.alt }}" loading="lazy">
+          {% endif %}
+        </div>
     </div>
 </div>
 
+
+<style>
+  .module-pet-parents {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .module-pet-parents__container {
+    gap: 40px;
+  }
+
+  .module-pet-parents__column-left  {
+    display: flex;
+    align-items: center;
+  }
+
+  .module-pet-parents__gif-main {
+    width: 85%;
+  }
+
+  .module-pet-parents__main-image, .module-pet-parents__gif {
+    max-width: 100%;
+  }
+
+  .module-pet-parents__description {
+    font-weight: 700;
+    width: 65%;
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .module-pet-parents__container {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .module-pet-parents__description,
+    .module-pet-parents__gif-main {
+      width: 100%;
+    }
+  }
+</style>
 
 {% schema %}
   {
@@ -16,16 +85,43 @@
     "class": "module",
     "settings": [
         {
-          "type": "text",
-          "id": "subheading",
-          "label": "Subheading (optional)",
-          "default": "Premium Kibble"
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "#fcfcff"
         },
         {
           "type": "text",
           "id": "heading",
-          "label": "Heading (optional)",
-          "default": "Premium quality pet food at supermarket prices"
+          "label": "Heading",
+          "default": "designed by pet parents for pet parents"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Shop Bare's & more accessible dog food to uplift your best friend's mealtime without emptying your wallet"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_gif",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main Image"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Know what's best for your best friend"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
         }
     ],
     "presets": [
