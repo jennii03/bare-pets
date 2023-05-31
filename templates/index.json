@@ -229,12 +229,27 @@
         "background_image": "shopify:\/\/shop_images\/BG_Comparison_Chart_benefits.png"
       }
     },
+    "f70b7d4d-d809-45c8-b342-1f3f9b4c12bc": {
+      "type": "module-pet-parents",
+      "settings": {
+        "background_color": "#fcfcff",
+        "heading": "designed by pet parents for pet parents",
+        "description": "Shop Bare's & more accessible dog food to uplift your best friend's mealtime without emptying your wallet",
+        "image_gif": "shopify:\/\/shop_images\/03_Dog_icons_animation_1.gif",
+        "main_image": "shopify:\/\/shop_images\/pexels-anastasia-shuraeva-5481542.png",
+        "button_text": "Know what's best for your best friend",
+        "button_link": ""
+      }
+    },
     "d905f7cd-742b-4293-808c-e747d8534912": {
       "type": "module-pet-parents",
       "disabled": true,
       "settings": {
-        "subheading": "Premium Kibble",
-        "heading": "Premium quality pet food at supermarket prices"
+        "background_color": "#fcfcff",
+        "heading": "Premium quality pet food at supermarket prices",
+        "description": "Shop Bare's & more accessible dog food to uplift your best friend's mealtime without emptying your wallet",
+        "button_text": "Know what's best for your best friend",
+        "button_link": ""
       }
     },
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755": {
@@ -553,6 +568,7 @@
     "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7",
     "3445f656-e9c5-4454-b00c-ad9feb9331c5",
     "5d075d25-c4ea-4323-9c20-c0870195b05f",
+    "f70b7d4d-d809-45c8-b342-1f3f9b4c12bc",
     "d905f7cd-742b-4293-808c-e747d8534912",
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755",
     "ab2d8d0e-25b1-4995-acbf-bdba125fc4df",
