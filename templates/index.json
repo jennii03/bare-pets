@@ -179,6 +179,56 @@
         "padding_bottom": 36
       }
     },
+    "5d075d25-c4ea-4323-9c20-c0870195b05f": {
+      "type": "module-ingredients",
+      "blocks": {
+        "8abb11e0-ef5a-4d99-a65f-5b0b8debbad4": {
+          "type": "text",
+          "settings": {
+            "heading": "first<br> ingredient",
+            "description": "Fresh cicken is an excellent source of high-quality protein source."
+          }
+        },
+        "c5922908-bbbb-4e0f-b019-08de42813aa0": {
+          "type": "text",
+          "settings": {
+            "heading": "flavoring",
+            "description": "Dogs tend to enjoy the taste of chicken, making it a popular ingredient in many dog foods."
+          }
+        },
+        "cddd4bc1-8635-4fa3-89a4-6667e9a5bdaf": {
+          "type": "text",
+          "settings": {
+            "heading": "amount of<br> meat shown",
+            "description": "Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        },
+        "081b90e4-587c-4868-bdf2-c47e2caf7d7a": {
+          "type": "text",
+          "settings": {
+            "heading": "probiotics",
+            "description": "These supplements can help improve digestion, boost the immune system, and improve skin and coat health."
+          }
+        },
+        "37285719-594d-4792-b26a-7c302b6f82f3": {
+          "type": "text",
+          "settings": {
+            "heading": "vitamins<br>& minerals",
+            "description": "Chicken is a great source of B vitamins, iron, and zinc all essential elements for healthy dogs."
+          }
+        }
+      },
+      "block_order": [
+        "8abb11e0-ef5a-4d99-a65f-5b0b8debbad4",
+        "c5922908-bbbb-4e0f-b019-08de42813aa0",
+        "cddd4bc1-8635-4fa3-89a4-6667e9a5bdaf",
+        "081b90e4-587c-4868-bdf2-c47e2caf7d7a",
+        "37285719-594d-4792-b26a-7c302b6f82f3"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/BG_Comparison_Chart_benefits.png"
+      }
+    },
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755": {
       "type": "featured-collection",
       "disabled": true,
@@ -320,7 +370,7 @@
         "e3229550-8878-4be2-8f84-3f90a6a02e84"
       ],
       "settings": {
-        "txt_color": "#9F9FBF",
+        "txt_color": "#9f9fbf",
         "heading": "AS FEATURED ON"
       }
     },
@@ -494,6 +544,7 @@
     "rich_text",
     "d1133c3f-b1ba-423f-9e6a-4c9f65af23b7",
     "3445f656-e9c5-4454-b00c-ad9feb9331c5",
+    "5d075d25-c4ea-4323-9c20-c0870195b05f",
     "80b04d10-7c5b-40cc-93a6-f0e5ce553755",
     "ab2d8d0e-25b1-4995-acbf-bdba125fc4df",
     "ad6a8d79-30d4-4419-8461-bfbf4101f893",
