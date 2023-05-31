@@ -35,8 +35,8 @@
 
 @media (min-width: 768px) {
     .section .section--heading {
-        font-size: 40px;
-        line-height: 42px;
+        font-size: 52px;
+        line-height: 1.1em;
     }
 }
 
@@ -56,6 +56,16 @@
 }
 
 .btn--primary {
+    color: white;
+    background: var(--mint);
+}
+
+.btn--secondary-new {
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+.btn--secondary {
     color: white;
     background: var(--mint);
 }
