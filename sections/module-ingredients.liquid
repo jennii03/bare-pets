@@ -1,0 +1,110 @@
+{%liquid
+    assign background_image = section.settings.background_image
+    assign image_position = section.settings.image_position
+%}
+  
+<div id="module-ingredients__{{ section.id }}" class="section module-ingredients" style="background-image: url('{{ background_image | image_url }}');">
+    <div class="module-ingredients__container page-width d-flex">
+        {%- for block in section.blocks -%}
+            {%liquid
+                assign heading = block.settings.heading
+                assign description = block.settings.description
+
+            %}
+            <div class="module-ingredients__item flex-basis-100">
+                <h3 class="module-ingredients__heading text-light remove-spacing text-center">{{ heading }}</h3>
+                <p class="module-ingredients__description text-light remove-spacing text-center">{{ description }}</p>
+            </div>
+        {%- endfor -%}
+    </div>
+</div>
+
+<style>
+    .module-ingredients {
+        background-position: center;
+        background-size: cover;
+        height: 516px;
+        position: relative;
+    }
+
+    .module-ingredients::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, var(--yellow) 50%, #fff 50%);
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .module-ingredients__container {
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 8rem;
+    }
+
+    .module-ingredients__heading {
+        font-family: var(--gilroybold);
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+
+    .module-ingredients__item:nth-child(2) {
+        margin-top: -8%;
+    }
+
+    .module-ingredients__item:nth-child(4) {
+        margin-bottom: -10%;
+    }
+
+    .module-ingredients__item:nth-child(5) {
+        margin-bottom: -6%;
+    }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Module Ingredients",
+    "class": "module",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
+        }
+    ],
+    "max_blocks": 5,
+    "blocks": [
+        {
+            "name": "Text",
+            "type": "text",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "first ingredient"
+                },
+                {
+                    "type": "textarea",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "Fresh cicken is an excellent source of high-quality protein source."
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Ingredients",
+        "category": "text"
+      }
+    ]
+  }
+{% endschema %}

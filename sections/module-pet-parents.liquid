@@ -1,0 +1,38 @@
+{%liquid
+    assign background_color = section.settings.background_color
+    assign image_position = section.settings.image_position
+%}
+  
+<div id="module-pet-parents__{{ section.id }}" class="section module-pet-parents" style="background: {{ background_color }};">
+    <div class="module-pet-parents__container page-width">
+        test
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Module Pet Parents",
+    "class": "module",
+    "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading (optional)",
+          "default": "Premium Kibble"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading (optional)",
+          "default": "Premium quality pet food at supermarket prices"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Pet Parents",
+        "category": "product"
+      }
+    ]
+  }
+{% endschema %}
