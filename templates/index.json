@@ -231,6 +231,7 @@
     },
     "d905f7cd-742b-4293-808c-e747d8534912": {
       "type": "module-pet-parents",
+      "disabled": true,
       "settings": {
         "subheading": "Premium Kibble",
         "heading": "Premium quality pet food at supermarket prices"
