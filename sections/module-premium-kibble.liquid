@@ -5,9 +5,7 @@
     assign subheading = section.settings.subheading
     assign heading = section.settings.heading
     assign badge = section.settings.badge
-
-    assign iframe_video = section.settings.iframe_video
-
+    assign main_image = section.settings.main_image
     assign column_subheading = section.settings.column_subheading
     assign column_heading = section.settings.column_heading
     assign review_text = section.settings.review_text
@@ -27,14 +25,11 @@
         {% endif %}
         <div class="module-premium-kibble__columns d-flex">
             <div class="module-premium-kibble__column flex-basis-100">
-              <video autoplay loop muted draggable="false">
-                {% for source in section.settings.video.sources %}
-                  {% if source.format == 'mp4' %}
-                    <source src="{{ source.url }}" type="{{ source.mime_type }}">
-                  {% endif %}
-                {% endfor %}
-                Your browser does not support the video tag.
-              </video>
+              {% if main_image != blank %}
+                <div class="module-premium-kibble__play-icon-main">
+                  <img class="module-premium-kibble__image" src="{{ main_image | img_url: 'master' }}" alt="{{ main_image.alt }}" loading="lazy">
+                </div>
+              {% endif %}
               {% if badge != blank %}
                 <div class="module-premium-kibble__badge">
                   <img src="{{ badge | img_url: 'master' }}" alt="{{ badge.alt }}" loading="lazy" width="130" height="130">
@@ -104,6 +99,11 @@
   .module-premium-kibble__container {
     z-index: 2;
     position: relative;
+    overflow-x: hidden;
+  }
+
+  .module-premium-kibble__image {
+    max-width: 100%;
   }
 
     .module-premium-kibble {
@@ -194,6 +194,22 @@
     }
   }
 
+  @media screen and (max-width: 768px) {
+    .module-premium-kibble__heading {
+      width: 100%;
+    }
+
+    .module-premium-kibble__badge img {
+      max-width: 94px;
+      object-fit: contain;
+    }
+
+    #module-premium-kibble__{{ section.id }} .module-premium-kibble__badge {
+      top: -40px;
+      left: -12%;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     #module-premium-kibble__{{ section.id }} .module-premium-kibble__columns {
       flex-direction: column;
@@ -212,17 +228,19 @@
 
     {% if image_position == 'image_left' %}
       #module-premium-kibble__{{ section.id }} .module-premium-kibble__badge {
-        left: 0;
+          left: 8px;
+          top: -35px;
       }
     {% elsif image_position == 'image_right' %}
         #module-premium-kibble__{{ section.id }} .module-premium-kibble__badge {
-          top: 10%;
-          right: 0;
+          top: 1%;
+          left: 76%;
         }
     {% endif %}
 
     .module-premium-kibble__badge img {
-      max-width: 70%;
+      max-width: 90px;
+      display: block;
     }
   }
 </style>
@@ -273,9 +291,9 @@
           "label": "Badge"
         },
         {
-          "type": "video",
-          "id": "video",
-          "label": "A Shopify-hosted video"
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main Image"
         },
         {
           "type": "text",
