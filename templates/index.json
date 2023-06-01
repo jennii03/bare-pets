@@ -31,7 +31,7 @@
         "subheading": "Premium Kibble",
         "heading": "Premium quality pet food at supermarket prices",
         "badge": "shopify:\/\/shop_images\/Badge-01.png",
-        "video": "shopify:\/\/files\/videos\/01 Dry Kibble_59693b3a-eb8a-46ae-8b00-d21ba0bfa1a0.mp4",
+        "main_image": "shopify:\/\/shop_images\/01_Dry_Kibbles-only_1_1_2_1.gif",
         "column_subheading": "Dry Kibble",
         "column_heading": "Candidly fresh chicken",
         "review_text": "12 reviews",
@@ -48,7 +48,7 @@
         "subheading": "",
         "heading": "",
         "badge": "shopify:\/\/shop_images\/Badge-01_purple.png",
-        "video": "shopify:\/\/files\/videos\/02 Wet Food_0e879865-2966-4956-a507-1d5182eef522.mp4",
+        "main_image": "shopify:\/\/shop_images\/02_Wet-Food_-_-beef_1_1_1.gif",
         "column_subheading": "Wet Food",
         "column_heading": "Seriously beefy",
         "review_text": "12 reviews",
@@ -460,7 +460,10 @@
         "heading": "designed by pet parents <span class=\"text-mint\">for pet parents<\/span>",
         "description": "Shop Bare's & more accessible dog food to uplift your best friend's mealtime without emptying your wallet",
         "image_gif": "shopify:\/\/shop_images\/03_Dog_icons_animation_1.gif",
+        "badge": "shopify:\/\/shop_images\/Badge-01_purple.png",
         "main_image": "shopify:\/\/shop_images\/pexels-anastasia-shuraeva-5481542.png",
+        "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "",
         "button_text": "Know what's best for your best friend",
         "button_link": ""
       }
@@ -472,6 +475,8 @@
         "background_color": "#fcfcff",
         "heading": "Premium quality pet food at supermarket prices",
         "description": "Shop Bare's & more accessible dog food to uplift your best friend's mealtime without emptying your wallet",
+        "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "",
         "button_text": "Know what's best for your best friend",
         "button_link": ""
       }
