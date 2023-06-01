@@ -205,12 +205,69 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "21e6180d-f2db-4c0c-96c5-4a57ecf02cae": {
+      "type": "module-stories",
+      "blocks": {
+        "e0d59abe-c76e-4067-a6f2-c20041d0ab41": {
+          "type": "story",
+          "settings": {
+            "story_image": "shopify:\/\/shop_images\/story-image.png",
+            "icon_1": "shopify:\/\/shop_images\/stethoscope_doctor_health.png",
+            "icon_text1": "Fewer vet <br> visits",
+            "icon_2": "shopify:\/\/shop_images\/energy_power_electric.png",
+            "icon_text2": "Increased <br> vitality",
+            "icon_3": "shopify:\/\/shop_images\/blank_canvas_pattern.png",
+            "icon_text3": "Clear skin & shiny coat",
+            "description": "\"Meet my 4 year old dog, Bailey. She started out as a hyper pup, but as the years went by and as I grew older, she's lost the will to play and run around like she used to.\n<br><br>\nBARE helped my precious Bailey in a lot of ways - she's happier, and never seems to get tired of playing! I highly recommend their kiddle to anyone who has a pet. A must have indeed ♥\"",
+            "reviewer": "Madison R."
+          }
+        },
+        "f2524d16-794c-45d1-88b3-ea11d1a6f7df": {
+          "type": "story",
+          "settings": {
+            "story_image": "shopify:\/\/shop_images\/Lifestyle_Image_-_Social_Proof.png",
+            "icon_1": "shopify:\/\/shop_images\/stethoscope_doctor_health.png",
+            "icon_text1": "Lorem ipsum dolor sit met",
+            "icon_2": "shopify:\/\/shop_images\/energy_power_electric.png",
+            "icon_text2": "Lorem ipsum dolor sit met",
+            "icon_3": "shopify:\/\/shop_images\/blank_canvas_pattern.png",
+            "icon_text3": "Lorem ipsum dolor sit met",
+            "description": "\"Meet my 4 year old dog, Bailey. She started out as a hyper pup, but as the years went by and as I grew older, she's lost the will to play and run around like she used to.\n<br><br>\nBARE helped my precious Bailey in a lot of ways - she's happier, and never seems to get tired of playing! I highly recommend their kiddle to anyone who has a pet. A must have indeed ♥\"",
+            "reviewer": "John Doe"
+          }
+        },
+        "54e597a7-a5a1-43ed-922d-57ff6bb4e876": {
+          "type": "story",
+          "settings": {
+            "story_image": "shopify:\/\/shop_images\/Lifestyle_Image_-_Social_Proof-1.png",
+            "icon_1": "shopify:\/\/shop_images\/stethoscope_doctor_health.png",
+            "icon_text1": "Lorem ipsum dolor sit met",
+            "icon_2": "shopify:\/\/shop_images\/blank_canvas_pattern.png",
+            "icon_text2": "Lorem ipsum dolor sit met",
+            "icon_3": "shopify:\/\/shop_images\/energy_power_electric.png",
+            "icon_text3": "Lorem ipsum dolor sit met",
+            "description": "\"Meet my 4 year old dog, Bailey. She started out as a hyper pup, but as the years went by and as I grew older, she's lost the will to play and run around like she used to.\n<br><br>\nBARE helped my precious Bailey in a lot of ways - she's happier, and never seems to get tired of playing! I highly recommend their kiddle to anyone who has a pet. A must have indeed ♥\"",
+            "reviewer": "John Doe"
+          }
+        }
+      },
+      "block_order": [
+        "e0d59abe-c76e-4067-a6f2-c20041d0ab41",
+        "f2524d16-794c-45d1-88b3-ea11d1a6f7df",
+        "54e597a7-a5a1-43ed-922d-57ff6bb4e876"
+      ],
+      "settings": {
+        "heading": "more stories from our loyal customers",
+        "bg_color": "#2A294F"
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "21e6180d-f2db-4c0c-96c5-4a57ecf02cae"
   ]
 }
