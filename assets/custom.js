@@ -88,6 +88,15 @@
         ]
     });
 
+    jQuery('.js-stories').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false
+    });
+
     jQuery('.js-image-carousel').slick({
         arrows: false,
         dots: false,
