@@ -1,0 +1,383 @@
+{% liquid
+    assign bg_color = section.settings.bg_color
+    assign subheading = section.settings.subheading
+    assign heading = section.settings.heading
+    assign image = section.settings.image
+%}
+
+<div id="module-sub-model-{{ section.id }}" class="module-sub-model">
+    <div class="module-sub-model__wrapper">
+        <div class="module-sub-model__container d-flex">
+            <div class="module-sub-model__container-left">
+                <h3 class="module-sub-model__subheading remove-spacing">{{ subheading }}</h3>
+                <h2 class="module-sub-model__heading remove-spacing">{{ heading }}</h2>
+
+                <div class="module-sub-model__video-container">
+                    <img src="{{ image | image_url }}">
+                </div>
+            </div>
+            <div class="module-sub-model__container-right">
+                {% for block in section.blocks %}
+                    {% liquid
+                        assign about_num = block.settings.about_num
+                        assign about_heading = block.settings.about_heading
+                        assign about_description = block.settings.about_description
+                        assign about_image = block.settings.about_image
+                        assign about_info1 = block.settings.about_info1
+                        assign about_info2 = block.settings.about_info2
+                        assign about_info3 = block.settings.about_info3
+                        assign about_info4 = block.settings.about_info4
+                    %}
+
+                    {% if block.type == 'about-dog' %}
+                        <div class="module-sub-model__model-item">
+                            <div class="model-item__container d-flex">
+                                <div class="model-item__num-container">
+                                    <h2 class="model-item__number remove-spacing text-center">{{ about_num }}</h2>
+                                </div>
+                                <div class="model-item__desc-container">
+                                    <h3 class="model-item__heading remove-spacing">{{ about_heading }}</h3>
+                                    <p class="model-item__description">{{ about_description }}</p>
+                                </div>
+                            </div>
+                            <div class="model-item__infos text-center">
+                                <img src="{{ about_image | image_url }}">
+                                <p class="model-item__about-info1">{{ about_info1 }}</p>
+                                <p class="model-item__about-info2">{{ about_info2 }}</p>
+                                <p class="model-item__about-info3">{{ about_info3 }}</p>
+                                <p class="model-item__about-info4">{{ about_info4 }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-sub-model__wrapper {
+        background-color: {{ bg_color }};
+        padding: 70px 30px;
+    }
+    .module-sub-model__container {
+        max-width: 1280px;
+        margin: auto;
+    }
+    .module-sub-model__subheading {
+        font-size: 18px;
+        line-height: 23px;
+        color: #6bc5b1;
+        font-family: var(--futurabold);
+        margin-bottom: 10px;
+    }
+    .module-sub-model__heading {
+        font-size: 46px;
+        line-height: 50px;
+        color: #ffffff;
+        font-family: var(--gilroybold);
+        margin-bottom: 15px;
+    }
+    .module-sub-model__video-container {
+        background: #fff;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .module-sub-model__video-container img {
+        object-fit: contain;
+        height: 80%;
+    }
+    .module-sub-model__container-left {
+        width: 40%;
+    }
+    .module-sub-model__container-right {
+        width: 60%;
+    }
+    .model-item__heading {
+        font-size: 28px;
+        line-height: 32px;
+        color: #fff;
+        font-family: var(--gilroybold);
+    }
+    .model-item__number {
+        font-size: 41px;
+        line-height: 75px;
+        color: #fff;
+        font-family: var(--gilroyblack);
+        background: #6bc5b1;
+        height: 85px;
+        width: 85px;
+        border-radius: 50px;
+    }
+    .model-item__container {
+        gap: 30px;
+    }
+    .model-item__description {
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+        font-family: var(--gilroyreg);
+    }
+    .model-item__infos img {
+        width: 80%;
+    }
+    .model-item__infos {
+        position: relative;
+    }
+    .model-item__infos p {
+        font-size: 28px;
+        line-height: 32px;
+        color: red;
+        z-index: 1;
+        position: relative;
+    }
+    .model-item__infos p, .model-item__about-info1:after {
+        height: 200px;
+        width: 400px;
+        object-fit: contain;
+    }
+    {% comment %} .model-item__about-info1:after {
+        position: absolute;
+        background-image: url('//cdn.shopify.com/s/files/1/0613/8406/5197/files/Union_2.png?v=1685616971');
+        background-size: 100%;
+        content: "";
+        z-index: -1;
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 0;
+    } {% endcomment %}
+</style>
+
+{% schema %}
+  {
+    "name": "Module Subscription Model",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color",
+            "default": "#2A294F"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Lorem Ipsum"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "lorem ipsum dolor"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "about-dog",
+            "name": "About Dog",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "about_num",
+                    "label": "Number",
+                    "default": "1"
+                },
+                {
+                    "type": "text",
+                    "id": "about_heading",
+                    "label": "Heading",
+                    "default": "lorem ipsum dolor"
+                },
+                {
+                    "type": "textarea",
+                    "id": "about_description",
+                    "label": "Description",
+                    "default": "lorem ipsum dolor sit met"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "about_image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "about_info1",
+                    "label": "Info 1",
+                    "default": "lorem ipsum"
+                },
+                {
+                    "type": "text",
+                    "id": "about_info2",
+                    "label": "Info 2",
+                    "default": "lorem ipsum"
+                },
+                {
+                    "type": "text",
+                    "id": "about_info3",
+                    "label": "Info 3",
+                    "default": "lorem ipsum"
+                },
+                {
+                    "type": "text",
+                    "id": "about_info4",
+                    "label": "Info 5",
+                    "default": "lorem ipsum"
+                }
+            ]
+        },
+        {
+            "type": "choose-option",
+            "name": "Choose Option",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "choose_number",
+                    "label": "Number",
+                    "default": "2"
+                },
+                {
+                    "type": "text",
+                    "id": "choose_heading",
+                    "label": "Heading",
+                    "default": "lorem ipsum dolor"
+                },
+                {
+                    "type": "textarea",
+                    "id": "choose_description",
+                    "label": "Description",
+                    "default": "lorem ipsum solor sit met"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "choose_image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "choose_info",
+                    "label": "Info",
+                    "default": "lorem ipsum"
+                }
+            ]
+        },
+        {
+            "type": "subscribe-save",
+            "name": "Subscribe and Save",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "subscribe_number",
+                    "label": "Number",
+                    "default": "3"
+                },
+                {
+                    "type": "text",
+                    "id": "subscribe_heading",
+                    "label": "Heading",
+                    "default": "lorem ipsum dolor"
+                },
+                {
+                    "type": "textarea",
+                    "id": "subscribe_description",
+                    "label": "Description",
+                    "default": "lorem ipsum solor sit met"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "subscribe_image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "subscribe_info",
+                    "label": "Info",
+                    "default": "lorem ipsum"
+                }
+            ]
+        },
+        {
+            "type": "relax",
+            "name": "Relax",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "relax_number",
+                    "label": "Number",
+                    "default": "4"
+                },
+                {
+                    "type": "text",
+                    "id": "relax_heading",
+                    "label": "Heading",
+                    "default": "lorem ipsum dolor"
+                },
+                {
+                    "type": "textarea",
+                    "id": "relax_description",
+                    "label": "Description",
+                    "default": "lorem ipsum solor sit met"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "relax_image",
+                    "label": "Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "relax_icon1",
+                    "label": "Icon 1"
+                },
+                {
+                    "type": "text",
+                    "id": "relax_info1",
+                    "label": "Relax Info 1",
+                    "default": "lorem ipsum"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "relax_icon2",
+                    "label": "Icon 2"
+                },
+                {
+                    "type": "text",
+                    "id": "relax_info2",
+                    "label": "Relax Info 2",
+                    "default": "lorem ipsum"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "relax_icon3",
+                    "label": "Icon 3"
+                },
+                {
+                    "type": "text",
+                    "id": "relax_info3",
+                    "label": "Relax Info 3",
+                    "default": "lorem ipsum"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Subscription Model",
+        "category": "info"
+      }
+    ]
+  }
+{% endschema %}
