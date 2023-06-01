@@ -4,8 +4,8 @@
   
 <div id="module-ingredients__{{ section.id }}" class="section module-ingredients" style="background: {{ background_color }};">
 
-    <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/download_2.png?v=1685525680" alt="Decor" style="background-color: #f9cf4f; display: block;">
-    <div class="module-ingredients__container page-width d-flex">
+    <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Sliced_top_-_Comparison_chart_benefits.png?v=1685603737" alt="Decor" style="background-color: #f9cf4f; display: block;">
+    <div class="module-ingredients__container d-flex">
         {%- for block in section.blocks -%}
             {%liquid
                 assign heading = block.settings.heading
@@ -19,38 +19,51 @@
         {%- endfor -%}
     </div>
 
-    <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/download_1.png?v=1685525680" alt="Decor" style="background-color: #fcfcff; display: block;">
+    <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Sliced_bottom_-_Comparison_chart_benefits.png?v=1685603738" alt="Decor" style="background-color: #fcfcff; display: block;">
 
 </div>
 
 <style>
     .module-ingredients__container {
-        gap: 15px;
+        gap: 50px;
         justify-content: space-between;
         align-items: center;
         height: 100%;
         padding-top: 30px;
         padding-bottom: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .module-ingredients__heading {
         font-family: var(--gilroybold);
-        font-size: 26px;
+        font-size: 34px;
         margin-bottom: 1rem;
     }
 
+    .module-ingredients .module-top-decor, .module-ingredients .module-bottom-decor {
+        height: 220px;
+    }
+
+    .module-ingredients__item:nth-child(1) {
+        margin-top: -8%;
+    }
 
     .module-ingredients__item:nth-child(2) {
+        margin-top: -10%;
+    }
+
+    .module-ingredients__item:nth-child(3) {
         margin-top: -6%;
     }
 
     .module-ingredients__item:nth-child(4) {
-        margin-bottom: -8%;
+        margin-top: -2%;
     }
 
     .module-ingredients__item:nth-child(5) {
-        margin-bottom: -6%;
-    }
+        margin-top: -4%;
+    } 
 
     .module-ingredients__item {
         z-index: 2;
@@ -85,6 +98,10 @@
           background-position: 0 365px, 90% 390px, center;
           background-size: 260px, 55px, 128%;
       }
+
+      .module-ingredients__heading {
+        font-size: 24px;
+      }
     }
 </style>
 
@@ -98,7 +115,7 @@
             "type": "color",
             "id": "background_color",
             "label": "Background Color",
-            "default": "#2a294f"
+            "default": "#2B2A51"
         }
     ],
     "max_blocks": 5,
