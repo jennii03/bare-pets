@@ -1,0 +1,87 @@
+{%liquid
+    assign background_color = section.settings.background_color
+%}
+
+<div id="module-logo-list__{{ section.id }}" class="module-logo-list" style="background: {{ background_color }};">
+    <div class="module-logo-list__container page-width d-flex">
+        {% for block in section.blocks %}
+            {%liquid
+                assign logo = block.settings.logo
+            %}
+            {% if logo != blank %}
+            <div class="module-logo-list__item flex-basis-100">
+                <img src="{{ logo | image_url }}" class="module-logo-list__image">
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .module-logo-list {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .module-logo-list__item img {
+        display: block;
+        margin-inline: auto;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    @media screen and (max-width: 768px) {
+        .module-logo-list__container {
+            flex-wrap: wrap;
+            gap: 0;
+            justify-content: center;
+        }
+
+        .module-logo-list__item {
+            flex-basis: calc(33.333% - 20px);
+            margin: 10px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .module-logo-list__item {
+            flex-basis: calc(50% - 20px);
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Logo List",
+    "class": "module",
+    "settings": [
+            {
+                "type": "color",
+                "id": "background_color",
+                "label": "Background Color",
+                "default": "#E0E0EC"
+            }
+    ],
+    "max_blocks": 8,
+    "blocks": [
+        {
+            "type": "logo",
+            "name": "Logo",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "logo",
+                    "label": "Logo"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Logo List",
+        "category": "image"
+      }
+    ]
+  }
+{% endschema %}
