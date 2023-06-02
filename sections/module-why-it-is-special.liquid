@@ -10,12 +10,12 @@
 
 <div id="module-why-special__{{ section.id }}" class="section module-why-special" style="background: {{ background_color }};">
     {% if subheading != blank or heading != blank %}
-      <div class="module-why-special__heading text-center page-width">
+      <div class="module-why-special__heading text-center">
             <h3 class="text-yellow remove-spacing subheading">{{ subheading }}</h3>
             <h2 class="text-light remove-spacing section--heading">{{ heading }}</h2>
       </div>
     {% endif %}
-    <div class="module-why-special__container page-width d-flex">
+    <div class="module-why-special__container d-flex">
         <div class="module-why-special__left">
           {% for block in section.blocks %}
             {%liquid
