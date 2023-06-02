@@ -332,7 +332,7 @@
         "3fc31072-b9b5-4838-9d31-18f6ddd74c83"
       ],
       "custom_css": [
-        ".module-bottom-decor {width: 100%;}"
+        "img.module-bottom-decor {width: 100%; background: transparent!important;}"
       ],
       "settings": {
         "background_color": "#eb5b56",
