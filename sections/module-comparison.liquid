@@ -4,8 +4,11 @@
     assign description = section.settings.description
     assign button = section.settings.comparison_button
     assign links = section.settings.comparison_button_link
-    assign description-color = section.settings.testimonial_comparison_desc-color
-    assign product_image = section.settings.comparison_product
+    assign heading_color = section.settings.heading_color
+    assign subheading_color = section.settings.subheading_color
+    assign border_color = section.settings.border_color
+    assign col_highlight_bg = section.settings.col_highlight_bg
+    assign colhight_txt_color = section.settings.colhight_txt_color
   %}
 <section id="{{ section.id }}" class="module module-comparison-wrapper">
   <div class="module page-width">
@@ -146,11 +149,11 @@
       </div>
 
 
-
-      <div class="module-comparison_button text-center">
-        <a href="{{ links }}" class="module-comparison_button-link btn btn--primary">{{ button }}
-        </a>
-      </div>
+      {% if button != blank %}
+        <div class="module-comparison_button text-center">
+          <a href="{{ links }}" class="module-comparison_button-link btn btn--primary">{{ button }}</a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -190,7 +193,32 @@
         "type": "color",
         "id": "comparison-bg-color",
         "label": "Background Color",
-        "default": "#fff"
+        "default": "#f9cf4f"
+      }, {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color",
+        "default": "#2a294f"
+      }, {
+        "type": "color",
+        "id": "subheading_color",
+        "label": "Subheading Color",
+        "default": "#EB5B56"
+      }, {
+        "type": "color",
+        "id": "border_color",
+        "label": "border Color",
+        "default": "#2a294f"
+      }, {
+        "type": "color",
+        "id": "col_highlight_bg",
+        "label": "Column Highlight BG",
+        "default": "#2a294f"
+      }, {
+        "type": "color",
+        "id": "colhight_txt_color",
+        "label": "hiighlighted Column Text Color",
+        "default": "#6DC5B1"
       }
     ],
     "max_blocks": 16,
@@ -341,6 +369,21 @@
 {% endschema %}
 
 {% style %}
+.module-comparison_heading,
+.module-comparison_description,
+.module-comparison_table .comparison_title strong,
+.petchola_enable p, .pedigree_enable p,
+.value_enable p, .euka_enable p,
+.onijen_enable p, .taste_enable p,
+.acana_enable p{
+  color: {{ heading_color }};
+}
+
+.mobile__slider .root_by_hudson {
+  background-color: {{ col_highlight_bg }};
+  border-color: {{ col_highlight_bg }};
+}
+
 .module-comparison_table table:not([class]) th {
     padding: 0 1em;
     border: none;
@@ -364,7 +407,7 @@
 .bare_enabled p {
     font-size: 14px;
     line-height: 17px;
-    color: #6DC5B1;
+    color: {{ colhight_txt_color }};
     text-align: center;
     font-family: var(--gilroybold);
 }
@@ -372,7 +415,6 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #3B3F3F;
     font-family: var(--gilroybold);
 }
 
@@ -395,7 +437,6 @@
   .module-comparison_heading {
     font-size: 46px;
     line-height: 50px;
-    color: #2a294f;
     font-family: var(--gilroybold);
     margin-bottom: 10px;
     }
@@ -411,7 +452,7 @@
     .module-comparison_subheading {
         font-size: 18px;
         line-height: 23px;
-        color: #EB5B56;
+        color: {{ subheading_color }};
         margin-bottom: 10px;
         font-family: var(--futurabold);
     }
@@ -419,7 +460,6 @@
     .module-comparison_description {
         font-size: 16px;
         line-height: 21px;
-        color: #2a294f;
         font-family: var(--gilroyreg);
     }
 
@@ -448,7 +488,7 @@
   }
 
   .module-comparison_table tbody tr td {
-    border-bottom: 1px solid #2a294f;
+    border-bottom: 1px solid {{ border_color }};
   }
 
   .module-comparison_table th,
@@ -470,7 +510,6 @@
     font-family: var(--gilroybold);
     font-size: 14px;
     line-height: 17px;
-    color: #2A294F;
   }
 
   .module-comparison_table td.bare_enabled,
@@ -492,8 +531,8 @@
 
   .module-comparison_table thead th.bare_pets,
   .module-comparison_table tbody td.bare_enabled {
-    background-color: #2a294f;
-    border-color: #2a294f;
+    background-color: {{ col_highlight_bg }};
+    border-color: {{ col_highlight_bg }};
   }
 
   .module-comparison_table thead th.bare_pets {
@@ -525,7 +564,7 @@
   .module-comparison_table tr:last-of-type td.bare_enabled:after {
     content: '';
     display: block;
-    background-color: #2a294f;
+    background-color: {{ col_highlight_bg }};
     height: 10px;
     width: 100%;
     position: absolute;
