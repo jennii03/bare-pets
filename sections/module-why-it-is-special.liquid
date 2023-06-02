@@ -1,183 +1,90 @@
+{{ 'module-why-it-is-special.css' | asset_url | stylesheet_tag }}
+
 {%liquid
     assign background_color = section.settings.background_color
+    assign subheading = section.settings.subheading
+    assign heading = section.settings.heading
+    assign original_image = section.settings.original_image
+    assign modified_image = section.settings.modified_image
 %}
 
 <div id="module-why-special__{{ section.id }}" class="section module-why-special" style="background: {{ background_color }};">
-    <div class="module-why-special__container page-width">
-        <figure class="cd-image-container">
-            <img src="https://source.unsplash.com/KbR06h9dNQw/768x460" alt="Original Image">
+    {% if subheading != blank or heading != blank %}
+      <div class="module-why-special__heading text-center page-width">
+            <h3 class="text-yellow remove-spacing subheading">{{ subheading }}</h3>
+            <h2 class="text-light remove-spacing section--heading">{{ heading }}</h2>
+      </div>
+    {% endif %}
+    <div class="module-why-special__container page-width d-flex">
+        <div class="module-why-special__left">
+          {% for block in section.blocks %}
+            {%liquid
+                assign left_icon = block.settings.left_icon
+                assign left_subheading = block.settings.left_subheading
+                assign left_heading = block.settings.left_heading
+                assign left_description = block.settings.left_description
+            %}
+            {% if block.type == 'left_info' %}
+                <div class="module-why-special__left-item">
+                    <div class="module-why-special__column-heading d-flex">
+                        {% if left_icon != blank %}
+                          <div class="module-why-special__icon">
+                              <img src="{{ left_icon | img_url: 'master' }}" alt="{{ left_icon.alt }}" width="75" height="75">
+                          </div>
+                        {% endif %}
+                        <h3 class="text-yellow remove-spacing subheading">{{ left_subheading }}</h3>
+                    </div>
+                    <h4 class="module-why-special__left-heading remove-spacing text-light">{{ left_heading }}</h4>
+                    {% if left_description != blank %}
+                        <p class="module-why-special__left-description remove-spacing text-light">{{ left_description }}</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        
+        <div class="module-why-special__middle">
+          <figure class="cd-image-container">
+            <img src="{{ original_image | img_url: 'master' }}" alt="{{ original_image.alt }}">
             <span class="cd-image-label" data-type="original">Crowded</span>
-          
             <div class="cd-resize-img">
               <!-- the resizable image on top -->
-              <img src="https://source.unsplash.com/jFCViYFYcus/768x460" alt="Modified Image">
+              <img src="{{ modified_image | img_url: 'master' }}" alt="{{ modified_image.alt }}">
               <span class="cd-image-label" data-type="modified">Quiet</span>
             </div>
           
             <span class="cd-handle"></span>
           </figure>
+        </div>
+
+        <div class="module-why-special__right">
+          {% for block in section.blocks %}
+            {%liquid
+                assign right_icon = block.settings.right_icon
+                assign right_subheading = block.settings.right_subheading
+                assign right_heading = block.settings.right_heading
+                assign right_description = block.settings.right_description
+            %}
+            {% if block.type == 'right_info' %}
+                <div class="module-why-special__right-item">
+                    <div class="module-why-special__column-heading d-flex">
+                        {% if right_icon != blank %}
+                          <div class="module-why-special__icon">
+                              <img src="{{ right_icon | img_url: 'master' }}" alt="{{ right_icon.alt }}" width="75" height="75">
+                          </div>
+                        {% endif %}
+                        <h3 class="text-yellow remove-spacing subheading">{{ right_subheading }}</h3>
+                    </div>
+                    <h4 class="module-why-special__right-heading remove-spacing text-light">{{ right_heading }}</h4>
+                    {% if right_description != blank %}
+                        <p class="module-why-special__right-description remove-spacing text-light">{{ right_description }}</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+          {% endfor %}
+        </div>
     </div>
 </div>
-
-<style>
-
-html,
-body {
-    overflow-x: hidden;
-}
-
-.cd-image-container {
-    position: relative;
-    width: 90%;
-    max-width: 768px;
-    margin: 0em auto;
-  }
-  .cd-image-container img {
-    display: block;
-  }
-  
-  .cd-image-label {
-    position: absolute;
-    font-weight: 500;
-    letter-spacing: 1px;
-    top: 0;
-    right: 0;
-    color: #ffffff;
-    padding: 1em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    -moz-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    -o-transform: translateY(20px);
-    transform: translateY(20px);
-    -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0.3s 0.7s;
-    -moz-transition: -moz-transform 0.3s 0.7s, opacity 0.3s 0.7s;
-    transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
-  }
-  .cd-image-label.is-hidden {
-    visibility: hidden;
-  }
-  .is-visible .cd-image-label {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-  
-  .cd-resize-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    overflow: hidden;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .cd-resize-img img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    height: 100%;
-    width: auto;
-    max-width: none;
-  }
-  .cd-resize-img .cd-image-label {
-    right: auto;
-    left: 0;
-  }
-  .is-visible .cd-resize-img {
-    width: 50%;
-    /* bounce in animation of the modified image */
-    -webkit-animation: cd-bounce-in 0.7s;
-    -moz-animation: cd-bounce-in 0.7s;
-    animation: cd-bounce-in 0.7s;
-  }
-  
-  @-webkit-keyframes cd-bounce-in {
-    0% {
-      width: 0;
-    }
-    60% {
-      width: 55%;
-    }
-    100% {
-      width: 50%;
-    }
-  }
-  @-moz-keyframes cd-bounce-in {
-    0% {
-      width: 0;
-    }
-    60% {
-      width: 55%;
-    }
-    100% {
-      width: 50%;
-    }
-  }
-  @keyframes cd-bounce-in {
-    0% {
-      width: 0;
-    }
-    60% {
-      width: 55%;
-    }
-    100% {
-      width: 50%;
-    }
-  }
-  .cd-handle {
-    position: absolute;
-    height: 44px;
-    width: 44px;
-    /* center the element */
-    left: 50%;
-    top: 50%;
-    margin-left: -22px;
-    margin-top: -22px;
-    border-radius: 50%;
-    background: #000000
-      url("https://images.clickfunnels.com/09/a714400d3211e7a0bd7d7140585054/cd-arrows.svg")
-      no-repeat center center;
-    cursor: move;
-    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0) scale(0);
-    -moz-transform: translate3d(0, 0, 0) scale(0);
-    -ms-transform: translate3d(0, 0, 0) scale(0);
-    -o-transform: translate3d(0, 0, 0) scale(0);
-    transform: translate3d(0, 0, 0) scale(0);
-  }
-  .cd-handle.draggable {
-    /* change background color when element is active */
-    background-color: #445b7c;
-  }
-  .is-visible .cd-handle {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0) scale(1);
-    -moz-transform: translate3d(0, 0, 0) scale(1);
-    -ms-transform: translate3d(0, 0, 0) scale(1);
-    -o-transform: translate3d(0, 0, 0) scale(1);
-    transform: translate3d(0, 0, 0) scale(1);
-    -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
-    -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
-    transition: transform 0.3s 0.7s, opacity 0s 0.7s;
-  }
-
-</style>
 
 {% schema %}
   {
@@ -189,26 +96,88 @@ body {
             "id": "background_color",
             "label": "Background Color",
             "default": "#2B2A51"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading (optional)",
+          "default": "Why it's so special"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading (optional)",
+          "default": "only the gooood stuff"
+        },
+        {
+          "type": "image_picker",
+          "id": "original_image",
+          "label": "Original Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "modified_image",
+          "label": "Modified Image"
         }
     ],
-    "max_blocks": 5,
+    "max_blocks": 4,
     "blocks": [
         {
-            "name": "Text",
-            "type": "text",
+            "name": "Left Info",
+            "type": "left_info",
             "settings": [
                 {
+                  "type": "image_picker",
+                  "id": "left_icon",
+                  "label": "Icon"
+                },
+                {
+                  "type": "text",
+                  "id": "left_subheading",
+                  "label": "Subheading",
+                  "default": "Natural"
+                },
+                {
                     "type": "text",
-                    "id": "heading",
+                    "id": "left_heading",
                     "label": "Heading",
-                    "default": "first ingredient"
+                    "default": "real meat as the 1st ingredient always"
                 },
                 {
                     "type": "textarea",
-                    "id": "description",
+                    "id": "left_description",
                     "label": "Description",
-                    "default": "Fresh cicken is an excellent source of high-quality protein source."
+                    "default": "with quality protein source, fresh veggies, superfood, and added vitamins and minerals"
                 }
+            ]
+        },
+        {
+            "name": "Right Info",
+            "type": "right_info",
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "right_icon",
+                "label": "Icon"
+              },
+              {
+                "type": "text",
+                "id": "right_subheading",
+                "label": "Subheading",
+                "default": "Natural"
+              },
+              {
+                  "type": "text",
+                  "id": "right_heading",
+                  "label": "Heading",
+                  "default": "real meat as the 1st ingredient always"
+              },
+              {
+                  "type": "textarea",
+                  "id": "right_description",
+                  "label": "Description",
+                  "default": "with quality protein source, fresh veggies, superfood, and added vitamins and minerals"
+              }
             ]
         }
     ],
