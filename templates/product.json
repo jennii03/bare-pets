@@ -285,6 +285,61 @@
         "legend_text_second": "previous food"
       }
     },
+    "b28bb169-b1c3-4c4a-b308-37c5d031e911": {
+      "type": "module-ingredients",
+      "blocks": {
+        "04f8f128-35b0-4854-996b-0d4367bb1d95": {
+          "type": "text",
+          "settings": {
+            "heading": "first <br> ingredient",
+            "description": "Fresh cicken is an excellent source of high-quality protein source."
+          }
+        },
+        "4228b407-9f5e-4796-a9dd-8cba38dc32cf": {
+          "type": "text",
+          "settings": {
+            "heading": "flavoring",
+            "description": "Dogs tend to enjoy the taste of chicken, making it a popular ingredient in many dog foods."
+          }
+        },
+        "63cdf995-3a9b-4cc4-b1f5-93ce316d9d21": {
+          "type": "text",
+          "settings": {
+            "heading": "amount of <br> meat shown",
+            "description": "Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        },
+        "14025e3b-c7de-43dc-93fb-4a929161e6a1": {
+          "type": "text",
+          "settings": {
+            "heading": "probiotics",
+            "description": "These supplements can help improve digestion, boost the immune system, and improve skin and coat health."
+          }
+        },
+        "3fc31072-b9b5-4838-9d31-18f6ddd74c83": {
+          "type": "text",
+          "settings": {
+            "heading": "vitamins <br>& minerals",
+            "description": "Chicken is a great source of B vitamins, iron, and zinc all essential elements for healthy dogs."
+          }
+        }
+      },
+      "block_order": [
+        "04f8f128-35b0-4854-996b-0d4367bb1d95",
+        "4228b407-9f5e-4796-a9dd-8cba38dc32cf",
+        "63cdf995-3a9b-4cc4-b1f5-93ce316d9d21",
+        "14025e3b-c7de-43dc-93fb-4a929161e6a1",
+        "3fc31072-b9b5-4838-9d31-18f6ddd74c83"
+      ],
+      "custom_css": [
+        ".module-bottom-decor {background-color: red!important;}"
+      ],
+      "settings": {
+        "background_color": "#eb5b56",
+        "top_decor": "shopify:\/\/shop_images\/image.webp",
+        "bot_decor": "shopify:\/\/shop_images\/image_1.webp"
+      }
+    },
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae": {
       "type": "module-stories",
       "blocks": {
@@ -400,6 +455,7 @@
     "b6b8eec1-04da-4865-8787-3809fbbb32c9",
     "e71da2e2-6927-4f25-b9fa-74046a6516e3",
     "7e947fd1-c14c-4ec1-a376-9bd653c19412",
+    "b28bb169-b1c3-4c4a-b308-37c5d031e911",
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae",
     "d1836111-80f7-493e-9f97-aeb8c1c0d691",
     "7779a1dd-d14c-48b3-b813-bbb544c058a4"
