@@ -508,10 +508,10 @@
         "comparison_button_link": "",
         "comparison-bg-color": "#2a294f",
         "heading_color": "#ffffff",
-        "subheading_color": "#fff",
-        "border_color": "#fff",
+        "subheading_color": "#ffffff",
+        "border_color": "#ffffff",
         "col_highlight_bg": "#eb5b56",
-        "colhight_txt_color": "#fff"
+        "colhight_txt_color": "#ffffff"
       }
     },
     "b28bb169-b1c3-4c4a-b308-37c5d031e911": {
@@ -566,7 +566,9 @@
       "settings": {
         "background_color": "#eb5b56",
         "top_decor": "shopify:\/\/shop_images\/image.webp",
-        "bot_decor": "shopify:\/\/shop_images\/image_1.webp"
+        "bot_decor": "shopify:\/\/shop_images\/image_1.webp",
+        "top_bg_color": "#2a294f",
+        "bot_bg_color": "#2a294f"
       }
     },
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae": {
