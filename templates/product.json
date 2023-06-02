@@ -279,7 +279,7 @@
       ],
       "settings": {
         "background_color": "#e0e0ec",
-        "heading": "first time trying bare?",
+        "heading": "first time <br>trying <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0613\/8406\/5197\/files\/logo.png?v=1678962502\" width=\"140\">?",
         "description": "Say goodbye to upset stomachs when switching your doggo over from another brand of food. Simply replace their old food with the of bare kibble as shown above over 10 days. <br><br> After 10 days you'll be set for life with no tummy troubles. It's that bare simple!",
         "legend_text_first": "bare food",
         "legend_text_second": "previous food"
@@ -344,8 +344,8 @@
     "d1836111-80f7-493e-9f97-aeb8c1c0d691": {
       "type": "module-money-back",
       "settings": {
-        "bg_color": "#FFFFFF",
-        "sh_color": "#6DC5B1",
+        "bg_color": "#ffffff",
+        "sh_color": "#6dc5b1",
         "color": "#2a294d",
         "image": "shopify:\/\/shop_images\/cropped-view-of-man-feeding-golden-retriever-from-2021-08-29-22-51-29-utc.png",
         "subheading": "MONEY-BACK GUARANTEE",
