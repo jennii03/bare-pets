@@ -1,10 +1,16 @@
 {%liquid
     assign background_color = section.settings.background_color
+    assign top_decor = section.settings.top_decor
+    assign bot_decor = section.settings.bot_decor
 %}
   
 <div id="module-ingredients__{{ section.id }}" class="section module-ingredients" style="background: {{ background_color }};">
 
-    <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Sliced_top_-_Comparison_chart_benefits.png?v=1685603737" alt="Decor" style="background-color: #f9cf4f; display: block;">
+    {% if top_decor != blank %}
+        <img class="module-bottom-decor" src="{{ top_decor | image_url }}" alt="Decor" style="background-color: #f9cf4f; display: block;">
+    {% else %}
+        <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Sliced_top_-_Comparison_chart_benefits.png?v=1685603737" alt="Decor" style="background-color: #f9cf4f; display: block;">
+    {% endif %}
     <div class="module-ingredients__container d-flex">
         {%- for block in section.blocks -%}
             {%liquid
@@ -18,9 +24,11 @@
             </div>
         {%- endfor -%}
     </div>
-
-    <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Sliced_bottom_-_Comparison_chart_benefits.png?v=1685603738" alt="Decor" style="background-color: #fcfcff; display: block;">
-
+    {% if bot_decor != blank %}
+        <img class="module-bottom-decor" src="{{ bot_decor | image_url }}" alt="Decor" style="background-color: #fcfcff; display: block;">
+    {% else %}
+        <img class="module-bottom-decor" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Sliced_bottom_-_Comparison_chart_benefits.png?v=1685603738" alt="Decor" style="background-color: #fcfcff; display: block;">
+    {% endif %}
 </div>
 
 <style>
@@ -112,6 +120,16 @@
             "id": "background_color",
             "label": "Background Color",
             "default": "#2B2A51"
+        },
+        {
+            "type": "image_picker",
+            "id": "top_decor",
+            "label": "Top Decor"
+        },
+        {
+            "type": "image_picker",
+            "id": "bot_decor",
+            "label": "Bottom Decor"
         }
     ],
     "max_blocks": 5,
