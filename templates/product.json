@@ -181,6 +181,60 @@
         "background_color": "#E0E0EC"
       }
     },
+    "e71da2e2-6927-4f25-b9fa-74046a6516e3": {
+      "type": "module-why-it-is-special",
+      "blocks": {
+        "cbb3d942-84ab-4dce-873e-56285f5427c5": {
+          "type": "left_info",
+          "settings": {
+            "left_icon": "shopify:\/\/shop_images\/Group_3233.png",
+            "left_subheading": "Natural",
+            "left_heading": "real meat as the 1st ingredient always",
+            "left_description": "with quality protein source, fresh veggies, superfood, and added vitamins and minerals"
+          }
+        },
+        "8ab32e22-9d38-4f91-9cf9-96ea7aa3ca2b": {
+          "type": "left_info",
+          "settings": {
+            "left_icon": "shopify:\/\/shop_images\/Group_3262.png",
+            "left_subheading": "Natural",
+            "left_heading": "real meat as the 1st ingredient always",
+            "left_description": "with quality protein source, fresh veggies, superfood, and added vitamins and minerals"
+          }
+        },
+        "aa6af382-68ec-438e-b7f4-d9b065bdb571": {
+          "type": "right_info",
+          "settings": {
+            "right_icon": "shopify:\/\/shop_images\/Group_1560.png",
+            "right_subheading": "Natural",
+            "right_heading": "real meat as the 1st ingredient always",
+            "right_description": "with quality protein source, fresh veggies, superfood, and added vitamins and minerals"
+          }
+        },
+        "fb41eaea-5456-4ee2-937f-ca330c2def69": {
+          "type": "right_info",
+          "settings": {
+            "right_icon": "shopify:\/\/shop_images\/Group_1555.png",
+            "right_subheading": "Natural",
+            "right_heading": "real meat as the 1st ingredient always",
+            "right_description": "with quality protein source, fresh veggies, superfood, and added vitamins and minerals"
+          }
+        }
+      },
+      "block_order": [
+        "cbb3d942-84ab-4dce-873e-56285f5427c5",
+        "8ab32e22-9d38-4f91-9cf9-96ea7aa3ca2b",
+        "aa6af382-68ec-438e-b7f4-d9b065bdb571",
+        "fb41eaea-5456-4ee2-937f-ca330c2def69"
+      ],
+      "settings": {
+        "background_color": "#2B2A51",
+        "subheading": "Why it's so special",
+        "heading": "only the gooood stuff",
+        "original_image": "shopify:\/\/shop_images\/sample-image.jpg",
+        "modified_image": "shopify:\/\/shop_images\/sample-image-2.jpg"
+      }
+    },
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae": {
       "type": "module-stories",
       "blocks": {
@@ -242,6 +296,7 @@
     "main",
     "product-recommendations",
     "b6b8eec1-04da-4865-8787-3809fbbb32c9",
+    "e71da2e2-6927-4f25-b9fa-74046a6516e3",
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae"
   ]
 }
