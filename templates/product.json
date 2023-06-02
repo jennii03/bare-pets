@@ -178,7 +178,7 @@
         "f92a99d5-3e28-43de-9b3c-ca76d069a01a"
       ],
       "settings": {
-        "background_color": "#E0E0EC"
+        "background_color": "#e0e0ec"
       }
     },
     "e71da2e2-6927-4f25-b9fa-74046a6516e3": {
@@ -228,7 +228,7 @@
         "fb41eaea-5456-4ee2-937f-ca330c2def69"
       ],
       "settings": {
-        "background_color": "#2B2A51",
+        "background_color": "#2b2a51",
         "subheading": "Why it's so special",
         "heading": "only the gooood stuff",
         "original_image": "shopify:\/\/shop_images\/sample-image.jpg",
@@ -278,7 +278,7 @@
         "de8b0a3b-ccea-4c0a-951a-9a3d35a2dd1f"
       ],
       "settings": {
-        "background_color": "#E0E0EC",
+        "background_color": "#e0e0ec",
         "heading": "first time trying bare?",
         "description": "Say goodbye to upset stomachs when switching your doggo over from another brand of food. Simply replace their old food with the of bare kibble as shown above over 10 days. <br><br> After 10 days you'll be set for life with no tummy troubles. It's that bare simple!",
         "legend_text_first": "bare food",
@@ -340,6 +340,58 @@
         "heading": "more stories from our loyal customers",
         "bg_color": "#2a294f"
       }
+    },
+    "d1836111-80f7-493e-9f97-aeb8c1c0d691": {
+      "type": "module-money-back",
+      "settings": {
+        "bg_color": "#FFFFFF",
+        "sh_color": "#6DC5B1",
+        "color": "#2a294d",
+        "image": "shopify:\/\/shop_images\/cropped-view-of-man-feeding-golden-retriever-from-2021-08-29-22-51-29-utc.png",
+        "subheading": "MONEY-BACK GUARANTEE",
+        "heading": "not satisfied with your new meal plan?",
+        "description": "Learn about how we guarantee you dog's meal time satisfaction",
+        "btn_text": "OUR GUARANTEE",
+        "btn_link": ""
+      }
+    },
+    "7779a1dd-d14c-48b3-b813-bbb544c058a4": {
+      "type": "module-FAQ",
+      "blocks": {
+        "3a428806-6f6a-44e3-ab30-da0b9729b0bf": {
+          "type": "faq_left",
+          "settings": {
+            "faq_question_left": "Why dog kibble?",
+            "faq_answer_left": "Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble."
+          }
+        },
+        "73c19ad0-727e-4d3f-ab5b-a4595a7fea04": {
+          "type": "faq_left",
+          "settings": {
+            "faq_question_left": "Who formulates bare kibbble?",
+            "faq_answer_left": "Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble."
+          }
+        },
+        "0047871c-6124-4ec2-b834-11a652a05754": {
+          "type": "faq_left",
+          "settings": {
+            "faq_question_left": "Does bare meet AAFCO guidelines?",
+            "faq_answer_left": "Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble."
+          }
+        }
+      },
+      "block_order": [
+        "3a428806-6f6a-44e3-ab30-da0b9729b0bf",
+        "73c19ad0-727e-4d3f-ab5b-a4595a7fea04",
+        "0047871c-6124-4ec2-b834-11a652a05754"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Base.png",
+        "heading_color": "#2a294f",
+        "heading": "Lorem ipsum dolor",
+        "btn_text": "View All FAQs",
+        "btn_link": ""
+      }
     }
   },
   "order": [
@@ -348,6 +400,8 @@
     "b6b8eec1-04da-4865-8787-3809fbbb32c9",
     "e71da2e2-6927-4f25-b9fa-74046a6516e3",
     "7e947fd1-c14c-4ec1-a376-9bd653c19412",
-    "21e6180d-f2db-4c0c-96c5-4a57ecf02cae"
+    "21e6180d-f2db-4c0c-96c5-4a57ecf02cae",
+    "d1836111-80f7-493e-9f97-aeb8c1c0d691",
+    "7779a1dd-d14c-48b3-b813-bbb544c058a4"
   ]
 }
