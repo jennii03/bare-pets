@@ -628,7 +628,7 @@ h4,
   font-family: var(--gilroyblack);
   font-style: var(--font-heading-style);
   /* font-size: calc(var(--font-heading-scale) * 1.5rem); */
-  font-size: 32px;
+  font-size: 34px;
 }
 
 h5,
