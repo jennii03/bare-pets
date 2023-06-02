@@ -1,0 +1,166 @@
+{% liquid
+    assign bg_color = section.settings.bg_color
+    assign sh_color = section.settings.sh_color
+    assign color = section.settings.color
+    assign image = section.settings.image
+    assign subheading = section.settings.subheading
+    assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign btn_text = section.settings.btn_text
+    assign btn_link = section.settings.btn_link
+%}
+
+<div id="module-money-back-{{ section.id }}" class="module-money-back">
+    <div class="module-money-back__wrapper">
+        <div class="module-money-back__container d-flex">
+            <div class="module-money-back__button m-show">
+                <a href="{{ btn_link }}" class="module-money-back__button-link btn btn--primary">{{ btn_text }}</a>
+            </div>
+            <div class="module-money-back__img-container">
+                <img src="{{ image | image_url }}">
+            </div>
+            <div class="module-money-back__desc-container">
+                <h4 class="module-money-back__subheading remove-spacing">{{ subheading }}</h4>
+                <h2 class="module-money-back__heading remove-spacing">{{ heading }}</h2>
+                <p class="module-money-back__description">{{ description }}</p>
+
+                <div class="module-money-back__button m-hide">
+                    <a href="{{ btn_link }}" class="module-money-back__button-link btn btn--primary">{{ btn_text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-money-back__wrapper {
+        background: {{ bg_color }};
+        padding: 70px 30px;
+    }
+    .module-money-back__container {
+        max-width: 1280px;
+        margin: auto;
+        gap: 30px;
+        align-items: center;
+    }
+    .module-money-back__img-container, .module-money-back__desc-container {
+        width: 50%;
+    }
+    .module-money-back__img-container img {
+        width: 100%;
+    }
+    .module-money-back__subheading {
+        color: {{ sh_color }};
+        font-size: 18px;
+        line-height: 23px;
+        font-family: var(--futurabold);
+    }
+    .module-money-back__heading, .module-money-back__description {
+        color: {{ color }};
+    }
+    .module-money-back__button .btn--primary {
+        background: #2a294f;
+    }
+    .module-money-back__heading {
+        font-size: 50px;
+        line-height: 52px;
+        font-family: var(--gilroyblack);
+    }
+    .module-money-back__description {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: var(--gilroyreg);
+    }
+    .m-show {
+        display: none;
+    }
+    @media (max-width: 767px) {
+        .m-show {
+            display: block;
+        }
+        .m-hide {
+            display: none;
+        }
+        .module-money-back__container {
+            flex-direction: column-reverse;
+            gap: 0;
+        }
+        .module-money-back__img-container, .module-money-back__desc-container {
+            width: 100%;
+        }
+        .module-money-back__description {
+            margin: 10px 0;
+        }
+        .module-money-back__heading {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Money Back",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "color",
+            "id": "sh_color",
+            "label": "Subheading Color",
+            "default": "#6DC5B1"
+        },
+        {
+            "type": "color",
+            "id": "color",
+            "label": "txt_color",
+            "default": "#2a294d"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "LOREM IPSUM DOLOR"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "lorem ipsum dolor"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "Lorem ipsum dolor sit met"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text",
+            "default": "OUR GUARANTEE"
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Money Back",
+        "category": "cta"
+      }
+    ]
+  }
+{% endschema %}
