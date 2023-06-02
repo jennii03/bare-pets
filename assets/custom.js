@@ -209,5 +209,11 @@
         ]
     });
 
+
+    $(".module-pet-parents__main-image").click(function() {
+        $(".module-pet-parents__video").show();
+        $(".module-pet-parents__image").hide();
+        $(".module-pet-parents__play-icon-main").hide();
+    });
     
 })();
