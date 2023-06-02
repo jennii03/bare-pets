@@ -235,6 +235,56 @@
         "modified_image": "shopify:\/\/shop_images\/sample-image-2.jpg"
       }
     },
+    "7e947fd1-c14c-4ec1-a376-9bd653c19412": {
+      "type": "module-first-time-trying",
+      "blocks": {
+        "8722c9c2-7327-4ba7-87fa-47e532276f0f": {
+          "type": "logo",
+          "settings": {
+            "days": "days 1-3",
+            "logo": "shopify:\/\/shop_images\/Group_3600.png",
+            "progress": "25% bare food"
+          }
+        },
+        "520ebbb8-9666-452e-b036-ac55ddc449b3": {
+          "type": "logo",
+          "settings": {
+            "days": "days 4-6",
+            "logo": "shopify:\/\/shop_images\/Group_3601.png",
+            "progress": "50% bare food"
+          }
+        },
+        "0754a1b2-9f09-41c8-a0cf-0e7cb2b3fb1c": {
+          "type": "logo",
+          "settings": {
+            "days": "days 7-9",
+            "logo": "shopify:\/\/shop_images\/Group_3602.png",
+            "progress": "75% bare food"
+          }
+        },
+        "de8b0a3b-ccea-4c0a-951a-9a3d35a2dd1f": {
+          "type": "logo",
+          "settings": {
+            "days": "days 10+",
+            "logo": "shopify:\/\/shop_images\/Group_3603.png",
+            "progress": "100% bare food"
+          }
+        }
+      },
+      "block_order": [
+        "8722c9c2-7327-4ba7-87fa-47e532276f0f",
+        "520ebbb8-9666-452e-b036-ac55ddc449b3",
+        "0754a1b2-9f09-41c8-a0cf-0e7cb2b3fb1c",
+        "de8b0a3b-ccea-4c0a-951a-9a3d35a2dd1f"
+      ],
+      "settings": {
+        "background_color": "#E0E0EC",
+        "heading": "first time trying bare?",
+        "description": "Say goodbye to upset stomachs when switching your doggo over from another brand of food. Simply replace their old food with the of bare kibble as shown above over 10 days. <br><br> After 10 days you'll be set for life with no tummy troubles. It's that bare simple!",
+        "legend_text_first": "bare food",
+        "legend_text_second": "previous food"
+      }
+    },
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae": {
       "type": "module-stories",
       "blocks": {
@@ -297,6 +347,7 @@
     "product-recommendations",
     "b6b8eec1-04da-4865-8787-3809fbbb32c9",
     "e71da2e2-6927-4f25-b9fa-74046a6516e3",
+    "7e947fd1-c14c-4ec1-a376-9bd653c19412",
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae"
   ]
 }
