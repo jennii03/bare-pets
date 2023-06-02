@@ -111,86 +111,9 @@
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -204,6 +127,58 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
+      }
+    },
+    "b6b8eec1-04da-4865-8787-3809fbbb32c9": {
+      "type": "module-logo-list",
+      "blocks": {
+        "7dab353d-6884-4fc0-885b-4ae14c1d11ff": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Badge_-_Guarantee.png"
+          }
+        },
+        "740de704-9189-4da4-a496-e27ddb3397ac": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Badge_-_Shipping.png"
+          }
+        },
+        "5b441fe8-a871-4518-ad57-2c6c8f3e3e01": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Badge_-_USA_36794c81-81ae-4a50-9849-b46e82378a86.png"
+          }
+        },
+        "f1e7aab6-18c3-41a9-b0a3-9addce99ae3a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Badge_-_AAFCO.png"
+          }
+        },
+        "dc5d3bc2-6440-4e04-bf16-496cfe60bcf3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Badge_-_Checkout.png"
+          }
+        },
+        "f92a99d5-3e28-43de-9b3c-ca76d069a01a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Badge_-_Charity.png"
+          }
+        }
+      },
+      "block_order": [
+        "7dab353d-6884-4fc0-885b-4ae14c1d11ff",
+        "740de704-9189-4da4-a496-e27ddb3397ac",
+        "5b441fe8-a871-4518-ad57-2c6c8f3e3e01",
+        "f1e7aab6-18c3-41a9-b0a3-9addce99ae3a",
+        "dc5d3bc2-6440-4e04-bf16-496cfe60bcf3",
+        "f92a99d5-3e28-43de-9b3c-ca76d069a01a"
+      ],
+      "settings": {
+        "background_color": "#E0E0EC"
       }
     },
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae": {
@@ -259,15 +234,14 @@
       ],
       "settings": {
         "heading": "more stories from our loyal customers",
-        "bg_color": "#2A294F"
+        "bg_color": "#2a294f"
       }
     }
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
     "product-recommendations",
+    "b6b8eec1-04da-4865-8787-3809fbbb32c9",
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae"
   ]
 }
