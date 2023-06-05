@@ -42,17 +42,17 @@
             {% endif %}
           {% endfor %}
         </div>
-        
+       
         <div class="module-why-special__middle">
           <figure class="cd-image-container">
-            <img src="{{ original_image | img_url: 'master' }}" alt="{{ original_image.alt }}">
-            <span class="cd-image-label" data-type="original">Crowded</span>
+            <img src="{{ original_image | img_url: 'master' }}" alt="{{ original_image.alt }}" style="background: {{ background_color }};">
+            <span class="cd-image-label" data-type="original"></span>
             <div class="cd-resize-img">
               <!-- the resizable image on top -->
-              <img src="{{ modified_image | img_url: 'master' }}" alt="{{ modified_image.alt }}">
-              <span class="cd-image-label" data-type="modified">Quiet</span>
+              <img src="{{ modified_image | img_url: 'master' }}" alt="{{ modified_image.alt }}" style="background: {{ background_color }};">
+              <span class="cd-image-label" data-type="modified"></span>
             </div>
-          
+         
             <span class="cd-handle"></span>
           </figure>
         </div>
@@ -111,13 +111,13 @@
         },
         {
           "type": "image_picker",
-          "id": "original_image",
-          "label": "Original Image"
+          "id": "modified_image",
+          "label": "Modified Image"
         },
         {
           "type": "image_picker",
-          "id": "modified_image",
-          "label": "Modified Image"
+          "id": "original_image",
+          "label": "Original Image"
         }
     ],
     "max_blocks": 4,

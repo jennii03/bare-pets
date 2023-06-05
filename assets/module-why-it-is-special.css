@@ -1,27 +1,23 @@
-
 html,
 body {
     overflow-x: hidden;
 }
 
 .module-why-special {
-  padding: 70px 30px;
+  padding-top: 70px;
 }
+
 .module-why-special__heading,
 .module-why-special__container {
   max-width: 1280px;
   margin: auto;
 }
 
-
-
-.module-why-special {
-  padding-top: 70px;
-}
-
 .module-why-special__container {
   justify-content: space-between;
   gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .module-why-special__heading {
@@ -32,9 +28,9 @@ body {
 }
 
 .module-why-special__icon img {
-  width: 75px;
+  width: 60px;
   max-width: 100%;
-  height: 75px;
+  height: 60px;
   max-height: 100%;
   object-fit: contain;
   display: block;
@@ -85,7 +81,7 @@ body {
   .cd-image-container img {
     display: block;
   }
-  
+ 
   .cd-image-label {
     position: absolute;
     font-weight: 500;
@@ -117,7 +113,7 @@ body {
     -o-transform: translateY(0);
     transform: translateY(0);
   }
-  
+ 
   .cd-resize-img {
     position: absolute;
     top: 0;
@@ -146,7 +142,7 @@ body {
     transform: translate(0, -50%);
   }
 
-  
+ 
   .cd-resize-img img {
     position: absolute;
     left: 0;
@@ -167,7 +163,7 @@ body {
     -moz-animation: cd-bounce-in 0.7s;
     animation: cd-bounce-in 0.7s;
   }
-  
+ 
   @-webkit-keyframes cd-bounce-in {
     0% {
       width: 0;
@@ -240,16 +236,35 @@ body {
     transition: transform 0.3s 0.7s, opacity 0s 0.7s;
   }
 
+  @media(max-width: 1340px) {
+    .module .module-first-time {
+      margin-top: -170px;
+    }
+
+    .module .module-first-time__decor-bottom {
+      margin-top: -120px;
+      margin-bottom: -120px;
+    }
+  }
 
   @media(max-width: 1024px) {
+    .module .module-first-time {
+      margin-top: -50px;
+    }
+    .module .module-first-time__decor-bottom {
+      margin-top: -50px;
+    }
+  }
+
+  @media(max-width: 768px) {
     .module-why-special__container {
         flex-direction: column;
     }
-    
+   
     .cd-image-container {
         width: auto;
     }
-    
+   
     .module-why-special__left, .module-why-special__right,
     .module-why-special__middle,
     .module-why-special__heading {
@@ -259,5 +274,20 @@ body {
     .module-why-special__middle {
       order: 3;
       margin-top: 2rem;
+    }
+
+    .module .module-first-time__decor-top {
+      margin-bottom: -20px;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .module .module-first-time__decor-top  {
+      margin-bottom: 50px;
+    }
+
+    .module .module-first-time__decor-bottom {
+      margin-top: 50px;
+      margin-bottom: 0;
     }
   }
