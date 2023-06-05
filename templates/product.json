@@ -129,15 +129,6 @@
         "padding_bottom": 28
       }
     },
-    "490c426a-d5f6-4523-ae19-41647cc9e43a": {
-      "type": "module-text-marquee",
-      "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
-        "text": "simple. honest. nutritious."
-      }
-    },
     "b6b8eec1-04da-4865-8787-3809fbbb32c9": {
       "type": "module-logo-list",
       "blocks": {
@@ -188,6 +179,15 @@
       ],
       "settings": {
         "background_color": "#e0e0ec"
+      }
+    },
+    "490c426a-d5f6-4523-ae19-41647cc9e43a": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
       }
     },
     "e71da2e2-6927-4f25-b9fa-74046a6516e3": {
@@ -692,8 +692,8 @@
   "order": [
     "main",
     "product-recommendations",
-    "490c426a-d5f6-4523-ae19-41647cc9e43a",
     "b6b8eec1-04da-4865-8787-3809fbbb32c9",
+    "490c426a-d5f6-4523-ae19-41647cc9e43a",
     "e71da2e2-6927-4f25-b9fa-74046a6516e3",
     "7e947fd1-c14c-4ec1-a376-9bd653c19412",
     "fe0010ce-743a-4c46-82bb-14021cc2d50f",
