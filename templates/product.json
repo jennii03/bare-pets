@@ -184,9 +184,9 @@
     "490c426a-d5f6-4523-ae19-41647cc9e43a": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     },
@@ -636,6 +636,60 @@
         "bg_color": "#2a294f"
       }
     },
+    "5e59646a-b9b1-4427-820b-9e2ddaa71093": {
+      "type": "module-logo-caption",
+      "blocks": {
+        "60b27f22-c531-47ee-bede-49d6fccdf0b3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_3233.png",
+            "logo_caption": "\"5 star review\""
+          }
+        },
+        "20b9fc86-aaed-4abd-a5bc-5a5eec722e85": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_3262.png",
+            "logo_caption": "\"best kibble quality\""
+          }
+        },
+        "a0ce01c9-24cf-446c-8361-c423ced02627": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1555.png",
+            "logo_caption": "\"they are obsessed\""
+          }
+        },
+        "014e0826-9876-484c-a79d-d15f06c1dfda": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_1560.png",
+            "logo_caption": "\"best chicken kibble\""
+          }
+        },
+        "dea6e6d2-5661-4e04-bf9a-ad5e8991c20f": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_3233.png",
+            "logo_caption": "\"clean dog food\""
+          }
+        }
+      },
+      "block_order": [
+        "60b27f22-c531-47ee-bede-49d6fccdf0b3",
+        "20b9fc86-aaed-4abd-a5bc-5a5eec722e85",
+        "a0ce01c9-24cf-446c-8361-c423ced02627",
+        "014e0826-9876-484c-a79d-d15f06c1dfda",
+        "dea6e6d2-5661-4e04-bf9a-ad5e8991c20f"
+      ],
+      "settings": {
+        "bg_color": "#6565A0",
+        "top_decor": "shopify:\/\/shop_images\/image_3.webp",
+        "bot_decor": "shopify:\/\/shop_images\/image_5.webp",
+        "top_bg_color": "#2a294f",
+        "bot_bg_color": "#fcfcff"
+      }
+    },
     "d1836111-80f7-493e-9f97-aeb8c1c0d691": {
       "type": "module-money-back",
       "settings": {
@@ -699,6 +753,7 @@
     "fe0010ce-743a-4c46-82bb-14021cc2d50f",
     "b28bb169-b1c3-4c4a-b308-37c5d031e911",
     "21e6180d-f2db-4c0c-96c5-4a57ecf02cae",
+    "5e59646a-b9b1-4427-820b-9e2ddaa71093",
     "d1836111-80f7-493e-9f97-aeb8c1c0d691",
     "7779a1dd-d14c-48b3-b813-bbb544c058a4"
   ]
