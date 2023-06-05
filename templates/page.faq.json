@@ -1,14 +1,24 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "afc930c5-07e7-49aa-a642-94b06751795e": {
+      "type": "module-mini-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/faqs_bg-edited.png",
+        "h_color": "#ffffff",
+        "heading": "have more<br>questions to ask?"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "afc930c5-07e7-49aa-a642-94b06751795e"
+  ]
+}
