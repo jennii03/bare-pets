@@ -209,6 +209,46 @@
         ]
     });
 
+    jQuery('.module-logo-caption__logos').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        autoplay: true,
+        centerMode: false,
+        mobileFirst: true, 
+        responsive: [
+          {
+            breakpoint: 990,
+            settings: "unslick"
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 590,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
+
 
     $(".module-pet-parents__main-image").click(function() {
         $(".module-pet-parents__video").show();
