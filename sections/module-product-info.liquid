@@ -1,0 +1,272 @@
+{{ 'module-product-info.css' | asset_url | stylesheet_tag }}
+
+{%liquid
+    assign background_color = section.settings.background_color
+    assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign image = section.settings.image
+%}
+
+<div class="module-product-info section section-padding" style="background: {{ background_color }};">
+    <div class="module-product-info__heading page-width">
+        <h2 class="text-center remove-spacing section--heading text-purple">{{ heading }}</h2>
+        <h3 class="module-product-info__subheading text-center text-light-purple">{{ description }}</h3>
+    </div>
+
+    <div class="module-product-info__main">
+        <div class="module-product-info__top">
+            {% assign count = 0 %}
+            {% for block in section.blocks %}
+                {%liquid
+                    assign top_text_color = block.settings.top_text_color
+                    assign top_icon = block.settings.top_icon
+                    assign top_subheading = block.settings.top_subheading
+                    assign top_heading = block.settings.top_heading
+                    assign top_description = block.settings.top_description
+                    assign count = count | plus: 1
+                    assign button_text = block.settings.button_text
+                    assign button_link = block.settings.button_link
+                %}
+
+                
+                {% if block.type == 'top_info' %}
+                    <div class="module-product-info__top-item module-product-info__tooltip module-product-info__tooltip-{{ count }}" data-hover="{{ top_text_color }}">
+                        <div class="module-product-info__content">
+                            <p class="remove-spacing text-center text-purple">{{ top_subheading }}</p>
+                            <h4 class="remove-spacing text-center" style="color: {{ top_text_color }};">{{ top_heading }}</h4>
+                        </div>
+
+                        <div class="module-product-info__hover">
+                            <div class="d-flex align-items-center">
+                                <p class="remove-spacing">{{ top_description }}</p>
+                                {% if top_icon !=blank  %}
+                                    <img src="{{ top_icon | img_url: 'master' }}" alt="{{ top_icon.alt }}">
+                                {% endif %}
+                            </div>
+                            <div class="module-product-info__button text-center">
+                                <a href="{{ button_link }}">{{ button_text }}</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                {% endif %}
+              {% endfor %}
+        </div>
+        <div class="module-product-info__bottom-main">
+            <div class="module-product-info__left">
+                <img src="{{ image | img_url: 'master' }}" alt="{{ image.alt }}">
+            </div>
+            <div class="module-product-info__right flex-basis-100">
+                <div class="module-product-info__middle">
+                    {% assign count = 0 %}
+                    {% for block in section.blocks %}
+                        {%liquid
+                            assign middle_text_color = block.settings.middle_text_color
+                            assign middle_icon = block.settings.middle_icon
+                            assign middle_subheading = block.settings.middle_subheading
+                            assign middle_heading = block.settings.middle_heading
+                            assign middle_description = block.settings.middle_description
+                            assign count = count | plus: 1
+                            assign middle_button_text = block.settings.middle_button_text
+                            assign middle_button_link = block.settings.middle_button_link
+                        %}
+
+                        {% if block.type == 'middle_info' %}
+                            <div class="module-product-info__middle-item module-product-info__tooltip module-product-info__tooltip-{{ count }}" data-hover="{{ middle_text_color }}">
+                                <div class="module-product-info__content">
+                                    <p class="remove-spacing text-center text-purple">{{ middle_subheading }}</p>
+                                    <h4 class="remove-spacing text-center" style="color: {{ middle_text_color }};">{{ middle_heading }}</h4>
+                                </div>
+        
+                                <div class="module-product-info__hover">
+                                    <div class="d-flex align-items-center">
+                                        <p class="remove-spacing">{{ middle_description }}</p>
+                                        {% if middle_icon !=blank  %}
+                                            <img src="{{ middle_icon | img_url: 'master' }}" alt="{{ middle_icon.alt }}">
+                                        {% endif %}
+                                    </div>
+                                    <div class="module-product-info__button text-center">
+                                        <a href="{{ middle_button_link }}">{{ middle_button_text }}</a>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div class="module-product-info__bottom">
+                    <div class="module-product-info__bottom-images d-flex">
+                        {% for block in section.blocks %}
+                            {%liquid
+                                assign bottom_image = block.settings.bottom_image
+                                assign bottom_heading = block.settings.bottom_heading
+                            %}
+                            {% if block.type == 'bottom_info' %}
+                                <div class="module-product-info__bottom-content flex-basis-100">
+                                    {% if bottom_image !=blank  %}
+                                        <div class="module-product-info__bottom-image text-center">
+                                            <img src="{{ bottom_image | image_url }}" class="module-product-info__image">
+                                        </div>
+                                    {% endif %}
+                                    <p class="text-center text-light-purple">{{ bottom_heading }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+{% schema %}
+  {
+    "name": "Module additional info",
+    "class": "module",
+    "settings": [
+            {
+                "type": "color",
+                "id": "background_color",
+                "label": "Background Color",
+                "default": "#E6E6F0"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Let's prioritize your best friend's health."
+            },
+            {
+                "type": "textarea",
+                "id": "description",
+                "label": "Description",
+                "default": "we share your love for pets and their well-being, which is why we've developed bare dry kibble"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            }
+    ],
+    "blocks": [
+        {
+            "name": "top Info",
+            "type": "top_info",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "top_text_color",
+                    "label": "Text Color",
+                    "default": "#2a294f"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "top_icon",
+                  "label": "Icon"
+                },
+                {
+                  "type": "text",
+                  "id": "top_subheading",
+                  "label": "Subheading",
+                  "default": "I want to promote healthy"
+                },
+                {
+                    "type": "text",
+                    "id": "top_heading",
+                    "label": "Heading",
+                    "default": "digestion in my dog"
+                },
+                {
+                    "type": "textarea",
+                    "id": "top_description",
+                    "label": "Description",
+                    "default": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion"
+                },
+                {
+                    "type": "text",
+                    "id": "button_text",
+                    "label": "Button Text",
+                    "default": "Shop now →"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "Button Link"
+                }
+            ]
+        },
+        {
+            "name": "Middle Info",
+            "type": "middle_info",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "middle_text_color",
+                    "label": "Text Color",
+                    "default": "#2a294f"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "middle_icon",
+                  "label": "Icon"
+                },
+                {
+                  "type": "text",
+                  "id": "middle_subheading",
+                  "label": "Subheading",
+                  "default": "I want to promote healthy"
+                },
+                {
+                    "type": "text",
+                    "id": "middle_heading",
+                    "label": "Heading",
+                    "default": "digestion in my dog"
+                },
+                {
+                    "type": "textarea",
+                    "id": "middle_description",
+                    "label": "Description",
+                    "default": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion"
+                },
+                {
+                    "type": "text",
+                    "id": "middle_button_text",
+                    "label": "Button Text",
+                    "default": "Shop now →"
+                },
+                {
+                    "type": "url",
+                    "id": "middle_button_link",
+                    "label": "Button Link"
+                }
+            ]
+        },
+        {
+            "name": "Bottom Info",
+            "type": "bottom_info",
+            "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "bottom_image",
+                  "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "bottom_heading",
+                    "label": "Heading",
+                    "default": "Fresh chicken"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module additional info",
+        "category": "product"
+      }
+    ]
+  }
+{% endschema %}

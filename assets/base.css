@@ -3244,8 +3244,20 @@ details-disclosure > details {
   color: var(--purple);
 }
 
+.text-purple {
+  color: var(--purple);
+}
+
+.text-light-purple {
+  color: var(--light-purple);
+}
+
 .d-flex {
   display: flex;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .flex-basis-100 {
