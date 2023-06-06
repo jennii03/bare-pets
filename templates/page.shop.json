@@ -73,10 +73,50 @@
             "question": "Why dog kibble?",
             "answer": "<p>Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble.<\/p>"
           }
+        },
+        "6529d9d9-3634-4a61-9309-41cea0f56229": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Who formulates bare kibble?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "e79372e8-89b5-4991-a4d0-e8227b8a8138": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Does bare meet AAFCO guidelines?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "483a1f91-77e4-455d-85c7-cecdef640b7c": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What is an all life stages recipe?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "9e88d39d-7bbc-48fd-bb26-fa38c02d9c2b": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What has changed and why\/difference between adult formula and all life stages formula?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "68ce5240-985e-4924-8b5c-df8b1f5a2665": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Will my dog need to transition to the all life stages kibble?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
         }
       },
       "block_order": [
-        "fc6dba96-f85f-49ac-a012-43f9eb7448bd"
+        "fc6dba96-f85f-49ac-a012-43f9eb7448bd",
+        "6529d9d9-3634-4a61-9309-41cea0f56229",
+        "e79372e8-89b5-4991-a4d0-e8227b8a8138",
+        "483a1f91-77e4-455d-85c7-cecdef640b7c",
+        "9e88d39d-7bbc-48fd-bb26-fa38c02d9c2b",
+        "68ce5240-985e-4924-8b5c-df8b1f5a2665"
       ],
       "settings": {
         "gradient1": "#2a294f",
