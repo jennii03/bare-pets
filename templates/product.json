@@ -181,6 +181,145 @@
         "background_color": "#e0e0ec"
       }
     },
+    "30a8f920-8535-4a3e-91e4-153bdacf5651": {
+      "type": "module-product-info",
+      "blocks": {
+        "753647a7-32e5-417e-ab72-360e4ee3803f": {
+          "type": "top_info",
+          "settings": {
+            "top_text_color": "#2a294f",
+            "top_icon": "shopify:\/\/shop_images\/02_food_shot_-_beef.png",
+            "top_subheading": "I want to promote healthy",
+            "top_heading": "digestion in my dog",
+            "top_description": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion",
+            "button_text": "Shop now →",
+            "button_link": ""
+          }
+        },
+        "f9f24228-fe70-4265-9515-d35b33e43ce3": {
+          "type": "top_info",
+          "settings": {
+            "top_text_color": "#2a294f",
+            "top_subheading": "I want to promote healthy",
+            "top_heading": "digestion in my dog",
+            "top_description": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion",
+            "button_text": "Shop now →",
+            "button_link": ""
+          }
+        },
+        "43bf54ec-c8da-4561-8e4b-ea4df4cf5fee": {
+          "type": "top_info",
+          "settings": {
+            "top_text_color": "#2a294f",
+            "top_icon": "shopify:\/\/shop_images\/00_BARE_20_EDITED_2_-_Edited.png",
+            "top_subheading": "I want to promote healthy",
+            "top_heading": "digestion in my dog",
+            "top_description": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion",
+            "button_text": "Shop now →",
+            "button_link": ""
+          }
+        },
+        "e04f3b25-10f5-41fb-98b1-547d4690759e": {
+          "type": "middle_info",
+          "settings": {
+            "middle_text_color": "#2a294f",
+            "middle_subheading": "I want to promote healthy",
+            "middle_heading": "digestion in my dog",
+            "middle_description": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion",
+            "middle_button_text": "Shop now →",
+            "middle_button_link": ""
+          }
+        },
+        "4ad38f34-2f00-4881-be73-630fc0cf55cc": {
+          "type": "middle_info",
+          "settings": {
+            "middle_text_color": "#2a294f",
+            "middle_subheading": "I want to promote healthy",
+            "middle_heading": "digestion in my dog",
+            "middle_description": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion",
+            "middle_button_text": "Shop now →",
+            "middle_button_link": ""
+          }
+        },
+        "0f9ea8de-10f7-40ca-a607-aa8f2404a1e9": {
+          "type": "middle_info",
+          "settings": {
+            "middle_text_color": "#2a294f",
+            "middle_subheading": "I want to promote healthy",
+            "middle_heading": "digestion in my dog",
+            "middle_description": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion",
+            "middle_button_text": "Shop now →",
+            "middle_button_link": ""
+          }
+        },
+        "53c8da61-83d7-4792-bff4-00c80388207a": {
+          "type": "middle_info",
+          "settings": {
+            "middle_text_color": "#2a294f",
+            "middle_subheading": "I want to promote healthy",
+            "middle_heading": "digestion in my dog",
+            "middle_description": "We carefully crafted a recipe that features digestion friendly ingredients like dried chicory, supporting nutrient absorption and digestive comformt for a happy and healthy companion",
+            "middle_button_text": "Shop now →",
+            "middle_button_link": ""
+          }
+        },
+        "33f35bc6-ab7d-4ce5-bfe6-ba64d61166a2": {
+          "type": "bottom_info",
+          "settings": {
+            "bottom_image": "shopify:\/\/shop_images\/4_1811e765-1f2e-42d9-b6e3-9357b951605d.png",
+            "bottom_heading": "Fresh chicken"
+          }
+        },
+        "81261f1e-903a-44a6-b4ea-558a3caf99a0": {
+          "type": "bottom_info",
+          "settings": {
+            "bottom_image": "shopify:\/\/shop_images\/8.png",
+            "bottom_heading": "Fresh chicken"
+          }
+        },
+        "bcae6557-f383-4dc0-bca6-6b5286d079fc": {
+          "type": "bottom_info",
+          "settings": {
+            "bottom_image": "shopify:\/\/shop_images\/5.png",
+            "bottom_heading": "Fresh chicken"
+          }
+        },
+        "12485431-aa10-469c-b664-080e33918d5f": {
+          "type": "bottom_info",
+          "settings": {
+            "bottom_image": "shopify:\/\/shop_images\/7.png",
+            "bottom_heading": "Fresh chicken"
+          }
+        },
+        "04f73e49-1616-415b-ae36-7f059c85654e": {
+          "type": "bottom_info",
+          "settings": {
+            "bottom_image": "shopify:\/\/shop_images\/9.png",
+            "bottom_heading": "Fresh chicken"
+          }
+        }
+      },
+      "block_order": [
+        "753647a7-32e5-417e-ab72-360e4ee3803f",
+        "f9f24228-fe70-4265-9515-d35b33e43ce3",
+        "43bf54ec-c8da-4561-8e4b-ea4df4cf5fee",
+        "e04f3b25-10f5-41fb-98b1-547d4690759e",
+        "4ad38f34-2f00-4881-be73-630fc0cf55cc",
+        "0f9ea8de-10f7-40ca-a607-aa8f2404a1e9",
+        "53c8da61-83d7-4792-bff4-00c80388207a",
+        "33f35bc6-ab7d-4ce5-bfe6-ba64d61166a2",
+        "81261f1e-903a-44a6-b4ea-558a3caf99a0",
+        "bcae6557-f383-4dc0-bca6-6b5286d079fc",
+        "12485431-aa10-469c-b664-080e33918d5f",
+        "04f73e49-1616-415b-ae36-7f059c85654e"
+      ],
+      "settings": {
+        "background_color": "#E6E6F0",
+        "heading": "Let's prioritize your best friend's health.",
+        "description": "we share your love for pets and their well-being, which is why we've developed bare dry kibble",
+        "image": "shopify:\/\/shop_images\/bare_dog_food_1.png"
+      }
+    },
     "490c426a-d5f6-4523-ae19-41647cc9e43a": {
       "type": "module-text-marquee",
       "settings": {
@@ -683,7 +822,7 @@
         "dea6e6d2-5661-4e04-bf9a-ad5e8991c20f"
       ],
       "settings": {
-        "bg_color": "#6565A0",
+        "bg_color": "#6565a0",
         "top_decor": "shopify:\/\/shop_images\/image_3.webp",
         "bot_decor": "shopify:\/\/shop_images\/image_5.webp",
         "top_bg_color": "#2a294f",
@@ -747,6 +886,7 @@
     "main",
     "product-recommendations",
     "b6b8eec1-04da-4865-8787-3809fbbb32c9",
+    "30a8f920-8535-4a3e-91e4-153bdacf5651",
     "490c426a-d5f6-4523-ae19-41647cc9e43a",
     "e71da2e2-6927-4f25-b9fa-74046a6516e3",
     "7e947fd1-c14c-4ec1-a376-9bd653c19412",
