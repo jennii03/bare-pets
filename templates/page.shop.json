@@ -1,14 +1,73 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "5e9f6ebe-748b-4d6a-8b78-96324bb69376": {
+      "type": "module-featured-products",
+      "blocks": {
+        "template--16111250047149__5e9f6ebe-748b-4d6a-8b78-96324bb69376-1686059983dce6d283-0": {
+          "type": "featured-product",
+          "settings": {
+            "bg_color": "#E0E0EC",
+            "text_color": "#2A294F",
+            "save_bg": "#6565a0",
+            "product": "test",
+            "product1": "seriously-beefy",
+            "image": "shopify:\/\/shop_images\/PackagingMockup02_frontnoshadows.png",
+            "product_weight": "5KG",
+            "sub_text": "With subscription",
+            "save_amount": "SAVE 20%",
+            "sub_price": "₱2,100",
+            "once_text": "Order once",
+            "once_price": "₱3,000",
+            "btn_text": "VIEW PRODUCT"
+          }
+        },
+        "a192f89d-4790-4358-af6b-a3f4497143bf": {
+          "type": "featured-product",
+          "settings": {
+            "bg_color": "#ffe1e0",
+            "text_color": "#eb5b56",
+            "save_bg": "#ea7b49",
+            "product": "seriously-beefy",
+            "product1": "test",
+            "image": "shopify:\/\/shop_images\/PackagingMockup02_frontnoshadows.png",
+            "product_weight": "5KG",
+            "sub_text": "With subscription",
+            "save_amount": "SAVE 20%",
+            "sub_price": "₱480",
+            "once_text": "Order once",
+            "once_price": "₱600",
+            "btn_text": "VIEW PRODUCT"
+          }
+        }
+      },
+      "block_order": [
+        "template--16111250047149__5e9f6ebe-748b-4d6a-8b78-96324bb69376-1686059983dce6d283-0",
+        "a192f89d-4790-4358-af6b-a3f4497143bf"
+      ],
+      "settings": {
+      }
+    },
+    "1a16c09f-a592-4dd9-8ea6-65ec57366403": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5e9f6ebe-748b-4d6a-8b78-96324bb69376",
+    "1a16c09f-a592-4dd9-8ea6-65ec57366403"
+  ]
+}
