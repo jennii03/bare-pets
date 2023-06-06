@@ -63,11 +63,35 @@
         "txt_color": "#FFFFFF",
         "text": "simple. honest. nutritious."
       }
+    },
+    "76e43578-e6a5-405f-9f3d-145bb258e77f": {
+      "type": "comp-faq",
+      "blocks": {
+        "fc6dba96-f85f-49ac-a012-43f9eb7448bd": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Why dog kibble?",
+            "answer": "<p>Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fc6dba96-f85f-49ac-a012-43f9eb7448bd"
+      ],
+      "settings": {
+        "gradient1": "#2a294f",
+        "gradient2": "#6565a0",
+        "heading": "Frequently Asked Questions",
+        "cta_label": "View All FAQs",
+        "cta_link": "",
+        "top_decor": "shopify:\/\/shop_images\/image_6.webp"
+      }
     }
   },
   "order": [
     "main",
     "5e9f6ebe-748b-4d6a-8b78-96324bb69376",
-    "1a16c09f-a592-4dd9-8ea6-65ec57366403"
+    "1a16c09f-a592-4dd9-8ea6-65ec57366403",
+    "76e43578-e6a5-405f-9f3d-145bb258e77f"
   ]
 }
