@@ -1,0 +1,300 @@
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<div id="module-featured-products-{{ section.id }}" class="module-featured-products">
+    <div class="module-featured-products__wrapper">
+        <div class="module-featured-products__container d-flex">
+            {% for block in section.blocks %}
+                {% liquid
+                    assign bg_color = block.settings.bg_color
+                    assign text_color = block.settings.text_color
+                    assign save_bg = block.settings.save_bg
+                    assign product = all_products[block.settings.product]
+                    assign product1 = all_products[block.settings.product1]
+                    assign image = block.settings.image
+                    assign product_weight = block.settings.product_weight
+                    assign sub_text = block.settings.sub_text
+                    assign save_amount = block.settings.save_amount
+                    assign sub_price = block.settings.sub_price
+                    assign once_text = block.settings.once_text
+                    assign once_price = block.settings.once_price
+                    assign btn_text = block.settings.btn_text
+                %}
+
+                <div class="featured-product__wrapper" style="background: {{ bg_color }};">
+                    <div class="featured-product__container">
+                        <div class="featured-product__img-container">
+                            <img src="{{ image | image_url }}">
+                        </div>
+                        <div class="featured-product__info-container">
+                            <div class="featured-product__title-info d-flex">
+                                <h2 class="featured-product__title remove-spacing" style="color: {{ text_color }}">{{ product.title }}</h2>
+                                <p class="featured-product__weight remove-spacing" style="background: {{ save_bg }}">{{ product_weight }}</p>
+                            </div>
+                            <div class="featured-product__input-form">
+                                <form>
+                                    <div class="featured-product__sub-data d-flex" style="border-bottom: solid 1px {{ text_color }}">
+                                        <div class="featured-product__radio-btn d-flex">
+                                            <input style="accent-color: {{ text_color }}" type="radio" name="{{ product.title | handleize }}" data-value={{ product.variants.first.id }} data-price={{ sub_price }}>
+                                            <p class="featured-product__sub-text remove-spacing" style="color: {{ text_color }}">{{ sub_text }}</p>
+                                            <p class="featured-product__save-amount remove-spacing" style="background: {{ save_bg }}">{{ save_amount }}</p>
+                                        </div>
+                                        <p class="featured-product__sub-price remove-spacing" style="color: {{ text_color }}">{{ sub_price }}</p>
+                                    </div>
+                                    <div class="featured-product__once-data d-flex">
+                                        <div class="featured-product__radio-btn d-flex">
+                                            <input style="accent-color: {{ text_color }}" type="radio" name="{{ product.title | handleize }}" data-value={{ product1.variants.first.id }} data-price={{ once_price }}>
+                                            <p class="featured-product__once-text remove-spacing" style="color: {{ text_color }}">{{ once_text }}</p>
+                                        </div>
+                                        <p class="featured-product__once-price remove-spacing" style="color: {{ text_color }}">{{ once_price }}</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="featured-product__buttons d-flex">
+                                <form method="post" action="/cart/add" class="featured-product__atc-form">
+                                    <input type="hidden" name="id" value="{{ product.variants.first.id }}" disabled>
+                                    <div class="featured-product__atc-button">
+                                        <input style="background: {{ text_color }}; border: solid 3px {{ text_color }}" type="submit" value="Add to Cart | {{ sub_price }}" class="btn featured-product__add-button" />
+                                    </div>
+                                </form>
+                                
+
+                                <div class="featured-product__view-product">
+                                    <a href="{{ product.url }}" class="featured-product__view-product-link btn btn--primary text-center" style="border: solid 3px {{ text_color }}; color: {{ text_color }}" >{{ btn_text }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .featured-product__wrapper {
+        width: 50%;
+    }
+    .featured-product__img-container img {
+        height: 360px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .featured-product__container {
+        max-width: 70%;
+        margin: auto;
+    }
+    .featured-product__title-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .featured-product__title {
+        font-size: 30px;
+        line-height: 40px;
+        font-family: var(--gilroyblack);
+        text-transform: lowercase;
+        letter-spacing: 0.9px;
+    }
+    .featured-product__weight {
+        font-size: 14px;
+        line-height: 15px;
+        font-family: var(--gilroyblack);
+        color: #fff;
+        padding: 7px 13px;
+        border-radius: 50px;
+    }
+    .featured-product__sub-text, .featured-product__once-text {
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 10px;
+        font-family: var(--gilroyreg);
+    }
+    .featured-product__save-amount {
+        font-size: 12px;
+        line-height: 15px;
+        font-family: var(--gilroyblack);
+        color: #fff;
+        padding: 3px 7px;
+        border-radius: 50px;
+    }
+    .featured-product__input-form input[type="radio"] {
+        height: 21px;
+        width: 21px;
+        margin: 0;
+    }
+    .featured-product__sub-price, .featured-product__once-price {
+        font-size: 24px;
+        line-height: 18px;
+        font-family: var(--gilroyblack);
+    }
+    .featured-product__radio-btn {
+        align-items: center;
+        gap: 5px;
+    }
+    .featured-product__sub-data, .featured-product__once-data {
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .featured-product__add-button {
+        color: #fff;
+        width: 100%;
+        padding: 7px 0;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 1px;
+    }
+    .featured-product__view-product-link {
+        background: transparent;
+        width: 100%;
+        padding: 7px 0;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 1px;
+    }
+    .featured-product__buttons {
+        gap: 20px;
+        justify-content: center;
+        padding: 10px 0 20px;
+    }
+    {% comment %} .featured-product__img-container:after {
+        position: absolute;
+        content: "";
+        background: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Ellipse_173.png?v=1686039479');
+        width: 350px;
+        height: 350px;
+        left: 23.5%;
+        top: -32px;
+        background-size: cover;
+        z-index: -1;
+    } {% endcomment %}
+    .featured-product__img-container {
+        {% comment %} position: relative;
+        z-index: 1; {% endcomment %}
+        margin-top: 6rem;
+    }
+    .featured-product__view-product, .featured-product__buttons form {
+        width: 50%;
+    }
+    @media (max-width: 1024px) {
+        .module-featured-products__container {
+            flex-direction: column;
+        }
+        .featured-product__wrapper {
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px) {
+        .featured-product__buttons {
+            flex-direction: column;
+        }
+        .featured-product__view-product, .featured-product__buttons form {
+            width: 100%;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Featured Products",
+    "class": "module",
+    "settings": [
+    ],
+    "max_blocks": 2,
+    "blocks": [
+        {
+            "name": "Featured Product",
+            "type": "featured-product",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "bg_color",
+                    "label": "Background Color",
+                    "default": "#E0E0EC"
+                },
+                {
+                    "type": "color",
+                    "id": "text_color",
+                    "label": "Text Colors",
+                    "default": "#2A294F"
+                },
+                {
+                    "type": "color",
+                    "id": "save_bg",
+                    "label": "Save Background",
+                    "default": "#6565a0"
+                },
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Choose Product"
+                },
+                {
+                    "type": "product",
+                    "id": "product1",
+                    "label": "Choose 2nd Product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Choose Image"
+                },
+                {
+                    "type": "text",
+                    "id": "product_weight",
+                    "label": "Product Weight",
+                    "default": "5KG"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_text",
+                    "label": "Subscription Text",
+                    "default": "With subscription"
+                },
+                {
+                    "type": "text",
+                    "id": "save_amount",
+                    "label": "Save Amount",
+                    "default": "SAVE 20%"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_price",
+                    "label": "With Subscription Price",
+                    "default": "₱2,100"
+                },
+                {
+                    "type": "text",
+                    "id": "once_text",
+                    "label": "Order Once Text",
+                    "default": "Order once"
+                },
+                {
+                    "type": "text",
+                    "id": "once_price",
+                    "label": "Order Once Price",
+                    "default": "₱3,000"
+                },
+                {
+                    "type": "text",
+                    "id": "btn_text",
+                    "label": "Button Text",
+                    "default": "VIEW PRODUCT"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Featured Products",
+        "category": "banner",
+        "blocks": [
+            {
+                "type": "featured-product"
+            }
+        ]
+      }
+    ]
+  }
+{% endschema %}
