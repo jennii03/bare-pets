@@ -1,0 +1,385 @@
+{% liquid
+    assign bg_color = section.settings.bg_color
+    assign txt_color = section.settings.txt_color
+    assign heading = section.settings.heading
+    assign image = section.settings.image
+    assign before_img = section.settings.before_img
+    assign after_img = section.settings.after_img
+%}
+
+<div id="module-bnutrition-{{ sectionid }}" class="module-bnutrition">
+    <div class="module-bnutrition__wrapper">
+        <div class="module-bnutrition__container">
+            <h2 class="module-bnutrition__heading remove-spacing text-center">{{ heading }}</h2>
+            <div class="module-bnutrition__img-container">
+                <img src="{{ image | image_url }}">
+            </div>
+            {% for block in section.blocks %}
+                {% liquid
+                    assign image = block.settings.image
+                    assign text = block.settings.text
+                    assign hover_description = block.settings.hover_description
+                    assign hover_heading = block.settings.hover_heading
+                %}
+
+                <div class="module-bnutrrition__item bnutrrition__item{{ forloop.index }}">
+                    <div class="module-bnutrition__item-img text-center">
+                        <img src="{{ image | image_url }}">
+                    </div>
+                    <div class="module-bnutrition__item-img">
+                        <p class="module-bnutrition__text remove-spacing text-center">{{ text }}</p>
+                    </div>
+
+                    <div class="module-bnutrrition__item-hover bnutrrition__item-hover{{ forloop.index }}">
+                        <div class="module-bnutrition__hover-desc">
+                            <p class="module-bnutrition__description remove-spacing">{{ hover_description }}</p>
+                        </div>
+                        <div class="module-bnutrition__hover-head">
+                            <p class="module-bnutrition__hheading remove-spacing">{{ hover_heading }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-bnutrition__wrapper {
+        background: {{ bg_color }};
+        padding: 70px 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    .module-bnutrition__container {
+        max-width: 1280px;
+        margin: auto;
+        position: relative;
+    }
+    .module-bnutrition__heading, .module-bnutrition__text, .module-bnutrition__description , .module-bnutrition__hheading {
+        color: {{ txt_color }};
+    }
+    .module-bnutrition__heading {
+        font-size: 46px;
+        line-height: 50px;
+        font-family: var(--gilroyblack);
+    }
+    .module-bnutrition__img-container img {
+        height: 400px;
+        width: 400px;
+        object-fit: contain;
+    }
+    .module-bnutrition__img-container {
+        text-align: center;
+        padding: 10rem 0;
+    }
+    .module-bnutrition__text, .module-bnutrition__hover-desc li {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: var(--gilroyreg);
+    }
+    .module-bnutrition__hheading {
+        font-size: 34px;
+        line-height: 38px;
+        font-family: var(--gilroybold);
+    }
+    .module-bnutrrition__item-hover {
+        background: #fff;
+        border: solid 3px #f9cf4f;
+        border-radius: 15px;
+        width: 400px;
+        display: none;
+    }
+    .module-bnutrition__hover-desc {
+        padding: 1rem;
+    }
+    .module-bnutrition__hover-head {
+        border-top: solid 3px #f9cf4f;
+        padding: 3rem;
+    }
+    .module-bnutrition__item-img {
+        margin-bottom: 5px;
+    }
+
+    .bnutrrition__item1 img, .bnutrrition__item3 img {
+        width: 175px;
+        height: 175px;
+    }
+    .bnutrrition__item2 img, .bnutrrition__item5 img {
+        width: 120px;
+        height: 120px;
+    }
+    .bnutrrition__item4 img {
+        width: 150px;
+        height: 150px;
+    }
+    .bnutrrition__item1 {
+        position: absolute;
+        top: 22%;
+        left: 18%;
+    }
+    .bnutrrition__item2 {
+        position: absolute;
+        top: 30%;
+        right: 10%;
+    }
+    .bnutrrition__item3 {
+        position: absolute;
+        bottom: 7%;
+        right: 20%;
+    }
+    .bnutrrition__item4 {
+        position: absolute;
+        bottom: 3%;
+        left: 24%;
+    }
+    .bnutrrition__item5 {
+        position: absolute;
+        bottom: 23%;
+        left: 7%;
+    }
+    .bnutrrition__item1:hover .bnutrrition__item-hover1 {
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 0%;
+        z-index: 9;
+    }
+    .bnutrrition__item2:hover .bnutrrition__item-hover2 {
+        display: block;
+        position: absolute;
+        top: -60%;
+        right: 120%;
+    }
+    .bnutrrition__item3:hover .bnutrrition__item-hover3 {
+        display: block;
+        position: absolute;
+        top: -135%;
+        right: 0;
+    }
+    .bnutrrition__item4:hover .bnutrrition__item-hover4 {
+        display: block;
+        position: absolute;
+        left: 110%;
+        bottom: 20%;
+    }
+    .bnutrrition__item5:hover .bnutrrition__item-hover5 {
+        display: block;
+        position: absolute;
+        bottom: 110%;
+    }
+    .module-bnutrition__wrapper:after, .module-bnutrition__wrapper:before {
+        position: absolute;
+        background-size: contain;
+        content: "";
+        z-index: 1;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+    }
+    .module-bnutrition__wrapper:before {
+        background-image: url('{{ before_img | image_url }}');
+        top: 60px;
+        left: -110px;
+    }
+    .module-bnutrition__wrapper:after {
+        background-image: url('{{ after_img | image_url }}');
+        bottom: -10px;
+        right: -70px;
+    }
+
+    @media (max-width: 1024px) {
+        .module-bnutrition__heading {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .module-bnutrition__text, .module-bnutrition__hover-desc li {
+            font-size: 12px;
+            line-height: 14px;
+            font-family: var(--gilroyreg);
+        }
+        .module-bnutrition__hheading {
+            font-size: 14px;
+        }
+        .module-bnutrition__hover-head {
+            padding: 0 1rem;
+        }
+        .module-bnutrition__hover-desc {
+            padding: 0 2rem 0 0;
+        }
+        .module-bnutrrition__item-hover {
+            width: 170px;
+        }
+        .module-bnutrition__img-container img {
+            height: 170px;
+            width: 170px;
+        }
+        .bnutrrition__item1 img {
+            width: 75px;
+            height: 75px;
+        }
+        .bnutrrition__item2 img {
+            width: 50px;
+            height: 50px;
+        }
+        .bnutrrition__item3 img {
+            width: 85px;
+            height: 85px;
+        }
+        .bnutrrition__item4 img {
+            width: 70px;
+            height: 70px;
+        }
+        .bnutrrition__item5 img {
+            width: 65px;
+            height: 65px;
+        }
+        .module-bnutrition__img-container {
+            text-align: center;
+            padding: 15rem 0;
+        }
+        .bnutrrition__item1 {
+            top: 17%;
+            left: 35%;
+        }
+        .bnutrrition__item2 {
+            right: 28%;
+        }
+        .bnutrrition__item3 {
+            bottom: 11%;
+            right: 30%;
+        }
+        .bnutrrition__item4 {
+            bottom: 13%;
+            left: 31%;
+        }
+        .bnutrrition__item5 {
+            bottom: 37%;
+            left: 27%;
+        }
+        .module-bnutrition__wrapper:after, .module-bnutrition__wrapper:before {
+            width: 150px;
+            height: 150px;
+        }
+        .module-bnutrition__wrapper:before {
+            left: -40px;
+        }
+        .module-bnutrition__wrapper:after {
+            right: -40px;
+        }
+    }
+    @media (max-width: 767px) {
+        .bnutrrition__item1 { left: 30%; }
+        .bnutrrition__item2 { right: 23%; }
+        .bnutrrition__item3 { right: 25%; }
+        .bnutrrition__item4 { left: 26%; }
+        .bnutrrition__item5 { left: 22%; }
+    }
+    @media (max-width: 580px) {
+        .bnutrrition__item2 { right: 13%; }
+        .bnutrrition__item3 { right: 15%; }
+        .bnutrrition__item4 { left: 16%; }
+        .bnutrrition__item5 { left: 12%; }
+    }
+    @media (max-width: 480px) {
+        .bnutrrition__item1 { left: 25%; }
+        .bnutrrition__item2 { right: 8%; }
+        .bnutrrition__item3 { right: 10%; }
+        .bnutrrition__item4 { left: 11%; }
+        .bnutrrition__item5 { left: 7%; }
+    }
+    @media (max-width: 400px) {
+        .bnutrrition__item1 {
+            top: 20%;
+            left: 17%;
+        }
+        .bnutrrition__item2 { right: 0%; }
+        .bnutrrition__item3 { right: 2%; }
+        .bnutrrition__item4 { left: 3%; }
+        .bnutrrition__item5 { left: -1%; }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Better Nutrition",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "color",
+            "id": "txt_color",
+            "label": "Text Color",
+            "default": "#2a294f"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "lorem ipsum dolor sit met"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "before_img",
+            "label": "Before Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "after_img",
+            "label": "After Image"
+        }
+    ],
+    "max_blocks": 5,
+    "blocks": [
+        {
+            "type": "nutrition-item",
+            "name": "Nutrition Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Text",
+                    "default": "lorem ipsum dolor"
+                },
+                {
+                    "type": "header",
+                    "content": "Hover Settings"
+                },
+                {
+                    "type": "html",
+                    "id": "hover_description",
+                    "label": "Description",
+                    "default": "<p>Lorem Ipsum Header</p>"
+                },
+                {
+                    "type": "text",
+                    "id": "hover_heading",
+                    "label": "Heading",
+                    "default": "lorem ipsum"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Better Nutrition",
+        "category": "banner"
+      }
+    ]
+  }
+{% endschema %}
