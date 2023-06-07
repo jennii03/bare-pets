@@ -1,0 +1,116 @@
+{% liquid
+    assign background_image = section.settings.background_image
+%}
+
+<div class="module-faq-cta section-padding section">
+    <div class="module-faq-cta__columns d-flex">
+        {% for block in section.blocks %}
+            {% liquid
+                assign text_color = block.settings.text_color
+                assign button_color = block.settings.button_color
+                assign heading = block.settings.heading
+                assign description = block.settings.description
+                assign button_text = block.settings.button_text
+                assign button_link = block.settings.button_link
+            %}
+            <div class="module-faq-cta__column-main flex-basis-100">
+                <div class="module-faq-cta__column">
+                    <h2 class="remove-spacing text-center section--heading" style="color: {{text_color }};">{{ heading }}</h2>
+                    <p class="text-center" style="color: {{text_color }};">{{ description }}</p>
+                    <div class="module-pet-parents__button text-center">
+                        <a href="{{ button_link }}" class="btn btn--primary" style="background-color: {{ button_color }};">{{ button_text }}</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+.module-faq-cta.section-padding {
+    background: linear-gradient(to left, #6565a0 50%, #e6e6f0 50%);
+}
+
+.module-faq-cta__columns {
+    gap: 40px;
+    max-width: 1280px;
+    margin: auto;
+    width: 100%;
+}
+
+.module-faq-cta__column {
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+}
+
+.module-faq-cta__column p {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+</style>
+
+{% schema %}
+  {
+    "name": "Module CTA FAQ",
+    "class": "module",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image"
+        }
+    ],
+    "max_blocks": 2,
+    "blocks": [
+        {
+            "type": "column",
+            "name": "Logo",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "text_color",
+                    "label": "Text Color",
+                    "default": "#ffffff"
+                },
+                {
+                    "type": "color",
+                    "id": "button_color",
+                    "label": "Button Color",
+                    "default": "#2a294f"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "have more questions to ask?"
+                },
+                {
+                    "type": "textarea",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "Send us an email and we'll get in touch with you as soon as we humanly can!"
+                },
+                {
+                    "type": "text",
+                    "id": "button_text",
+                    "label": "Button Text",
+                    "default": "Talk to us"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "Button Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module CTA FAQ",
+        "category": "image"
+      }
+    ]
+  }
+{% endschema %}
