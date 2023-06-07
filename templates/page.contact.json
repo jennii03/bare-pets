@@ -3,6 +3,8 @@
     "main": {
       "type": "module-pages-banner",
       "settings": {
+        "heading": "how can we help you today?",
+        "background": "shopify:\/\/shop_images\/cute-little-dog-isolated-yellow-edited.png"
       }
     },
     "form": {
