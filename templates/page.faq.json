@@ -15,10 +15,44 @@
         "h_color": "#ffffff",
         "heading": "have more<br>questions to ask?"
       }
+    },
+    "e118b38e-98d7-4c57-9696-d69eff484fcd": {
+      "type": "module-faq-cta",
+      "blocks": {
+        "3e5fdf41-5735-4ad7-984e-297674e73a65": {
+          "type": "column",
+          "settings": {
+            "text_color": "#6565a0",
+            "button_color": "#6565a0",
+            "heading": "have more questions to ask?",
+            "description": "Send us an email and we'll get in touch with you as soon as we humanly can!",
+            "button_text": "Talk to us",
+            "button_link": ""
+          }
+        },
+        "2fe100f9-9373-4eaf-b970-fa712ce6a15d": {
+          "type": "column",
+          "settings": {
+            "text_color": "#ffffff",
+            "button_color": "#2a294f",
+            "heading": "ready or not,<br> big deals await!",
+            "description": "Take advantage of our best deals on our most popular bundles before it's too late!",
+            "button_text": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3e5fdf41-5735-4ad7-984e-297674e73a65",
+        "2fe100f9-9373-4eaf-b970-fa712ce6a15d"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "afc930c5-07e7-49aa-a642-94b06751795e"
+    "afc930c5-07e7-49aa-a642-94b06751795e",
+    "e118b38e-98d7-4c57-9696-d69eff484fcd"
   ]
 }
