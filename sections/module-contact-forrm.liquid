@@ -1,0 +1,280 @@
+{%liquid
+    assign bg_color = section.settings.bg_color
+    assign bg_color_form = section.settings.bg_color_form
+    assign txt_color_left = section.settings.txt_color_left
+    assign txt_color_right = section.settings.txt_color_right
+    assign contact_heading = section.settings.contact_heading
+    assign contact_description = section.settings.contact_description
+    assign contact_form = section.settings.contact_form
+    assign support_heading = section.settings.support_heading
+    assign enable_socials = section.settings.enable_socials
+%}
+
+<div class="module-contact-{{ section.id }}" class="module-contact">
+    <div class="module-contact__wrapper">
+        <div class="module-contact__container d-flex">
+            <div class="module-contact__container-left">
+                <h2 class="module-contact__heading remove-spacing">{{ contact_heading }}</h2>
+                <p class="module-contact__description remove-spacing">{{ contact_description }}</p>
+                <div class="module-contact__contact-form">
+                    {{ contact_form }}
+                </div>
+            </div>
+            <div class="module-contact__container-right">
+                <h2 class="module-contact__s-heading remove-spacing text-center">{{ support_heading }}</h2>
+                <div class="module-contact__support">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'support_item' %}
+                            {%liquid
+                                assign support_img = block.settings.support_img
+                                assign support_head = block.settings.support_head
+                                assign support_desc = block.settings.support_desc
+                            %}
+                            <div class="module-contact__support-item">
+                                <div class="module-contact__support-img text-center">
+                                    <img src="{{ support_img | image_url }}">
+                                </div>
+                                <div class="module-contact__support-desc">
+                                    <h3 class="module-contact__support-head remove-spacing text-center">{{ support_head }}</h3>
+                                    <p class="module-contact__support-desc remove-spacing">{{ support_desc }}</p>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% if enable_socials %}
+                    <div class="module-contact__socials">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'social_share' %}
+                                {% liquid
+                                    assign social_image = block.settings.social_image
+                                    assign social_link = block.settings.social_link
+                                %}
+
+                                <div><a href="{{ social_link }}"><img src="{{ social_image | image_url }}"></a></div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-contact__wrapper {
+        background: {{ bg_color }};
+        padding: 70px 30px;
+    }
+    .module-contact__container {
+        max-width: 1280px;
+        margin: auto;
+        gap: 50px;
+    }
+    .module-contact__container-left {
+        background: {{ bg_color_form }};
+        border: solid 3px {{ bg_color_form }};
+        width: 70%;
+        border-radius: 20px;
+        padding: 60px;
+    }
+    .module-contact__heading, .module-contact__description {
+        color: {{ txt_color_left }};
+    }
+    .module-contact__s-heading, .module-contact__support-head, .module-contact__support-desc {
+        color: {{ txt_color_right }};
+    }
+    .module-contact__container-right {
+        border: solid 3px {{ txt_color_right }};
+        width: 30%;
+        border-radius: 20px;
+        padding: 20px 60px;
+    }
+    .module-contact__heading, .module-contact__s-heading {
+        font-size: 48px;
+        line-height: 60px;
+        font-family: var(--gilroyblack);
+    }
+    .module-contact__description {
+        font-size: 14px;
+        line-height: 21px;
+        font-family: var(--gilroyreg);
+    }
+    .module-contact__support-img img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+    .module-contact__support-head {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: var(--futurabold);
+        letter-spacing: 1px;
+    }
+    .module-contact__support-desc p {
+        font-size: 18px;
+        line-height: 24px;
+        font-family: var(--gilroyreg);
+    }
+    .module-contact__support {
+        display: flex;
+        flex-direction: column;
+    }
+    .module-contact__support-img {
+        margin-bottom: 5px;
+    }
+    .module-contact__support-item:not(:last-child) {
+        margin: 25px 0;
+    }
+    .module-contact__support-item:last-child {
+        border-top: solid 3px #fff;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .module-contact__socials img {
+        height: 30px;
+        width: 30px;
+        object-fit: contain;
+    }
+    .module-contact__socials {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    @media (max-width: 1024px) {
+        .module-contact__container {
+            gap: 20px;
+            flex-direction: column;
+        }
+        .module-contact__container-left, .module-contact__container-right {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .module-contact__heading, .module-contact__s-heading {
+            font-size: 24px;
+            line-height: 60px;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Contact Form",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color",
+            "default": "#2a294f"
+        },
+        {
+            "type": "color",
+            "id": "bg_color_form",
+            "label": "Form Bg Color",
+            "default": "#f9cf4f"
+        },
+        {
+            "type": "color",
+            "id": "txt_color_left",
+            "label": "Left Text Color",
+            "default": "#2a294f"
+        },
+        {
+            "type": "color",
+            "id": "txt_color_right",
+            "label": "Right Text Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "header",
+            "content": "Contact Info"
+        },
+        {
+            "type": "text",
+            "id": "contact_heading",
+            "label": "Contact Heading",
+            "default": "contact us"
+        },
+        {
+            "type": "textarea",
+            "id": "contact_description",
+            "label": "Contact Description",
+            "default": "lorem ipsum dolor"
+        },
+        {
+            "type": "html",
+            "id": "contact_form",
+            "label": "Contact Form Code",
+            "default": "<p>Insert Code Here</p>"
+        },
+        {
+            "type": "header",
+            "content": "Support Info"
+        },
+        {
+            "type": "text",
+            "id": "support_heading",
+            "label": "Support Heading",
+            "default": "support"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_socials",
+            "label": "Enable Socials?",
+            "default": true
+        }
+    ],
+    "blocks":[
+        {
+            "type": "support_item",
+            "name": "Support Item",
+            "limit": 4,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "support_img",
+                    "label": "Support Image"
+                },
+                {
+                    "type": "text",
+                    "id": "support_head",
+                    "label": "Support Heading",
+                    "default": "LOREM IPSUM"
+                },
+                {
+                    "type": "html",
+                    "id": "support_desc",
+                    "label": "Support Description",
+                    "default": "<p>Lorem Ipsum</p>"
+                }
+            ]
+        },
+        {
+            "type": "social_share",
+            "name": "Social Share",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "social_image",
+                    "label": "Soocial Image"
+                },
+                {
+                    "type": "url",
+                    "id": "social_link",
+                    "label": "Social Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Contact Form",
+        "category": "banner"
+      }
+    ]
+  }
+{% endschema %}
