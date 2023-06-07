@@ -255,5 +255,14 @@
         $(".module-pet-parents__image").hide();
         $(".module-pet-parents__play-icon-main").hide();
     });
-    
+
+    var mainImage = $('#main-image-js');
+    $('.module-product-banner__product-thumbnail-js-1').on('click', function(event) {
+      event.preventDefault();
+      var imageSrc = $(this).find('a').data('image');
+      var imageZoomSrc = $(this).find('a').data('zoom-image');
+      mainImage.attr('src', imageSrc);
+      mainImage.attr('data-zoom-image', imageZoomSrc);
+    });
+
 })();
