@@ -24,7 +24,7 @@
           "settings": {
             "text_color": "#6565a0",
             "button_color": "#6565a0",
-            "heading": "have more questions to ask?",
+            "heading": "have more <br> questions to ask?",
             "description": "Send us an email and we'll get in touch with you as soon as we humanly can!",
             "button_text": "Talk to us",
             "button_link": ""
