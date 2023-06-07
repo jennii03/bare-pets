@@ -14,8 +14,8 @@
         "template--16111250047149__5e9f6ebe-748b-4d6a-8b78-96324bb69376-1686059983dce6d283-0": {
           "type": "featured-product",
           "settings": {
-            "bg_color": "#E0E0EC",
-            "text_color": "#2A294F",
+            "bg_color": "#e0e0ec",
+            "text_color": "#2a294f",
             "save_bg": "#6565a0",
             "product": "test",
             "product1": "seriously-beefy",
@@ -58,10 +58,75 @@
     "1a16c09f-a592-4dd9-8ea6-65ec57366403": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
+      }
+    },
+    "132beb25-694d-4866-a95c-3177245493b6": {
+      "type": "module-better-nutrition",
+      "blocks": {
+        "9e166276-b8ef-42ac-bc55-0654f3d1543e": {
+          "type": "nutrition-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/real_meat.png",
+            "text": "Real meat as <br>ingredients",
+            "hover_description": "<ul>\n<li>Fresh chicken, salmon and lamb<\/li>\n<li>Lorem ipsum dolor sit amet<\/li>\n<\/ul>",
+            "hover_heading": "real meat"
+          }
+        },
+        "c4af103c-0522-4cee-9df6-d3e611ae610d": {
+          "type": "nutrition-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/leafy.png",
+            "text": "Other natural <br> ingredients",
+            "hover_description": "<ul>\n<li>Fresh chicken, salmon and lamb<\/li>\n<li>Lorem ipsum dolor sit amet<\/li>\n<\/ul>",
+            "hover_heading": "natural ingredients"
+          }
+        },
+        "80d1cb4a-09f7-4054-b8a2-69141c4ec05c": {
+          "type": "nutrition-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sweet_potatoes.png",
+            "text": "Sweet potato",
+            "hover_description": "<ul>\n<li>Fresh chicken, salmon and lamb<\/li>\n<li>Lorem ipsum dolor sit amet<\/li>\n<\/ul>",
+            "hover_heading": "sweet potato"
+          }
+        },
+        "b29e1e8c-756b-4c4a-ad71-8beaacc71275": {
+          "type": "nutrition-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/egg.png",
+            "text": "Fresh eggs",
+            "hover_description": "<ul>\n<li>Fresh chicken, salmon and lamb<\/li>\n<li>Lorem ipsum dolor sit amet<\/li>\n<\/ul>",
+            "hover_heading": "fresh eggs"
+          }
+        },
+        "1b5e3c3d-57f2-4df0-a34c-14862d6bd080": {
+          "type": "nutrition-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-peas.png",
+            "text": "Green peas",
+            "hover_description": "<ul>\n<li>Fresh chicken, salmon and lamb<\/li>\n<li>Lorem ipsum dolor sit amet<\/li>\n<\/ul>",
+            "hover_heading": "peas & beans"
+          }
+        }
+      },
+      "block_order": [
+        "9e166276-b8ef-42ac-bc55-0654f3d1543e",
+        "c4af103c-0522-4cee-9df6-d3e611ae610d",
+        "80d1cb4a-09f7-4054-b8a2-69141c4ec05c",
+        "b29e1e8c-756b-4c4a-ad71-8beaacc71275",
+        "1b5e3c3d-57f2-4df0-a34c-14862d6bd080"
+      ],
+      "settings": {
+        "bg_color": "#FFFFFF",
+        "txt_color": "#2a294f",
+        "heading": "lorem ipsum dolor sit met",
+        "image": "shopify:\/\/shop_images\/Ellipse_173.png",
+        "before_img": "shopify:\/\/shop_images\/chichen_1_2.png",
+        "after_img": "shopify:\/\/shop_images\/tomato_2.png"
       }
     },
     "76e43578-e6a5-405f-9f3d-145bb258e77f": {
@@ -132,6 +197,7 @@
     "main",
     "5e9f6ebe-748b-4d6a-8b78-96324bb69376",
     "1a16c09f-a592-4dd9-8ea6-65ec57366403",
+    "132beb25-694d-4866-a95c-3177245493b6",
     "76e43578-e6a5-405f-9f3d-145bb258e77f"
   ]
 }
