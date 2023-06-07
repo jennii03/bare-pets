@@ -84,10 +84,85 @@
         "support_heading": "support",
         "enable_socials": true
       }
+    },
+    "cd46c390-d886-4a4e-b4c1-d3aee0f0ac17": {
+      "type": "comp-faq",
+      "blocks": {
+        "f4cfd5f2-e2cb-42a3-a353-7004320d04d8": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Why dog kibble?",
+            "answer": "<p>Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble.<\/p>"
+          }
+        },
+        "d7485590-b2bf-4d39-ad1f-929a851c7f7c": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Who formulates bare kibble?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "57a07b83-2877-4c5d-930b-b5be504754af": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Does bare meet AAFCO guidelines?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "b5ff7f87-fca9-4d78-bd16-5f3f8417007b": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What is an all life stages recipe?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "cde83587-4fcb-43be-9b18-b49f7379186f": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What has changed and why\/difference between adult formula and all life stages formula?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        },
+        "08673ff2-097e-44cc-b31c-f351ca890358": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Will my dog need to transition to the all life stages kibble?",
+            "answer": "<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f4cfd5f2-e2cb-42a3-a353-7004320d04d8",
+        "d7485590-b2bf-4d39-ad1f-929a851c7f7c",
+        "57a07b83-2877-4c5d-930b-b5be504754af",
+        "b5ff7f87-fca9-4d78-bd16-5f3f8417007b",
+        "cde83587-4fcb-43be-9b18-b49f7379186f",
+        "08673ff2-097e-44cc-b31c-f351ca890358"
+      ],
+      "settings": {
+        "gradient1": "#6565a0",
+        "gradient2": "#2a294f",
+        "heading": "have questions?",
+        "cta_label": "View All FAQs",
+        "cta_link": "",
+        "subscribe_logo": "shopify:\/\/shop_images\/Badge-01_purple.png",
+        "top_decor": "shopify:\/\/shop_images\/image_10.png"
+      }
+    },
+    "81eb2db8-d9c0-41f1-834a-3ce76b20ad6d": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
     "main",
-    "d8d5f1f7-a60d-4458-b118-a84bd7220016"
+    "d8d5f1f7-a60d-4458-b118-a84bd7220016",
+    "cd46c390-d886-4a4e-b4c1-d3aee0f0ac17",
+    "81eb2db8-d9c0-41f1-834a-3ce76b20ad6d"
   ]
 }
