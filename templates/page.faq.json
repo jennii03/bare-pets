@@ -48,11 +48,21 @@
       ],
       "settings": {
       }
+    },
+    "5ff0e112-6ab7-436f-a29b-ebcb6c266d34": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
     "main",
     "afc930c5-07e7-49aa-a642-94b06751795e",
-    "e118b38e-98d7-4c57-9696-d69eff484fcd"
+    "e118b38e-98d7-4c57-9696-d69eff484fcd",
+    "5ff0e112-6ab7-436f-a29b-ebcb6c266d34"
   ]
 }
