@@ -4,6 +4,7 @@
   assign gradient1 = section.settings.gradient1
   assign gradient2 = section.settings.gradient2
   assign top_decor = section.settings.top_decor
+  assign subscribe_logo = section.settings.subscribe_logo
 %}
 
 <section class="section section--faq">
@@ -12,7 +13,10 @@
   {% else %}
     <img class="decor-top" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgwLjk0NSIgaGVpZ2h0PSI5OS41MzkiIHZpZXdCb3g9IjAgMCAxMjgwLjk0NSA5OS41MzkiPgogIDxwYXRoIGlkPSJQYXRoXzI2NzA5IiBkYXRhLW5hbWU9IlBhdGggMjY3MDkiIGQ9Ik0xNzkzLDcxNjMuODcxczEwNS42NywzNi44NDYsNjMxLjQ0LTIuOSw2NDkuNSwxMS44LDY0OS41LDExLjh2NzIuNjg4SDE3OTNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTc5MyAtNzE0NS45MjQpIiBmaWxsPSIjZWI1ZDU1Ii8+Cjwvc3ZnPgo=" alt="decor">
   {% endif %}  
-    <div class="wrapper">
+    <div class="wrapper" style="position: relative">
+      {% if subscribe_logo != blank %}
+        <img src="{{ subscribe_logo | image_url }}" class="subscribe__logo">
+      {% endif %}
         <h2 class="section--heading">{{ section.settings.heading }}</h2>
 
         {% if section.blocks %}
@@ -79,6 +83,11 @@
       "type": "url",
       "id": "cta_link",
       "label": "CTA Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "subscribe_logo",
+      "label": "Subscribe Logo"
     },
     {
       "type": "image_picker",
