@@ -139,6 +139,9 @@
         "cde83587-4fcb-43be-9b18-b49f7379186f",
         "08673ff2-097e-44cc-b31c-f351ca890358"
       ],
+      "custom_css": [
+        ".subscribe__logo {top: -14%;}"
+      ],
       "settings": {
         "gradient1": "#6565a0",
         "gradient2": "#2a294f",
@@ -152,9 +155,9 @@
     "81eb2db8-d9c0-41f1-834a-3ce76b20ad6d": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
