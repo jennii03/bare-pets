@@ -1,0 +1,143 @@
+{{ 'main-product-new.css' | asset_url | stylesheet_tag }}
+
+{%liquid
+    assign product_weight = section.settings.product_weight
+    assign modal_text = section.settings.modal_text
+
+%}
+
+<div id="module-product-banner-{{ section.id }}" class="module-product-banner section-padding">
+    <div class="module-product-banner__container page-width d-flex">
+        <div class="module-product-banner__left-column flex-basis-100">
+            <div class="module-product-banner__content">
+                <div class="module-product-banner__heading d-flex">
+                    <h1 class="remove-spacing">{{ product.title | escape  }}</h1>
+                    <span class="module-product-banner__weight">{{ section.settings.product_weight }}</span>
+                </div>
+
+                <div id="price-{{ section.id }}" role="status" class="text-mint">
+                    {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large text-mint'-%}
+                </div>
+
+                <div class="module-product-banner__description product__description rte quick-add-hidden">
+                    {{ product.description }}
+                </div>
+
+                <div class="module-product-banner__info">
+                    {% for block in section.blocks %}
+                        {%liquid
+                            assign block_info_icon = block.settings.block_info_icon
+                            assign block_info_subheading = block.settings.block_info_subheading
+                            assign block_info_heading = block.settings.block_info_heading
+                        %}
+                        {% if block.type == 'block_info' %}
+                            <div class="module-product-banner__block_info-item">
+                                <div class="module-product-banner__column-heading d-flex">
+                                    {% if block_info_icon != blank %}
+                                      <div class="module-product-banner__icon">
+                                          <img src="{{ block_info_icon | img_url: 'master' }}" alt="{{ block_info_icon.alt }}" width="60" height="60">
+                                      </div>
+                                    {% endif %}
+                                    <div class="module-product-banner__block-heading">
+                                        <h5 class="text-mint remove-spacing">{{ block_info_subheading }}</h5>
+                                        <h5 class="module-product-banner__block_info-heading remove-spacing">{{ block_info_heading }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div style="height: 140px; background: #e0e0ec;">
+                    subscription code
+                </div>
+
+                <div class="module-product-banner__add-to-cart">
+                    <form action="/cart/add" method="post">
+                        <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                        <button class="btn btn--secondary btn--add-to-cart" type="submit">Add to Cart</button>
+                    </form>
+                </div>
+
+                <div class="module-product-banner__modal">
+                    <p class="text-center">{{ modal_text }}<img class="module-product-banner__modal-image" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/question.png?v=1686104986" alt="Question marl icon" width="18" height="18"></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="module-product-banner__right-column flex-basis-100">
+            <div class="module-product-banner__product-images d-flex">
+                <div class="product-main-image flex-basis-100">
+                    <a href="{{ product.url }}">
+                      <img id="main-image-js" class="main-image" src="{{ product.featured_image.src | product_img_url: "large" }}" alt="{{ product.featured_image.alt | escape }}">
+                    </a>
+                </div>
+
+                <div class="module-product-banner__product-thumbnails-main">
+                  <ul id="module-product-banner__product-thumbnails" class="module-product-banner__product-thumbnails">
+                    {% for image in product.images %}
+                      <li class="module-product-banner__product-thumbnail module-product-banner__product-thumbnail-js-1">
+                        <a href="" data-image="{{ image.src | product_img_url: "large" }}" data-zoom-image="{{ image.src | product_img_url: "large" }}">
+                          <img src="{{ image.src | product_img_url: "compact" }}" alt="{{ image.alt | escape }}"  width="90" height="70">
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Banner",
+    "class": "module",
+    "settings": [
+        {
+            "type": "text",
+            "id": "product_weight",
+            "label": "Prduct Weight",
+            "default": "(5kg)"
+        },
+        {
+            "type": "text",
+            "id": "modal_text",
+            "label": "Modal Text",
+            "default": "How long will bare last"
+        }
+    ],
+    "max_blocks": 10,
+    "blocks": [
+        {
+            "name": "Block Info",
+            "type": "block_info",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "block_info_icon",
+                    "label": "Icon"
+                  },
+                  {
+                    "type": "text",
+                    "id": "block_info_subheading",
+                    "label": "Subheading",
+                    "default": "Natural"
+                  },
+                  {
+                      "type": "text",
+                      "id": "block_info_heading",
+                      "label": "Heading",
+                      "default": "real meat as the 1st ingredient always"
+                  }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Product Banner",
+        "category": "product"
+      }
+    ]
+  }
+{% endschema %}
