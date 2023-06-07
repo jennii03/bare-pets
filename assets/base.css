@@ -3275,6 +3275,12 @@ details-disclosure > details {
   margin-bottom: 1.1rem;
 }
 
+.main-heading {
+  font-family: var(--gilroyblack);
+  font-size: 46px;
+  line-height: 58px;
+}
+
 /* About page */
 .section .section--subheading.info--subheading {
   font-size: 20px;

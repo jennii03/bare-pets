@@ -1,0 +1,14 @@
+.module-pages-banner {
+    height: 450px;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.module-pages-banner__container {
+    width: 450px;
+}

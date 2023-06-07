@@ -10,20 +10,22 @@
 }
 
 .module-product-banner__heading {
-    padding-bottom: 1rem;
     justify-content: space-between;
 }
 
 .module-product-banner__heading h1 {
     color: var(--purple);
     font-family: var(--gilroyblack);
-    font-size: 60px;
     line-height: 1em;
+}
+
+.module-product-banner__block-heading h5 {
+    font-weight: 700;
 }
 
 .module-product-banner .price-item {
     color: var(--mint);
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
 }
 
@@ -36,7 +38,7 @@
 }
 
 .module-product-banner__weight {
-    font-size: 40px;
+    font-size: 28px;
     color: #B9B9D0;
 }
 
