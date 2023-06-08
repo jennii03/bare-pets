@@ -1,0 +1,396 @@
+{%liquid
+    assign heading_color = section.settings.heading_color
+%}
+
+<div id="module-faq-filtering-{{ section.id }}" class="module-faq-filtering">
+    <div class="module-faq-filtering__wrapper">
+        <div class="module-faq-filtering__container d-flex">
+            <div class="module-faq-filtering__filter-container sticky-container">
+                <div class="sticky-element">
+                    <div class="module-faq-filtering__categories">
+                        <button class="category-all active">All</button>
+                        {% for block in section.blocks %}
+                            {% if block.settings.separator-heading !=blank %}
+                                <button class="faq-category__{{ block.settings.separator-heading | handleize }}">{{ block.settings.separator-heading }}</button>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="ufaq-search">
+                        <div class="search-section">
+                            <input type="text" class="ufaq-search-box" placeholder="Search topics" onfocus="this.placeholder=''" onblur="this.placeholder='Search Topics'">
+                            <button class="clear-search" id="clear-search" onclick="clearsearch();" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module-faq-filtering__faq-container">
+                {% if section.blocks.size > 0 %}
+                    {% for block in section.blocks %}
+                        {% if forloop.index > 1  and block.settings.separator-heading !=blank  %}
+                            </div>
+                            <div class="module-faq-filtering__faq-content faq-category__{{ block.settings.separator-heading | handleize }}"> 
+                        {% endif %}
+                        {% if forloop.index == 1  and block.settings.separator-heading !=blank  %} 
+                            <div class="module-faq-filtering__faq-content faq-category__{{ block.settings.separator-heading | handleize }}"> 
+                        {% endif %}
+                    <div class="faq-filter"> 
+                        <div class="faq-filter__wrapper">
+                            {% if block.settings.separator-heading !=blank %}
+                                <h3 class="faq-filter__category-headinng remove-spacing">{{ block.settings.separator-heading }}</h3>
+                            {% endif %}
+                
+                        <div class="faq-filter__item">
+                            {% if block.settings.faq-question !=blank %}
+                                <div class="faq-filter__question-container">
+                                    <p class="accordion-{{ forloop.index }} faq-filter__question remove-spacing">{{ block.settings.faq-question }}</p>
+                                </div>
+                                <div class="faq-filter__answer-container">
+                                    <p class="module-faq__answer remove-spacing">{{ block.settings.faq-answer }}</p>
+                                </div>
+                            {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Show or hide content based on button click
+    function showContent(faq_category) {
+        var faq_contents = document.querySelectorAll('.module-faq-filtering__faq-container .module-faq-filtering__faq-content');
+        if (faq_category === 'category-all') {
+          faq_contents.forEach(function(content) {
+            content.classList.remove('active-content');
+            content.style.display = 'block';
+          });
+        } else {
+          faq_contents.forEach(function(content) {
+            if (content.classList.contains(faq_category)) {
+              content.classList.add('active-content');
+              content.style.display = 'block';
+            } else {
+              content.classList.remove('active-content');
+              content.style.display = 'none';
+            }
+          });
+        }
+      }
+
+    // Toggle active class on the clicked button
+    function toggleActiveClass(button) {
+        var buttons = document.querySelectorAll('.module-faq-filtering__categories button');
+        buttons.forEach(function(btn) {
+        if (btn === button) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+        });
+    }
+    
+    // Attach click event listeners to buttons
+    var buttons = document.querySelectorAll('.module-faq-filtering__categories button');
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var faq_category = btn.classList[0];
+        showContent(faq_category);
+        toggleActiveClass(btn);
+      });
+    });
+
+    setTimeout(function() {
+        // FAQ stylings/function
+        $(document).ready(function() {
+            $('.faq-filter__question-container').on('click', function() {
+                if($(this).hasClass('active')) {
+                $(this).siblings('.faq-filter__answer-container').slideUp();
+                $(this).removeClass('active');
+                }
+                else {
+                $('.faq-filter__answer-container').slideUp();
+                $('.faq-filter__question-container').removeClass('active');
+                $(this).siblings('.faq-filter__answer-container').slideToggle();
+                $(this).toggleClass('active');
+                }
+            });     
+        });
+    
+    // faq filtering
+    $(".ufaq-search-box").on("input", function () {
+       
+        var searhvalue =  $(this).val();
+         
+          if(searhvalue !='')  {
+            capsearhvalue = searhvalue.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+              return letter.toUpperCase();
+            });
+                
+            $(".module-faq-filtering__faq-content").css({"display":"none"}); 
+            $('.show-heading').removeClass('show-heading'); 
+            $( ".faq-filter__item").addClass("find-faq-hideen"); 
+            $( ".faq-filter__category-headinng").addClass("find-faq-hideen"); 
+            $( "div:contains("+ searhvalue +")" ).removeClass("find-faq-hideen");
+            $( "div:contains("+ capsearhvalue +")" ).removeClass("find-faq-hideen");
+            $("div:contains("+ capsearhvalue +")" ).closest('.module-faq-filtering__faq-content').addClass('show-heading');
+            $("div:contains("+ searhvalue +")" ).closest('.module-faq-filtering__faq-content').addClass('show-heading');  
+            $(".show-heading").css({"display":"block"}); 
+            $('#clear-search').addClass('clear-search-active'); 
+            
+          } else {
+            $(".find-faq-hideen").removeClass("find-faq-hideen");	      
+            $('#clear-search').removeClass('clear-search-active');
+          }
+        });
+    }, 500);
+  
+    // clear search
+    function clearsearch(){
+        $('.ufaq-search-box').val('');
+        $(".module-faq-filtering__faq-content").css({"display":""}); 
+        $(".find-faq-hideen").removeClass("find-faq-hideen");   
+        $('#clear-search').removeClass('clear-search-active');
+    }
+</script>
+
+<style>
+    .module-faq-filtering__wrapper {
+        padding: 70px 30px
+    }
+    .module-faq-filtering__container {
+        max-width: 1280px;
+        margin: auto;
+        gap: 50px;
+    }
+    .module-faq-filtering__filter-container {
+        width: 30%;
+    }
+    .module-faq-filtering__faq-container {
+        width: 70%;
+    }
+    .faq-filter__item {
+        border-bottom: solid 1px #9DA9B3;
+    }
+    .faq-filter__question, .module-faq__answer, .faq-filter__category-headinng {
+        color: {{ heading_color }};
+    }
+    .module-faq__answer {
+        font-size: 14px;
+        line-height: 20px
+    }
+    .faq-filter__question-container {
+        padding: 15px;
+        position: relative;
+        cursor: pointer;
+    }
+    .faq-filter__question-container::before,
+    .faq-filter__question-container::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        background-color: #9DA9B3;
+        transition: all .3s;
+    }
+    .faq-filter__question-container::before {
+        right: 30px;
+        width: 2px;
+        height: 10px;
+        margin-top: -10px;
+        top: 31px;
+    }
+    .faq-filter__question-container::after {
+        right: 26px;
+        width: 10px;
+        height: 2px;
+        margin-top: -2px;
+        top: 27px;
+    }
+    .faq-filter__answer-container {
+        padding: 0 15px 20px;
+        display: none;
+    }
+    .faq-filter__question-container.active::before {
+        transform: rotate(90deg);
+    }
+    .faq-filter__question {
+        font-size: 16px;
+        line-height: 18px;
+        font-family: var(--gilroybold);
+    }
+    .module-faq__answer {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: var(--gilroyreg);
+    }
+    .faq-filter__category-headinng {
+        font-size: 30px;
+        line-height: 38px;
+        font-family: var(--gilroybold);
+        padding: 10px 15px;
+        background: #e0e0ec;
+    }
+    .module-faq-filtering__faq-content:not(:first-child) {
+        margin-top: 100px;
+    }
+
+    .module-faq-filtering__categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .module-faq-filtering__categories button {
+        width: calc(50% - 10px);
+        padding: 15px;
+        text-align: left;
+        border: none;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #9DA9B3;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+        font-family: var(--futurabold);
+        cursor: pointer;
+    }
+    .module-faq-filtering__categories button.active {
+        background: #2A294F;
+        color: #ffffff;
+    }
+    .module-faq-filtering__faq-content.active-content {
+        margin: 0;
+    }
+    .search-section {
+        position: relative;
+        margin-top: 30px;
+    }
+    input.ufaq-search-box {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: var(--gilroyreg);
+        padding: 12px 15px;
+        border-radius: 5px;
+        border: solid 1px #5c605f;
+        color: #5c605f;
+        width: 100%;
+    }
+    #clear-search {
+        position: absolute;
+        right: 10px;
+        z-index: 6;
+        top: 25%;
+        background: #fff;
+        border: none;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: var(--futura);
+        cursor: pointer;
+    }
+    .ufaq-search-box:focus-visible {
+        outline: none;
+        outline-offset: inherit;
+        box-shadow: none;
+    }
+    .sticky-element {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 48px;
+    }
+    .find-faq-hideen {
+        display: none;
+    }
+    .show-heading h3.find-faq-hideen {
+        display: block;
+    }
+
+    @media (max-width: 1024px) {
+        .module-faq-filtering__container {
+            flex-direction: column;
+        }
+        .module-faq-filtering__filter-container, .module-faq-filtering__faq-container {
+            width: 100%;
+        }
+        .module-faq-filtering__categories button {
+            padding: 15px 70px;
+            text-align: center;
+            margin: 12px 0;
+        }
+        .module-faq-filtering__categories {
+            margin-top: -40px;
+            white-space: nowrap;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .module-faq-filtering__categories::-webkit-scrollbar {
+            display: none;
+        }
+        .module-faq-filtering__categories {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+          }
+    }
+
+    @media (max-width: 767px) {
+        .faq-filter__question {
+            font-size: 16px;
+        }
+        .module-faq__answer {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "FAQ",
+    "class": "faq-section",
+    "settings": [
+        {
+            "type": "color",
+            "id": "heading_color",
+            "label": "Heading Color",
+            "default": "#2A294F"
+        }
+    ],
+    "max_blocks": 900,
+    "blocks": [
+        {
+            "type": "page-custom-faqs",
+            "name": "Add FAQ",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "separator-heading",
+                    "label": "Separator Heading"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "expand-answer",
+                    "label": "Expand This"
+                },
+                {
+                    "type": "text",
+                    "id": "faq-question",
+                    "label": "Question"
+                },
+                {
+                    "type": "html",
+                    "id": "faq-answer",
+                    "label": "Answer"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "FAQqqqqqq",
+        "category": "faq"
+      }
+    ]
+  }
+{% endschema %}
