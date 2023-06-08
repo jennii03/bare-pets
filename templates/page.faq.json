@@ -123,8 +123,116 @@
           "settings": {
             "separator-heading": "orders",
             "expand-answer": false,
-            "faq-question": "",
-            "faq-answer": ""
+            "faq-question": "How does your subscription program work?",
+            "faq-answer": "Our subscription program offers a convenient way to receive regular deliveries of your favorite Bare Pets products. By subscribing, you'll enjoy automatic shipments, exclusive discounts, and the flexibility to manage your subscription based on your pet's needs. It's a hassle-free way to ensure your pet always has the nutrition they deserve."
+          }
+        },
+        "2343eaa0-9ce8-4485-a26b-e990c5cd3752": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "When will I be billed?",
+            "faq-answer": "You'll be billed for your subscription at the time of each shipment. The billing frequency depends on the delivery schedule you've selected. Rest assured, we'll notify you before any charges are processed, giving you the opportunity to make any necessary adjustments."
+          }
+        },
+        "6d8f53e0-4ff7-4ded-b1ef-1aad5cb4650c": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "What payment methods do you accept?",
+            "faq-answer": "We accept major credit cards, debit cards, and select online payment platforms. During the checkout process, you can choose your preferred payment method and securely complete your transaction."
+          }
+        },
+        "86bcd486-2698-4501-a06c-aa6d8e2edec0": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "How do I make changes to my subscription & update my account?",
+            "faq-answer": "Managing your subscription is easy. Simply log in to your account on our website, where you can make changes to your subscription, update your account information, and manage your delivery details. If you encounter any issues or need further assistance, our customer support team is ready to help you."
+          }
+        },
+        "d2a1fb67-6c56-4dc5-85e9-03e47b900046": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "shipping",
+            "expand-answer": false,
+            "faq-question": "How long does shipping usually take?",
+            "faq-answer": "Shipping times can vary depending on your location and the shipping method chosen. Typically, orders are processed and shipped within [timeframe]. Once shipped, you can expect your order to arrive within [estimated delivery timeframe]."
+          }
+        },
+        "a5007908-6edb-4b1a-8fdc-399f8efb51ee": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Do you offer free shipping?",
+            "faq-answer": "Yes! We offer free shipping on orders above a certain value. Keep an eye out for promotional offers or check our website for more details on our current free shipping policy."
+          }
+        },
+        "c634a701-8f2d-48c6-8b9d-092fe41695b7": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "returns",
+            "expand-answer": false,
+            "faq-question": "Can I return a product if my pet doesn't like it? Do you have a money-back guarantee?",
+            "faq-answer": "We understand that every pet's taste preferences may vary, and that's okay! At Bare Pets, we stand behind the quality of our products and want you and your pet to be completely satisfied. If you're not satisfied with your purchase, we offer a money-back guarantee. Learn more about the details and steps here."
+          }
+        },
+        "b4003b89-92c3-48c0-b6db-763172ea6333": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "What happens to our return orders?",
+            "faq-answer": "We give out the returned orders into our partner shelters and animal organizations listed here."
+          }
+        },
+        "96d0b7e0-fa13-4ed2-9568-d75d97df8e28": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "perks",
+            "expand-answer": false,
+            "faq-question": "Do you offer any discounts or rewards for loyal customers?",
+            "faq-answer": "Absolutely! We appreciate our loyal customers. By joining our subscription program, you'll unlock exclusive discounts and rewards. Additionally, we periodically offer promotions, discounts, and special offers. Stay tuned for exciting deals and savings opportunities!"
+          }
+        },
+        "364d2b1f-f787-4045-939c-e5d54e5ca08e": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Are there any benefits to referring a friend to Bare Pets?",
+            "faq-answer": "Yes! Our referral program rewards you for sharing the love for Bare. When you refer a friend, both you and your friend will receive a special discount on your next purchase. It's a great way to spread the word about our brand and save on your pet's nutrition."
+          }
+        },
+        "96f9f222-c2f5-4ad2-9f81-bb4f13caa07a": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Can I earn rewards for leaving product reviews?",
+            "faq-answer": "Definitely! We value your feedback. By leaving a product review, you not only help other pet parents make informed decisions but also have the chance to earn rewards. Stay tuned for more details on our product review rewards program."
+          }
+        },
+        "e68f7bf7-2a32-4fb1-8989-cfd05ad2ca5c": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Do you have an affiliate program for current and potential pet consumers?",
+            "faq-answer": "Yes, we have an affiliate program designed to empower pet enthusiasts and influencers to promote and share their love for Bare. Through our affiliate program, participants have the opportunity to earn rewards for referring new customers to our brand. We believe in building a community of pet lovers who appreciate our products."
+          }
+        },
+        "4209165a-ab50-40b9-969b-e3b926204683": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "How can I apply as an affiliate of your brand?",
+            "faq-answer": "Joining our affiliate program is easy! Simply visit our website and navigate to the Affiliate Program section. Fill out the application form with your details, including your website or social media handles, and our team will review your application. If approved, you'll receive further instructions on how to get started."
           }
         }
       },
@@ -140,7 +248,19 @@
         "a5000dea-3d41-43a8-881f-3b815e70174d",
         "d86e8281-f559-4c40-b8a3-468a1ef40c40",
         "d0e44687-4621-4840-b5d7-14f3a07c850c",
-        "88a6c606-96e3-4154-b049-df9956669a44"
+        "88a6c606-96e3-4154-b049-df9956669a44",
+        "2343eaa0-9ce8-4485-a26b-e990c5cd3752",
+        "6d8f53e0-4ff7-4ded-b1ef-1aad5cb4650c",
+        "86bcd486-2698-4501-a06c-aa6d8e2edec0",
+        "d2a1fb67-6c56-4dc5-85e9-03e47b900046",
+        "a5007908-6edb-4b1a-8fdc-399f8efb51ee",
+        "c634a701-8f2d-48c6-8b9d-092fe41695b7",
+        "b4003b89-92c3-48c0-b6db-763172ea6333",
+        "96d0b7e0-fa13-4ed2-9568-d75d97df8e28",
+        "364d2b1f-f787-4045-939c-e5d54e5ca08e",
+        "96f9f222-c2f5-4ad2-9f81-bb4f13caa07a",
+        "e68f7bf7-2a32-4fb1-8989-cfd05ad2ca5c",
+        "4209165a-ab50-40b9-969b-e3b926204683"
       ],
       "settings": {
         "heading_color": "#2A294F"
