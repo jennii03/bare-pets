@@ -16,6 +16,136 @@
         "heading": "have more<br>questions to ask?"
       }
     },
+    "680ad3af-d24c-4b6c-8493-84fc0280d9f1": {
+      "type": "module-faq-filtering",
+      "blocks": {
+        "d95a811c-04af-4ee8-b60a-b19a11ef319a": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "brand",
+            "expand-answer": false,
+            "faq-question": "What is Bare?",
+            "faq-answer": "At Bare, we believe in simple, honest, and nutritious pet food. We're here to bring transparency to an industry plagued with misleading practices. Our goal is to prioritize the health and well-being of pets by delivering innovative products with the highest quality of nutrition. We're a modern brand, empowering pet parents through honest education and making premium pet care accessible."
+          }
+        },
+        "abf85b66-b123-4ed3-946f-fc06736ca6ab": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "How does Bare prioritize sustainability?",
+            "faq-answer": "Sustainability is a core value for us at Bare Pets. We're committed to minimizing our environmental impact through responsible sourcing, recyclable packaging, and reducing our carbon footprint. By making conscious choices, we aim to contribute to a healthier planet for our furry friends and future generations."
+          }
+        },
+        "a2e60a22-dc59-4c58-b0a8-1ac3f79430b8": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "product",
+            "expand-answer": false,
+            "faq-question": "What ingredients do you use in your pet food products?",
+            "faq-answer": "Our pet food products contain premium quality ingredients. We carefully select ingredients that provide essential nutrition and stay away from fillers or artificial additives. We're offer recipes that are free from artificial preservatives, artificial ingredients, and artificial colors. No nasties!"
+          }
+        },
+        "420c086f-8d31-4ee7-a56b-e30556eb2e45": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Does Bare Pets contain artificial preservatives, artificial ingredients, or colors?",
+            "faq-answer": "Never! We're proud to say that Bare Pets products are free from all those \"B.S\". (bad stuff). We believe in providing only the best for your furry family members."
+          }
+        },
+        "384ab8e6-4678-4a27-bdbb-49e2f75fb4d0": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "safety",
+            "expand-answer": false,
+            "faq-question": "How do you ensure the safety of your pet food products?",
+            "faq-answer": "We take pet safety seriously. Our pet food products undergo strict quality control measures and rigorous testing throughout the manufacturing process. We follow industry regulations and guidelines to ensure that our products meet or exceed safety standards."
+          }
+        },
+        "ee043d29-0736-4f3e-8a72-bab72e97023c": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Where are Bare Pets dog food products manufactured?",
+            "faq-answer": "Our dog food products are proudly manufactured in Europe and Thailand that adhere to strict quality control standards. Our manufacturing partners share our commitment to excellence and prioritize the health and well-being of pets. Rest assured that your pet's food is produced with the utmost care and attention to detail."
+          }
+        },
+        "fc0e77a3-f13c-463f-ad7e-77961915dfb7": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "How are your ingredients sourced?",
+            "faq-answer": "We prioritize sourcing ingredients of the highest quality. We work closely with trusted suppliers who share our commitment to transparency and sustainability. Our ingredients are carefully selected to provide the essential nutrition your pet needs for a healthy and balanced diet."
+          }
+        },
+        "ba9ce1fe-3e0d-4d2d-8b07-61cae68b5c51": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Who is AAFCO? Does Bare meet their guidelines?",
+            "faq-answer": "AAFCO stands for the Association of American Feed Control Officials. They establish guidelines and regulations for pet food manufacturing. At Bare Pets, we're proud to say that our products meet or exceed AAFCO guidelines. This ensures that our pet food is nutritionally balanced and suitable for pets, providing them with the essential nutrients they need to thrive."
+          }
+        },
+        "a5000dea-3d41-43a8-881f-3b815e70174d": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "Are your pet food products FDA-approved?",
+            "faq-answer": "While the FDA does not approve individual pet food products, we strictly adhere to FDA regulations and guidelines in our facilities and manufacturing processes. This ensures that our pet food products are produced according to the highest standards of safety and quality."
+          }
+        },
+        "d86e8281-f559-4c40-b8a3-468a1ef40c40": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "feeding",
+            "expand-answer": false,
+            "faq-question": "How do I determine the right portion size for my pet?",
+            "faq-answer": "The right portion size for your pet can vary based on factors like age, weight, activity level, and overall health. We provide general feeding guidelines on our packaging and here in our website, but it's essential to consult with your veterinarian for personalized recommendations tailored to your pet's specific needs."
+          }
+        },
+        "d0e44687-4621-4840-b5d7-14f3a07c850c": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "",
+            "expand-answer": false,
+            "faq-question": "What are your feeding tips?",
+            "faq-answer": "Feeding your pet is a special time to bond and nourish them. Here are a few tips: establish a regular feeding schedule, provide fresh water at all times, monitor portion sizes, and observe your pet's behavior and body condition. Remember, every pet is unique, so it's important to consult with your veterinarian for personalized feeding advice."
+          }
+        },
+        "88a6c606-96e3-4154-b049-df9956669a44": {
+          "type": "page-custom-faqs",
+          "settings": {
+            "separator-heading": "orders",
+            "expand-answer": false,
+            "faq-question": "",
+            "faq-answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "d95a811c-04af-4ee8-b60a-b19a11ef319a",
+        "abf85b66-b123-4ed3-946f-fc06736ca6ab",
+        "a2e60a22-dc59-4c58-b0a8-1ac3f79430b8",
+        "420c086f-8d31-4ee7-a56b-e30556eb2e45",
+        "384ab8e6-4678-4a27-bdbb-49e2f75fb4d0",
+        "ee043d29-0736-4f3e-8a72-bab72e97023c",
+        "fc0e77a3-f13c-463f-ad7e-77961915dfb7",
+        "ba9ce1fe-3e0d-4d2d-8b07-61cae68b5c51",
+        "a5000dea-3d41-43a8-881f-3b815e70174d",
+        "d86e8281-f559-4c40-b8a3-468a1ef40c40",
+        "d0e44687-4621-4840-b5d7-14f3a07c850c",
+        "88a6c606-96e3-4154-b049-df9956669a44"
+      ],
+      "settings": {
+        "heading_color": "#2A294F"
+      }
+    },
     "e118b38e-98d7-4c57-9696-d69eff484fcd": {
       "type": "module-faq-cta",
       "blocks": {
@@ -52,9 +182,9 @@
     "5ff0e112-6ab7-436f-a29b-ebcb6c266d34": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
@@ -62,6 +192,7 @@
   "order": [
     "main",
     "afc930c5-07e7-49aa-a642-94b06751795e",
+    "680ad3af-d24c-4b6c-8493-84fc0280d9f1",
     "e118b38e-98d7-4c57-9696-d69eff484fcd",
     "5ff0e112-6ab7-436f-a29b-ebcb6c266d34"
   ]
