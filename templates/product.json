@@ -6,7 +6,6 @@
         "d04a4286-58ed-44c2-bf16-45270b8f28c8": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/4_ca8d41ed-f875-4291-b5b0-851a74a849f1.png",
             "block_info_subheading": "Natural",
             "block_info_heading": "real meat as the 1st ingredient always"
           }
@@ -14,7 +13,6 @@
         "6a82b260-db6f-4e8e-8a12-ec4a49de62dd": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/3_50db9ffa-43ba-450e-a7d2-52c86f2f6a3f.png",
             "block_info_subheading": "Immunity",
             "block_info_heading": "superfood, plant-based proteins,"
           }
@@ -22,7 +20,6 @@
         "6f7f88dd-933b-4aa3-989b-babcabe36ce1": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/2_ba15326e-5e2a-4aa9-8f63-78db745d8fcd.png",
             "block_info_subheading": "Our health",
             "block_info_heading": "formulated & tested by vets"
           }
@@ -30,9 +27,50 @@
         "de06e0fd-220e-40b6-8768-8085e407257c": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/1_363bfab5-d94c-49bf-800a-29d1d39f6cd6.png",
             "block_info_subheading": "Transparency",
             "block_info_heading": "safe & delicious recipes without b.s."
+          }
+        },
+        "500d12b9-e40f-41b3-a150-7ca04559b26a": {
+          "type": "block_accordion",
+          "settings": {
+            "accordion_label": "Recipe Details",
+            "accordion_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          }
+        },
+        "66768d8c-39fe-4841-892c-55f8c18dcaa9": {
+          "type": "block_accordion",
+          "settings": {
+            "accordion_label": "Recipe Details",
+            "accordion_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          }
+        },
+        "7e98882b-6bc9-45a8-bff9-f3b2529a286d": {
+          "type": "block_accordion",
+          "settings": {
+            "accordion_label": "Recipe Details",
+            "accordion_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          }
+        },
+        "0b72cb65-c12f-4881-93b4-a1980da052e4": {
+          "type": "block_accordion",
+          "settings": {
+            "accordion_label": "Recipe Details",
+            "accordion_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          }
+        },
+        "a79c9f28-588b-4c44-9439-bf6bec44c9e0": {
+          "type": "block_accordion",
+          "settings": {
+            "accordion_label": "Recipe Details",
+            "accordion_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          }
+        },
+        "b3b69cdd-2187-4b96-b496-915c48b663a5": {
+          "type": "block_accordion",
+          "settings": {
+            "accordion_label": "Recipe Details",
+            "accordion_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
           }
         }
       },
@@ -40,11 +78,19 @@
         "d04a4286-58ed-44c2-bf16-45270b8f28c8",
         "6a82b260-db6f-4e8e-8a12-ec4a49de62dd",
         "6f7f88dd-933b-4aa3-989b-babcabe36ce1",
-        "de06e0fd-220e-40b6-8768-8085e407257c"
+        "de06e0fd-220e-40b6-8768-8085e407257c",
+        "500d12b9-e40f-41b3-a150-7ca04559b26a",
+        "66768d8c-39fe-4841-892c-55f8c18dcaa9",
+        "7e98882b-6bc9-45a8-bff9-f3b2529a286d",
+        "0b72cb65-c12f-4881-93b4-a1980da052e4",
+        "a79c9f28-588b-4c44-9439-bf6bec44c9e0",
+        "b3b69cdd-2187-4b96-b496-915c48b663a5"
       ],
       "settings": {
         "product_weight": "(5kg)",
-        "modal_text": "How long will bare last"
+        "modal_text": "How long will bare last",
+        "modal_heading": "how long will bare last?",
+        "modal_description": "Please provide us with your dog's weight and the size of the food bag you're considering. We'll then calculate the recommended daily cups and estimate how long the bag will last for your dog."
       }
     },
     "product-recommendations": {
