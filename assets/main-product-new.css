@@ -44,6 +44,7 @@
 
 .module-product-banner__container {
     align-items: center;
+    position: relative;
 }
 
 .module-product-banner__column-heading {
@@ -62,6 +63,11 @@
     margin-top: 2rem;
 }
 
+
+.module-modal__right {
+    display: flex;
+    justify-content: end;
+}
 
 .module-product-banner__product-thumbnails {
     list-style-type: none;
@@ -130,6 +136,392 @@
     cursor: pointer;
     color: #b9b9d0;
 }
+
+.module-product-banner__modal a {
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+}
+
+.module-product-banner__modal {
+    margin-top: 1.2rem;
+}
+
+.module-product-banner__modal img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+/* modal */
+
+.module-modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 50%);
+    transition: all 0.4s;
+}
+  
+.module-modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.module-modal__content {
+    border-radius: 20px;
+    position: relative;
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+}
+
+.module-modal__left {
+    display: flex;
+    align-items: center;
+}
+
+.module-modal__left-item {
+    padding: 4rem 20px;
+}
+
+.module-modal__close {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: var(--gilroyreg);
+}
+
+/* Quatity selector */
+
+.module-product-banner .qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 700;
+    line-height:10px;
+    padding: 0 2px;
+    min-width: 35px;
+    text-align: center;
+}
+
+.module-product-banner .qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.module-product-banner .qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    line-height: 0.8;
+    border-radius: 50%;
+    background-clip: padding-box;
+}
+
+.module-product-banner .minus:hover{
+    background-color: #717fe0 !important;
+}
+.module-product-banner .plus:hover{
+    background-color: #717fe0 !important;
+}
+/*Prevent text selection*/
+.module-modal span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.module-modal .qty input{  
+    border: 0;
+    width: 18px;
+}
+
+.recommended-value input,
+.recommended-days input {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.module-modal input::-webkit-outer-spin-button,
+.module-modal input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qty__main {
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.qty h5,
+.recommended-value h5,
+.recommended-days h5 {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.recommended-value,
+.recommended-days {
+    padding-top: 2rem;
+}
+
+.module-modal input:disabled {
+    background-color:white;
+}
+
+.module-modal .minus, .module-modal .plus,
+.module-modal .minus-2, .module-modal .plus-2 {
+    background: #6bc5b1;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 22px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.module-modal .plus,
+.module-modal .plus-2 {
+    padding-top: 1px;
+}
+
+/* sidebar accordion */
+
+.module-product-banner {
+    position: relative;
+}
+
+#slidingSideNav.overlay {
+    height: auto;
+    width: 0%;
+}
+
+#slidingSideNav.overlay { 
+    position: absolute;
+    z-index: 1;
+    bottom: 110px;
+    left: 0;
+    background-color: var(--mint);
+    overflow-y: hidden;
+    transition: .5s;
+    border-top-right-radius: 25px;
+    /* border-bottom-right-radius: 25px; */
+    max-width: 650px;
+    display: flex;
+    align-items: end;
+}
+
+.side-accordion__overflow-text {
+    position: absolute;
+    right: -271px;
+    bottom: 141px;
+    font-family: var(--futurabold);
+    font-size: 18px;
+    line-height: 64px;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    transform-origin: left top;
+    vertical-align: middle;
+    background: var(--mint);
+    padding: 0 20px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(255 255 255 / 60%);
+}
+
+.side-accordion-main {
+    display: flex;
+    align-items: center;
+}
+
+.side-accordion {
+    position: absolute;
+    left: 60px;
+    bottom: 260px;
+    font-family: var(--futurabold);
+    font-size: 18px;
+    line-height: 64px;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    transform-origin: left top;
+    vertical-align: middle;
+    background: var(--mint);
+    padding: 0 20px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+ 
+}
+
+.side-overlay-content {
+	 /* position: relative;
+    top: 5%;
+    width: 100%; */
+    padding: 0 40px 25px;
+}
+
+.sideClosebtn {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 6rem;
+    z-index: 2;
+}
+.side-accordion__container .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.side-accordion__container .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(255 255 255 / 60%);
+}
+
+.side-accordion__container .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    cursor: pointer;
+    color: #fff;
+    font-family: var(--futurabold);
+    font-size: 18px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.side-accordion__container .tab-label::after {
+    content: "-";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+
+.side-accordion__container input:checked+.tab-label::after {
+    transform: rotate(90deg);
+    content: "+";
+}
+
+.side-accordion__container input:checked~.tab-content {
+    max-height: 100vh;
+    visibility: visible;
+    height: auto;
+}
+
+.side-accordion__container input~.tab-content {
+    visibility: hidden;
+    height: 0;
+}
+
+.side-accordion__container input {
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+}
+@media only screen and (max-width: 479px) {
+	.sideClosebtn {
+        right: 2%;
+    }
+}
+
+/*Copyright (c) 2017 by Ryan Bobrowski, Susan Jensen (https://codepen.io/rbobrowski/pen/likvA)*/
+
+* {
+  margin: 0; padding: 0;
+}
+
+.accordion h1, h2, h3, h4{
+  cursor: pointer;
+  	margin: 0;
+	padding: 0;
+}
+
+/* percentages listed next to the background colors are from the chart here: https://www.w3schools.com/colors/colors_picker.asp  Listing them this way should make it relatively easy to swap them out for a different base color (hue), while maintaining the same color values.*/
+ #accordion { 
+   padding: 0 0 0 2rem;
+   margin: 0;
+}
+
+.accordion h1, #accordion {
+   background-color: var(--mint);
+  
+  font-weight: normal;
+  color: white;
+}
+.accordion h1:hover {
+	background-color: #666666; /* 40%*/
+  color: white;
+}
+
+.accordion h1:not(:last-of-type) {
+  border-bottom: 1px dotted #999999; /* 60%*/
+}
+.accordion div, .accordion p {
+  display: none;
+}
+
+.accordion h3:hover {
+  background-color: #a6a6a6; /* 65%*/
+}
+.accordion div ul li a {
+  padding: .5rem 8rem;
+  list-style: none;
+  background-color: #bfbfbf; /* 75%*/
+  font-size: 1.4rem;
+  color: #0059b3; 
+}
+
+.accordion div ul li a:hover{
+  background-color: #d9d9d9; /*lightest 85%*/
+  color: #1a8cff; 
+}
+
+.accordion .in-stock-open {
+  display: block;
+}
+
 
 @media (max-width: 768px) {
     .module-product-banner__container {
