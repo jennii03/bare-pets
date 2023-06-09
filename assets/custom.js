@@ -265,4 +265,32 @@
       mainImage.attr('data-zoom-image', imageZoomSrc);
     });
 
+    $('.count').prop('disabled', true);
+   			$(document).on('click','.plus',function(){
+				$('.count').val(parseInt($('.count').val()) + 5 );
+     				if ($('.count').val() >= 100) {
+						$('.count').val(100); 
+            }
+    		});
+        	$(document).on('click','.minus',function(){
+    			$('.count').val(parseInt($('.count').val()) - 5 );
+    				if ($('.count').val() <= 0) {
+						$('.count').val(0);
+					}
+    });
+
+    $('.count-2').prop('disabled', true);
+      $(document).on('click','.plus-2',function(){
+      $('.count-2').val(parseInt($('.count-2').val()) + 5 );
+            if ($('.count-2').val() >= 100) {
+          $('.count-2').val(100); 
+          }
+      });
+        $(document).on('click','.minus-2',function(){
+        $('.count-2').val(parseInt($('.count-2').val()) - 5 );
+          if ($('.count-2').val() <= 0) {
+          $('.count-2').val(0);
+        }
+    });
+
 })();
