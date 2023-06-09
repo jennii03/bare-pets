@@ -90,7 +90,8 @@
         "product_weight": "(5kg)",
         "modal_text": "How long will bare last",
         "modal_heading": "how long will bare last?",
-        "modal_description": "Please provide us with your dog's weight and the size of the food bag you're considering. We'll then calculate the recommended daily cups and estimate how long the bag will last for your dog."
+        "modal_description": "Please provide us with your dog's weight and the size of the food bag you're considering. We'll then calculate the recommended daily cups and estimate how long the bag will last for your dog.",
+        "modal_image": "shopify:\/\/shop_images\/image_modal.png"
       }
     },
     "product-recommendations": {
