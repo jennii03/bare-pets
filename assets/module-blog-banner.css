@@ -1,0 +1,28 @@
+.module-blog-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+}
+
+.module-blog-banner__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.module-blog-banner__heading {
+    width: 56%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .module-blog-banner__heading {
+        width: 66%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .module-blog-banner__heading {
+        width: 72%;
+    }
+}
