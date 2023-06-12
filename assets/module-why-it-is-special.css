@@ -258,7 +258,7 @@ body {
 
   @media(max-width: 768px) {
     .module-why-special__container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
    
     .cd-image-container {
