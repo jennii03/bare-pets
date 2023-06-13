@@ -3245,10 +3245,6 @@ details-disclosure > details {
   color: var(--purple);
 }
 
-.text-purple {
-  color: var(--purple);
-}
-
 .text-light-purple {
   color: var(--light-purple);
 }
@@ -3259,6 +3255,10 @@ details-disclosure > details {
 
 .align-items-center {
   align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
 }
 
 .flex-basis-100 {
