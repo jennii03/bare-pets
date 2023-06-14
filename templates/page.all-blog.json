@@ -1,14 +1,22 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "49e20230-8946-41a2-81eb-083bb4e8bda1": {
+      "type": "module-blog-categories",
+      "settings": {
+        "h_color": "#ffffff",
+        "heading": "lorem ipsum dolor sit met"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "49e20230-8946-41a2-81eb-083bb4e8bda1"
+  ]
+}
