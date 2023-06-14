@@ -1,0 +1,199 @@
+{%liquid
+    assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign image = section.settings.image
+    assign r_heading = section.settings.r_heading
+%}
+
+<div id="module-guarantee-info-{{ section.id }}" class="module-guarantee-info">
+    <div class="guarantee-info__wrapper">
+        <div class="guarantee-info__container d-flex">
+            <div class="guarantee-info__left-container">
+                <h2 class="guarantee-info__heading remove-spacing">{{ heading }}</h2>
+                <p class="guarantee-info__description remove-spacing">{{ description }}</p>
+
+                <div class="guarantee-info__img-contaier">
+                    <img src="{{ image | image_url }}">
+                </div>
+            </div>
+            <div class="guarantee-info__right-container">
+                <h2 class="guarantee-info__rheading remove-spacing">{{ r_heading }}</h2>
+
+                <div class="guarantee-info__works">
+                    {% for block in section.blocks %}
+                        {%liquid
+                            assign heading = block.settings.heading
+                            assign description = block.settings.description
+                        %}
+
+                        <div class="guarantee-info__item">
+                            <h3 class="guarantee-info__item-heading remove-spacing">{{ heading }}</h3>
+                            <p class="guarantee-info__item-description remove-spacing">{{ description }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .guarantee-info__wrapper {
+        padding: 70px 30px;
+    }
+    .guarantee-info__container {
+        max-width: 1280px;
+        margin: auto;
+        gap: 40px;
+    }
+    .guarantee-info__left-container, .guarantee-info__right-container {
+        width: 50%;
+    }
+    .guarantee-info__img-contaier img {
+        width: 150%;
+        margin-left: -30%;
+        margin-top: -13%;
+    }
+    .guarantee-info__heading {
+        font-size: 30px;
+        line-height: 38px;
+        font-family: var(--gilroybold);
+        color: #6565a0;
+        margin-bottom: 20px;
+    }
+    .guarantee-info__description, .guarantee-info__item-description {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: var(--gilroyreg);
+        color: #2a294f;
+    }
+    .guarantee-info__rheading {
+        font-size: 18px;
+        line-height: 21px;
+        color: #6bc5b1;
+        font-family: var(--futurabold);
+        margin-bottom: 6px;
+    }
+    .guarantee-info__item-heading {
+        font-size: 30px;
+        line-height: 38px;
+        font-family: var(--gilroybold);
+        color: #2a294f;
+    }
+    .guarantee-info__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .guarantee-info__item {
+        padding-left: 30px;
+        position: relative;
+    }
+    .guarantee-info__item:before {
+        height: 10px;
+        width: 10px;
+        border: solid 1px #2a294f;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 15px;
+        background: white;
+        border-radius: 10px;
+    }
+    .guarantee-info__item:last-child:before {
+        background: #2a294f;
+    }
+    .guarantee-info__item:after {
+        height: 120%;
+        width: 1px;
+        border: solid 1px #2a294f;
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 25px;
+        background: #2a294f;
+    }
+    .guarantee-info__item:last-child:after {
+        background: #fff;
+        border: solid 1px #fff;
+        width: 5px;
+        left: 3px;
+    }
+    @media (max-width: 767px) {
+        .guarantee-info__container {
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .guarantee-info__left-container, .guarantee-info__right-container {
+            width: 100%;
+        }
+        .guarantee-info__img-contaier img {
+            margin-left: -21%;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Guarantee Info",
+    "class": "module",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Left Info"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "lorem ipsum dolor"
+        },
+        {
+            "type": "text",
+            "id": "description",
+            "label": "Description",
+            "default": "lorem ipsum dolor sit met"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "header",
+            "content": "Right Info"
+        },
+        {
+            "type": "text",
+            "id": "r_heading",
+            "label": "Heading",
+            "default": "lorem ipsum dolor"
+        }
+    ],
+    "max_blocks": 3,
+    "blocks": [
+        {
+            "type": "item-info",
+            "name": "Item Info",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Heading",
+                    "default": "lorem ipsum dolor"
+                },
+                {
+                    "type": "textarea",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "lorem ipsum dolor sit met"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Guarantee Info",
+        "category": "info"
+      }
+    ]
+  }
+{% endschema %}

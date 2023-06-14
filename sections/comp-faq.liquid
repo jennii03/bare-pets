@@ -5,6 +5,7 @@
   assign gradient2 = section.settings.gradient2
   assign top_decor = section.settings.top_decor
   assign subscribe_logo = section.settings.subscribe_logo
+  assign logo_position = section.settings.logo_position
 %}
 
 <section class="section section--faq">
@@ -46,7 +47,41 @@
 <style>
   .section--faq::before {
     background: linear-gradient(0deg, {{ gradient1 }} 0%, {{ gradient2 }} 80%);
-}
+  }
+
+  .subscribe__logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    position: absolute;
+    top: -37%;
+  }
+
+  {% if logo_position == 'left' %}
+    .subscribe__logo {
+      left: -2%;
+    }
+  {% else %}
+    .subscribe__logo {
+      right: -2%;
+    }
+  {% endif %}
+
+  @media (max-width: 768px) {
+      .subscribe__logo {
+          width: 80px;
+          height: 80px;
+      }
+      {% if logo_position == 'left' %}
+        .subscribe__logo {
+          left: 2%;
+      }
+      {% else %}
+        .subscribe__logo {
+          right: 2%;
+        }
+      {% endif %}
+  }
 </style>
 
 {% schema %}
@@ -88,6 +123,22 @@
       "type": "image_picker",
       "id": "subscribe_logo",
       "label": "Subscribe Logo"
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "label": "Logo Position",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
     },
     {
       "type": "image_picker",
