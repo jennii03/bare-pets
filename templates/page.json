@@ -70,9 +70,9 @@
       ],
       "settings": {
         "txt_color": "#9f9fbf",
-        "top_bg_color": "#2B2A51",
+        "top_bg_color": "#ffffff",
         "middle_bg_color": "#6565A0",
-        "bottom_bg_color": "#ffffff",
+        "bottom_bg_color": "#6565a0",
         "heading": "AS FEATURED ON"
       }
     },
