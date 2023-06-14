@@ -345,6 +345,10 @@
     position: relative;
 }
 
+.slidingOpen {
+    display: none;
+}
+
 #slidingSideNav.overlay {
     height: auto;
     width: 0%;
