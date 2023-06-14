@@ -1,14 +1,138 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "17d248b6-8a60-490c-9ec6-e5858d666e0f": {
+      "type": "module-mini-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Base1.png",
+        "h_color": "#ffffff",
+        "heading": "our money-back<br>guarantee"
+      }
+    },
+    "2296e0b2-a871-4f36-a14a-65bcf0e17484": {
+      "type": "module-guarantee-info",
+      "blocks": {
+        "4df1fcf1-afe6-4423-829e-838b3c558cfe": {
+          "type": "item-info",
+          "settings": {
+            "heading": "send us an unboxing video",
+            "description": "Record yourself unpacking and opening your order."
+          }
+        },
+        "28fb8640-6034-4d21-ad68-3978c11472bd": {
+          "type": "item-info",
+          "settings": {
+            "heading": "record your dog's reaction",
+            "description": "After unboxing, give your doggo the food and see his reaction! If the video clearly shows that your dog doesn't like the food and refuses to eat it after a while, we will make it right."
+          }
+        },
+        "1142d514-1c3a-4da3-8360-d2edeecfc9ca": {
+          "type": "item-info",
+          "settings": {
+            "heading": "return your order to us",
+            "description": "Select Request A Refund under Orders in your account. Submit the request form with your video. Within 3 business days, you should receive 50% of the total price paid will be refunded to your bank account once it's shipped to our offices. This will be given as a donation to a local shelter."
+          }
+        }
+      },
+      "block_order": [
+        "4df1fcf1-afe6-4423-829e-838b3c558cfe",
+        "28fb8640-6034-4d21-ad68-3978c11472bd",
+        "1142d514-1c3a-4da3-8360-d2edeecfc9ca"
+      ],
+      "settings": {
+        "heading": "dogs have different preferences on foods, and that's okay!",
+        "description": "Your dog's happiness is our top priority, and so are dogs in need. We aim to cater for every breed and size of dog by working closely with veterinarians and pet nutritionists to create food that keeps your dog healthy and happy.  If your dogs is not satisfied with your order, give us a bone to pick! Follow these easy steps to get back your money's worth.",
+        "image": "shopify:\/\/shop_images\/Group_3550.png",
+        "r_heading": "HOW DOES IT WORKS?"
+      }
+    },
+    "010f5b07-f480-43c0-8132-4e3b539b6f3e": {
+      "type": "comp-faq",
+      "blocks": {
+        "5f5a941c-165f-4ede-b303-4cdd66956ccd": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Why dog kibble?",
+            "answer": "<p>Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble.<\/p>"
+          }
+        },
+        "f41c8745-d622-4d10-a9ee-8a3329559029": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Who formulates bare kibble?",
+            "answer": "<p>Add Answer Here<\/p>"
+          }
+        },
+        "a1bda089-ca6b-4eca-a17a-3e9ff5095205": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Does bare meet AAFCO guidelines?",
+            "answer": "<p>Add Answer Here<\/p>"
+          }
+        },
+        "83f15fe8-2548-48f2-a836-a7fc3947c7c7": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What is an all life stages recipe?",
+            "answer": "<p>Add Answer Here<\/p>"
+          }
+        },
+        "3f50dc25-0a4b-4747-ae1d-ac6b77ef6cdc": {
+          "type": "faq-item",
+          "settings": {
+            "question": "What has changed and why\/difference between adult formula and all life stages formula?",
+            "answer": "<p>Add Answer Here<\/p>"
+          }
+        },
+        "f5a19e9f-dadc-4898-a193-c70d62d2e8a2": {
+          "type": "faq-item",
+          "settings": {
+            "question": "Will my dog need to transition to the all life stages kibble?",
+            "answer": "<p>Add Answer Here<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5f5a941c-165f-4ede-b303-4cdd66956ccd",
+        "f41c8745-d622-4d10-a9ee-8a3329559029",
+        "a1bda089-ca6b-4eca-a17a-3e9ff5095205",
+        "83f15fe8-2548-48f2-a836-a7fc3947c7c7",
+        "3f50dc25-0a4b-4747-ae1d-ac6b77ef6cdc",
+        "f5a19e9f-dadc-4898-a193-c70d62d2e8a2"
+      ],
+      "settings": {
+        "gradient1": "#2a294f",
+        "gradient2": "#6565a0",
+        "heading": "Frequently Asked Questions",
+        "cta_label": "View All FAQs",
+        "cta_link": "",
+        "subscribe_logo": "shopify:\/\/shop_images\/Badge-01_54a2694c-5315-46b0-8e35-2ae60a9fc895.png",
+        "logo_position": "right",
+        "top_decor": "shopify:\/\/shop_images\/image_6.webp"
+      }
+    },
+    "3095a6a4-daf4-4867-a953-5969a449ebbf": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17d248b6-8a60-490c-9ec6-e5858d666e0f",
+    "2296e0b2-a871-4f36-a14a-65bcf0e17484",
+    "010f5b07-f480-43c0-8132-4e3b539b6f3e",
+    "3095a6a4-daf4-4867-a953-5969a449ebbf"
+  ]
+}
