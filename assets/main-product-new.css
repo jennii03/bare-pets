@@ -94,18 +94,39 @@
 }
 
 .module-product-banner__product-thumbnail {
+    position: relative;
+}
+
+.module-product-banner__product-thumbnail:after {
+    content: "";
     background: #e0e0ec;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.module-product-banner .slick-slide {
+    margin: 5px 0;
+}
+
+.slidingOpen {
+    display: none;
+}
+
+.module-product-banner .slick-list {
+    margin: -5px 0;
 }
 
 #main-image-js {
     display: block;
     margin-inline: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .product-main-image {
@@ -314,6 +335,14 @@
     padding-top: 1px;
 }
 
+.product-main-image {
+    width: 75%;
+}
+
+.module-product-banner__product-thumbnails-main {
+    width: 25%;
+}
+
 /* sidebar accordion */
 
 .module-product-banner {
@@ -342,7 +371,7 @@
 
 .side-accordion__overflow-text {
     position: absolute;
-    right: -271px;
+    right: -270px;
     bottom: 141px;
     font-family: var(--futurabold);
     font-size: 18px;
@@ -466,11 +495,6 @@
     }
 }
 
-/*Copyright (c) 2017 by Ryan Bobrowski, Susan Jensen (https://codepen.io/rbobrowski/pen/likvA)*/
-
-* {
-  margin: 0; padding: 0;
-}
 
 .accordion h1, h2, h3, h4{
   cursor: pointer;
@@ -478,7 +502,6 @@
 	padding: 0;
 }
 
-/* percentages listed next to the background colors are from the chart here: https://www.w3schools.com/colors/colors_picker.asp  Listing them this way should make it relatively easy to swap them out for a different base color (hue), while maintaining the same color values.*/
  #accordion { 
    padding: 0 0 0 2rem;
    margin: 0;
@@ -528,6 +551,10 @@
         flex-direction: column-reverse;
         gap: 30px;
     }
+
+    .product-main-image a:after {
+        height: 470px;
+    }
 }
 
 
@@ -546,6 +573,44 @@
 
     .module-product-banner .price-item {
         font-size: 22px;
+    }
+
+    .module-product-banner #main-image-js {
+        width: 100%;
+    }
+
+    .product-main-image a:after {
+        height: 290px;
+    }
+
+    .module-product-banner__product-thumbnails img {
+        width: 70px;
+        height: 60px;
+    }
+
+    .module-product-banner__product-thumbnail:after {
+        width: 60px;
+    }
+
+    .product-main-image a:after {
+        display: none;
+    }
+
+    .module-product-banner__right-column {
+        position: relative;
+    }
+
+    .module-product-banner__right-column:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 115%;
+        height: 85%;
+        background-color: #6565a0;
+        border-radius: 50% 50% 0 0;
+        z-index: -1;
     }
 }
 
