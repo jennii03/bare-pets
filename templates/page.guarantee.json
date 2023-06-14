@@ -107,6 +107,9 @@
         "3f50dc25-0a4b-4747-ae1d-ac6b77ef6cdc",
         "f5a19e9f-dadc-4898-a193-c70d62d2e8a2"
       ],
+      "custom_css": [
+        ".subscribe__logo {top: -20%;}"
+      ],
       "settings": {
         "gradient1": "#2a294f",
         "gradient2": "#6565a0",
@@ -120,6 +123,9 @@
     },
     "3095a6a4-daf4-4867-a953-5969a449ebbf": {
       "type": "module-text-marquee",
+      "custom_css": [
+
+      ],
       "settings": {
         "gradient_color1": "#2A294F",
         "gradient_color2": "#6565A0",
