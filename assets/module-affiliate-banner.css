@@ -1,0 +1,22 @@
+.module-affiliate-banner {
+    height: 450px;
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-affiliate-banner__container {
+    max-width: 650px;
+    margin-left: 5%;
+}
+
+.module-affiliate-banner__description {
+    font-family: var(--gilroybold);
+    font-size: 18px;
+    line-height: 18px;
+    margin: 10px 0 30px;
+    color: var(--purple);
+}

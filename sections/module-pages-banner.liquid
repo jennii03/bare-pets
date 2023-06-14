@@ -2,24 +2,40 @@
 
 {%liquid
     assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign heading_alignment = section.settings.heading_alignment
 %}
 
 <div class="module-pages-banner section-padding" style="background-image: url({{ section.settings.background | img_url : 'master' }})">
-    <div class="module-pages-banner__container">
-        <h1 class="main-heading remove-spacing text-purple">{{ heading }}</h1>
-    </div>
+  <div class="module-pages-banner__container">
+      <h1 class="main-heading remove-spacing text-purple {% if heading_alignment %}text-center{% endif %}">{{ heading }}</h1>
+      {% if description != blank %}
+        <p>{{ description }}</p>
+      {% endif %}
+  </div>
 </div>
 
 {% schema %}
   {
-    "name": "Pages Banner",
+    "name": "Module Pages Banner",
     "class": "module",
     "settings": [
+        {
+          "type": "checkbox",
+          "id": "heading_alignment",
+          "label": "Heading Text Center",
+          "default": true
+        },
         {
             "type": "text",
             "id": "heading",
             "label": "Heading",
             "default": "how can we help you today?"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description (optional)"
         },
         {
             "type": "image_picker",
@@ -29,7 +45,7 @@
     ],
     "presets": [
       {
-        "name": "Pages Banner",
+        "name": "Module Pages Banner",
         "category": "product"
       }
     ]
