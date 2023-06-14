@@ -17,6 +17,16 @@
         "background_mobile": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_5755b293-68d3-4c05-b9bf-ba5b1519d41c.png"
       }
     },
+    "7511aa05-15ed-4230-97ac-840503cd6895": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 80
+      }
+    },
     "c06ce948-4209-4afb-818f-0b37a8dec8a5": {
       "type": "module-logo",
       "blocks": {
@@ -59,16 +69,19 @@
         "b4fbc2b4-fade-412d-b9a4-a933c032220c"
       ],
       "settings": {
-        "txt_color": "#9F9FBF",
+        "txt_color": "#9f9fbf",
+        "top_bg_color": "#2B2A51",
+        "middle_bg_color": "#6565A0",
+        "bottom_bg_color": "#ffffff",
         "heading": "AS FEATURED ON"
       }
     },
     "4c081107-2c48-451a-9073-9aaf3ed445ac": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#6565a0",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
@@ -76,6 +89,7 @@
   "order": [
     "main",
     "65e291ec-a53a-4e8b-8838-1bf4da54d3a8",
+    "7511aa05-15ed-4230-97ac-840503cd6895",
     "c06ce948-4209-4afb-818f-0b37a8dec8a5",
     "4c081107-2c48-451a-9073-9aaf3ed445ac"
   ]
