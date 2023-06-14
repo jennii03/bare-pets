@@ -16,10 +16,67 @@
         "background": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_451caf55-92f5-4c7e-8e41-7e2717dc9390.png",
         "background_mobile": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_5755b293-68d3-4c05-b9bf-ba5b1519d41c.png"
       }
+    },
+    "c06ce948-4209-4afb-818f-0b37a8dec8a5": {
+      "type": "module-logo",
+      "blocks": {
+        "18654990-09c1-45b1-aedb-a852b42cb089": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/the_pet_times.svg"
+          }
+        },
+        "7b91268d-48ed-4ffb-a0f9-5eee1612c92c": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/philstar.svg"
+          }
+        },
+        "336e1c73-ddb6-4ae1-9742-f74a1ea57b61": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Esquire-logo.svg"
+          }
+        },
+        "6cbedc5b-e02e-4931-a447-ea840ade1e8f": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Esquire-logo.svg"
+          }
+        },
+        "b4fbc2b4-fade-412d-b9a4-a933c032220c": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/manila.svg"
+          }
+        }
+      },
+      "block_order": [
+        "18654990-09c1-45b1-aedb-a852b42cb089",
+        "7b91268d-48ed-4ffb-a0f9-5eee1612c92c",
+        "336e1c73-ddb6-4ae1-9742-f74a1ea57b61",
+        "6cbedc5b-e02e-4931-a447-ea840ade1e8f",
+        "b4fbc2b4-fade-412d-b9a4-a933c032220c"
+      ],
+      "settings": {
+        "txt_color": "#9F9FBF",
+        "heading": "AS FEATURED ON"
+      }
+    },
+    "4c081107-2c48-451a-9073-9aaf3ed445ac": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
     "main",
-    "65e291ec-a53a-4e8b-8838-1bf4da54d3a8"
+    "65e291ec-a53a-4e8b-8838-1bf4da54d3a8",
+    "c06ce948-4209-4afb-818f-0b37a8dec8a5",
+    "4c081107-2c48-451a-9073-9aaf3ed445ac"
   ]
 }
