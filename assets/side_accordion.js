@@ -9,15 +9,18 @@ var slideMq = window.matchMedia("(min-width: 479px)");
     /* the viewport is at least 479 pixels wide */
         document.getElementById("slidingSideNav").style.width = "auto";
         document.getElementById("slidingSideNav").style.overflowY = "visible";
+        jQuery('.side-overlay-content').removeClass('slidingOpen');
     } else {
     /* the viewport is less than 479 pixels wide */
         document.getElementById("slidingSideNav").style.width = "100%";
         document.getElementById("slidingSideNav").style.overflowY = "hidden";
+        jQuery('.side-overlay-content').removeClass('slidingOpen');
     }
 }
 slideMq.addListener(function(changed) {
     document.getElementById("slidingSideNav").style.width = "0";
     document.getElementById("slidingSideNav").style.display = "none";
+    jQuery('.side-overlay-content').addClass('slidingOpen');
 });
 
 jQuery(document).on('click', '.side-accordion__overflow-text', function() {
@@ -28,6 +31,7 @@ jQuery(document).on('click', '.side-accordion__overflow-text', function() {
 function closeSideNav() {
     document.getElementById("slidingSideNav").style.width = "0%";
     document.getElementsByClassName("side-accordion__overflow-text")[0].style.display = "none";
+    jQuery('.side-overlay-content').addClass('slidingOpen');
 }
 
   // Get all checkboxes
