@@ -2,13 +2,24 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "65e291ec-a53a-4e8b-8838-1bf4da54d3a8": {
+      "type": "module-affiliate-banner",
+      "settings": {
+        "heading": "how can we help you today?",
+        "description": "Help spread the word about Bare and earn perks along the way.",
+        "background": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_451caf55-92f5-4c7e-8e41-7e2717dc9390.png",
+        "background_mobile": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_5755b293-68d3-4c05-b9bf-ba5b1519d41c.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "65e291ec-a53a-4e8b-8838-1bf4da54d3a8"
   ]
 }
