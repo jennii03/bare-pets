@@ -1,0 +1,114 @@
+{%liquid
+    assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign retailer_form = section.settings.retailer_form
+    assign image = section.settings.image
+%}
+
+<div id="module-become-retailer-{{ section.id }}" class="module-become-retailer">
+    <div class="become-retailer__wrapper">
+        <div class="become-retailer__container d-flex">
+            <div class="become-retailer__contact-container">
+                <h2 class="become-retailer__heading remove-spacing text-center">{{ heading }}</h2>
+                <p class="become-retailer__description remove-spacing text-center">{{ description }}</p>
+
+                <div class="become-retailer__retailer-form">
+                    {{ retailer_form }}
+                </div>
+            </div>
+            <div class="become-retailer__img-container">
+                <img src="{{ image | image_url }}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .become-retailer__wrapper {
+        padding: 70px 30px;
+        background-image: linear-gradient(180deg, #e0e0ec, #ffffff);
+    }
+    .become-retailer__container {
+        max-width: 1280px;
+        margin: auto;
+        position: relative;
+    }
+    .become-retailer__contact-container, .become-retailer__img-container {
+        width: 50%;
+    }
+    .become-retailer__img-container img {
+        width: 100%;
+    }
+    .become-retailer__heading {
+        font-size: 30px;
+        line-height: 38px;
+        font-family: var(--gilroybold);
+        color: #6565a0;
+    }
+    .become-retailer__description {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: var(--gilroyreg);
+        color: #2a294f;
+        margin-top: 10px;
+    }
+    .become-retailer__img-container img {
+        width: 120%;
+        margin-top: -27%;
+    }
+    @media (max-width: 1450px) {
+        .become-retailer__img-container img {
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px) {
+        .become-retailer__container {
+            flex-direction: column;
+        }
+        .become-retailer__contact-container, .become-retailer__img-container {
+            width: 100%;
+        }
+        .become-retailer__img-container img {
+            margin-top: 0;
+            margin-left: -25%;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Become a Retailer",
+    "class": "module",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "lorem ipsum"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "lorem ipsum dolor sit met"
+        },
+        {
+            "type": "html",
+            "id": "retailer_form",
+            "label": "Retailer Form",
+            "default": "<p>[INSERT RETAILER FORM HERE]</p>"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Become a Retailer",
+        "category": "contact"
+      }
+    ]
+  }
+{% endschema %}
