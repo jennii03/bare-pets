@@ -1,0 +1,48 @@
+{{ 'module-how-does-it-works.css' | asset_url | stylesheet_tag }}
+
+{%liquid
+    assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign background = section.settings.background
+    assign background_mobile = section.settings.background_mobile
+%}
+
+<div class="module-how-does-it-works section-padding">
+    test
+</div>
+
+{% schema %}
+  {
+    "name": "Module Affiliate Banner",
+    "class": "module",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "become an affiliate"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description (optional)"
+        },
+        {
+            "type": "image_picker",
+            "id": "background",
+            "label": "Background"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_mobile",
+            "label": "Background mobile"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Affiliate Banner",
+        "category": "product"
+      }
+    ]
+  }
+{% endschema %}
