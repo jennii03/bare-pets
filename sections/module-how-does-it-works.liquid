@@ -1,0 +1,123 @@
+{{ 'module-how-does-it-works.css' | asset_url | stylesheet_tag }}
+
+{%liquid
+    assign heading = section.settings.heading
+    assign subheading = section.settings.subheading
+%}
+
+<div class="module-how-does-it-works section">
+    <img class="module-how-does-it-works__decor-top" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Base1_2_1_1.png?v=1686812525" alt="decor">
+    <div class="module-how-does-it-works__container">
+        <div class="module-how-does-it-works__heading">
+            <h2 class="section--heading remove-spacing text-center text-light">{{ heading }}</h2>
+        </div>
+        <div class="module-how-does-it-works__programs module-how-does-it-works__programs-desktop d-flex">
+            {% for block in section.blocks %}
+                {%liquid
+                    assign number = block.settings.number
+                    assign heading = block.settings.heading
+                    assign description = block.settings.description
+                    assign image = block.settings.image
+                %}
+                <div class="module-how-does-it-works__bare-visual-item text-center flex-basis-100">
+                    {% if number != blank %}
+                    <div class="module-how-does-it-works__number-container text-center">
+                        <h5 class="module-how-does-it-works__number remove-spacing text-light-purple">{{ number }}</h5>
+                    </div>
+                    {% endif %}
+                    <h4 class="module-how-does-it-works__bare-visual-item-h4 remove-spacing text-light">{{ heading }}</h4>
+                    <p class="remove-spacing text-light">{{ description }}</p>
+
+                    {% if image != blank %}
+                        <div class="module-how-does-it-works__item text-center">
+                            <img src="{{ image | image_url }}" class="module-how-does-it-works__image">
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="module-how-does-it-works__programs module-how-does-it-works__programs-mobile d-flex">
+            {% for block in section.blocks %}
+                {%liquid
+                    assign number = block.settings.number
+                    assign heading = block.settings.heading
+                    assign description = block.settings.description
+                %}
+                <div class="module-how-does-it-works__bare-visual-item text-center flex-basis-100">
+                    {% if number != blank %}
+                    <div class="module-how-does-it-works__number-container text-center d-flex">
+                        <h5 class="module-how-does-it-works__number remove-spacing text-light-purple">{{ number }}</h5>
+                        <h4 class="module-how-does-it-works__bare-visual-item-h4 remove-spacing text-light">{{ heading }}</h4>
+                    </div>
+                    {% endif %}
+                    <p class="remove-spacing text-light">{{ description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <img class="module-how-does-it-works__decor-bottom" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Base1_1_1.png?v=1686812691" alt="decor">
+
+    <div class="module-how-does-it-works__heading-bottom">
+        <h3 class="remove-spacing text-center text-purple">{{ subheading }}</h3>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Module how does it works",
+    "class": "module",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "how does it works?"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "you earn a 20% commission on the order placed by the user"
+        }
+    ],
+    "max_blocks": 4,
+    "blocks": [
+        {
+            "type": "affiliate_program",
+            "name": "Affiliate program",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "number",
+                    "label": "Number",
+                    "default": "1"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Title",
+                    "default": "spread the word"
+                },
+                {
+                    "type": "textarea",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "Write an article on your blog or share our products in your social channels"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module how does it works",
+        "category": "info"
+      }
+    ]
+  }
+{% endschema %}
