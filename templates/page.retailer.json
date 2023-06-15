@@ -1,14 +1,96 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "3d2dc14b-fb27-475c-9013-c816fc26fa7d": {
+      "type": "module-mini-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/BG_About_Us_page.png",
+        "h_color": "#2a294f",
+        "heading": "become a retailer"
+      }
+    },
+    "e735b393-9c7b-4481-8e89-5b121f18e993": {
+      "type": "module-become-retailer",
+      "settings": {
+        "heading": "start your journey and join our pack",
+        "description": "If you are interested in becoming a Bare Pet Food retailer, please complete the form below. Fields marked with an asterisk (*) are mandatory.",
+        "retailer_form": "<p>[INSERT RETAILER FORM HERE]<\/p>",
+        "image": "shopify:\/\/shop_images\/Top_Design_copy.png"
+      }
+    },
+    "822c9531-528a-404c-9bd5-a2db8486a25e": {
+      "type": "module-logo",
+      "blocks": {
+        "600caf01-9525-4569-8f53-6392a0f8a4fb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "475fb044-ce77-41b6-a99f-93bcb7ae5be9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "2afc89b1-ac03-4155-a76f-f4a8b1a2d1f1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "ac78aaf3-5c0b-4744-b011-8e964848dcbb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "29f54a55-c8a5-4656-bb42-1603479d4e46": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        }
+      },
+      "block_order": [
+        "600caf01-9525-4569-8f53-6392a0f8a4fb",
+        "475fb044-ce77-41b6-a99f-93bcb7ae5be9",
+        "2afc89b1-ac03-4155-a76f-f4a8b1a2d1f1",
+        "ac78aaf3-5c0b-4744-b011-8e964848dcbb",
+        "29f54a55-c8a5-4656-bb42-1603479d4e46"
+      ],
+      "settings": {
+        "txt_color": "#9F9FBF",
+        "top_bg_color": "#fff",
+        "middle_bg_color1": "#6565A0",
+        "middle_bg_color2": "#6565A0",
+        "bottom_bg_color": "#ffffff",
+        "heading": "AS FEATURED ON",
+        "remove_bot_decor": true
+      }
+    },
+    "3eabdabe-f833-4a01-ae7b-8863ba32784b": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3d2dc14b-fb27-475c-9013-c816fc26fa7d",
+    "e735b393-9c7b-4481-8e89-5b121f18e993",
+    "822c9531-528a-404c-9bd5-a2db8486a25e",
+    "3eabdabe-f833-4a01-ae7b-8863ba32784b"
+  ]
+}
