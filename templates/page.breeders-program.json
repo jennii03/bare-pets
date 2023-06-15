@@ -1,14 +1,100 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "1482ba33-4944-476e-9e5f-34538e035a5b": {
+      "type": "module-breeder-banner",
+      "settings": {
+        "bg_color": "#6565a0",
+        "h_color": "#ffffff",
+        "heading": "bare breeder program",
+        "banner_image": "shopify:\/\/shop_images\/group-portrait-adorable-puppies_1.png"
+      }
+    },
+    "0cb8443f-15a0-46e3-8f40-1bcb5dead304": {
+      "type": "module-breeder-program",
+      "settings": {
+        "heading": "bare: nutrition for exceptional breeding programs",
+        "description": "Nourishing the Future: Join Our Bare Breeder Partner Program for Canine and Feline Companions. As a responsible dog or cat breeder, you understand the crucial role of proper nutrition in your pets' health and well-being. That's why we want to connect with you. Our Bare Breeder Partner Program is designed to support you in providing the best nutrition for your furry friends through fresh meat, whole food ingredients, and highly digestible protein. To learn more, simply fill out the form and we'll be in touch with all the details.",
+        "subscribe_image": "shopify:\/\/shop_images\/Layer_5.png",
+        "featured_image": "shopify:\/\/shop_images\/studio-shot-papillon-fallen-little-dogs-isolated-white-studio-wall.png",
+        "r_heading": "fill in the fields and join the pack",
+        "form_code": "<p>[INSERT FORM CODE HERE]<\/p>"
+      }
+    },
+    "78d1a80f-deb1-4836-a3e6-5b69e52bb7b4": {
+      "type": "module-logo",
+      "blocks": {
+        "7fe09202-58e7-44ef-a8d4-fa4e9c856202": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "b86ed0cb-f177-4d86-b115-9dc3149f783b": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "929845f1-b399-49ad-a1ac-5eab4faafb43": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "654874d1-0821-42aa-a448-18bb15f39c78": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        },
+        "7e2e76ef-0df9-4071-a321-3183735f5bc6": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+          }
+        }
+      },
+      "block_order": [
+        "7fe09202-58e7-44ef-a8d4-fa4e9c856202",
+        "b86ed0cb-f177-4d86-b115-9dc3149f783b",
+        "929845f1-b399-49ad-a1ac-5eab4faafb43",
+        "654874d1-0821-42aa-a448-18bb15f39c78",
+        "7e2e76ef-0df9-4071-a321-3183735f5bc6"
+      ],
+      "settings": {
+        "txt_color": "#9F9FBF",
+        "top_bg_color": "#ffffff",
+        "middle_bg_color1": "#EB5B56",
+        "middle_bg_color2": "#ea7b49",
+        "bottom_bg_color": "#ffffff",
+        "heading": "AS FEATURED ON",
+        "remove_bot_decor": true,
+        "top_decor": "shopify:\/\/shop_images\/featured-top-image.png"
+      }
+    },
+    "5e5c708c-a879-4245-8403-c76e62bce148": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1482ba33-4944-476e-9e5f-34538e035a5b",
+    "0cb8443f-15a0-46e3-8f40-1bcb5dead304",
+    "78d1a80f-deb1-4836-a3e6-5b69e52bb7b4",
+    "5e5c708c-a879-4245-8403-c76e62bce148"
+  ]
+}
