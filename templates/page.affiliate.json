@@ -1,0 +1,11 @@
+{
+    "name": "Affiliate",
+    "sections": {
+      "main": {
+        "type": "module-affiliate-banner.liquid"
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
