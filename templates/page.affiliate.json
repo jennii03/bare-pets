@@ -59,10 +59,21 @@
         "heading": "how does it works?",
         "subheading": "you earn a 20% commission on the order placed by the user"
       }
+    },
+    "37e54214-a904-444d-956f-09a0f9561506": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "e933852e-d143-4b72-844a-7b695f9eafc8"
+    "e933852e-d143-4b72-844a-7b695f9eafc8",
+    "37e54214-a904-444d-956f-09a0f9561506"
   ]
 }
