@@ -1,0 +1,108 @@
+{% liquid
+    assign bg_color = section.settings.bg_color
+    assign h_color = section.settings.h_color
+    assign heading = section.settings.heading
+    assign banner_image = section.settings.banner_image
+%}
+
+<div id="module-breeder-banner-{{ section.id }}" class="module-breeder-banner">
+    <div class="module-breeder-banner__wrapper">
+        <div class="module-breeder-banner__container d-flex">
+            <div class="module-breeder-banner__left-container">
+                <img src="{{ banner_image | image_url }}">
+            </div>
+            <div class="module-breeder-banner__right-container">
+                <h1 class="module-breeder-banner__heading remove-spacing">{{ heading }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-breeder-banner__wrapper {
+        background: {{ bg_color }};
+    }
+    .module-breeder-banner__heading {
+        color: {{ h_color }};
+    }
+    .module-breeder-banner__container {
+        max-width: 1280px;
+        margin: auto;
+        align-items: center;
+        gap: 40px;
+        overflow: hidden;
+    }
+    .module-breeder-banner__left-container, .module-breeder-banner__right-container {
+        width: 50%;
+    }
+    .module-breeder-banner__left-container img {
+        width: 100%;
+        margin-bottom: -28px;
+    }
+    .module-breeder-banner__heading {
+        color: #ffffff;
+        font-size: 64px;
+        line-height: 70px;
+        font-family: var(--gilroyblack);
+    }
+    @media (max-width: 767px) {
+        .module-breeder-banner__heading {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .module-breeder-banner__container {
+            flex-direction: column-reverse;
+        }
+        .module-breeder-banner__left-container, .module-breeder-banner__right-container {
+            width: 100%;
+        }
+        .module-breeder-banner__left-container img {
+            width: 50%;
+            margin-bottom: -20px;
+        }
+        .module-breeder-banner__wrapper {
+            padding: 70px 30px 0;
+        }
+        .module-breeder-banner__container {
+            gap: 10px;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Breeder Banner",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color",
+            "default": "#6565a0"
+        },
+        {
+            "type": "color",
+            "id": "h_color",
+            "label": "Heading Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "lorem ipsum dolor sit met"
+        },
+        {
+            "type": "image_picker",
+            "id": "banner_image",
+            "label": "Banner Image"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Breeder Banner",
+        "category": "banner"
+      }
+    ]
+  }
+{% endschema %}
