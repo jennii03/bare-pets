@@ -8,9 +8,61 @@
         "background": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_451caf55-92f5-4c7e-8e41-7e2717dc9390.png",
         "background_mobile": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_5755b293-68d3-4c05-b9bf-ba5b1519d41c.png"
       }
+    },
+    "e933852e-d143-4b72-844a-7b695f9eafc8": {
+      "type": "module-how-does-it-works",
+      "blocks": {
+        "af96d172-1193-4b39-821c-cd619cff544b": {
+          "type": "affiliate_program",
+          "settings": {
+            "number": "1",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/Dog_Personality-1.png"
+          }
+        },
+        "32b07d4f-f79d-41aa-b5e5-4618cf147972": {
+          "type": "affiliate_program",
+          "settings": {
+            "number": "2",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/Dog_Personality_1.png"
+          }
+        },
+        "acdf8b15-e5b7-425f-85d8-4d2bd023667c": {
+          "type": "affiliate_program",
+          "settings": {
+            "number": "3",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/Group_3617.png"
+          }
+        },
+        "29cae7e1-e3bf-45d9-a815-ddb92f0e3888": {
+          "type": "affiliate_program",
+          "settings": {
+            "number": "4",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/Golden_Retriever_BG.png"
+          }
+        }
+      },
+      "block_order": [
+        "af96d172-1193-4b39-821c-cd619cff544b",
+        "32b07d4f-f79d-41aa-b5e5-4618cf147972",
+        "acdf8b15-e5b7-425f-85d8-4d2bd023667c",
+        "29cae7e1-e3bf-45d9-a815-ddb92f0e3888"
+      ],
+      "settings": {
+        "heading": "how does it works?",
+        "subheading": "you earn a 20% commission on the order placed by the user"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "e933852e-d143-4b72-844a-7b695f9eafc8"
   ]
 }
