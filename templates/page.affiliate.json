@@ -1,11 +1,16 @@
 {
-    "name": "Affiliate",
-    "sections": {
-      "main": {
-        "type": "module-affiliate-banner.liquid"
+  "sections": {
+    "main": {
+      "type": "module-affiliate-banner",
+      "settings": {
+        "heading": "become an affiliate",
+        "description": "Help spread the word about Bare and earn perks along the way.",
+        "background": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_451caf55-92f5-4c7e-8e41-7e2717dc9390.png",
+        "background_mobile": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws_5755b293-68d3-4c05-b9bf-ba5b1519d41c.png"
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
