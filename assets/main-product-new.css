@@ -69,6 +69,10 @@
     justify-content: end;
 }
 
+.module-modal__right img {
+  max-width: 100%;
+}
+
 .module-product-banner__product-thumbnails {
     list-style-type: none;
     margin: 0;
@@ -192,7 +196,7 @@
 }
   
 .module-modal__content {
-    border-radius: 20px;
+    border-radius: 35px;
     position: relative;
     width: 800px;
     max-width: 90%;
