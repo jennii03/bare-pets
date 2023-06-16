@@ -69,11 +69,74 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "5612f480-68b4-47f2-a5d1-e29595156651": {
+      "type": "module-logo",
+      "blocks": {
+        "c1fb8810-cce9-43e1-aae3-7ec6de06df77": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Same-Size-01_copy.png"
+          }
+        },
+        "cb27ad47-3634-49ac-9135-4a733e5e5cb5": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Same-Size-02_copy.png"
+          }
+        },
+        "d9b786df-27f6-4e42-bb39-bfc88acd8dcb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Same-Size-05_copy-removebg-preview.png"
+          }
+        },
+        "14959c16-2c4a-4928-b5bb-6eda1dd25652": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Same-Size-03_copy.png"
+          }
+        },
+        "9f6510c4-25fc-4fcc-b171-ace071bad18b": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Same-Size-04_copy.png"
+          }
+        }
+      },
+      "block_order": [
+        "c1fb8810-cce9-43e1-aae3-7ec6de06df77",
+        "cb27ad47-3634-49ac-9135-4a733e5e5cb5",
+        "d9b786df-27f6-4e42-bb39-bfc88acd8dcb",
+        "14959c16-2c4a-4928-b5bb-6eda1dd25652",
+        "9f6510c4-25fc-4fcc-b171-ace071bad18b"
+      ],
+      "settings": {
+        "txt_color": "#c4c4cf",
+        "top_bg_color": "#ffffff",
+        "middle_bg_color1": "#ea7c4b",
+        "middle_bg_color2": "#eb5b56",
+        "bottom_bg_color": "#ffffff",
+        "heading": "AS FEATURE ON",
+        "remove_bot_decor": true,
+        "top_decor": "shopify:\/\/shop_images\/image_3_2.png"
+      }
+    },
+    "5178ec61-32e3-415b-9d03-8f8a41105756": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
     "main",
     "e933852e-d143-4b72-844a-7b695f9eafc8",
-    "37e54214-a904-444d-956f-09a0f9561506"
+    "37e54214-a904-444d-956f-09a0f9561506",
+    "5612f480-68b4-47f2-a5d1-e29595156651",
+    "5178ec61-32e3-415b-9d03-8f8a41105756"
   ]
 }
