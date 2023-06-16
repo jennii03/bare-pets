@@ -1,5 +1,6 @@
 .module-how-does-it-works {
     margin-top: -14rem;
+    position: relative;
 }
 
 .module-how-does-it-works__decor-top,
@@ -11,6 +12,20 @@
 
 .module-how-does-it-works__container {
     background: #2A294F;
+}
+
+.module-how-does-it-works__arrow-down {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 62px);
+}
+
+.module-how-does-it-works__arrow-down-img {
+    max-width: 100%;
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
 .module-how-does-it-works__image {
@@ -126,7 +141,76 @@
         display: none;
     }
     
+    /*== Mobile */
+
+    .module-how-does-it-works {
+        margin-top: -8rem;
+    }
+
+    .module-how-does-it-works__arrow-down {
+        transform: translate(-50%, 10px);
+    }
+
+    .module-how-does-it-works__heading {
+        margin-bottom: 2rem;
+    }
+    
+    .module-how-does-it-works__bare-visual-item {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .module-how-does-it-works__number-container.text-center {
+        margin-inline: unset;
+        margin-top: 0;
+        width: 55px;
+        height: 55px;
+        margin-bottom: 0;
+    }
+    
+    .module-how-does-it-works__bare-visual-item:nth-child(1), .module-how-does-it-works__bare-visual-item:nth-child(3) {
+        transform: unset;
+    }
+    
+    .module-how-does-it-works__heading-mobile {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .module-how-does-it-works__bare-visual-item-h4 {
+        text-align: left;
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    
+    .module-how-does-it-works__number {
+        font-size: 30px;
+    }
+    
+    .module-how-does-it-works__bare-visual-item:last-child {
+        margin-bottom: 0;
+    }
+
     .module-how-does-it-works__programs-mobile {
         display: block;
+        padding-bottom: 50px;
+    }
+    
+    .module-how-does-it-works p {
+        text-align: left;
+    }
+
+    .module-how-does-it-works__heading-bottom {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 600px) { 
+    .module-how-does-it-works__heading {
+        padding-top: 4rem;
+    }
+
+    .module-how-does-it-works__arrow-down {
+        transform: translate(-50%, 0);
     }
 }

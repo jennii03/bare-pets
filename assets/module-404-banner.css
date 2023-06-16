@@ -1,0 +1,48 @@
+.module-404-banner {
+    height: 750px;
+}
+
+.module-404-banner__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.module-404-banner__main-content {
+    max-width: 470px;
+}
+
+.module-404-banner__subheading {
+    font-family: var(--gilroybold);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.module-404-banner__heading {
+    font-size: 90px;
+    line-height: 1.1em;
+}
+
+.module-404-banner__button {
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .module-404-banner {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .module-404-banner {
+        height: 450px;
+        text-align: center;
+    }
+
+    .module .main-heading {
+        font-size: 64px;
+        line-height: 1.3em;
+    }
+}
+
