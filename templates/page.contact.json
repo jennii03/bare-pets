@@ -3,7 +3,9 @@
     "main": {
       "type": "module-pages-banner",
       "settings": {
+        "heading_alignment": true,
         "heading": "how can we help you today?",
+        "description": "",
         "background": "shopify:\/\/shop_images\/cute-little-dog-isolated-yellow-edited.png"
       }
     },
@@ -80,7 +82,7 @@
         "txt_color_right": "#ffffff",
         "contact_heading": "contact us",
         "contact_description": "We know how important your dogs are to you, so we're here to help in any way we can. We'd love to hear from you! Expect a response within 3 business days.",
-        "contact_form": "<p>Insert Code Here<\/p>",
+        "contact_form": "<div class=\"klaviyo-form-Yx5baU\"><\/div>",
         "support_heading": "support",
         "enable_socials": true
       }
@@ -149,6 +151,7 @@
         "cta_label": "View All FAQs",
         "cta_link": "",
         "subscribe_logo": "shopify:\/\/shop_images\/Badge-01_purple.png",
+        "logo_position": "left",
         "top_decor": "shopify:\/\/shop_images\/image_10.png"
       }
     },
