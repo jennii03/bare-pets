@@ -1,13 +1,14 @@
 {%liquid
+    assign background_color = section.settings.background_color
     assign heading = section.settings.heading
     assign description = section.settings.description
 %}
 
-<div class="module-stocklist-banner section-padding" style="background-image: url({{ section.settings.background | img_url : 'master' }})">
-  <div class="module-stocklist-banner__container">
+<div class="module-stocklist-banner section-padding" style="background-color: {{ background_color }}">
+  <div class="module-stocklist-banner__container page-width">
       <h1 class="main-heading remove-spacing text-light">{{ heading }}</h1>
       {% if description != blank %}
-        <p class="text-light">{{ description }}</p>
+        <p class="text-light remove-spacing">{{ description }}</p>
       {% endif %}
   </div>
 </div>
@@ -17,6 +18,12 @@
     "name": "Module Stocklist Banner",
     "class": "module",
     "settings": [
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#2a294f"
+        },
         {
             "type": "text",
             "id": "heading",
