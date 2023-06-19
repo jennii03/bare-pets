@@ -3,10 +3,23 @@
     "main": {
       "type": "module-stocklist-banner",
       "settings": {
+        "background_color": "#2a294f",
+        "heading": "stocklist",
+        "description": "Find your nearest bare stocklist"
+      }
+    },
+    "bf94ee4b-3eb1-481f-b6d4-7aa788d9ec08": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "bf94ee4b-3eb1-481f-b6d4-7aa788d9ec08"
   ]
 }
