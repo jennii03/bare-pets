@@ -1,0 +1,162 @@
+
+<div class="map-main">
+    <div class="sidebar-map">
+      <div class="heading">
+        <h1 class="remove-spacing text-purple">bare near you</h1>
+      </div>
+      <div id="listings" class="listings"></div>
+    </div>
+    <div id="map" class="map"></div>
+</div>
+
+<style>
+    .map-main {
+        position: relative;
+        height: 400px;
+    }
+    .sidebar-map {
+        position: absolute;
+        width: 33.3333%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        border-right: 1px solid rgba(0, 0, 0, 0.25);
+      }
+
+      .sidebar-map p {
+            margin: 0;
+            padding: 0;
+       }
+      
+      .map {
+        position: absolute;
+        left: 33.3333%;
+        width: 66.6666%;
+        top: 0;
+        bottom: 0;
+      }
+      
+
+      .heading {
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        min-height: 60px;
+        line-height: 60px;
+        padding: 0 10px;
+        background-color: #f9cf4f;
+        color: #fff;
+      }
+      
+      .listings {
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 60px;
+      }
+      
+      .listings .item {
+        display: block;
+        border-bottom: 1px solid #eee;
+        padding: 10px;
+        text-decoration: none;
+      }
+      
+      .listings .item:last-child {
+        border-bottom: none;
+      }
+      .listings .item .title {
+        display: block;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: #2a294f;
+      }
+      
+      .listings .item .title small {
+        font-weight: 400;
+      }
+      .listings .item.active .title
+       {
+        color: #fff;
+      }
+      .listings .item.active {
+        background-color: #2a294f;
+        color: #fff;
+      }
+      ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+        border-left: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      ::-webkit-scrollbar-track {
+        background: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2a294f;
+        border-radius: 0;
+      }
+      
+      .marker {
+        border: none;
+        cursor: pointer;
+        height: 56px;
+        width: 56px;
+        background-image: url(https://docs.mapbox.com/help/demos/building-a-store-locator/marker.png);
+      }
+      
+      /* Marker tweaks */
+      .mapboxgl-popup {
+        padding-bottom: 50px;
+      }
+      
+      .mapboxgl-popup-close-button {
+        display: none;
+      }
+      .mapboxgl-popup-content {
+        font: 400 15px/22px "Source Sans Pro", "Helvetica Neue", sans-serif;
+        padding: 0;
+        width: 180px;
+      }
+      .mapboxgl-popup-content h3 {
+        background: #2a294f;
+        color: #fff;
+        margin: 0;
+        padding: 10px;
+        border-radius: 3px 3px 0 0;
+        font-weight: 700;
+        margin-top: -15px;
+      }
+      
+      .mapboxgl-popup-content h4 {
+        margin: 0;
+        padding: 10px;
+        font-weight: 400;
+      }
+      
+      .mapboxgl-popup-content div {
+        padding: 10px;
+      }
+      
+      .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+        margin-top: 15px;
+      }
+      
+      .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+        border-bottom-color: #91c949;
+      }
+</style>
+
+
+
+{% schema %}
+  {
+    "presets": [
+      {
+        "name": "Module store locator",
+        "category": "map"
+      }
+    ]
+  }
+{% endschema %}
