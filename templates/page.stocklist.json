@@ -11,15 +11,21 @@
     "bf94ee4b-3eb1-481f-b6d4-7aa788d9ec08": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
+      }
+    },
+    "2e2afd7d-29a0-4e94-9e4a-abd5220877ed": {
+      "type": "module-store-locator",
+      "settings": {
       }
     }
   },
   "order": [
     "main",
-    "bf94ee4b-3eb1-481f-b6d4-7aa788d9ec08"
+    "bf94ee4b-3eb1-481f-b6d4-7aa788d9ec08",
+    "2e2afd7d-29a0-4e94-9e4a-abd5220877ed"
   ]
 }
