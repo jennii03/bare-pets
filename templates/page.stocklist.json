@@ -1,11 +1,12 @@
 {
-    "name": "Stocklist",
-    "sections": {
-      "main": {
-        "type": "module-stocklist-banner"
+  "sections": {
+    "main": {
+      "type": "module-stocklist-banner",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
