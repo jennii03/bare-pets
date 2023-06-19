@@ -25,7 +25,7 @@
         "subscribe_image": "shopify:\/\/shop_images\/Layer_5.png",
         "featured_image": "shopify:\/\/shop_images\/studio-shot-papillon-fallen-little-dogs-isolated-white-studio-wall.png",
         "r_heading": "fill in the fields and join the pack",
-        "form_code": "<p>[INSERT FORM CODE HERE]<\/p>"
+        "form_code": "<div class=\"klaviyo-form-Yx5baU\"><\/div>"
       }
     },
     "78d1a80f-deb1-4836-a3e6-5b69e52bb7b4": {
@@ -72,7 +72,7 @@
       "settings": {
         "txt_color": "#ffffff",
         "top_bg_color": "#ffffff",
-        "middle_bg_color1": "#EB5B56",
+        "middle_bg_color1": "#eb5b56",
         "middle_bg_color2": "#ea7b49",
         "bottom_bg_color": "#ffffff",
         "heading": "AS FEATURED ON",
@@ -83,9 +83,9 @@
     "5e5c708c-a879-4245-8403-c76e62bce148": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
