@@ -360,7 +360,7 @@
 
 #slidingSideNav.overlay { 
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     bottom: 110px;
     left: 0;
     background-color: var(--mint);
