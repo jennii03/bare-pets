@@ -1,0 +1,11 @@
+{
+    "name": "Stocklist",
+    "sections": {
+      "main": {
+        "type": "module-stocklist-banner"
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
