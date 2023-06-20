@@ -10,8 +10,12 @@
     "49e20230-8946-41a2-81eb-083bb4e8bda1": {
       "type": "module-blog-categories",
       "settings": {
-        "h_color": "#ffffff",
-        "heading": "lorem ipsum dolor sit met"
+        "heading": "CATEGORY",
+        "menu": "blog-categories",
+        "blog_handles": "news,partnership,wellness",
+        "enable_recent": true,
+        "recent": "RECENT",
+        "blog": "news"
       }
     },
     "main": {
@@ -21,11 +25,21 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "4af59e6f-0ec1-43e7-9243-4885cb5ef28b": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
     "c146958b-f610-4f31-83cc-5632ce03bc3f",
     "49e20230-8946-41a2-81eb-083bb4e8bda1",
-    "main"
+    "main",
+    "4af59e6f-0ec1-43e7-9243-4885cb5ef28b"
   ]
 }
