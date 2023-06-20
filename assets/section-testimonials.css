@@ -84,6 +84,50 @@
   margin: 0 20px;
 }
 
+
+.section--testimonials::before {
+  content: "";
+position: absolute;
+top: 30px;
+right: 0;
+background-image: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Group_3610.png?v=1687242964');
+background-size: contain;
+width: 300px;
+height: 200px;
+max-width: 100%;
+background-repeat: no-repeat;
+}
+
+
+.testimonial p,
+.section--testimonials {
+  position: relative;
+}
+
+.testimonial p::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-image: url(https://cdn.shopify.com/s/files/1/0613/8406/5197/files/image_5.png?v=1687242416);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.testimonial p::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  background-image: url(https://cdn.shopify.com/s/files/1/0613/8406/5197/files/image_4.png?v=1687242416);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 768px) {
   .section--testimonials {
     padding: 0 0 90px;
@@ -105,7 +149,7 @@
   .section--testimonials .testimonials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 85px;
   }
 
   .section--testimonials .testimonials h5 {
