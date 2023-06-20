@@ -400,7 +400,12 @@
         "description": "Superior, clean ingredients mean balanced nutrition that's better for your <br> doggo in every bite, which is not something we can say about the competition.",
         "comparison_button": "BUNDLE AND SAVE",
         "comparison_button_link": "",
-        "comparison-bg-color": "#f9cf4f"
+        "comparison-bg-color": "#f9cf4f",
+        "heading_color": "#2a294f",
+        "subheading_color": "#EB5B56",
+        "border_color": "#2a294f",
+        "col_highlight_bg": "#2a294f",
+        "colhight_txt_color": "#6DC5B1"
       }
     },
     "5d075d25-c4ea-4323-9c20-c0870195b05f": {
@@ -450,7 +455,9 @@
         "37285719-594d-4792-b26a-7c302b6f82f3"
       ],
       "settings": {
-        "background_color": "#2a294f"
+        "background_color": "#2a294f",
+        "top_bg_color": "#f9cf4f",
+        "bot_bg_color": "#fcfcff"
       }
     },
     "f70b7d4d-d809-45c8-b342-1f3f9b4c12bc": {
@@ -517,7 +524,7 @@
             "photo": "shopify:\/\/shop_images\/Image.png",
             "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
             "author": "John D.",
-            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "title": "Approved by Bronco,<br> the Bernese Mountain Dog",
             "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
           }
         },
@@ -527,7 +534,7 @@
             "photo": "shopify:\/\/shop_images\/Image.png",
             "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
             "author": "John D.",
-            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "title": "Approved by Bronco,<br> the Bernese Mountain Dog",
             "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
           }
         },
@@ -537,7 +544,7 @@
             "photo": "shopify:\/\/shop_images\/Image.png",
             "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
             "author": "John D.",
-            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "title": "Approved by Bronco,<br> the Bernese Mountain Dog",
             "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
           }
         },
@@ -547,7 +554,7 @@
             "photo": "shopify:\/\/shop_images\/Image.png",
             "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
             "author": "John D.",
-            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "title": "Approved by Bronco,<br> the Bernese Mountain Dog",
             "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
           }
         },
@@ -557,7 +564,7 @@
             "photo": "shopify:\/\/shop_images\/Image.png",
             "quote": "Believe it or not, this goofball is fussy as he is fluffy. Ordered his first @barekibble... it was love at first bite! 😍",
             "author": "John D.",
-            "title": "Approved by Bronco, the Bernese Mountain Dog",
+            "title": "Approved by Bronco,<br> the Bernese Mountain Dog",
             "dog": "shopify:\/\/shop_images\/happy-dog-holding-bone-with-his-paws.png"
           }
         }
@@ -623,7 +630,12 @@
       ],
       "settings": {
         "txt_color": "#9f9fbf",
-        "heading": "AS FEATURED ON"
+        "top_bg_color": "#2B2A51",
+        "middle_bg_color1": "#6565A0",
+        "middle_bg_color2": "#6565A0",
+        "bottom_bg_color": "#ffffff",
+        "heading": "AS FEATURED ON",
+        "remove_bot_decor": false
       }
     },
     "b0e025b4-e579-45aa-b878-dd05d98304cd": {
@@ -781,9 +793,12 @@
         "b1f43ebf-0bc7-4956-be0f-3afbb811c88c"
       ],
       "settings": {
+        "gradient1": "#ea7b49",
+        "gradient2": "#eb5b56",
         "heading": "Have Questions?",
         "cta_label": "View All FAQs",
-        "cta_link": "shopify:\/\/pages\/faqs"
+        "cta_link": "shopify:\/\/pages\/faqs",
+        "logo_position": "left"
       }
     }
   },
