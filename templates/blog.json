@@ -19,10 +19,32 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ae0dcde2-48c1-4878-a672-aee6276055e7": {
+      "type": "module-blog-categories",
+      "settings": {
+        "heading": "CATEGORY",
+        "menu": "blog-categories",
+        "blog_handles": "",
+        "enable_recent": true,
+        "recent": "RECENT",
+        "blog": "news"
+      }
+    },
+    "2c387df6-1483-48ac-8ad2-912529a3d569": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
     "f9a92236-49ee-4719-8751-94202465ae28",
-    "main"
+    "main",
+    "ae0dcde2-48c1-4878-a672-aee6276055e7",
+    "2c387df6-1483-48ac-8ad2-912529a3d569"
   ]
 }
