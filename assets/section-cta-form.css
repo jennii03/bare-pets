@@ -41,6 +41,7 @@
   .section-cta-form .section--intro {
     font-size: 46px;
     line-height: 50px;
+    margin: 0;
   }
 
   .section-cta-form .cta-form-text {
@@ -177,7 +178,24 @@
   }
   
   .transparent { display: none; }
+
+  .cta-form-text .klaviyo-form-TnwYMn input, .cta-form-text .klaviyo-form-TnwYMn input::placeholder {
+    font-family: var(--gilroybold)!important;
+    font-size: 14x!important;
+    line-height: 18px;
+    background: #fff!important;
+  }
   
+  .klaviyo-form-TnwYMn input::placeholder {
+    color: #5c605f!important;
+  }
+
+  .cta-form-text .klaviyo-form-TnwYMn button {
+    font-family: var(--futurabold)!important;
+    font-size: 16px!important;
+    letter-spacing: 1px!important;
+  }
+
   @media (min-width: 768px) {
     .transparent {
       display: block;
