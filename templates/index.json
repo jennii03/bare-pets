@@ -402,10 +402,10 @@
         "comparison_button_link": "",
         "comparison-bg-color": "#f9cf4f",
         "heading_color": "#2a294f",
-        "subheading_color": "#EB5B56",
+        "subheading_color": "#eb5b56",
         "border_color": "#2a294f",
         "col_highlight_bg": "#2a294f",
-        "colhight_txt_color": "#6DC5B1"
+        "colhight_txt_color": "#6dc5b1"
       }
     },
     "5d075d25-c4ea-4323-9c20-c0870195b05f": {
@@ -630,9 +630,9 @@
       ],
       "settings": {
         "txt_color": "#9f9fbf",
-        "top_bg_color": "#2B2A51",
-        "middle_bg_color1": "#6565A0",
-        "middle_bg_color2": "#6565A0",
+        "top_bg_color": "#2b2a51",
+        "middle_bg_color1": "#6565a0",
+        "middle_bg_color2": "#6565a0",
         "bottom_bg_color": "#ffffff",
         "heading": "AS FEATURED ON",
         "remove_bot_decor": false
@@ -733,7 +733,7 @@
       "settings": {
         "heading": "sign up and get 30% off your first month!",
         "intro": "You shouldn't be the only one eating healthy",
-        "form": "FORM CODE",
+        "form": "<div class=\"klaviyo-form-TnwYMn\"><\/div>",
         "background": "shopify:\/\/shop_images\/bg-ctaform.png",
         "badge": "shopify:\/\/shop_images\/Badge-4.png"
       }
