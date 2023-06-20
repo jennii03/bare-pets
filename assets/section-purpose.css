@@ -35,6 +35,9 @@
     z-index: 1;
 }
 
+.purpose__heading {
+    margin-bottom: 2.5rem;
+}
 
 .section--purpose.pull-by-prev {
     margin-top: -10%;
