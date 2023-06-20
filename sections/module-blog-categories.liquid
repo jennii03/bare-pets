@@ -1,11 +1,57 @@
+{%liquid
+    assign heading = section.settings.heading
+    assign menu = section.settings.menu
+    assign blog_handles = section.settings.blog_handles
+    assign enable_recent = section.settings.enable_recent
+    assign recent = section.settings.recent
+    assign blog = section.settings.blog
+%}
+
 <div id="module-blog-cat-{{ section.id }}" class="module-blog-cat">
     <div class="module-blog-cat__wrapper">
         <div class="module-blog-cat__container d-flex">
             <div class="module-blog-cat__filter-container">
-                [Insert Filter Here]
+                <h2 class="module-blog-cat__heading remove-spacing">{{ heading }}</h2>
+                
+                {%- if menu != blank -%}
+                    <ul class="module-blog-cat__menu list-unstyled">
+                      {%- for link in menu.links -%}
+                        <li>
+                          <a href="{{ link.url }}" class="module-blog-cat__menu-item">
+                            {{ link.title }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                {%- endif -%}
+
+                {% if enable_recent %}
+                    <h2 class="module-blog-cat__recent remove-spacing">{{ recent }}</h2>
+                    <div class="module-blog-cat__recents">
+                        {% assign recent = blog | split: "," %}
+
+                        {% for handle in recent %}
+                            {% for article in blogs[handle].articles %}
+                                <div class="module-blog-cat__recent-item">
+                                    <div class="module-blog-cat__recent-image">
+                                        <img src="{{ article.image | image_url }}">
+                                    </div>
+                                    <div class="module-blog-cat__recent-info">
+                                        <p class="module-blog-cat__recent-content remove-spacing">{{ article.content | truncatewords: 8 }}</p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
             <div class="module-blog-cat__blog-container">
-                {% assign blog_handles = "news,partnership,wellness" | split: "," %}
+                {% if blog_handles != blank %}
+                    {% assign blog_handles = blog_handles | split: "," %}
+                {% else %}
+                {% assign blog_handless = blog.handle %}
+                    {% assign blog_handles = blog_handless | split: "," %}
+                {% endif %}
 
                 {% for handle in blog_handles %}
                     {% for article in blogs[handle].articles %}
@@ -44,10 +90,10 @@
         gap: 50px;
     }
     .module-blog-cat__filter-container {
-        width: 30%;
+        width: 20%;
     }
     .module-blog-cat__blog-container {
-        width: 70%;
+        width: 80%;
     }
     .module-blog-cat__blog-image img {
         width: 100%;
@@ -122,6 +168,60 @@
     .module-blog-cat__blog-linking {
         padding: 20px;
     }
+    .module-blog-cat__menu-item {
+        font-family: var(--gilroyreg);
+        font-size: 14px;
+        line-height: 40px;
+        color: #2a294f;
+        text-decoration: none;
+    }
+    .module-blog-cat__menu li {
+        border-bottom: solid 1px #9f9fbf;
+    }
+    .module-blog-cat__heading, .module-blog-cat__recent {
+        font-size: 18px;
+        line-height: 21px;
+        font-family: var(--futurabold);
+        color: #6bc5b1;
+    }
+    .module-blog-cat__recent {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .module-blog-cat__recent-item {
+        display: flex;
+        gap: 20px;
+    }
+    .module-blog-cat__recent-image img {
+        width: 90px;
+        height: 70px;
+        object-fit: cover;
+    }
+    .module-blog-cat__recent-info p {
+        font-family: var(--gilroyreg);
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+    }
+    @media (max-width: 1024px) {
+        .module-blog-cat__blog-lists {
+            width: calc(50% - 14px);
+        }
+    }
+    @media (max-width: 767px) {
+        .module-blog-cat__filter-container, .module-blog-cat__blog-container {
+            width: 100%;
+        }
+        .module-blog-cat__blog-lists {
+            width: 100%;
+        }
+        .module-blog-cat__container {
+            flex-direction: column;
+        }
+        .module-blog-cat__recent, .module-blog-cat__recents {
+            display: none;
+        }
+    }
 </style>
 
 {% schema %}
@@ -130,21 +230,38 @@
     "class": "module",
     "settings": [
         {
-            "type": "image_picker",
-            "id": "bg_image",
-            "label": "Background Image"
-        },
-        {
-            "type": "color",
-            "id": "h_color",
-            "label": "Heading Color",
-            "default": "#ffffff"
-        },
-        {
             "type": "text",
             "id": "heading",
             "label": "Heading",
-            "default": "lorem ipsum dolor sit met"
+            "default": "CATEGORY"
+        },
+        {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu"
+        },
+        {
+            "type": "text",
+            "id": "blog_handles",
+            "label": "Blog Handles",
+            "info": "separate handles with comma (,). leave blank if it will be used on individual blog pages"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_recent",
+            "label": "Enable Recent Blogs?",
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "recent",
+            "label": "Heading",
+            "default": "RECENT"
+        },
+        {
+            "type": "blog",
+            "id": "blog",
+            "label": "Blog to feature"
         }
     ],
     "presets": [
