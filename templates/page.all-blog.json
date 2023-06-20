@@ -1,7 +1,15 @@
 {
   "sections": {
+    "c146958b-f610-4f31-83cc-5632ce03bc3f": {
+      "type": "module-blog-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Food-Photography-Retouching-Ideas-For-Inspiration-12-banner.png",
+        "heading": "free education to set your pup up for a healthier, happier life"
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -16,6 +24,7 @@
     }
   },
   "order": [
+    "c146958b-f610-4f31-83cc-5632ce03bc3f",
     "main",
     "49e20230-8946-41a2-81eb-083bb4e8bda1"
   ]
