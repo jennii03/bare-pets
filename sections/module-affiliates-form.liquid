@@ -1,0 +1,77 @@
+{%liquid
+    assign heading = section.settings.heading
+    assign affiliates_form = section.settings.affiliates_form
+%}
+
+<div id="module-affiliates-form-{{ section.id }}" class="module-affiliates-form">
+    <div class="affiliates-form__wrapper">
+        <div class="affiliates-form__container">
+            <h2 class="affiliates-form__heading remove-spacing text-center">{{ heading }}</h2>
+            <div class="affiliates-form">
+                {{ affiliates_form }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .affiliates-form__wrapper {
+        padding: 70px 30px;
+    }
+    .affiliates-form__container {
+        max-width: 900px;
+        margin: auto;
+    }
+    .affiliates-form__heading {
+        font-size: 28px;
+        line-height: 32px;
+        font-family: var(--gilroybold);
+        color: #6565a0;
+        margin-bottom: 20px;
+    }
+    .affiliates-form .klaviyo-form-RYsnEW label {
+        color: #2a294f!important;
+        font-family: var(--gilroyreg)!important;
+        font-size: 16px!important;
+        line-height: 19px;
+    }
+    .affiliates-form .klaviyo-form-RYsnEW input {
+        font-family: var(--gilroybold)!important;
+        font-size: 14px!important;
+        line-height: 17px;
+        background: #fff!important;
+    }
+    .affiliates-form .klaviyo-form-RYsnEW input::placeholder {
+        font-family: var(--gilroybold)!important;
+        font-size: 14px!important;
+        line-height: 17px;
+        color: #9da9b3!important;
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Affiliates Form",
+    "class": "module",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "lorem ipsum dolor"
+        },
+        {
+            "type": "html",
+            "id": "affiliates_form",
+            "label": "Affiliates Form",
+            "default": "<p>[INSERT FORM CODE HERE]</p>"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Affiliates Form",
+        "category": "form"
+      }
+    ]
+  }
+{% endschema %}
