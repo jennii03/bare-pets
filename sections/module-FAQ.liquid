@@ -4,6 +4,7 @@
     assign heading = section.settings.heading
     assign btn_text = section.settings.btn_text
     assign btn_link = section.settings.btn_link
+    assign bg_color = section.settings.bg_color
 %}
 
 <div id="module-faq-{{ section.id }}" class="module-faq">
@@ -46,6 +47,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
+        background-color: {{ bg_color }};
     }
     .module-faq__container {
         max-width: 1280px;
@@ -185,6 +187,11 @@
             "type": "image_picker",
             "id": "bg_image",
             "label": "Background Image"
+        },
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color"
         },
         {
             "type": "color",

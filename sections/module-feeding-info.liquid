@@ -1,0 +1,191 @@
+{%liquid
+    assign bg_color = section.settings.bg_color
+    assign txt_color = section.settings.txt_color
+    assign heading1 = section.settings.heading1
+    assign description1 = section.settings.description1
+    assign heading2 = section.settings.heading2
+    assign description2 = section.settings.description2
+    assign btn_txt = section.settings.btn_txt
+    assign btn_link = section.settings.btn_link
+    assign top_decor = section.settings.top_decor
+    assign before_img = section.settings.before_img
+    assign after_img = section.settings.after_img
+%}
+
+<div id="module-feeding-info-{{ section.id }}" class="module-feeding-info">
+    {% if top_decor != blank %}
+        <img class="decor-top" src="{{ top_decor | image_url }}" alt="decor">
+    {% endif %}
+    <div class="feeding-info__wrapper">
+        <div class="feeding-info__container">
+            <h2 class="feeding-info__heading1 remove-spacing">{{ heading1 }}</h2>
+            <p class="feeding-info__description1 remove-spacing">{{ description1 }}</p>
+            <h2 class="feeding-info__heading2 remove-spacing">{{ heading2 }}</h2>
+            <p class="feeding-info__description2 remove-spacing">{{ description2 }}</p>
+
+            <div class="feeding-info__button text-center">
+                <a href="{{ btn_link }}" class="feeding-info__button-link btn btn--primary">{{ btn_txt }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .module-feeding-info {
+        position: relative;
+        overflow: hidden;
+    }
+    .feeding-info__wrapper {
+        padding: 50px 30px;
+        background: {{ bg_color }};
+    }
+    .feeding-info__container {
+       max-width: 1280px;
+       margin: auto; 
+       position: relative;
+       z-index: 2;
+    }
+    .feeding-info__container h2, .feeding-info__container p {
+        color: {{ txt_color }};
+    }
+    .feeding-info__container h2 {
+        font-size: 38px;
+        line-height: 55px;
+        font-family: var(--gilroybold);
+        margin-bottom: 10px;
+    }
+    .feeding-info__container p {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: var(--gilroyreg);
+    }
+    .feeding-info__heading2 {
+        margin-top: 30px;
+    }
+    .feeding-info__description1 {
+        border-bottom: solid 1px #e1e1e1;
+        padding-bottom: 30px;
+    }
+    .feeding-info__button {
+        padding-top: 50px;
+    }
+    .module-feeding-info .decor-top {
+        width: 100%;
+        margin-bottom: -50px;
+    }
+    .module-feeding-info:after, .module-feeding-info:before {
+        position: absolute;
+        background-size: contain;
+        content: "";
+        z-index: 1;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 250px;
+    }
+    .module-feeding-info:before {
+        background-image: url('{{ before_img | image_url }}');
+        top: 0;
+        right: -50px;
+    }
+    .module-feeding-info:after {
+        background-image: url('{{ after_img | image_url }}');
+        bottom: 0;
+        left: -70px;
+    }
+    @media (max-width: 767px) {
+        .module-feeding-info:after, .module-feeding-info:before {
+            width: 100px;
+            height: 100px;
+        }
+        .module-feeding-info:before {
+            right: -10px;
+        }
+        .module-feeding-info:after {
+            left: -20px;
+        }
+        .feeding-info__container h2 {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .module-feeding-info .decor-top {
+            margin-bottom: -20px;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Module Feeding Info",
+    "class": "module",
+    "settings": [
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color",
+            "default": "#2a294f"
+        },
+        {
+            "type": "color",
+            "id": "txt_color",
+            "label": "Text Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "text",
+            "id": "heading1",
+            "label": "Heading 1",
+            "default": "lorem ipsum dolor"
+        },
+        {
+            "type": "textarea",
+            "id": "description1",
+            "label": "Description 1",
+            "default": "lorem ipsum dolor sit met"
+        },
+        {
+            "type": "text",
+            "id": "heading2",
+            "label": "Heading 2",
+            "default": "lorem ipsum dolor"
+        },
+        {
+            "type": "textarea",
+            "id": "description2",
+            "label": "Description 2",
+            "default": "lorem ipsum dolor sit met"
+        },
+        {
+            "type": "text",
+            "id": "btn_txt",
+            "label": "Button Text",
+            "default": "TRY BARE"
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+        },
+        {
+            "type": "image_picker",
+            "id": "top_decor",
+            "label": "Top Decor"
+        },
+        {
+            "type": "image_picker",
+            "id": "before_img",
+            "label": "Before Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "after_img",
+            "label": "After Image"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Module Feeding Info",
+        "category": "info"
+      }
+    ]
+  }
+{% endschema %}
