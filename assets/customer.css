@@ -1,4 +1,4 @@
-.customer:not(.account):not(.order) {
+.customer:not(.account):not(.order):not(.login) {
   margin: 0 auto;
   max-width: 33.4rem;
   padding-left: 1.5rem;
@@ -7,18 +7,153 @@
 }
 
 @media screen and (min-width: 750px) {
-  .customer:not(.account):not(.order) {
+  .customer:not(.account):not(.order):not(.login) {
     max-width: 47.8rem;
   }
 }
 
+.customer.login {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 780px;
+}
+
+.login__form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.login__text {
+  align-self: start;
+  margin-top: 10rem;
+  margin-left: 12rem;
+  text-align: center;
+}
+
+.login__container {
+  max-width: 44rem;
+  width: 44rem;
+  background: #fff;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.login__form .ssi-wrapper {
+  margin: 0;
+}
+
+.login-main-form {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .customer > h1,
 .customer__title {
   margin-top: 0;
 }
 
-.customer form {
+.login #login__button {
+  background: var(--purple);
+  margin-bottom: 1rem;
+}
+
+.login.customer button:after,
+.login.customer button:before {
+  box-shadow: none;
+}
+
+#login__button {
+  margin-top: 2rem;
+}
+
+.ssi-title:before,
+.ssi-title:after {
+    content: "";
+    width: 12rem;
+    max-width: 12rem;
+    height: 2px;
+    background: #ccc;
+}
+.ssi-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+#recovery-button {
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #808080;
+  margin-bottom: 0.5rem;
+}
+
+h1#recover {
+  font-size: 36px;
+  text-align: center;
+  color: var(--purple);
+}
+
+.login__container button.customer_submit {
+  background: var(--purple);
+  border-radius: 30px;
+}
+
+.login .create-account-button,
+#login__button,
+.login__container .customer_submit {
+  color: #fff;
+  background: #5D5D95;
+  font-family: var(--futurabold);
+  line-height: normal;
+  padding: 16px 36px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  transition: all ease-in-out .3s;
+  transform: scale(1);
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* .customer form {
   margin-top: 4rem;
+} */
+
+
+.have-account {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.have-account:before,
+.have-account:after {
+  content: "";
+  width: 7rem;
+  max-width: 7rem;
+  height: 2px;
+  background: #ccc;
+}
+
+.have-account:before{
+  margin: 0 20px 0 0;
+}
+
+.have-account:after{
+  margin: 0 0 0 20px;
 }
 
 .customer button {
@@ -226,6 +361,41 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .customer.login {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login__form {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .login__text {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login__container {
+    max-width: 38rem;
+  }
+}
+
+@media screen and (max-width: 375px) { 
+  .login__container {
+    max-width: 34rem;
+  }
+}
+
+@media screen and (max-width: 320px) { 
+  .login__container {
+    max-width: 29rem;
+  }
+}
+
 /* mobile table overrides */
 @media screen and (max-width: 749px) {
   .customer thead,
@@ -345,7 +515,7 @@
 }
 
 .login p {
-  margin: 1.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .login h3 {

@@ -55,5 +55,13 @@
           $('.count-2').val(0);
         }
     });
+    
+    $("#recovery-button").click(function() {
+      $(".login-main-form-head, .login-main-form").hide();
+    });
+  
+    $("#login__cancel").click(function() {
+      $(".login-main-form-head, .login-main-form").show();
+    });
 
 })();
