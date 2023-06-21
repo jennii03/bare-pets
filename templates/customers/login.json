@@ -3,6 +3,7 @@
     "main": {
       "type": "main-login",
       "settings": {
+        "bg_image_desktop": "shopify:\/\/shop_images\/bg_cc8f6326-205e-4819-b6cd-d951aeadaa1c.png",
         "padding_top": 36,
         "padding_bottom": 36
       }
