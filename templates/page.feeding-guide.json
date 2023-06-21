@@ -1,14 +1,81 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
+    "0cf628b0-322d-42fd-b5c3-a2a606feb851": {
+      "type": "module-feeding-info",
+      "settings": {
+        "bg_color": "#2a294f",
+        "txt_color": "#ffffff",
+        "heading1": "how bare food calculator will help you?",
+        "description1": "The BARE Food Calculator is an online tool designed to calculate how much you should feed your dog. It also displays the amount you should feed them, as per their breed and body weight.",
+        "heading2": "why is calculating the amount of dog food important?",
+        "description2": "All dogs are different. Whether it is because of their breed, body weight, age, or activity level, different dogs have different energy needs. It's extremely important important to understand the correct amount of food that the dogs need as per their energy needs.Hence, it becomes necessary to calculate the amount of food to feed your dog, so they stay fit and healthy. Here are the common factors that can help determine the amount of food your dog needs: \n<br><br>\n1. Age of your dog: Younger pups are more active and have higher metabolism rates, and hence, need more calories than adult and senior dogs. Puppies also need more protein, calcium, and phosphorus. Senior dogs have a low calorie and high protein requirement.\n<br>\n2. Activity level: Active dogs need more calories than inactive dogs. \n<br>\n3. Dog Food Type: The amount of dog food you should feed also depends on the type of food you select - wet or dry.\n<br>\n4. Size of the dog: Small dogs have small stomachs and thus require high calorie-density from their food to ensure that they are fed well. \n<br><br>\nOther factors that may temporarily affect your dog’s food requirements include injuries or sickness (your dog may need more calories to heal faster), and pregnancy or lactation period (during which time a dog requires more calories).",
+        "btn_txt": "TRY BARE",
+        "btn_link": "",
+        "top_decor": "shopify:\/\/shop_images\/Base1_2_1_1.png",
+        "before_img": "shopify:\/\/shop_images\/chichen_1_2.png",
+        "after_img": "shopify:\/\/shop_images\/chichen_1_2.png"
+      }
+    },
+    "1ed673de-21ba-4c88-bcef-71fb76be2dc3": {
+      "type": "module-FAQ",
+      "blocks": {
+        "006bc764-527b-4ee3-a702-f26865850fbd": {
+          "type": "faq_left",
+          "settings": {
+            "faq_question_left": "Why dog kibble?",
+            "faq_answer_left": "Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble."
+          }
+        },
+        "42a2e439-4fbe-4b5e-b346-bfaf95f79c20": {
+          "type": "faq_left",
+          "settings": {
+            "faq_question_left": "Who formulates bare kibbble?",
+            "faq_answer_left": "Here’s the scoop. Backed by decades of scientific research, kibble proves to be the simplest and safest way to ensure your dog is getting a balanced diet. It’s cost-effective, easy to store with low risk of spoilage, and can help promote healthier teeth and gums. You know your dog best, but we unanimously decided that kibble was the kind of food we wanted to both make and feed our dogs. As it turns out, every nutritionist and industry expert that we consulted also feeds their own dogs kibble."
+          }
+        },
+        "421722b5-9b16-447b-b63d-a5fb1e200307": {
+          "type": "faq_left",
+          "settings": {
+            "faq_question_left": "Does bare meet AAFCO guidelines?",
+            "faq_answer_left": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nulla? Suscipit corrupti nemo consequuntur necessitatibus sunt perferendis, dolores consectetur itaque quas eum enim nulla, laborum laboriosam, provident commodi odit animi!"
+          }
+        }
+      },
+      "block_order": [
+        "006bc764-527b-4ee3-a702-f26865850fbd",
+        "42a2e439-4fbe-4b5e-b346-bfaf95f79c20",
+        "421722b5-9b16-447b-b63d-a5fb1e200307"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Base.png",
+        "bg_color": "#2a294f",
+        "heading_color": "#2A294F",
+        "heading": "have more questions?",
+        "btn_text": "View All FAQs",
+        "btn_link": ""
+      }
+    },
+    "10d0061f-dd6d-41ce-80c2-71ea3f2e4631": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0cf628b0-322d-42fd-b5c3-a2a606feb851",
+    "1ed673de-21ba-4c88-bcef-71fb76be2dc3",
+    "10d0061f-dd6d-41ce-80c2-71ea3f2e4631"
+  ]
+}
