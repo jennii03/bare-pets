@@ -21,7 +21,7 @@
       "settings": {
         "heading": "start your journey and join our pack",
         "description": "If you are interested in becoming a Bare Pet Food retailer, please complete the form below. Fields marked with an asterisk (*) are mandatory.",
-        "retailer_form": "<p>[INSERT RETAILER FORM HERE]<\/p>",
+        "retailer_form": "<div class=\"klaviyo-form-YvP4uL\"><\/div>",
         "image": "shopify:\/\/shop_images\/Top_Design_copy.png"
       }
     },
@@ -67,10 +67,10 @@
         "29f54a55-c8a5-4656-bb42-1603479d4e46"
       ],
       "settings": {
-        "txt_color": "#9F9FBF",
-        "top_bg_color": "#fff",
-        "middle_bg_color1": "#6565A0",
-        "middle_bg_color2": "#6565A0",
+        "txt_color": "#9f9fbf",
+        "top_bg_color": "#ffffff",
+        "middle_bg_color1": "#6565a0",
+        "middle_bg_color2": "#6565a0",
         "bottom_bg_color": "#ffffff",
         "heading": "AS FEATURED ON",
         "remove_bot_decor": true
@@ -79,9 +79,9 @@
     "3eabdabe-f833-4a01-ae7b-8863ba32784b": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
