@@ -1,18 +1,16 @@
 {{ 'module-404-banner.css' | asset_url | stylesheet_tag }}
 
 {%liquid
+    assign background_image_desktop = section.settings.background_image_desktop
+    assign background_image_mobile = section.settings.background_image_mobile
     assign subheading = section.settings.subheading
     assign heading = section.settings.heading
     assign description = section.settings.description
     assign button_text = section.settings.button_text
-    assign button_link = section.settings.button_link
+    assign button_link = section.settings.button_link 
 %}
 
-{% comment %}
-background-image: url({{ section.settings.background | img_url : 'master' }});
-{% endcomment%}
-
-<div class="module-404-banner section-padding" style=" background-color: #5D5D95;">
+<div id="module-404-banner-{{ section.id }}" class="module-404-banner section-padding">
   <div class="module-404-banner__container page-width">
       <div class="module-404-banner__main-content">
         <h3 class="module-404-banner__subheading remove-spacing text-mint">{{ subheading }}</h4>
@@ -25,8 +23,38 @@ background-image: url({{ section.settings.background | img_url : 'master' }});
             <a class="btn btn--primary" href="{{ button_link }}">{{ button_text }}</a>
         </div>
       </div>
+      <div class="module-404-banner__mobile-image">
+        <img src="{{ background_image_mobile | image_url }}" alt="{{ background_image_mobile.alt }}">
+      </div>
   </div>
 </div>
+
+<style>
+  #module-404-banner-{{ section.id }} {
+    background-image: url('{{ background_image_desktop | image_url }}');
+    background-size: cover;
+  }
+
+  .module-404-banner__mobile-image {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    #module-404-banner-{{ section.id }} {
+      background-image: none;
+      background-color: #42426F;
+    }
+
+    .module-404-banner__mobile-image {
+      display: block;
+    }
+
+    .module-404-banner__container {
+      flex-direction: column;
+    }
+  }
+
+</style>
 
 {% schema %}
   {
@@ -35,8 +63,13 @@ background-image: url({{ section.settings.background | img_url : 'master' }});
     "settings": [
         {
             "type": "image_picker",
-            "id": "background",
+            "id": "background_image_desktop",
             "label": "Background"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image_mobile",
+          "label": "Background"
         },
         {
             "type": "text",
