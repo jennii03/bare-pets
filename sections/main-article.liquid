@@ -37,7 +37,7 @@
             {% endif %}
             <div class="article-details">
               <div class="d-flex justify-space-between text-mint">
-                <p class="article-category remove-spacing">News</p>
+                <h3 class="article-category text-mint remove-spacing subheading">News</h3>
                 <p class="article-date remove-spacing">{{ article.published_at | date: "%B %d, %Y" }}</p>
               </div>
     
@@ -84,10 +84,24 @@
   
           {%- when 'title'-%}
             <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-              <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
+              <h1 class="article-template__title text-purple section--heading" itemprop="headline">{{ article.title | escape }}</h1>
               {%- if block.settings.blog_show_date -%}
-                <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+                <div class="article-template__container d-flex">
+                  <div>
+                    <h3 class="article-category-date text-mint remove-spacing subheading">Date</h3>
+                    <span class="circle-divider caption-with-letter-spacing article-category-sub" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>  
+                  </div>
+
+                  <div>
+                    <h3 class="article-category-date text-mint remove-spacing subheading">Category</h3>
+                    {% comment %} static currently {% endcomment %}
+                    <span class="circle-divider caption-with-letter-spacing article-category-sub">Partnership</span>
+                  </div>
+                </div>
               {%- endif -%}
+
+   
+              
               {%- if block.settings.blog_show_author -%}
                 <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
                   <span itemprop="name">{{ article.author }}</span>
