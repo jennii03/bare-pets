@@ -9,7 +9,8 @@
     "dde739ac-ca54-4ba2-902f-2b37bef84563": {
       "type": "module-404-banner",
       "settings": {
-        "background": "shopify:\/\/shop_images\/BG_404.png",
+        "background_image_desktop": "shopify:\/\/shop_images\/BG_404.png",
+        "background_image_mobile": "shopify:\/\/shop_images\/404_1.png",
         "subheading": "404 page not found",
         "heading": "uh-oh!",
         "description": "This page is like chicken you left on the couster that can't be found, want to keep shopping instead?",
