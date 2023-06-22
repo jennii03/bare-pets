@@ -9,7 +9,7 @@
         "heading": "simple. honest. nutritious. dog food.",
         "subheading": "A pet brand that millennial moms and dads actually approve of!",
         "btn_text": "Try Bare",
-        "btn_link": "",
+        "btn_link": "shopify:\/\/pages\/shop",
         "floating_txt_1": "Dog food that your best<br>friends are guaranteed to love.",
         "floating_txt_2": "Our fur friends loves us"
       }
@@ -37,7 +37,7 @@
         "review_text": "12 reviews",
         "column_description": "Honestly good dry dog food. No gluten. No preservatives. Never any bad stuff.",
         "button_text": "Try Bare",
-        "button_link": ""
+        "button_link": "shopify:\/\/products\/candidly-fresh-chicken"
       }
     },
     "08ac1a4a-6db7-4fcb-a8cc-33e6320e947c": {
@@ -54,7 +54,7 @@
         "review_text": "12 reviews",
         "column_description": "Serve your picky with the taste and perks of a home-cooked meal, hassle-free.",
         "button_text": "Try Bare",
-        "button_link": ""
+        "button_link": "shopify:\/\/products\/seriously-beefy"
       }
     },
     "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb": {
@@ -398,7 +398,7 @@
         "subheading": "HOW WE COMPARE",
         "comparison_heading": "<p>see the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0613\/8406\/5197\/files\/logo.png?v=1678962502\"> difference<\/p>",
         "description": "Superior, clean ingredients mean balanced nutrition that's better for your <br> doggo in every bite, which is not something we can say about the competition.",
-        "comparison_button": "BUNDLE AND SAVE",
+        "comparison_button": "LEARN MORE",
         "comparison_button_link": "",
         "comparison-bg-color": "#f9cf4f",
         "heading_color": "#2a294f",
@@ -472,7 +472,7 @@
         "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video": "",
         "button_text": "Know what's best for your best friend",
-        "button_link": ""
+        "button_link": "shopify:\/\/pages\/feeding-guide"
       }
     },
     "d905f7cd-742b-4293-808c-e747d8534912": {
