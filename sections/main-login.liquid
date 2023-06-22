@@ -6,15 +6,28 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  #login-{{ section.id }} {
+    background-image: url('{{ section.settings.bg_image_desktop | image_url }}');
+  }
+
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    #login-{{ section.id }}.login {
+      background-image: url('{{ section.settings.bg_image_mobile | image_url }}');
+      height: 890px;
+    }
+    
+  }
 {%- endstyle -%}
 
-<div class="customer login section-{{ section.id }}-padding" style="background-image: url('{{ section.settings.bg_image_desktop | image_url }}')">
+<div id="login-{{ section.id }}" class="customer login section-{{ section.id }}-padding">
   <div class="login__form page-width">
     <div class="login__container">
       <h1 id="recover" tabindex="-1" class="remove-spacing">
