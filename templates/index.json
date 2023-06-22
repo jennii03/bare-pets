@@ -732,7 +732,7 @@
       "type": "comp-cta-form",
       "settings": {
         "heading": "sign up and get 30% off your first month!",
-        "intro": "You shouldn't be the only one eating healthy",
+        "intro": "you shouldn't be the only one eating healthy",
         "form": "<div class=\"klaviyo-form-TnwYMn\"><\/div>",
         "background": "shopify:\/\/shop_images\/bg-ctaform.png",
         "badge": "shopify:\/\/shop_images\/Badge-4.png"
