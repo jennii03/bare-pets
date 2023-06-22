@@ -12,11 +12,14 @@
   line-height: 23px;
   color: var(--mint);
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: var(--futurabold);
 }
 
 .section-cta-form .section--intro {
   color: #fff;
-  font-family: var(--gilroybold);
+  font-family: var(--gilroyblack);
   font-size: 24px;
   line-height: 29px;
   margin: 0;
@@ -180,7 +183,7 @@
   .transparent { display: none; }
 
   .cta-form-text .klaviyo-form-TnwYMn input, .cta-form-text .klaviyo-form-TnwYMn input::placeholder {
-    font-family: var(--gilroybold)!important;
+    font-family: var(--gilroysemi)!important;
     font-size: 14x!important;
     line-height: 18px;
     background: #fff!important;
