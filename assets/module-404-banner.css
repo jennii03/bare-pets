@@ -2,6 +2,12 @@
     height: 750px;
 }
 
+.module-404-banner__mobile-image img {
+    max-width: 60%;
+    display: block;
+    margin-inline: auto;
+}
+
 .module-404-banner__container {
     display: flex;
     align-items: center;
@@ -27,19 +33,26 @@
     margin-top: 2rem;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .module-404-banner {
-        height: 600px;
+        height: 570px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .module-404-banner {
-        height: 450px;
-        text-align: center;
+        height: auto;
+        padding-bottom: 0;
     }
 
+    .module-404-banner__main-content {
+        text-align: center;
+    }
+    
+    
+}
+
+@media screen and (max-width: 600px) {
     .module .main-heading {
         font-size: 64px;
         line-height: 1.3em;
