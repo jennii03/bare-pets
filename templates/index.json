@@ -4,6 +4,7 @@
       "type": "module-banner",
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/hero_image.png",
+        "mobile_bg": "shopify:\/\/shop_images\/Hero_Image_1.png",
         "h_color": "#6565a0",
         "txt_color": "#2a294f",
         "heading": "simple. honest. nutritious. dog food.",
