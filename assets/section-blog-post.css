@@ -55,22 +55,24 @@
 
 .article-template header {
   margin-top: 4.4rem;
-  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
   line-height: calc(0.8 / var(--font-body-scale));
 }
 
 @media screen and (min-width: 750px) {
   .article-template header {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 }
 
-.article-template__title {
+.article-template .article-template__title {
   margin: 0;
+  text-transform: capitalize;
 }
 
 .article-template__title:not(:only-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .article-template__link {
@@ -247,14 +249,25 @@ article.article-template {
   color: rgba(var(--color-foreground),.75);
 }
 
-.section .article .article-date {
-  font-size: 14px;
-  color: var(--color-foreground);
-}
-
-.article-category {
+/* .article-category {
   text-transform: uppercase;
   font-weight: 700;
+} */
+
+.article-category-date {
+  margin-bottom: 0.5rem;
+}
+
+.article-category-sub,
+.section .article .article-date {
+  font-weight: 600;
+  font-size: 12px;
+  color: #808080;
+  text-transform: capitalize;
+}
+
+.article-template__container {
+  gap: 40px;
 }
 
 @media screen and (max-width: 990px) { 
