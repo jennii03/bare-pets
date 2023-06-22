@@ -4,12 +4,13 @@
       "type": "module-banner",
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/hero_image.png",
+        "mobile_bg": "shopify:\/\/shop_images\/Hero_Image_1.png",
         "h_color": "#6565a0",
         "txt_color": "#2a294f",
         "heading": "simple. honest. nutritious. dog food.",
         "subheading": "A pet brand that millennial moms and dads actually approve of!",
         "btn_text": "Try Bare",
-        "btn_link": "",
+        "btn_link": "shopify:\/\/pages\/shop",
         "floating_txt_1": "Dog food that your best<br>friends are guaranteed to love.",
         "floating_txt_2": "Our fur friends loves us"
       }
@@ -37,7 +38,7 @@
         "review_text": "12 reviews",
         "column_description": "Honestly good dry dog food. No gluten. No preservatives. Never any bad stuff.",
         "button_text": "Try Bare",
-        "button_link": ""
+        "button_link": "shopify:\/\/products\/candidly-fresh-chicken"
       }
     },
     "08ac1a4a-6db7-4fcb-a8cc-33e6320e947c": {
@@ -54,7 +55,7 @@
         "review_text": "12 reviews",
         "column_description": "Serve your picky with the taste and perks of a home-cooked meal, hassle-free.",
         "button_text": "Try Bare",
-        "button_link": ""
+        "button_link": "shopify:\/\/products\/seriously-beefy"
       }
     },
     "bc31eabb-76f5-4b99-87e3-cdbb0b1b1dbb": {
@@ -398,8 +399,8 @@
         "subheading": "HOW WE COMPARE",
         "comparison_heading": "<p>see the <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0613\/8406\/5197\/files\/logo.png?v=1678962502\"> difference<\/p>",
         "description": "Superior, clean ingredients mean balanced nutrition that's better for your <br> doggo in every bite, which is not something we can say about the competition.",
-        "comparison_button": "BUNDLE AND SAVE",
-        "comparison_button_link": "",
+        "comparison_button": "LEARN MORE",
+        "comparison_button_link": "shopify:\/\/pages\/shop",
         "comparison-bg-color": "#f9cf4f",
         "heading_color": "#2a294f",
         "subheading_color": "#eb5b56",
@@ -472,7 +473,7 @@
         "iframe_video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video": "",
         "button_text": "Know what's best for your best friend",
-        "button_link": ""
+        "button_link": "shopify:\/\/pages\/feeding-guide"
       }
     },
     "d905f7cd-742b-4293-808c-e747d8534912": {
@@ -731,7 +732,7 @@
     "4ca29403-f6d8-41da-93ee-564a217f84a5": {
       "type": "comp-cta-form",
       "settings": {
-        "heading": "sign up and get 30% off your first month!",
+        "heading": "SUBSCRIBE AND GET 20% OFF YOUR FIRST ORDER",
         "intro": "you shouldn't be the only one eating healthy",
         "form": "<div class=\"klaviyo-form-TnwYMn\"><\/div>",
         "background": "shopify:\/\/shop_images\/bg-ctaform.png",
@@ -759,7 +760,7 @@
           "type": "faq-item",
           "settings": {
             "question": "Does bare meet AAFCO guidelines?",
-            "answer": "<p>Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus.<\/p>"
+            "answer": "<p>AAFCO stands for the Association of American Feed Control Officials. They establish guidelines and regulations for pet food manufacturing. At Bare Pets, we're proud to say that our products meet or exceed AAFCO guidelines. This ensures that our pet food is nutritionally balanced and suitable for pets, providing them with the essential nutrients they need to thrive.<\/p>"
           }
         },
         "70db93f5-ec8b-4007-a32a-b092688aaa19": {
