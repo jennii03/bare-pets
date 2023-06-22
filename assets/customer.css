@@ -128,6 +128,10 @@ h1#recover {
   font-weight: 700;
 }
 
+.login .create-account-button:hover {
+  color: #fff;
+}
+
 /* .customer form {
   margin-top: 4rem;
 } */
@@ -358,6 +362,12 @@ h1#recover {
   .customer thead::after,
   .customer tfoot::before {
     background: CanvasText;
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  .customer.login {
+    height: 720px;
   }
 }
 
