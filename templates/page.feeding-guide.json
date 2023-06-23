@@ -17,7 +17,7 @@
         "heading2": "why is calculating the amount of dog food important?",
         "description2": "All dogs are different. Whether it is because of their breed, body weight, age, or activity level, different dogs have different energy needs. It's extremely important important to understand the correct amount of food that the dogs need as per their energy needs.Hence, it becomes necessary to calculate the amount of food to feed your dog, so they stay fit and healthy. Here are the common factors that can help determine the amount of food your dog needs: \n<br><br>\n1. Age of your dog: Younger pups are more active and have higher metabolism rates, and hence, need more calories than adult and senior dogs. Puppies also need more protein, calcium, and phosphorus. Senior dogs have a low calorie and high protein requirement.\n<br>\n2. Activity level: Active dogs need more calories than inactive dogs. \n<br>\n3. Dog Food Type: The amount of dog food you should feed also depends on the type of food you select - wet or dry.\n<br>\n4. Size of the dog: Small dogs have small stomachs and thus require high calorie-density from their food to ensure that they are fed well. \n<br><br>\nOther factors that may temporarily affect your dog’s food requirements include injuries or sickness (your dog may need more calories to heal faster), and pregnancy or lactation period (during which time a dog requires more calories).",
         "btn_txt": "TRY BARE",
-        "btn_link": "",
+        "btn_link": "shopify:\/\/collections",
         "top_decor": "shopify:\/\/shop_images\/Base1_2_1_1.png",
         "before_img": "shopify:\/\/shop_images\/chichen_1_2.png",
         "after_img": "shopify:\/\/shop_images\/chichen_1_2.png"
@@ -56,7 +56,7 @@
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Base.png",
         "bg_color": "#2a294f",
-        "heading_color": "#2A294F",
+        "heading_color": "#2a294f",
         "heading": "have more questions?",
         "btn_text": "View All FAQs",
         "btn_link": ""
@@ -65,9 +65,9 @@
     "10d0061f-dd6d-41ce-80c2-71ea3f2e4631": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
