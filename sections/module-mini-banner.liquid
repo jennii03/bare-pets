@@ -2,11 +2,15 @@
     assign bg_image = section.settings.bg_image
     assign h_color = section.settings.h_color
     assign heading = section.settings.heading
+    assign subheading = section.settings.subheading
 %}
 
 <div id="module-mini-banner-{{ section.id }}" class="module-mini-banner">
     <div class="module-mini-banner__wrapper">
         <div class="module-mini-banner__container">
+            {% if subheading != blank %}
+                <h3 class="remove-spacing subheading text-mint">{{ subheading }}</h3>
+            {% endif %}
             <h1 class="module-mini-banner__heading remove-spacing">{{ heading }}</h1>
         </div>
     </div>
@@ -64,6 +68,11 @@
             "id": "h_color",
             "label": "Heading Color",
             "default": "#ffffff"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading (Optional)"
         },
         {
             "type": "text",
