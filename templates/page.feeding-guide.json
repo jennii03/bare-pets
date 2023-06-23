@@ -2,9 +2,19 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "0c98137d-c9b1-4a24-9ed4-cf357cb6792d": {
+      "type": "module-mini-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/faqs_bg-edited.png",
+        "h_color": "#ffffff",
+        "subheading": "Feeding Calculator",
+        "heading": "How to transition<br> your dog food to bare"
       }
     },
     "0cf628b0-322d-42fd-b5c3-a2a606feb851": {
@@ -74,6 +84,7 @@
   },
   "order": [
     "main",
+    "0c98137d-c9b1-4a24-9ed4-cf357cb6792d",
     "0cf628b0-322d-42fd-b5c3-a2a606feb851",
     "1ed673de-21ba-4c88-bcef-71fb76be2dc3",
     "10d0061f-dd6d-41ce-80c2-71ea3f2e4631"
