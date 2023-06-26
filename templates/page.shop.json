@@ -121,7 +121,7 @@
         "1b5e3c3d-57f2-4df0-a34c-14862d6bd080"
       ],
       "settings": {
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "txt_color": "#2a294f",
         "heading": "better nutrition<br>starts with clean ingredients",
         "image": "shopify:\/\/shop_images\/Ellipse_173.png",
@@ -188,7 +188,8 @@
         "gradient2": "#6565a0",
         "heading": "Frequently Asked Questions",
         "cta_label": "View All FAQs",
-        "cta_link": "",
+        "cta_link": "shopify:\/\/pages\/faqs",
+        "logo_position": "left",
         "top_decor": "shopify:\/\/shop_images\/image_6.webp"
       }
     }
