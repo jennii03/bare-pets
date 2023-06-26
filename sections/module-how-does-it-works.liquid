@@ -3,14 +3,26 @@
 {%liquid
     assign heading = section.settings.heading
     assign subheading = section.settings.subheading
+    assign margin_top = section.settings.margin_top
+    assign bg_color = section.settings.bg_color
+    assign padding_bot = section.settings.padding_bot
+    assign bg_color_top = section.settings.bg_color_top
+    assign btn_link = section.settings.btn_link
+    assign btn_text = section.settings.btn_text
 %}
 
 <div id="module-how-does-it-works" class="module-how-does-it-works section">
     <a class="module-how-does-it-works__arrow-down" href="#module-how-does-it-works"><img class="module-how-does-it-works__arrow-down-img" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Icon_Drag_Scroll_down.png?v=1686896982" alt="Icon Drag Scroll down"></a>
-    <img class="module-how-does-it-works__decor-top" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Base1_2_1_1.png?v=1686812525" alt="decor">
+    <img class="module-how-does-it-works__decor-top" src="https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Base1_2_1_1.png?v=1686812525" alt="decor" style="background-color: {{ bg_color_top }}">
     <div class="module-how-does-it-works__container">
         <div class="module-how-does-it-works__heading">
             <h2 class="section--heading remove-spacing text-center text-light">{{ heading }}</h2>
+
+            {% if btn_link != blank %}
+                <div class="module-how-does-it-works_button text-center">
+                    <a href="{{ btn_link }}" class="module-how-does-it-works_button-link btn btn--primary">{{ btn_text }}</a>
+                </div>
+            {% endif %}
         </div>
         <div class="module-how-does-it-works__programs module-how-does-it-works__programs-desktop d-flex">
             {% for block in section.blocks %}
@@ -69,6 +81,15 @@
     </div>
 </div>
 
+<style>
+    .module-how-does-it-works {
+        margin-top: -{{ margin_top }}rem;
+        position: relative;
+        padding-bottom: {{ padding_bot }}rem;
+        background-color: {{ bg_color }};
+    }
+</style>
+
 {% schema %}
   {
     "name": "Module how does it works",
@@ -85,6 +106,47 @@
             "id": "subheading",
             "label": "Subheading",
             "default": "you earn a 20% commission on the order placed by the user"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text",
+            "default": "TRY BARE"
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+        },
+        {
+            "type": "color",
+            "id": "bg_color_top",
+            "label": "Top Decor Background Color"
+        },
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color"
+        },
+        {
+            "type": "range",
+            "id": "margin_top",
+            "min": 0,
+            "max": 15,
+            "step": 1,
+            "unit": "rem",
+            "label": "Margin Top",
+            "default": 14
+        },
+        {
+            "type": "range",
+            "id": "padding_bot",
+            "min": 0,
+            "max": 15,
+            "step": 1,
+            "unit": "rem",
+            "label": "Padding Bottom",
+            "default": 0
         }
     ],
     "max_blocks": 4,
