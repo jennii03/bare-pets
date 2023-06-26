@@ -52,7 +52,7 @@
     .module-logo__container {
         max-width: 1280px;
         margin: auto;
-        padding: 20px 0 0;
+        padding: 40px 0 0;
     }
     .module-logo__heading {
         color: {{ txt_color }};
@@ -85,7 +85,9 @@
         }
         .module-logo__items:nth-child(3),
         .module-logo__items:nth-child(4) {
-            margin-top: 8%;
+            margin-top: 4%;
+            margin-bottom: -2%;
+            z-index: 1;
         }
     {% else %}
         .module-logo__items:nth-child(1),
@@ -118,6 +120,7 @@
         .module-logo__items:nth-child(3),
         .module-logo__items:nth-child(4) {
             margin-top: 0;
+            margin-bottom: 0;
         }
         .module-logo__logos {
             padding: 20px 0;

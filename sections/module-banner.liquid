@@ -73,6 +73,50 @@
         bottom: 50%;
         left: 20%;
     }
+    .module-banner__floating-txt1:after {
+        content: '';
+        position: absolute;
+        background: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Group_1152.png?v=1684482073');
+        height: 50px;
+        width: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        top: 105%;
+    }
+    .module-banner__floating-txt2:after {
+        content: '';
+        position: absolute;
+        background: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/g10.png?v=1684482074');
+        height: 140px;
+        width: 140px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 10%;
+        top: -80%;
+    }
+    .module-banner__wrapper:before {
+        content: '';
+        position: absolute;
+        background: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/banner_kibble_1.png?v=1687420098');
+        height: 40%;
+        width: 40%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 1%;
+        bottom: 5%;
+    }
+    .module-banner__wrapper:after {
+        content: '';
+        position: absolute;
+        background: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/banner_kibble_2.png?v=1687420098');
+        height: 45%;
+        width: 12%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: 20%;
+    }
     @media (max-width: 1600px) {
         .module-banner__floating-txt1 {
             left: 15%;
@@ -101,6 +145,9 @@
         }
     }
     @media (max-width: 767px) {
+        .module-banner__wrapper:before {
+            height: 25%;
+        }
         .module-banner__heading {
             margin-top: 70px;
         }
