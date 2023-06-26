@@ -123,7 +123,7 @@
       "settings": {
         "bg_color": "#ffffff",
         "txt_color": "#2a294f",
-        "heading": "better nutrition<br>starts with clean ingredients",
+        "heading": "better nutritionstarts with clean ingredients",
         "image": "shopify:\/\/shop_images\/Ellipse_173.png",
         "before_img": "shopify:\/\/shop_images\/chichen_1_2.png",
         "after_img": "shopify:\/\/shop_images\/tomato_2.png"
@@ -180,7 +180,7 @@
         "02a3cccb-a1fa-44c5-93f6-891f87582a64"
       ],
       "settings": {
-        "heading": "how does it works?",
+        "heading": "how does the subscription model work?",
         "subheading": ""
       }
     },
