@@ -13,6 +13,7 @@
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/BG_About_Us_page.png",
         "h_color": "#2a294f",
+        "subheading": "",
         "heading": "become a retailer"
       }
     },
@@ -31,31 +32,31 @@
         "600caf01-9525-4569-8f53-6392a0f8a4fb": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+            "logo": "shopify:\/\/shop_images\/Same-Size-01_copy.png"
           }
         },
         "475fb044-ce77-41b6-a99f-93bcb7ae5be9": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+            "logo": "shopify:\/\/shop_images\/Same-Size-02_copy.png"
           }
         },
         "2afc89b1-ac03-4155-a76f-f4a8b1a2d1f1": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+            "logo": "shopify:\/\/shop_images\/Same-Size-05_copy-removebg-preview.png"
           }
         },
         "ac78aaf3-5c0b-4744-b011-8e964848dcbb": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+            "logo": "shopify:\/\/shop_images\/Same-Size-03_copy.png"
           }
         },
         "29f54a55-c8a5-4656-bb42-1603479d4e46": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Icon-Immunity.png"
+            "logo": "shopify:\/\/shop_images\/Same-Size-04_copy.png"
           }
         }
       },
