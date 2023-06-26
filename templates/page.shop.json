@@ -129,6 +129,61 @@
         "after_img": "shopify:\/\/shop_images\/tomato_2.png"
       }
     },
+    "51551aac-593d-46d5-aad2-10ac974a2567": {
+      "type": "module-how-does-it-works",
+      "blocks": {
+        "10ae3106-0341-4ebe-892a-266c2b38d2f2": {
+          "type": "affiliate_program",
+          "settings": {
+            "background_color": "#6565a0",
+            "number": "1",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/01.png"
+          }
+        },
+        "aabf8c00-7e2e-4847-b630-f89523fc2d01": {
+          "type": "affiliate_program",
+          "settings": {
+            "background_color": "#6565a0",
+            "number": "2",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/Dog_Personality_1.png"
+          }
+        },
+        "cc3e32e3-f4e1-46d9-b782-1dc2bef0ecba": {
+          "type": "affiliate_program",
+          "settings": {
+            "background_color": "#6565a0",
+            "number": "3",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/03.png"
+          }
+        },
+        "02a3cccb-a1fa-44c5-93f6-891f87582a64": {
+          "type": "affiliate_program",
+          "settings": {
+            "background_color": "#6565a0",
+            "number": "4",
+            "heading": "spread the word",
+            "description": "Write an article on your blog or share our products in your social channels",
+            "image": "shopify:\/\/shop_images\/Golden_Retriever_BG.png"
+          }
+        }
+      },
+      "block_order": [
+        "10ae3106-0341-4ebe-892a-266c2b38d2f2",
+        "aabf8c00-7e2e-4847-b630-f89523fc2d01",
+        "cc3e32e3-f4e1-46d9-b782-1dc2bef0ecba",
+        "02a3cccb-a1fa-44c5-93f6-891f87582a64"
+      ],
+      "settings": {
+        "heading": "how does it works?",
+        "subheading": ""
+      }
+    },
     "76e43578-e6a5-405f-9f3d-145bb258e77f": {
       "type": "comp-faq",
       "blocks": {
@@ -186,7 +241,7 @@
       "settings": {
         "gradient1": "#2a294f",
         "gradient2": "#6565a0",
-        "heading": "Frequently Asked Questions",
+        "heading": "have questions?",
         "cta_label": "View All FAQs",
         "cta_link": "shopify:\/\/pages\/faqs",
         "logo_position": "left",
@@ -199,6 +254,7 @@
     "5e9f6ebe-748b-4d6a-8b78-96324bb69376",
     "1a16c09f-a592-4dd9-8ea6-65ec57366403",
     "132beb25-694d-4866-a95c-3177245493b6",
+    "51551aac-593d-46d5-aad2-10ac974a2567",
     "76e43578-e6a5-405f-9f3d-145bb258e77f"
   ]
 }
