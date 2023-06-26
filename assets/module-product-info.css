@@ -158,6 +158,10 @@
     margin-bottom: 5rem;
 }
 
+.module-product-info__heading h2 {
+    margin-bottom: 1.5rem;
+}
+
 .module-product-info__bottom-main {
     display: flex;
     gap: 20px;
