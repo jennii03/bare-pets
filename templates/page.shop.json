@@ -135,7 +135,7 @@
         "10ae3106-0341-4ebe-892a-266c2b38d2f2": {
           "type": "affiliate_program",
           "settings": {
-            "background_color": "#6565a0",
+            "background_color": "#a4a4ca",
             "number": "1",
             "heading": "spread the word",
             "description": "Write an article on your blog or share our products in your social channels",
@@ -145,30 +145,30 @@
         "aabf8c00-7e2e-4847-b630-f89523fc2d01": {
           "type": "affiliate_program",
           "settings": {
-            "background_color": "#6565a0",
+            "background_color": "#a4a4ca",
             "number": "2",
-            "heading": "spread the word",
-            "description": "Write an article on your blog or share our products in your social channels",
+            "heading": "choose from our honest options",
+            "description": "Pick from either our wet food, dry food or both options depending on your best friend's needs.",
             "image": "shopify:\/\/shop_images\/Dog_Personality_1.png"
           }
         },
         "cc3e32e3-f4e1-46d9-b782-1dc2bef0ecba": {
           "type": "affiliate_program",
           "settings": {
-            "background_color": "#6565a0",
+            "background_color": "#a4a4ca",
             "number": "3",
-            "heading": "spread the word",
-            "description": "Write an article on your blog or share our products in your social channels",
+            "heading": "subscribe and save",
+            "description": "Subscribe to your favorite bare products and save. Then sit back and never worry about running out of food your dog actually enjoys again.",
             "image": "shopify:\/\/shop_images\/03.png"
           }
         },
         "02a3cccb-a1fa-44c5-93f6-891f87582a64": {
           "type": "affiliate_program",
           "settings": {
-            "background_color": "#6565a0",
+            "background_color": "#a4a4ca",
             "number": "4",
-            "heading": "spread the word",
-            "description": "Write an article on your blog or share our products in your social channels",
+            "heading": "sit back. relax. repeat.",
+            "description": "We will deliver your order on your chosen schedule if you subscribed. You can edit your delivery preferences, and more, all in your personal Bare account.",
             "image": "shopify:\/\/shop_images\/Golden_Retriever_BG.png"
           }
         }
@@ -181,7 +181,13 @@
       ],
       "settings": {
         "heading": "how does the subscription model work?",
-        "subheading": ""
+        "subheading": "",
+        "btn_text": "TRY BARE",
+        "btn_link": "shopify:\/\/pages\/shop",
+        "bg_color_top": "#ffffff",
+        "bg_color": "#6565a0",
+        "margin_top": 14,
+        "padding_bot": 2
       }
     },
     "76e43578-e6a5-405f-9f3d-145bb258e77f": {
