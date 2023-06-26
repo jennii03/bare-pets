@@ -15,12 +15,13 @@
         <div class="module-how-does-it-works__programs module-how-does-it-works__programs-desktop d-flex">
             {% for block in section.blocks %}
                 {%liquid
+                    assign background_color = block.settings.background_color
                     assign number = block.settings.number
                     assign heading = block.settings.heading
                     assign description = block.settings.description
                     assign image = block.settings.image
                 %}
-                <div class="module-how-does-it-works__bare-visual-item text-center flex-basis-100">
+                <div class="module-how-does-it-works__bare-visual-item text-center flex-basis-100" style="background-color: {{ background_color }}">
                     {% if number != blank %}
                     <div class="module-how-does-it-works__number-container text-center">
                         <h5 class="module-how-does-it-works__number remove-spacing text-light-purple">{{ number }}</h5>
@@ -41,11 +42,12 @@
         <div class="module-how-does-it-works__programs module-how-does-it-works__programs-mobile d-flex">
             {% for block in section.blocks %}
                 {%liquid
+                    assign background_color = block.settings.background_color
                     assign number = block.settings.number
                     assign heading = block.settings.heading
                     assign description = block.settings.description
                 %}
-                <div class="module-how-does-it-works__bare-visual-item text-center flex-basis-100">
+                <div class="module-how-does-it-works__bare-visual-item text-center flex-basis-100" style="background-color: {{ background_color }}">
                     {% if number != blank %}
                     <div class="module-how-does-it-works__heading-mobile">
                         <div class="module-how-does-it-works__number-container text-center d-flex">
@@ -91,6 +93,12 @@
             "type": "affiliate_program",
             "name": "Affiliate program",
             "settings": [
+                {
+                    "type": "color",
+                    "id": "background_color",
+                    "default": "#6565a0",
+                    "label": "Background Color"
+                },
                 {
                     "type": "text",
                     "id": "number",

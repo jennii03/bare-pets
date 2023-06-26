@@ -43,7 +43,7 @@
 }
 
 .module-how-does-it-works__bare-visual-item {
-    background: #6565a0;
+    /* background: #6565a0; */
     border-radius: 30px;
     padding: 0 25px;
     z-index: 1;
