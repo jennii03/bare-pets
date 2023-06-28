@@ -5,14 +5,15 @@
 }
 
 .section .section--heading {
-    font-family: var(--gilroyblack);
+    font-family: var(--gilroybold);
     font-size: 24px;
     line-height: 29px;
     text-transform: lowercase;
 }
 
 .section .section--subheading  {
-    font-family: var(--futurabold);
+    font-family: var(--futuramd);
+    letter-spacing: 1px;
     font-size: 18px;
     line-height: 1.3em;
     margin: 0;
