@@ -286,6 +286,12 @@
         "settings": {
           "enablePreviewMode": true
         }
+      },
+      "72581342190376770": {
+        "type": "shopify:\/\/apps\/dcart\/blocks\/app-embed\/731e2611-8bdf-4514-b5e4-f64f1cae3fb7",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
