@@ -69,9 +69,10 @@
 }
 
 .history--desc {
-  font-size: 12px;
+  font-family: var(--gilroyreg);
+  font-weight: 600;
+  font-size: 13px;
   line-height: 16px;
-  font-family: var(--gilroysemi);
   width: 145px;
   text-align: center;
 
@@ -143,6 +144,10 @@
 /* SECOND */
 .history--item:nth-child(2) .history--desc {
   margin-bottom: 120px;
+}
+
+.about-store-info .section--store-info .info p {
+  font-weight: 600;
 }
 
 .history--item:nth-child(2) .history--year h3 {
