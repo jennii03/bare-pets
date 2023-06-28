@@ -1508,5 +1508,17 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       }
     ]
+  },
+  {
+    "name": "Free Shipping",
+    "settings": [
+      {
+        "type": "number",
+        "id": "free_shipping_amount",
+        "label": "Enter Amount",
+        "info": "The amount on cart to get free shipping",
+        "default": 2000
+      }
+    ]
   }
 ]
