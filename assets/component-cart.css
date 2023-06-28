@@ -41,6 +41,10 @@ cart-items.is-empty .title-wrapper-with-link,
   font-size: inherit;
 }
 
+.cart__main-grid {
+  --grid-desktop-horizontal-spacing: 30px;
+}
+
 @media screen and (min-width: 990px) {
   .cart__warnings {
     padding: 7rem 0 1rem;
@@ -58,7 +62,6 @@ cart-items {
 .cart__items {
   position: relative;
   padding-bottom: 3rem;
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .cart__items--disabled {
@@ -165,7 +168,7 @@ cart-items {
 }
 
 .cart__dynamic-checkout-buttons {
-  max-width: 36rem;
+  max-width: 26rem;
   margin: 0 auto;
 }
 
