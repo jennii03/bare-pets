@@ -142,7 +142,10 @@ body {
     transform: translate(0, -50%);
   }
 
- 
+  .why-it-so-special-section .text-yellow {
+    font-family: var(--gilroysemi);
+    letter-spacing: 1.3px;
+}
   .cd-resize-img img {
     position: absolute;
     left: 0;
