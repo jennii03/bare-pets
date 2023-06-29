@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="page-width">
+        <div class="review__header">
+            <h2>{{ section.settings.head }}</h2>
+        </div>
+    </div>
+</div>
+
+<style>
+.review__header h2 {
+    font-size: 65px;
+    text-align: center;
+    font-family: var(--gilroybold);
+}
+@media (max-width: 600px){
+    .review__header h2 {
+    font-size: 30px;
+}
+}
+</style>
+
+{% schema %}
+  {
+  "name": "Review Header",
+  "class": "review-header-section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "head"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Review Header"
+    }
+  ]
+}  
+{% endschema %}
