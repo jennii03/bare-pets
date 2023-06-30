@@ -13,6 +13,7 @@
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Base1.png",
         "h_color": "#ffffff",
+        "subheading": "",
         "heading": "our money-back<br>guarantee"
       }
     },
@@ -115,7 +116,7 @@
         "gradient2": "#6565a0",
         "heading": "Frequently Asked Questions",
         "cta_label": "View All FAQs",
-        "cta_link": "",
+        "cta_link": "shopify:\/\/pages\/faqs",
         "subscribe_logo": "shopify:\/\/shop_images\/Badge-01_54a2694c-5315-46b0-8e35-2ae60a9fc895.png",
         "logo_position": "right",
         "top_decor": "shopify:\/\/shop_images\/image_6.webp"
@@ -127,9 +128,9 @@
 
       ],
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
