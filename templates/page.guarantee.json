@@ -113,7 +113,8 @@
       ],
       "custom_css": [
         ".decor-top {margin-top: -100px; padding-bottom: 2rem;}",
-        ".subscribe__logo {top: -20%;}"
+        ".subscribe__logo {top: -20%;}",
+        "@media (min-width: 768px) {section {padding: 0 0 100px;}}"
       ],
       "settings": {
         "gradient1": "#2a294f",
