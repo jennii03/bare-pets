@@ -109,6 +109,7 @@
         "f5a19e9f-dadc-4898-a193-c70d62d2e8a2"
       ],
       "custom_css": [
+        ".decor-top {margin-top: -100px; padding-bottom: 2rem;}",
         ".subscribe__logo {top: -20%;}"
       ],
       "settings": {
