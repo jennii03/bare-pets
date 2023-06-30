@@ -47,6 +47,9 @@
         "28fb8640-6034-4d21-ad68-3978c11472bd",
         "1142d514-1c3a-4da3-8360-d2edeecfc9ca"
       ],
+      "custom_css": [
+        ".guarantee-info__wrapper {padding: 70px 30px 100px;}"
+      ],
       "settings": {
         "heading": "dogs have different preferences on foods, and that's okay!",
         "description": "Your dog's happiness is our top priority, and so are dogs in need. We aim to cater for every breed and size of dog by working closely with veterinarians and pet nutritionists to create food that keeps your dog healthy and happy.  If your dogs is not satisfied with your order, give us a bone to pick! Follow these easy steps to get back your money's worth.",
