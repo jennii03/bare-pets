@@ -55,19 +55,25 @@
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
-                  <thead role="rowgroup">
+                  {% comment %} <thead role="rowgroup">
                     <tr role="row">
                       <th id="CartDrawer-ColumnProductImage" role="columnheader"><span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span></th>
                       <th id="CartDrawer-ColumnProduct" class="caption-with-letter-spacing" scope="col" role="columnheader">{{ 'sections.cart.headings.product' | t }}</th>
                       <th id="CartDrawer-ColumnTotal" class="right caption-with-letter-spacing" scope="col" role="columnheader">{{ 'sections.cart.headings.total' | t }}</th>
                       <th id="CartDrawer-ColumnQuantity" role="columnheader"><span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span></th>
                     </tr>
-                  </thead>
+                  </thead> {% endcomment %}
 
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
-                        <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
+
+                        <td class="cart-item__media d-flex" role="cell" headers="CartDrawer-ColumnProductImage">
+                          <cart-remove-button id="CartDrawer-Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                            <button type="button" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                              {% render 'icon-remove' %}
+                            </button>
+                          </cart-remove-button>
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                             <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
@@ -87,28 +93,9 @@
                           {%- endif -%}
 
                           <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+                          {% assign product_collection = item.product.collections | first %}
 
-                          {%- if item.original_price != item.final_price -%}
-                            <div class="cart-item__discounted-prices">
-                              <span class="visually-hidden">
-                                {{ 'products.product.price.regular_price' | t }}
-                              </span>
-                              <s class="cart-item__old-price product-option">
-                                {{- item.original_price | money -}}
-                              </s>
-                              <span class="visually-hidden">
-                                {{ 'products.product.price.sale_price' | t }}
-                              </span>
-                              <strong class="cart-item__final-price product-option">
-                                {{ item.final_price | money }}
-                              </strong>
-                            </div>
-                          {%- else -%}
-                            <div class="product-option">
-                              {{ item.original_price | money }}
-                            </div>
-                          {%- endif -%}
-
+                          <div class="cart-item__name-category"> {{ product_collection.title }}</div>
                           {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
                             <dl>
                               {%- if item.product.has_only_default_variant == false -%}
@@ -152,7 +139,7 @@
                           </ul>
                         </td>
 
-                        <td class="cart-item__totals right" role="cell" headers="CartDrawer-ColumnTotal">
+                        {% comment %} <td class="cart-item__totals right" role="cell" headers="CartDrawer-ColumnTotal">
                           <div class="loading-overlay hidden">
                             <div class="loading-overlay__spinner">
                               <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -196,10 +183,10 @@
                               </div>
                             {%- endif -%}
                           </div>
-                        </td>
+                        </td> {% endcomment %}
 
-                        <td class="cart-item__quantity" role="cell" headers="CartDrawer-ColumnQuantity">
-                          <div class="cart-item__quantity-wrapper">
+                        <td class="cart-item__quantity d-flex" role="cell" headers="CartDrawer-ColumnQuantity">
+                          <div class="cart-item__quantity-wrapper flex-basis-100">
                             <quantity-input class="quantity">
                               <button class="quantity__button no-js-hidden" name="minus" type="button">
                                 <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
@@ -219,12 +206,6 @@
                                 {% render 'icon-plus' %}
                               </button>
                             </quantity-input>
-
-                            <cart-remove-button id="CartDrawer-Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
-                              <button type="button" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
-                                {% render 'icon-remove' %}
-                              </button>
-                            </cart-remove-button>
                           </div>
 
                           <div id="CartDrawer-LineItemError-{{ item.index | plus: 1 }}" class="cart-item__error" role="alert">
@@ -236,6 +217,27 @@
                               <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
                             </svg>
                           </div>
+
+                            {%- if item.original_price != item.final_price -%}
+                              <div class="cart-item__discounted-prices flex-basis-100">
+                                <span class="visually-hidden">
+                                  {{ 'products.product.price.regular_price' | t }}
+                                </span>
+                                <s class="cart-item__old-price product-option">
+                                  {{- item.original_price | money -}}
+                                </s>
+                                <span class="visually-hidden">
+                                  {{ 'products.product.price.sale_price' | t }}
+                                </span>
+                                <strong class="cart-item__final-price product-option">
+                                  {{ item.final_price | money }}
+                                </strong>
+                              </div>
+                            {%- else -%}
+                              <div class="product-option flex-basis-100">
+                                {{ item.original_price | money }}
+                              </div>
+                            {%- endif -%}
                         </td>
                       </tr>
                     {%- endfor -%}

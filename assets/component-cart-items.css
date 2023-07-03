@@ -200,10 +200,11 @@
 }
 
 .product-option {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   word-break: break-all;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   color: var(--purple);
+  font-family: var(--gilroysemi);
 }
 
 .cart-item__name-category {
