@@ -218,6 +218,7 @@
 
 .cart-item cart-remove-button {
   display: flex;
+  z-index: 2;
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
