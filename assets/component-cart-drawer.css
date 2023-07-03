@@ -1,7 +1,7 @@
 .drawer {
   position: fixed;
   z-index: 1000;
-  left: -16px;
+  left: 0;
   top: 0;
   width: 100vw;
   height: 100%;
