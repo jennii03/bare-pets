@@ -55,11 +55,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "8c1568e0-6cef-4c4b-bafc-af3cb5036ee3": {
+      "type": "module-text-marquee",
+      "settings": {
+        "gradient_color1": "#2A294F",
+        "gradient_color2": "#6565A0",
+        "txt_color": "#FFFFFF",
+        "text": "simple. honest. nutritious."
+      }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-collection"
+    "featured-collection",
+    "8c1568e0-6cef-4c4b-bafc-af3cb5036ee3"
   ]
 }
