@@ -232,7 +232,7 @@
       }
     },
     "cart": {
-      "title": "your bag",
+      "title": "your bag test",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",
