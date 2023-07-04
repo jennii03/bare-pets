@@ -1,3 +1,4 @@
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
 {%liquid
     assign heading_color = section.settings.heading_color
 %}
@@ -28,15 +29,16 @@
                     {% for block in section.blocks %}
                         {% if forloop.index > 1  and block.settings.separator-heading !=blank  %}
                             </div>
-                            <div class="module-faq-filtering__faq-content faq-category__{{ block.settings.separator-heading | handleize }}"> 
+                            <div class="module-faq-filtering__faq-content faq-category__{{ block.settings.separator-heading | handleize }} ">
                         {% endif %}
                         {% if forloop.index == 1  and block.settings.separator-heading !=blank  %} 
-                            <div class="module-faq-filtering__faq-content faq-category__{{ block.settings.separator-heading | handleize }}"> 
+                            <div class="module-faq-filtering__faq-content faq-category__{{ block.settings.separator-heading | handleize }} ">
                         {% endif %}
                     <div class="faq-filter"> 
                         <div class="faq-filter__wrapper">
                             {% if block.settings.separator-heading !=blank %}
-                                <h3 class="faq-filter__category-headinng remove-spacing">{{ block.settings.separator-heading }}</h3>
+                                <h3 class="faq-filter__category-headinng remove-spacing drop_icon">{{ block.settings.separator-heading }}</h3>
+                            
                             {% endif %}
                 
                         <div class="faq-filter__item">
