@@ -15,6 +15,7 @@
         "af96d172-1193-4b39-821c-cd619cff544b": {
           "type": "affiliate_program",
           "settings": {
+            "background_color": "#6565a0",
             "number": "1",
             "heading": "spread the word",
             "description": "Write an article on your blog or share our products in your social channels",
@@ -24,6 +25,7 @@
         "32b07d4f-f79d-41aa-b5e5-4618cf147972": {
           "type": "affiliate_program",
           "settings": {
+            "background_color": "#6565a0",
             "number": "2",
             "heading": "spread the word",
             "description": "Write an article on your blog or share our products in your social channels",
@@ -33,6 +35,7 @@
         "acdf8b15-e5b7-425f-85d8-4d2bd023667c": {
           "type": "affiliate_program",
           "settings": {
+            "background_color": "#9595c3",
             "number": "3",
             "heading": "spread the word",
             "description": "Write an article on your blog or share our products in your social channels",
@@ -42,6 +45,7 @@
         "29cae7e1-e3bf-45d9-a815-ddb92f0e3888": {
           "type": "affiliate_program",
           "settings": {
+            "background_color": "#9595c3",
             "number": "4",
             "heading": "spread the word",
             "description": "Write an article on your blog or share our products in your social channels",
@@ -57,7 +61,13 @@
       ],
       "settings": {
         "heading": "how does it works?",
-        "subheading": "you earn a 20% commission on the order placed by the user"
+        "subheading": "you earn a 20% commission on the order placed by the user",
+        "btn_text": "TRY BARE",
+        "btn_link": "",
+        "bg_color_top": "",
+        "bg_color": "",
+        "margin_top": 14,
+        "padding_bot": 0
       }
     },
     "de3edd19-2972-4757-86ca-16a18ac66765": {
