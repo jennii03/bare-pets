@@ -19,6 +19,9 @@
     },
     "0cb8443f-15a0-46e3-8f40-1bcb5dead304": {
       "type": "module-breeder-program",
+      "custom_css": [
+        "@media only screen and (min-width: 900px) {.breeder-program__wrapper {margin-bottom: 70px; }}"
+      ],
       "settings": {
         "heading": "bare: nutrition for exceptional breeding programs",
         "description": "Nourishing the Future: Join Our Bare Breeder Partner Program for Canine and Feline Companions. As a responsible dog or cat breeder, you understand the crucial role of proper nutrition in your pets' health and well-being. That's why we want to connect with you. Our Bare Breeder Partner Program is designed to support you in providing the best nutrition for your furry friends through fresh meat, whole food ingredients, and highly digestible protein. To learn more, simply fill out the form and we'll be in touch with all the details.",
