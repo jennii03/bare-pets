@@ -332,27 +332,27 @@
           "type": "left_info",
           "settings": {
             "left_icon": "shopify:\/\/shop_images\/Group_3262.png",
-            "left_subheading": "CLEAN",
-            "left_heading": "formulated & tested by vets & nutritionists",
-            "left_description": "ensure balance and completeness that meet the specific dietary needs of our companions"
+            "left_subheading": "Weight control",
+            "left_heading": "easy to chew and more filling",
+            "left_description": "easy to chew, highly digestible, and well-balanced for weight management"
           }
         },
         "aa6af382-68ec-438e-b7f4-d9b065bdb571": {
           "type": "right_info",
           "settings": {
             "right_icon": "shopify:\/\/shop_images\/Group_1560.png",
-            "right_subheading": "SUPER FOOD",
-            "right_heading": "added plant-based proteins and probiotics",
-            "right_description": "delivers the maximum amount of nutrients and maximum calories without the health risk for allergy-prone dogs"
+            "right_subheading": "Healthy and safe",
+            "right_heading": "no artificial flavorings and colorings",
+            "right_description": "no salt, synthetic preservatives, and helps protect against heat stress"
           }
         },
         "fb41eaea-5456-4ee2-937f-ca330c2def69": {
           "type": "right_info",
           "settings": {
             "right_icon": "shopify:\/\/shop_images\/Group_1555.png",
-            "right_subheading": "TRANSPARENCY",
-            "right_heading": "safe & delicious recipes without the b.s.",
-            "right_description": "never any bad stuff like salt, soy and other preservations"
+            "right_subheading": "Versatility",
+            "right_heading": "suitable as a meal or topping",
+            "right_description": "great for trips and provides added hydration"
           }
         }
       },
