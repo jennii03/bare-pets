@@ -8,9 +8,13 @@
     assign contact_form = section.settings.contact_form
     assign support_heading = section.settings.support_heading
     assign enable_socials = section.settings.enable_socials
+    assign top_decor = section.settings.top_decor
 %}
 
 <div class="module-contact-{{ section.id }}" class="module-contact">
+    {% if top_decor != blank %}
+        <img class="decor-top decor-top-contact" src="{{ top_decor | image_url }}" alt="decor">
+    {% endif %}
     <div class="module-contact__wrapper">
         <div class="module-contact__container d-flex">
             <div class="module-contact__container-left">
@@ -164,6 +168,13 @@
         line-height: 19px;
         letter-spacing: 2px!important;
     }
+
+    .decor-top-contact {
+        width: 100%;
+        display: block;
+        margin-top: -140px;
+    }
+
     @media (max-width: 1024px) {
         .module-contact__container {
             gap: 20px;
@@ -172,6 +183,10 @@
         .module-contact__container-left, .module-contact__container-right {
             width: 100%;
             padding: 20px;
+        }
+
+        .decor-top-contact {
+            margin-top: -100px;
         }
     }
     @media (max-width: 767px) {
@@ -192,6 +207,11 @@
             "id": "bg_color",
             "label": "Background Color",
             "default": "#2a294f"
+        },
+        {
+            "type": "image_picker",
+            "id": "top_decor",
+            "label": "Top Decor"
         },
         {
             "type": "color",

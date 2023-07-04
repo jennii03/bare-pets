@@ -37,8 +37,7 @@
                     <div class="faq-filter"> 
                         <div class="faq-filter__wrapper">
                             {% if block.settings.separator-heading !=blank %}
-                                <h3 class="faq-filter__category-headinng remove-spacing drop_icon">{{ block.settings.separator-heading }}</h3>
-                            
+                                <h3 class="faq-filter__category-heading remove-spacing drop_icon">{{ block.settings.separator-heading }}</h3>
                             {% endif %}
                 
                         <div class="faq-filter__item">
@@ -134,7 +133,7 @@
             $(".module-faq-filtering__faq-content").css({"display":"none"}); 
             $('.show-heading').removeClass('show-heading'); 
             $( ".faq-filter__item").addClass("find-faq-hideen"); 
-            $( ".faq-filter__category-headinng").addClass("find-faq-hideen"); 
+            $( ".faq-filter__category-heading").addClass("find-faq-hideen"); 
             $( "div:contains("+ searhvalue +")" ).removeClass("find-faq-hideen");
             $( "div:contains("+ capsearhvalue +")" ).removeClass("find-faq-hideen");
             $("div:contains("+ capsearhvalue +")" ).closest('.module-faq-filtering__faq-content').addClass('show-heading');
@@ -176,7 +175,7 @@
     .faq-filter__item {
         border-bottom: solid 1px #9DA9B3;
     }
-    .faq-filter__question, .module-faq__answer, .faq-filter__category-headinng {
+    .faq-filter__question, .module-faq__answer, .faq-filter__category-heading {
         color: {{ heading_color }};
     }
     .module-faq__answer {
@@ -227,7 +226,8 @@
         line-height: 18px;
         font-family: var(--gilroyreg);
     }
-    .faq-filter__category-headinng {
+    .faq-filter__category-heading {
+        position: relative;
         font-size: 30px;
         line-height: 38px;
         font-family: var(--gilroybold);
