@@ -13,6 +13,7 @@
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/faqs_bg-edited.png",
         "h_color": "#ffffff",
+        "subheading": "",
         "heading": "have more<br>questions to ask?"
       }
     },
@@ -263,7 +264,7 @@
         "4209165a-ab50-40b9-969b-e3b926204683"
       ],
       "settings": {
-        "heading_color": "#2A294F"
+        "heading_color": "#2a294f"
       }
     },
     "e118b38e-98d7-4c57-9696-d69eff484fcd": {
@@ -297,6 +298,7 @@
         "2fe100f9-9373-4eaf-b970-fa712ce6a15d"
       ],
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/BG-FAQs_1.png"
       }
     },
     "5ff0e112-6ab7-436f-a29b-ebcb6c266d34": {
