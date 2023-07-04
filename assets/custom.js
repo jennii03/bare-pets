@@ -64,4 +64,12 @@
       $(".login-main-form-head, .login-main-form").show();
     });
 
+    setTimeout(function() {
+      $(".needsclick label").each(function() {
+        var labelText = $(this).html();
+        var updatedText = labelText.replace("*", '<span style="color: red;">*</span>');
+        $(this).html(updatedText);
+      });
+    }, 1000);
+
 })();
