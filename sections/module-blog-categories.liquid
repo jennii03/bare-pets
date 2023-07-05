@@ -112,6 +112,18 @@
     </div>
 </div>
 
+<script>
+    function handleBlogFilter(selection) {
+      if (selection === 'recent') {
+        document.getElementById('recent-blogs').style.display = 'block';
+        document.getElementById('popular-blogs').style.display = 'none';
+      } else if (selection === 'popular') {
+        document.getElementById('recent-blogs').style.display = 'none';
+        document.getElementById('popular-blogs').style.display = 'block';
+      }
+    }
+  </script>
+
 <style>
     .module-blog-cat__wrapper {
         padding: 70px 30px;
