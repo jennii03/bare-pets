@@ -1,0 +1,11 @@
+<div class="select">
+    <select clas="select__select for-select" onchange="javascript:location.href = window.location.href = this.value" aria-label="Filter posts">
+        <option value="{{ blog.url }}">
+            {{ text_all_topics }} 
+        </option>
+        {% for tag in blog.all_tags %}
+            <option value="{{ blog.url }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>
+            {{ tag }}
+            </option>
+        {% endfor %}
+</div>
