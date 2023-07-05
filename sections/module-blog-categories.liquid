@@ -5,7 +5,7 @@
     assign blog_handles = section.settings.blog_handles
     assign enable_recent = section.settings.enable_recent
     assign recent = section.settings.recent
-    assign blog = section.settings.blog
+    assign blogsss = section.settings.blogsss
 %}
 
 <div id="module-blog-cat-{{ section.id }}" class="module-blog-cat">
@@ -35,18 +35,20 @@
                 {% if enable_recent %}
                     <h2 class="module-blog-cat__recent remove-spacing">{{ recent }}</h2>
                     <div class="module-blog-cat__recents">
-                        {% assign recent = blog | split: "," %}
+                        {% assign recent = blogsss | split: "," %}
 
                         {% for handle in recent %}
                             {% for article in blogs[handle].articles %}
-                                <div class="module-blog-cat__recent-item">
-                                    <div class="module-blog-cat__recent-image">
-                                        <img src="{{ article.image | image_url }}">
+                                {% if forloop.index <= 3 %}
+                                    <div class="module-blog-cat__recent-item">
+                                        <div class="module-blog-cat__recent-image">
+                                            <img src="{{ article.image | image_url }}">
+                                        </div>
+                                        <div class="module-blog-cat__recent-info">
+                                            <p class="module-blog-cat__recent-content remove-spacing">{{ article.content | truncatewords: 8 }}</p>
+                                        </div>
                                     </div>
-                                    <div class="module-blog-cat__recent-info">
-                                        <p class="module-blog-cat__recent-content remove-spacing">{{ article.content | truncatewords: 8 }}</p>
-                                    </div>
-                                </div>
+                                {% endif %}
                             {% endfor %}
                         {% endfor %}
                     </div>
@@ -59,8 +61,7 @@
                 {% assign blog_handless = blog.handle %}
                     {% assign blog_handles = blog_handless | split: "," %}
                 {% endif %}
-                {{ page.url }}
-                {%- paginate blogs[handle].articles by 6 -%}
+
                 {% for handle in blog_handles %}
                     {% for article in blogs[handle].articles %}
                         <div class="module-blog-cat__blog-lists">
@@ -83,13 +84,8 @@
                         </div>
                     {% endfor %}
                 {% endfor %}
-                {%- endpaginate -%}
-                <div class="pagination">
-                    {%- paginate blogs[handle].articles by 6 -%}
-                      {{ paginate | default_pagination: next: '>', previous: '<' }}
-                    {%- endpaginate -%}
-                </div>                  
-                  
+
+                <div class="pagination"></div>          
             </div>
         </div>
     </div>
@@ -278,6 +274,28 @@
     }
 </style>
 
+<script>
+    setTimeout(function() {
+        var items = $(".module-blog-cat__blog-container .module-blog-cat__blog-lists");
+        var numItems = items.length;
+        var perPage = 6;
+
+        items.slice(perPage).hide();
+
+        $('.pagination').pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            prevText: "&laquo;",
+            nextText: "&raquo;",
+            onPageClick: function (pageNumber) {
+                var showFrom = perPage * (pageNumber - 1);
+                var showTo = showFrom + perPage;
+                items.hide().slice(showFrom, showTo).show();
+            }
+        });
+    }, 100);
+</script>
+
 {% schema %}
   {
     "name": "Module Blog Categories",
@@ -314,7 +332,7 @@
         },
         {
             "type": "blog",
-            "id": "blog",
+            "id": "blogsss",
             "label": "Blog to feature"
         }
     ],
