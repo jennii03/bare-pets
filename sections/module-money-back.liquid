@@ -20,13 +20,16 @@
                 <img src="{{ image | image_url }}">
             </div>
             <div class="module-money-back__desc-container">
-                <h4 class="module-money-back__subheading remove-spacing">{{ subheading }}</h4>
-                <h2 class="module-money-back__heading remove-spacing">{{ heading }}</h2>
-                <p class="module-money-back__description">{{ description }}</p>
-
-                <div class="module-money-back__button m-hide">
-                    <a href="{{ btn_link }}" class="module-money-back__button-link btn btn--primary">{{ btn_text }}</a>
+                <div class="module-money-back__desc-container--width">
+                  <h4 class="module-money-back__subheading remove-spacing">{{ subheading }}</h4>
+                  <h2 class="module-money-back__heading remove-spacing">{{ heading }}</h2>
+                  <p class="module-money-back__description">{{ description }}</p>
+  
+                  <div class="module-money-back__button m-hide">
+                      <a href="{{ btn_link }}" class="module-money-back__button-link btn btn--primary">{{ btn_text }}</a>
+                  </div>
                 </div>
+              
             </div>
         </div>
     </div>
@@ -74,6 +77,13 @@
     .m-show {
         display: none;
     }
+
+    @media (min-width: 900px) {
+      .module-money-back__desc-container--width {
+        max-width:80%;
+      }
+    }
+  
     @media (max-width: 767px) {
         .m-show {
             display: block;
