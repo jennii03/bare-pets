@@ -52,29 +52,6 @@
             </div>
             
             <div class="module-blog-cat__blog-container">
-                <select onchange="handleBlogFilter(this.value)">
-                    <option value="recent">Recent Blogs</option>
-                    <option value="popular">Most Viewed Blogs</option>
-                  </select>
-                  
-                  <div id="recent-blogs">
-                    <h2>Recent Blogs</h2>
-                    {% assign sorted_recent_blogs = blogs.all_blogs | sort: 'created_at' | reverse %}
-                    {% for blog in sorted_recent_blogs %}
-                      <h3>{{ blog.title }}</h3>
-                      <p>{{ blog.published_at | date: "%B %d, %Y" }}</p>
-                    {% endfor %}
-                  </div>
-                  
-                  <div id="popular-blogs" style="display: none;">
-                    <h2>Most Viewed Blogs</h2>
-                    {% assign sorted_popular_blogs = blogs.all_blogs | sort: 'page_views' | reverse %}
-                    {% for blog in sorted_popular_blogs %}
-                      <h3>{{ blog.title }}</h3>
-                      <p>Views: {{ blog.page_views }}</p>
-                    {% endfor %}
-                  </div>
-                  
                 {% if blog_handles != blank %}
                     {% assign blog_handles = blog_handles | split: "," %}
                 {% else %}
@@ -112,18 +89,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    function handleBlogFilter(selection) {
-      if (selection === 'recent') {
-        document.getElementById('recent-blogs').style.display = 'block';
-        document.getElementById('popular-blogs').style.display = 'none';
-      } else if (selection === 'popular') {
-        document.getElementById('recent-blogs').style.display = 'none';
-        document.getElementById('popular-blogs').style.display = 'block';
-      }
-    }
-  </script>
 
 <style>
     .module-blog-cat__wrapper {
