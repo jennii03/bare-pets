@@ -492,21 +492,21 @@
           "settings": {
             "comparision_title": "first ingredient",
             "bare_enable": false,
-            "bare_text": "fresh chicken",
+            "bare_text": "seriously beefy",
             "petchola_enable": false,
-            "petchola_text": "poultrry meal",
+            "petchola_text": "fresh salmon",
             "pedigree_enable": false,
-            "pedigree_text": "cereals",
+            "pedigree_text": "meat",
             "value_enable": false,
-            "value_text": "wholegrain cereals",
+            "value_text": "meat",
             "euka_enable": false,
-            "euka_text": "chicken",
+            "euka_text": "lamb",
             "onijen_enable": false,
-            "onijen_text": "fresh chicken",
+            "onijen_text": "chicken",
             "taste_enable": false,
-            "taste_text": "duck",
+            "taste_text": "pea starch",
             "acana_enable": false,
-            "acana_text": "chicken meal"
+            "acana_text": "chicken meat"
           }
         },
         "a1c2664d-a61a-4179-b155-f75291f4510f": {
@@ -518,25 +518,25 @@
             "petchola_enable": false,
             "petchola_text": "natural",
             "pedigree_enable": false,
-            "pedigree_text": "not shown",
+            "pedigree_text": "natural",
             "value_enable": false,
-            "value_text": "not shown",
+            "value_text": "natural",
             "euka_enable": false,
             "euka_text": "natural",
             "onijen_enable": false,
-            "onijen_text": "natural",
+            "onijen_text": "not detailed",
             "taste_enable": false,
             "taste_text": "natural",
             "acana_enable": false,
-            "acana_text": "none"
+            "acana_text": "natural"
           }
         },
         "9b4f4633-2bf5-49bc-b6ce-76c8e71cdee4": {
           "type": "table",
           "settings": {
             "comparision_title": "amount of meat shown",
-            "bare_enable": true,
-            "bare_text": "15%",
+            "bare_enable": false,
+            "bare_text": "10%",
             "petchola_enable": false,
             "petchola_text": "",
             "pedigree_enable": false,
@@ -544,22 +544,22 @@
             "value_enable": false,
             "value_text": "",
             "euka_enable": false,
-            "euka_text": "",
+            "euka_text": "36%",
             "onijen_enable": false,
-            "onijen_text": "13%",
+            "onijen_text": "",
             "taste_enable": false,
             "taste_text": "",
             "acana_enable": false,
-            "acana_text": "25%"
+            "acana_text": "100%"
           }
         },
         "8de92441-f937-4dc2-ac01-ef118bc818eb": {
           "type": "table",
           "settings": {
-            "comparision_title": "added probiotics",
+            "comparision_title": "at least 15 vitamins & minerals",
             "bare_enable": true,
-            "bare_text": "Lorem Ipsum",
-            "petchola_enable": true,
+            "bare_text": "",
+            "petchola_enable": false,
             "petchola_text": "",
             "pedigree_enable": false,
             "pedigree_text": "",
@@ -578,23 +578,23 @@
         "67b45380-a4fb-4a1f-8ef0-6057b1bb6edd": {
           "type": "table",
           "settings": {
-            "comparision_title": "at least 18 vitamin & minerals",
-            "bare_enable": true,
-            "bare_text": "Lorem Ipsum",
+            "comparision_title": "protein content",
+            "bare_enable": false,
+            "bare_text": "5%",
             "petchola_enable": false,
-            "petchola_text": "",
+            "petchola_text": "3%",
             "pedigree_enable": false,
-            "pedigree_text": "",
+            "pedigree_text": "8%",
             "value_enable": false,
-            "value_text": "",
+            "value_text": "7%",
             "euka_enable": false,
-            "euka_text": "",
+            "euka_text": "8%",
             "onijen_enable": false,
-            "onijen_text": "",
+            "onijen_text": "5%",
             "taste_enable": false,
-            "taste_text": "",
+            "taste_text": "6%",
             "acana_enable": false,
-            "acana_text": ""
+            "acana_text": "16%"
           }
         },
         "5897c656-30e5-4197-a230-b00921aa03c5": {
