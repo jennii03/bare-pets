@@ -52,6 +52,9 @@
             </div>
             
             <div class="module-blog-cat__blog-container">
+                <div>
+                    {% render 'blog-filters' %}
+                </div>
                 {% if blog_handles != blank %}
                     {% assign blog_handles = blog_handles | split: "," %}
                 {% else %}
