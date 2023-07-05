@@ -1,14 +1,15 @@
 {{ 'module-ingredients.css' | asset_url | stylesheet_tag }}
 
 {%liquid
-    assign background_color = section.settings.background_color
+    assign background_color1 = section.settings.background_color1
+    assign background_color2 = section.settings.background_color2
     assign top_decor = section.settings.top_decor
     assign bot_decor = section.settings.bot_decor
     assign top_bg_color = section.settings.top_bg_color
     assign bot_bg_color = section.settings.bot_bg_color
 %}
   
-<div id="module-ingredients__{{ section.id }}" class="section module-ingredients" style="background: {{ background_color }};">
+<div id="module-ingredients__{{ section.id }}" class="section module-ingredients" style="background: linear-gradient(0deg, {{ background_color1 }} 0%, {{ background_color2 }} 80%);">
 
     {% if top_decor != blank %}
         <img class="module-bottom-decor" src="{{ top_decor | image_url }}" alt="Decor" style="background-color: {{ top_bg_color }}; display: block;">
@@ -42,9 +43,15 @@
     "settings": [
         {
             "type": "color",
-            "id": "background_color",
-            "label": "Background Color",
-            "default": "#2B2A51"
+            "id": "background_color1",
+            "label": "Background Color Top",
+            "default": "#6565a0"
+        },
+       {
+            "type": "color",
+            "id": "background_color2",
+            "label": "Background Color Bottom",
+            "default": "#6565a0"
         },
         {
             "type": "image_picker",
