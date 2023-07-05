@@ -96,7 +96,7 @@
         "modal_heading": "how long will bare last?",
         "modal_description": "Please provide us with your dog's weight and the size of the food bag you're considering. We'll then calculate the recommended daily cups and estimate how long the bag will last for your dog.",
         "modal_image": "shopify:\/\/shop_images\/Pop_up_-_image_-_how_long_our_food_lasts.png",
-        "main_product_image_bg_color": "#eb5b56",
+        "main_product_image_bg_color": "#6565a0",
         "thumbnail_product_image_bg_color": "#e0e0ec"
       }
     },
@@ -334,27 +334,27 @@
           "type": "left_info",
           "settings": {
             "left_icon": "shopify:\/\/shop_images\/Group_3262.png",
-            "left_subheading": "Weight control",
-            "left_heading": "easy to chew and more filling",
-            "left_description": "easy to chew, highly digestible, and well-balanced for weight management"
+            "left_subheading": "clean",
+            "left_heading": "formulated & tested by vets & nutritionists",
+            "left_description": "ensure balance and completeness that meet the specific dietary needs of companions"
           }
         },
         "aa6af382-68ec-438e-b7f4-d9b065bdb571": {
           "type": "right_info",
           "settings": {
             "right_icon": "shopify:\/\/shop_images\/Group_1560.png",
-            "right_subheading": "Healthy and safe",
-            "right_heading": "no artificial flavorings and colorings",
-            "right_description": "no salt, synthetic preservatives, and helps protect against heat stress"
+            "right_subheading": "superfood",
+            "right_heading": "added plant-based proteins and probiotics",
+            "right_description": "delivers the maximum amount of nutrients and minimum calories without the health risk for allergy-prone dogs"
           }
         },
         "fb41eaea-5456-4ee2-937f-ca330c2def69": {
           "type": "right_info",
           "settings": {
             "right_icon": "shopify:\/\/shop_images\/Group_1555.png",
-            "right_subheading": "Versatility",
-            "right_heading": "suitable as a meal or topping",
-            "right_description": "great for trips and provides added hydration"
+            "right_subheading": "Transparency",
+            "right_heading": "Safe & delicious recipes without the b.s.",
+            "right_description": "never any bad stuff like salt, soy, and other preservatives"
           }
         }
       },
@@ -416,7 +416,7 @@
       ],
       "settings": {
         "background_color": "#e0e0ec",
-        "heading": "first time <br>trying <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0613\/8406\/5197\/files\/logo.png?v=1678962502\" width=\"140\">?",
+        "heading": "first time trying <img src=\"https:\/\/barepets.com\/cdn\/shop\/files\/Logo_2.png?v=1665737732\" width=\"120\">?",
         "description": "Say goodbye to upset stomachs when switching your doggo over from another brand of food. Simply replace their old food with the of bare kibble as shown above over 10 days. <br><br> After 10 days you'll be set for life with no tummy troubles. It's that bare simple!",
         "legend_text_first": "bare food",
         "legend_text_second": "previous food"

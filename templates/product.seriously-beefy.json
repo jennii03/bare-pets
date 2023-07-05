@@ -6,7 +6,7 @@
         "d04a4286-58ed-44c2-bf16-45270b8f28c8": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/Icon-Natural.png",
+            "block_info_icon": "shopify:\/\/shop_images\/Group_1554.png",
             "block_info_subheading": "Natural",
             "block_info_heading": "real meat as the 1st ingredient always"
           }
@@ -14,23 +14,23 @@
         "6a82b260-db6f-4e8e-8a12-ec4a49de62dd": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/Icon-Immunity.png",
+            "block_info_icon": "shopify:\/\/shop_images\/Group_1560_d5e23e7b-d570-4a8a-adbd-2b04b2931170.png",
             "block_info_subheading": "Immunity",
-            "block_info_heading": "superfood, plant-based proteins,"
+            "block_info_heading": "superfoods, plant-based proteins,"
           }
         },
         "6f7f88dd-933b-4aa3-989b-babcabe36ce1": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/Icon-Gut_health.png",
-            "block_info_subheading": "Our health",
-            "block_info_heading": "formulated & tested by vets"
+            "block_info_icon": "shopify:\/\/shop_images\/Group_1555_be7d3dbb-f0ac-4f1a-89cc-195d7088e8b1.png",
+            "block_info_subheading": "Stain-free",
+            "block_info_heading": "stain-free smile for your dog's mouth"
           }
         },
         "de06e0fd-220e-40b6-8768-8085e407257c": {
           "type": "block_info",
           "settings": {
-            "block_info_icon": "shopify:\/\/shop_images\/Icon-Transparency.png",
+            "block_info_icon": "shopify:\/\/shop_images\/Group_1557.png",
             "block_info_subheading": "Transparency",
             "block_info_heading": "safe & delicious recipes without b.s."
           }
@@ -91,13 +91,13 @@
         "b3b69cdd-2187-4b96-b496-915c48b663a5"
       ],
       "settings": {
-        "product_weight": "(5kg)",
+        "product_weight": "(100g)",
         "modal_text": "How long will bare last",
         "modal_heading": "how long will bare last?",
         "modal_description": "Please provide us with your dog's weight and the size of the food bag you're considering. We'll then calculate the recommended daily cups and estimate how long the bag will last for your dog.",
         "modal_image": "shopify:\/\/shop_images\/Pop_up_-_image_-_how_long_our_food_lasts.png",
         "main_product_image_bg_color": "#eb5b56",
-        "thumbnail_product_image_bg_color": "#e0e0ec"
+        "thumbnail_product_image_bg_color": "#eb5b56"
       }
     },
     "product-recommendations": {
@@ -124,37 +124,37 @@
         "7dab353d-6884-4fc0-885b-4ae14c1d11ff": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Badge_-_Guarantee.png"
+            "logo": "shopify:\/\/shop_images\/image_3.png"
           }
         },
         "740de704-9189-4da4-a496-e27ddb3397ac": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Badge_-_Shipping.png"
+            "logo": "shopify:\/\/shop_images\/image_4_3e277e89-3778-4ca3-a4de-37de02ed4b82.png"
           }
         },
         "5b441fe8-a871-4518-ad57-2c6c8f3e3e01": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Badge_-_USA_36794c81-81ae-4a50-9849-b46e82378a86.png"
+            "logo": "shopify:\/\/shop_images\/image_5_0f804e45-f068-4faa-8016-192b636d7239.png"
           }
         },
         "f1e7aab6-18c3-41a9-b0a3-9addce99ae3a": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Badge_-_AAFCO.png"
+            "logo": "shopify:\/\/shop_images\/image_257f3e70-19b4-4b81-838d-3b034de37adf.png"
           }
         },
         "dc5d3bc2-6440-4e04-bf16-496cfe60bcf3": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Badge_-_Checkout.png"
+            "logo": "shopify:\/\/shop_images\/image_2.png"
           }
         },
         "f92a99d5-3e28-43de-9b3c-ca76d069a01a": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Badge_-_Charity.png"
+            "logo": "shopify:\/\/shop_images\/image_1.png"
           }
         }
       },
@@ -167,7 +167,7 @@
         "f92a99d5-3e28-43de-9b3c-ca76d069a01a"
       ],
       "settings": {
-        "background_color": "#e0e0ec"
+        "background_color": "#ffdfde"
       }
     },
     "30a8f920-8535-4a3e-91e4-153bdacf5651": {
@@ -416,7 +416,7 @@
       ],
       "settings": {
         "background_color": "#e0e0ec",
-        "heading": "first time <br>trying <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0613\/8406\/5197\/files\/logo.png?v=1678962502\" width=\"140\">?",
+        "heading": "first time trying <img src=\"https:\/\/barepets.com\/cdn\/shop\/files\/Logo_2.png?v=1665737732\" width=\"120\">?",
         "description": "Say goodbye to upset stomachs when switching your doggo over from another brand of food. Simply replace their old food with the of bare kibble as shown above over 10 days. <br><br> After 10 days you'll be set for life with no tummy troubles. It's that bare simple!",
         "legend_text_first": "bare food",
         "legend_text_second": "previous food"
@@ -492,21 +492,21 @@
           "settings": {
             "comparision_title": "first ingredient",
             "bare_enable": false,
-            "bare_text": "fresh chicken",
+            "bare_text": "seriously beefy",
             "petchola_enable": false,
-            "petchola_text": "poultrry meal",
+            "petchola_text": "fresh salmon",
             "pedigree_enable": false,
-            "pedigree_text": "cereals",
+            "pedigree_text": "meat",
             "value_enable": false,
-            "value_text": "wholegrain cereals",
+            "value_text": "meat",
             "euka_enable": false,
-            "euka_text": "chicken",
+            "euka_text": "lamb",
             "onijen_enable": false,
-            "onijen_text": "fresh chicken",
+            "onijen_text": "chicken",
             "taste_enable": false,
-            "taste_text": "duck",
+            "taste_text": "pea starch",
             "acana_enable": false,
-            "acana_text": "chicken meal"
+            "acana_text": "chicken meat"
           }
         },
         "a1c2664d-a61a-4179-b155-f75291f4510f": {
@@ -518,25 +518,25 @@
             "petchola_enable": false,
             "petchola_text": "natural",
             "pedigree_enable": false,
-            "pedigree_text": "not shown",
+            "pedigree_text": "natural",
             "value_enable": false,
-            "value_text": "not shown",
+            "value_text": "natural",
             "euka_enable": false,
             "euka_text": "natural",
             "onijen_enable": false,
-            "onijen_text": "natural",
+            "onijen_text": "not detailed",
             "taste_enable": false,
             "taste_text": "natural",
             "acana_enable": false,
-            "acana_text": "none"
+            "acana_text": "natural"
           }
         },
         "9b4f4633-2bf5-49bc-b6ce-76c8e71cdee4": {
           "type": "table",
           "settings": {
             "comparision_title": "amount of meat shown",
-            "bare_enable": true,
-            "bare_text": "15%",
+            "bare_enable": false,
+            "bare_text": "10%",
             "petchola_enable": false,
             "petchola_text": "",
             "pedigree_enable": false,
@@ -544,22 +544,22 @@
             "value_enable": false,
             "value_text": "",
             "euka_enable": false,
-            "euka_text": "",
+            "euka_text": "36%",
             "onijen_enable": false,
-            "onijen_text": "13%",
+            "onijen_text": "",
             "taste_enable": false,
             "taste_text": "",
             "acana_enable": false,
-            "acana_text": "25%"
+            "acana_text": "100%"
           }
         },
         "8de92441-f937-4dc2-ac01-ef118bc818eb": {
           "type": "table",
           "settings": {
-            "comparision_title": "added probiotics",
+            "comparision_title": "at least 15 vitamins & minerals",
             "bare_enable": true,
-            "bare_text": "Lorem Ipsum",
-            "petchola_enable": true,
+            "bare_text": "",
+            "petchola_enable": false,
             "petchola_text": "",
             "pedigree_enable": false,
             "pedigree_text": "",
@@ -578,23 +578,23 @@
         "67b45380-a4fb-4a1f-8ef0-6057b1bb6edd": {
           "type": "table",
           "settings": {
-            "comparision_title": "at least 18 vitamin & minerals",
-            "bare_enable": true,
-            "bare_text": "Lorem Ipsum",
+            "comparision_title": "protein content",
+            "bare_enable": false,
+            "bare_text": "5%",
             "petchola_enable": false,
-            "petchola_text": "",
+            "petchola_text": "3%",
             "pedigree_enable": false,
-            "pedigree_text": "",
+            "pedigree_text": "8%",
             "value_enable": false,
-            "value_text": "",
+            "value_text": "7%",
             "euka_enable": false,
-            "euka_text": "",
+            "euka_text": "8%",
             "onijen_enable": false,
-            "onijen_text": "",
+            "onijen_text": "5%",
             "taste_enable": false,
-            "taste_text": "",
+            "taste_text": "6%",
             "acana_enable": false,
-            "acana_text": ""
+            "acana_text": "16%"
           }
         },
         "5897c656-30e5-4197-a230-b00921aa03c5": {
@@ -770,35 +770,35 @@
         "60b27f22-c531-47ee-bede-49d6fccdf0b3": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Group_3233.png",
+            "logo": "shopify:\/\/shop_images\/Same-Size-01_copy.png",
             "logo_caption": "\"5 star review\""
           }
         },
         "20b9fc86-aaed-4abd-a5bc-5a5eec722e85": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Group_3262.png",
+            "logo": "shopify:\/\/shop_images\/Same-Size-02_copy.png",
             "logo_caption": "\"best kibble quality\""
           }
         },
         "a0ce01c9-24cf-446c-8361-c423ced02627": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Group_1555.png",
+            "logo": "shopify:\/\/shop_images\/Same-Size-05_copy-removebg-preview.png",
             "logo_caption": "\"they are obsessed\""
           }
         },
         "014e0826-9876-484c-a79d-d15f06c1dfda": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Group_1560.png",
+            "logo": "shopify:\/\/shop_images\/Same-Size-03_copy.png",
             "logo_caption": "\"best chicken kibble\""
           }
         },
         "dea6e6d2-5661-4e04-bf9a-ad5e8991c20f": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Group_3233.png",
+            "logo": "shopify:\/\/shop_images\/Same-Size-04_copy.png",
             "logo_caption": "\"clean dog food\""
           }
         }
@@ -895,7 +895,7 @@
         "bg_image": "shopify:\/\/shop_images\/Base.png",
         "bg_color": "",
         "heading_color": "#2a294f",
-        "heading": "Lorem ipsum dolor",
+        "heading": "have a questions?",
         "btn_text": "View All FAQs",
         "btn_link": "shopify:\/\/pages\/faqs"
       }

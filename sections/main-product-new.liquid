@@ -6,6 +6,8 @@
     assign modal_heading = section.settings.modal_heading
     assign modal_description = section.settings.modal_description
     assign modal_image = section.settings.modal_image
+    assign main_product_image_bg_color = section.settings.main_product_image_bg_color
+    assign thumbnail_product_image_bg_color = section.settings.thumbnail_product_image_bg_color
 %}
 
 <div id="module-product-banner-{{ section.id }}" class="module-product-banner section-padding">
@@ -17,8 +19,8 @@
                     <span class="module-product-banner__weight">{{ section.settings.product_weight }}</span>
                 </div>
 
-                <div id="price-{{ section.id }}" role="status" class="text-mint">
-                    {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large text-mint'-%}
+                <div id="price-{{ section.id }}" role="status">
+                    {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large'-%}
                 </div>
 
                 <div class="module-product-banner__description product__description rte quick-add-hidden">
@@ -41,7 +43,7 @@
                                       </div>
                                     {% endif %}
                                     <div class="module-product-banner__block-heading">
-                                        <h5 class="text-mint remove-spacing">{{ block_info_subheading }}</h5>
+                                        <h5 class="module-product-banner__block_info-subheading remove-spacing">{{ block_info_subheading }}</h5>
                                         <h5 class="module-product-banner__block_info-heading remove-spacing">{{ block_info_heading }}</h5>
                                     </div>
                                 </div>
@@ -125,7 +127,6 @@
                 About this food
               </div>
         </div>
-       
 </div>
 
 
@@ -178,6 +179,26 @@
     </div>
 </div>
 
+<style>
+    #module-product-banner-{{ section.id }} .product-main-image a:after {
+        background: {{ main_product_image_bg_color }};
+    }
+
+    #module-product-banner-{{ section.id }} .price__container,
+    #module-product-banner-{{ section.id }} .module-product-banner__block_info-subheading{
+      color: {{ main_product_image_bg_color }};
+    }
+
+    #module-product-banner-{{ section.id }} .module-product-banner__weight {
+      color: {{ main_product_image_bg_color }};
+      opacity: 0.6;
+    }
+  
+    #module-product-banner-{{ section.id }} .module-product-banner__product-thumbnail:after {
+        background: {{ thumbnail_product_image_bg_color }};
+    }
+</style>
+
 {% schema %}
   {
     "name": "Product Banner",
@@ -211,6 +232,18 @@
             "type": "image_picker",
             "id": "modal_image",
             "label": "Modal Image"
+        },
+        {
+            "type": "color",
+            "id": "main_product_image_bg_color",
+            "default": "#6565a0",
+            "label": "Main image background color"
+        },
+        {
+            "type": "color",
+            "id": "thumbnail_product_image_bg_color",
+            "default": "#e0e0ec",
+            "label": "Thumbnail image background color"
         }
     ],
     "blocks": [

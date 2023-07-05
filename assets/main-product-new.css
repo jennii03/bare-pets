@@ -24,7 +24,6 @@
 }
 
 .module-product-banner .price-item {
-    color: var(--mint);
     font-size: 26px;
     font-weight: 700;
 }
@@ -39,7 +38,6 @@
 
 .module-product-banner__weight {
     font-size: 28px;
-    color: #B9B9D0;
 }
 
 .module-product-banner__container {
@@ -103,7 +101,6 @@
 
 .module-product-banner__product-thumbnail:after {
     content: "";
-    background: #e0e0ec;
     width: 100px;
     height: 100%;
     position: absolute;
@@ -135,7 +132,6 @@
 
 .product-main-image a:after {
     content: "";
-    background: #6565a0;
     width: 100%;
     height: 440px;
     border-radius: 50%;
@@ -461,7 +457,7 @@
 }
 
 .side-accordion__container .tab-label::after {
-    content: "-";
+    content: "+";
     width: 1em;
     height: 1em;
     text-align: center;
@@ -469,8 +465,7 @@
 }
 
 .side-accordion__container input:checked+.tab-label::after {
-    transform: rotate(90deg);
-    content: "+";
+    content: "-";
 }
 
 .side-accordion__container input:checked~.tab-content {
@@ -617,5 +612,3 @@
         z-index: -1;
     }
 }
-
-
