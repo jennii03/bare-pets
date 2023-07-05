@@ -50,8 +50,8 @@
                     </div>
                 {% endif %}
             </div>
+            
             <div class="module-blog-cat__blog-container">
-                {% render 'blog-filters' %}
                 {% if blog_handles != blank %}
                     {% assign blog_handles = blog_handles | split: "," %}
                 {% else %}
