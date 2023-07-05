@@ -184,8 +184,14 @@
         background: {{ main_product_image_bg_color }};
     }
 
-    #module-product-banner-{{ section.id }} .price__container {
+    #module-product-banner-{{ section.id }} .price__container,
+    #module-product-banner-{{ section.id }} .module-product-banner__block_info-subheading{
       color: {{ main_product_image_bg_color }};
+    }
+
+    #module-product-banner-{{ section.id }} .module-product-banner__weight {
+      color: {{ main_product_image_bg_color }};
+      opacity: 0.6;
     }
   
     #module-product-banner-{{ section.id }} .module-product-banner__product-thumbnail:after {
