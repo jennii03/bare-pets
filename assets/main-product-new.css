@@ -465,7 +465,6 @@
 }
 
 .side-accordion__container input:checked+.tab-label::after {
-    transform: rotate(90deg);
     content: "-";
 }
 
