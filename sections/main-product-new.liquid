@@ -180,11 +180,14 @@
 </div>
 
 <style>
-    #module-product-banner-{{ section.id }} .product-main-image a:after,
-    #module-product-banner-{{ section.id }} .price__container {
+    #module-product-banner-{{ section.id }} .product-main-image a:after {
         background: {{ main_product_image_bg_color }};
     }
 
+    #module-product-banner-{{ section.id }} .price__container {
+      color: {{ main_product_image_bg_color }};
+    }
+  
     #module-product-banner-{{ section.id }} .module-product-banner__product-thumbnail:after {
         background: {{ thumbnail_product_image_bg_color }};
     }
