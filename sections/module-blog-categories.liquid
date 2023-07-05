@@ -16,7 +16,6 @@
                 <form class="search" action="/search">
                     <input type="text" placeholder="Search.." name="q" value="{{ search.terms | escape }}"  />
                 </form>
-                {% render 'blog-filters' %}
                 <h2 class="module-blog-cat__heading remove-spacing">{{ heading }}</h2>
                 
                 {%- if menu != blank -%}
