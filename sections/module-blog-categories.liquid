@@ -1,3 +1,4 @@
+
 {%liquid
     assign heading = section.settings.heading
     assign menu = section.settings.menu
@@ -9,7 +10,13 @@
 
 <div id="module-blog-cat-{{ section.id }}" class="module-blog-cat">
     <div class="module-blog-cat__wrapper">
+        
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search blog..." />
+            <button type="submit">Search</button>
+          </form>
         <div class="module-blog-cat__container d-flex">
+
             <div class="module-blog-cat__filter-container">
                 <h2 class="module-blog-cat__heading remove-spacing">{{ heading }}</h2>
                 
@@ -52,7 +59,8 @@
                 {% assign blog_handless = blog.handle %}
                     {% assign blog_handles = blog_handless | split: "," %}
                 {% endif %}
-                {%- paginate blogs[handle].articles by 9 -%}
+                {{ page.url }}
+                {%- paginate blogs[handle].articles by 6 -%}
                 {% for handle in blog_handles %}
                     {% for article in blogs[handle].articles %}
                         <div class="module-blog-cat__blog-lists">
@@ -76,9 +84,12 @@
                     {% endfor %}
                 {% endfor %}
                 {%- endpaginate -%}
-                {%- paginate blogs[handle].articles by 9 -%}
-                {{ paginate | default_pagination: next_label: 'Older', previous_label: 'Newer' }}
-                {%- endpaginate -%}
+                <div class="pagination">
+                    {%- paginate blogs[handle].articles by 6 -%}
+                      {{ paginate | default_pagination: next: '>', previous: '<' }}
+                    {%- endpaginate -%}
+                </div>                  
+                  
             </div>
         </div>
     </div>
@@ -207,6 +218,45 @@
         line-height: 16px;
         margin: 0;
     }
+    .pagination {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        max-height: 50px;
+        align-items: center;
+    }
+    .pagination span {
+        margin-right: 20px;
+    }
+    
+    .pagination a {
+        color: #9f9fbf;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: solid 2px #e0e0ec;
+        border-radius: 100%;
+        font-family: var(--gilroyreg);
+        font-weight: 900;
+        font-size: 18px;
+      }
+      span.page.current {
+        color: #9f9fbf;
+        text-decoration: none;
+        padding: 5px 15px;
+        border: solid 2px #e0e0ec;
+        border-radius: 100%;
+        font-family: var(--gilroyreg);
+        font-weight: 900;
+        font-size: 18px;
+    }
+    .prev a , .next a {
+        background: #e0e0ec;
+    }
+    .prev a:hover ,  .next a:hover, .page a:hover , .pagination .page:hover {
+        color: #2a294f;
+    }
+    
+    
     @media (max-width: 1024px) {
         .module-blog-cat__blog-lists {
             width: calc(50% - 14px);
