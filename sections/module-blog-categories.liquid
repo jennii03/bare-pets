@@ -74,6 +74,7 @@
                       <p>Views: {{ blog.page_views }}</p>
                     {% endfor %}
                   </div>
+                  
                 {% if blog_handles != blank %}
                     {% assign blog_handles = blog_handles | split: "," %}
                 {% else %}
