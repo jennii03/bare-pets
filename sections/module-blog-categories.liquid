@@ -34,7 +34,7 @@
                     <h2 class="module-blog-cat__recent remove-spacing">{{ recent }}</h2>
                     <div class="module-blog-cat__recents">
                         {% assign recent = blog | split: "," %}
-                        {%- paginate blogs[handle].articles by 9 -%}
+                        
                         {% for handle in recent %}
                             {% for article in blogs[handle].articles %}
                                 <div class="module-blog-cat__recent-item">
@@ -47,10 +47,6 @@
                                 </div>
                             {% endfor %}
                         {% endfor %}
-                        {%- endpaginate -%}
-                {%- paginate blogs[handle].articles by 9 -%}
-                {{ paginate | default_pagination: next_label: 'Older', previous_label: 'Newer' }}
-                {%- endpaginate -%}
                     </div>
                 {% endif %}
             </div>
