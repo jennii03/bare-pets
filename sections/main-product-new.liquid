@@ -19,7 +19,7 @@
                     <span class="module-product-banner__weight">{{ section.settings.product_weight }}</span>
                 </div>
 
-                <div id="price-{{ section.id }}" role="status" style="color: {{ main_product_image_bg_color }}">
+                <div id="price-{{ section.id }}" role="status">
                     {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large'-%}
                 </div>
 
@@ -180,7 +180,8 @@
 </div>
 
 <style>
-    #module-product-banner-{{ section.id }} .product-main-image a:after {
+    #module-product-banner-{{ section.id }} .product-main-image a:after,
+    #module-product-banner-{{ section.id }} .price__container {
         background: {{ main_product_image_bg_color }};
     }
 
