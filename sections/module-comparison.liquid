@@ -369,6 +369,27 @@
 {% endschema %}
 
 {% style %}
+
+.module-comparison {
+    position: relative;
+}
+
+.module-comparison:after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Asset.png?v=1688607283'), url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/Asset-1.png?v=1688607283');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom 100px right;
+    background-size: 130px, 200px;
+    z-index: 1;
+}
+
 .module-comparison_heading,
 .module-comparison_description,
 .module-comparison_table .comparison_title strong,
