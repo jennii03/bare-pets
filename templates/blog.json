@@ -23,20 +23,21 @@
     "ae0dcde2-48c1-4878-a672-aee6276055e7": {
       "type": "module-blog-categories",
       "settings": {
+        "heading1": "SEARCH",
         "heading": "CATEGORY",
         "menu": "blog-categories",
         "blog_handles": "",
         "enable_recent": true,
         "recent": "RECENT",
-        "blog": "news"
+        "blogsss": "news"
       }
     },
     "2c387df6-1483-48ac-8ad2-912529a3d569": {
       "type": "module-text-marquee",
       "settings": {
-        "gradient_color1": "#2A294F",
-        "gradient_color2": "#6565A0",
-        "txt_color": "#FFFFFF",
+        "gradient_color1": "#2a294f",
+        "gradient_color2": "#6565a0",
+        "txt_color": "#ffffff",
         "text": "simple. honest. nutritious."
       }
     }
