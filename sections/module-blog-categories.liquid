@@ -234,23 +234,24 @@
         font-weight: bold;
         font-size: 16px;
     }
-    .current.prev , .page-link.next{
+    .current.prev , .current.next , .page-link.next , .page-link.prev{
         background: #e0e0ec;
         font-size: 0;
         width: 45px;
         height: 45px;
+        border: none;
     }
-    span.current.prev {
+    span.current.prev , a.page-link.prev{
     background-image: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/previous.png?v=1688613875');
     background-repeat: no-repeat;
     background-position: center;
     }
-    a.page-link.next {
+    span.current.next , a.page-link.next {
     background-image: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/next.png?v=1688613875');
     background-repeat: no-repeat;
     background-position: center;
     }
-    span.current:active{
+    .pagination span.current{
         color: #2a294f;
         border-color: #2a294f;
     }
