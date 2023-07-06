@@ -13,7 +13,7 @@
         <h3 class="module-product-info__subheading text-center text-light-purple">{{ description }}</h3>
     </div>
 
-    <div class="module-product-info__main">
+    <div class="module-product-info__main module-product-info__main-desktop">
         <div class="module-product-info__top">
             {% assign count = 0 %}
             {% for block in section.blocks %}
@@ -119,6 +119,146 @@
         </div>
     </div>
     
+
+    <div class="module-product-info__main module-product-info__main-mobile">
+        <div class="module-product-info__top-mobile">
+            {% assign count = 0 %}
+            {% for block in section.blocks %}
+                {%liquid
+                    assign top_text_color = block.settings.top_text_color
+                    assign top_icon = block.settings.top_icon
+                    assign top_subheading = block.settings.top_subheading
+                    assign top_heading = block.settings.top_heading
+                    assign top_description = block.settings.top_description
+                    assign count = count | plus: 1
+                    assign button_text = block.settings.button_text
+                    assign button_link = block.settings.button_link
+                %}
+
+                
+                {% if block.type == 'top_info' %}
+                    <div class="module-product-info__top-item module-product-info__tooltip module-product-info__tooltip-{{ count }}" data-hover="{{ top_text_color }}">
+                        <div class="module-product-info__content">
+                            <p class="remove-spacing text-center text-purple">{{ top_subheading }}</p>
+                            <h4 class="remove-spacing text-center" style="color: {{ top_text_color }};">{{ top_heading }}</h4>
+                        </div>
+
+                        <div class="module-product-info__hover">
+                            <div class="d-flex align-items-center">
+                                <p class="remove-spacing">{{ top_description }}</p>
+                                {% if top_icon !=blank  %}
+                                    <img src="{{ top_icon | img_url: 'master' }}" alt="{{ top_icon.alt }}">
+                                {% endif %}
+                            </div>
+                            <div class="module-product-info__button text-center">
+                                <a href="{{ button_link }}">{{ button_text }}</a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            {% assign count = 0 %}
+                {% for block in section.blocks %}
+                    {%liquid
+                        assign middle_text_color = block.settings.middle_text_color
+                        assign middle_icon = block.settings.middle_icon
+                        assign middle_subheading = block.settings.middle_subheading
+                        assign middle_heading = block.settings.middle_heading
+                        assign middle_description = block.settings.middle_description
+                        assign count = count | plus: 1
+                        assign middle_button_text = block.settings.middle_button_text
+                        assign middle_button_link = block.settings.middle_button_link
+                    %}
+    
+                    {% if block.type == 'middle_info' %}
+                        <div class="module-product-info__middle-item-mobile module-product-info__middle-item module-product-info__tooltip module-product-info__tooltip-{{ count }}" data-hover="{{ middle_text_color }}">
+                            <div class="module-product-info__content">
+                                <p class="remove-spacing text-center text-purple">{{ middle_subheading }}</p>
+                                <h4 class="remove-spacing text-center" style="color: {{ middle_text_color }};">{{ middle_heading }}</h4>
+                            </div>
+    
+                            <div class="module-product-info__hover">
+                                <div class="d-flex align-items-center">
+                                    <p class="remove-spacing">{{ middle_description }}</p>
+                                    {% if middle_icon !=blank  %}
+                                        <img src="{{ middle_icon | img_url: 'master' }}" alt="{{ middle_icon.alt }}">
+                                    {% endif %}
+                                </div>
+                                <div class="module-product-info__button text-center">
+                                    <a href="{{ middle_button_link }}">{{ middle_button_text }}</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    {% endif %}
+            {% endfor %}
+
+        </div>
+        <div class="module-product-info__bottom-mobile d-flex">
+            <div class="module-product-info__image-mobile">
+                <img src="{{ image | img_url: 'master' }}" alt="{{ image.alt }}">
+            </div>
+
+            <div class="module-product-info__tablet">
+                {% assign count = 0 %}
+                {% for block in section.blocks %}
+                    {%liquid
+                        assign middle_text_color = block.settings.middle_text_color
+                        assign middle_icon = block.settings.middle_icon
+                        assign middle_subheading = block.settings.middle_subheading
+                        assign middle_heading = block.settings.middle_heading
+                        assign middle_description = block.settings.middle_description
+                        assign count = count | plus: 1
+                        assign middle_button_text = block.settings.middle_button_text
+                        assign middle_button_link = block.settings.middle_button_link
+                    %}
+    
+                    {% if block.type == 'middle_info' %}
+                        <div class="module-product-info__middle-item module-product-info__tooltip module-product-info__tooltip-{{ count }}" data-hover="{{ middle_text_color }}">
+                            <div class="module-product-info__content">
+                                <p class="remove-spacing text-center text-purple">{{ middle_subheading }}</p>
+                                <h4 class="remove-spacing text-center" style="color: {{ middle_text_color }};">{{ middle_heading }}</h4>
+                            </div>
+    
+                            <div class="module-product-info__hover">
+                                <div class="d-flex align-items-center">
+                                    <p class="remove-spacing">{{ middle_description }}</p>
+                                    {% if middle_icon !=blank  %}
+                                        <img src="{{ middle_icon | img_url: 'master' }}" alt="{{ middle_icon.alt }}">
+                                    {% endif %}
+                                </div>
+                                <div class="module-product-info__button text-center">
+                                    <a href="{{ middle_button_link }}">{{ middle_button_text }}</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="module-product-info__image-block-mobile d-flex">
+            {% for block in section.blocks %}
+                {%liquid
+                    assign bottom_image = block.settings.bottom_image
+                    assign bottom_heading = block.settings.bottom_heading
+                %}
+                {% if block.type == 'bottom_info' %}
+                    <div class="module-product-info__bottom-content flex-basis-100">
+                        {% if bottom_image !=blank  %}
+                            <div class="module-product-info__bottom-image text-center">
+                                <img src="{{ bottom_image | image_url }}" class="module-product-info__image">
+                            </div>
+                        {% endif %}
+                        <p class="text-center text-light-purple">{{ bottom_heading }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 
 </div>
 

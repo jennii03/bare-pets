@@ -199,3 +199,69 @@
     font-size: 16px;
     line-height: 18px;
 }
+
+.module-product-info__main-mobile,
+.module-product-info__middle-item-mobile {
+    display: none;
+}
+
+@media (max-width: 1480) {
+    .module-product-info__middle-item:nth-child(1), .module-product-info__middle-item:nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .module-product-info__main-desktop {
+        display: none;
+    }
+
+    .module-product-info__main-mobile {
+        display: block;
+    }
+
+    .module-product-info__top-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .module-product-info__image-mobile {
+        margin-top: 6rem;
+    }
+
+    .module-product-info__middle-item:nth-child(1), .module-product-info__middle-item:nth-child(2) {
+        margin-left: unset;
+    }
+
+    .module-product-info__bottom-mobile.d-flex {
+        gap: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .module-product-info__middle-item {
+        margin: 10px 10px 3rem;
+    }
+
+    .module-product-info__middle-item-mobile {
+        display: block;
+    }
+
+    .module-product-info__tablet {
+        display: none;
+    }
+
+    .module-product-info__image-block-mobile {
+        margin-top: -15rem;
+    }
+
+    .module-product-info__tooltip {
+        height: auto;
+    }
+}
+
+/* @media (max-width: 600px) {
+
+} */
