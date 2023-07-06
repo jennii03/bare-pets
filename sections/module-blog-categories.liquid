@@ -1,3 +1,4 @@
+
 {%liquid
     assign heading1 = section.settings.heading1
     assign heading = section.settings.heading
@@ -5,7 +6,7 @@
     assign blog_handles = section.settings.blog_handles
     assign enable_recent = section.settings.enable_recent
     assign recent = section.settings.recent
-    assign blog = section.settings.blog
+    assign blogsss = section.settings.blogsss
 %}
 
 <div id="module-blog-cat-{{ section.id }}" class="module-blog-cat">
@@ -14,7 +15,7 @@
             <div class="module-blog-cat__filter-container">
                 <h2 class="module-blog-cat__heading remove-spacing">{{ heading1 }}</h2>
                 <form class="search" action="/search">
-                    <input type="text" placeholder="Search.." name="q" value="{{ search.terms | escape }}"  />
+                    <input type="text" placeholder="Search.." name="size" value="{{ search.terms | escape }}"  />
                 </form>
                 <h2 class="module-blog-cat__heading remove-spacing">{{ heading }}</h2>
                 
@@ -33,18 +34,19 @@
                 {% if enable_recent %}
                     <h2 class="module-blog-cat__recent remove-spacing">{{ recent }}</h2>
                     <div class="module-blog-cat__recents">
-                        {% assign recent = blog | split: "," %}
-                        
+                        {% assign recent = blogsss | split: "," %}
                         {% for handle in recent %}
                             {% for article in blogs[handle].articles %}
-                                <div class="module-blog-cat__recent-item">
-                                    <div class="module-blog-cat__recent-image">
-                                        <img src="{{ article.image | image_url }}">
+                                {% if forloop.index <= 3 %}
+                                    <div class="module-blog-cat__recent-item">
+                                        <div class="module-blog-cat__recent-image">
+                                            <img src="{{ article.image | image_url }}">
+                                        </div>
+                                        <div class="module-blog-cat__recent-info">
+                                            <p class="module-blog-cat__recent-content remove-spacing">{{ article.content | truncatewords: 8 }}</p>
+                                        </div>
                                     </div>
-                                    <div class="module-blog-cat__recent-info">
-                                        <p class="module-blog-cat__recent-content remove-spacing">{{ article.content | truncatewords: 8 }}</p>
-                                    </div>
-                                </div>
+                                {% endif %}
                             {% endfor %}
                         {% endfor %}
                     </div>
@@ -58,7 +60,7 @@
                 {% assign blog_handless = blog.handle %}
                     {% assign blog_handles = blog_handless | split: "," %}
                 {% endif %}
-                {%- paginate blogs[handle].articles by 9 -%}
+
                 {% for handle in blog_handles %}
                     {% for article in blogs[handle].articles %}
                         <div class="module-blog-cat__blog-lists">
@@ -81,10 +83,8 @@
                         </div>
                     {% endfor %}
                 {% endfor %}
-                {%- endpaginate -%}
-                {%- paginate blogs[handle].articles by 9 -%}
-                {{ paginate | default_pagination: next_label: 'Older', previous_label: 'Newer' }}
-                {%- endpaginate -%}
+
+                <div class="pagination"></div>          
             </div>
         </div>
     </div>
@@ -213,6 +213,47 @@
         line-height: 16px;
         margin: 0;
     }
+    .pagination {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top:20px;
+        align-items: center;
+    }
+    .pagination span , .page-link {
+        margin-right: 20px;
+    }
+    
+    span.current , .page-link{
+        color: #7c7c94;
+        text-decoration: none;
+        padding: 5px 15px;
+        border: solid 2px #e0e0ec;
+        border-radius: 100%;
+        font-family: var(--gilroyreg);
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .current.prev , .page-link.next{
+        background: #e0e0ec;
+        font-size: 0;
+        width: 45px;
+        height: 45px;
+    }
+    span.current.prev {
+    background-image: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/previous.png?v=1688613875');
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    a.page-link.next {
+    background-image: url('https://cdn.shopify.com/s/files/1/0613/8406/5197/files/next.png?v=1688613875');
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    span.current:active{
+        color: #2a294f;
+        border-color: #2a294f;
+    }
     .search input{
         border-radius: 30px;
         border: solid 1px #6bc5b1;
@@ -221,6 +262,13 @@
         margin: 10px 0 20px 0;
         outline: none;
         box-shadow: none;
+    }
+    .search input[type="text"] {
+        background-image: url(https://cdn.shopify.com/s/files/1/0613/8406/5197/files/seach_icon_918b7261-1326-4b15-adef-ead6716cc6ed.png?v=1688636228);
+        background-repeat: no-repeat;
+        align-content: end;
+        right: 0;
+        background-position: 205px;
     }
     @media (max-width: 1024px) {
         .module-blog-cat__blog-lists {
@@ -242,6 +290,28 @@
         }
     }
 </style>
+
+<script>
+    setTimeout(function() {
+        var items = $(".module-blog-cat__blog-container .module-blog-cat__blog-lists");
+        var numItems = items.length;
+        var perPage = 6;
+
+        items.slice(perPage).hide();
+
+        $('.pagination').pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            prevText: "&laquo;",
+            nextText: "&raquo;",
+            onPageClick: function (pageNumber) {
+                var showFrom = perPage * (pageNumber - 1);
+                var showTo = showFrom + perPage;
+                items.hide().slice(showFrom, showTo).show();
+            }
+        });
+    }, 1000);
+</script>
 
 {% schema %}
   {
@@ -285,7 +355,7 @@
         },
         {
             "type": "blog",
-            "id": "blog",
+            "id": "blogsss",
             "label": "Blog to feature"
         }
     ],
